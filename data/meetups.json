@@ -1,0 +1,31 @@
+[{
+    "name": "Bay Area Electron User Group",
+    "location": "San Francisco, California",
+    "country": "USA",
+    "href": "http://www.meetup.com/Bay-Area-Electron-User-Group"
+  },
+  {
+    "name": "Electron Korea",
+    "location": "Seoul",
+    "country": "South Korea",
+    "href": "https://electron-kr.github.io/electron-kr"
+  },
+  {
+    "name": "Austin ElectronJS Meetup",
+    "location": "Austin, Texas",
+    "country": "USA",
+    "href": "http://www.meetup.com/Austin-ElectronJs-Meetup"
+  },
+  {
+    "name": "Github Electron Bamenda",
+    "location": "Bamenda",
+    "country": "Cameroon",
+    "href": "mailto:mathalpha26@gmail.com"
+  },
+  {
+    "name": "Pittsburgh Video Game Developers: Electron Games Topic",
+    "location": "Pittsburgh, PA",
+    "country": "USA",
+    "href": "https://www.meetup.com/Pittsburgh-Game-Dev/"
+  }
+]

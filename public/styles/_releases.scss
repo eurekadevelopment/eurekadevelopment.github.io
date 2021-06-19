@@ -1,0 +1,176 @@
+
+// Releases ------------------------------
+
+.releases-tag {
+  display: inline-block;
+  margin: 0.3em 0.1em;
+  padding: 0.1em 0.4em;
+  font-size: 0.86em;
+  color: $main-color-subtle;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+
+  &:hover {
+    text-decoration: none;
+    color: $main-color-strong;
+    background-color: $main-bg-color-shade;
+  }
+}
+
+.release-version-filter .active {
+  text-decoration: underline;
+}
+
+.r-menu {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
+  list-style: none;
+
+  .menu-item {
+    font-size: 21px;
+    // Remove border radius for active element.
+    border-radius: 0;
+    position: relative;
+    display: block;
+    padding: 12px 15px;
+    border-bottom: 1px solid $border-color;
+
+    &:first-child {
+      border-top: 0;
+      border-top-right-radius: $border-radius;
+      border-top-left-radius: $border-radius;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+      border-bottom-right-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+    }
+
+    &:hover {
+      text-decoration: none;
+      background-color: $gray-0;
+    }
+
+    &.active {
+      font-weight: bold;
+      background-color: $gray-0;
+      border-left: 2px solid $main-link-color;
+    }
+
+    .octicon {
+      font-size: 20px;
+      padding-right: 8px;
+    }
+
+    p {
+      font-size: 15px;
+      // margin-left: 23px;
+    }
+  }
+}
+
+.r-flex {
+  display: flex;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.releases {
+  width: 1012px;
+  flex: 1;
+
+  .release-entry {
+    margin-bottom: $spacer-3;
+
+    // Tag
+    & > .tag {
+      display: inline-block;
+      padding: 0.1em 0.3em;
+      color: $main-color;
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
+
+      &:hover {
+        text-decoration: none;
+        color: $main-color-strong;
+        background-color: $main-bg-color-shade;
+      }
+
+      &.octicon-wrapper {
+        border: none;
+      }
+    }
+
+    // Date
+    & > .date {
+      margin-left: 0.5em;
+      font-size: $body-font-size;
+      color: $main-color-subtle;
+      font-style: normal;
+    }
+  }
+
+  .release-notes {
+    border-bottom: 1px solid $gray-0;
+    margin-bottom: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+@media (min-width: 700px) {
+  .r-resp-header,
+  .r-resp-header-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu-item {
+    font-size: 18px;
+    line-height: 1.75;
+
+    .octicon {
+      font-size: 18px;
+      padding-right: 8px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .release-version-filter {
+    margin-left: 0;
+  }
+
+  .container-narrow {
+    .r-resp-header-narrow {
+      display: flex;
+
+      h1 {
+        flex: 1;
+      }
+    }
+
+    .r-resp-header-toggle {
+      .octicon {
+        font-size: 20px;
+        margin-bottom: 4px;
+        color: #3a585f !important;
+      }
+    }
+  }
+
+  .r-resp-header {
+    ul > li {
+      list-style: none;
+      line-height: 1.25;
+    }
+  }
+
+  .r-menu {
+    display: none;
+  }
+}

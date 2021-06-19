@@ -1,0 +1,44 @@
+.footer {
+  border-top: 1px solid $gray-1;
+  border-color: darken($main-bg-color-shade, 8%);
+  background: $main-bg-color-shade;
+
+  a {
+    color: $main-color-strong;
+
+    &:hover {
+      color: $main-color-subtle;
+    }
+  }
+}
+
+.footer-nav-list {
+  columns: 2;
+  list-style: none;
+}
+
+.footer-openjs-logo {
+  width: 150px;
+}
+
+.footer-social {
+  margin-bottom: $spacer-3;
+}
+
+.footer-social-list {
+  margin-left: 0;
+  list-style: none;
+
+  & > li {
+    padding-right: $spacer-3;
+    display: inline;
+  }
+}
+
+a.footer-social-icon {
+  font-size: 200%;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

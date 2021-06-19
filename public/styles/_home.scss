@@ -1,0 +1,164 @@
+
+// Jumbotron ------------------------------
+
+.jumbotron.jumbotron-home {
+  // Reduce padding because the hero has some extra padding for the animation.
+  padding: $spacer-2 $spacer-3 $spacer-6 $spacer-3;
+
+  @include breakpoint(md) { padding: $spacer-4 $spacer-3 $spacer-8 $spacer-3; }
+
+  @include breakpoint(xl) { padding: $spacer-6 0 $spacer-6 * 2 0; }
+}
+
+// Headers ------------------------------
+
+.nodejs-color {
+  color: $nodejs-color;
+}
+
+.chromium-color {
+  color: $chromium-color;
+}
+
+// Features ------------------------------
+
+.home-illu {
+  max-height: 200px;
+}
+
+// Featured apps section --------------------------
+
+.featured-apps {
+  display: flex;
+  justify-content: center;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a.featured-app-list-item {
+  background-color: $screen-shot-bg;
+  padding: 20px;
+  margin: 20px;
+  transition: background-color 200ms ease-in-out;
+  position: relative;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:hover {
+    background-color: $main-bg-color-shade;
+  }
+
+  img {
+    max-height: 400px;
+  }
+
+  h4 {
+    margin-top: 10px;
+    max-width: 65%;
+  }
+
+  .icon {
+    position: absolute;
+    right: 10px;
+    float: left;
+    bottom: 35px;
+    max-width: 35%;
+    max-height: 35%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .featured-apps {
+    flex-wrap: wrap;
+  }
+
+  a.featured-app-list-item {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  a.featured-app-list-item {
+    width: 100px;
+    min-width: unset;
+    padding: 15px;
+    margin: 10px;
+
+    picture {
+      display: none;
+    }
+
+    h4 {
+      max-width: 100%;
+      justify-self: flex-end;
+
+      /* Turn it into a h5 */
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .icon {
+      max-width: 70px;
+      position: unset;
+      float: unset;
+      max-height: unset;
+    }
+  }
+}
+
+// Getting Started section ------------------------------
+
+.highlight-dark {
+  color: $jumbo-color-strong;
+  background-color: $jumbo-bg-color;
+  border-color: darken($jumbo-bg-color, 12%);
+
+  code {
+    color: inherit;
+  }
+
+  .c1.c1 {
+    color: mix($jumbo-color-strong, $jumbo-bg-color, 60%);
+  }
+}
+
+.app-frame {
+  border: 2px solid $main-border-color;
+  border-top-width: 20px;
+  border-radius: 4px;
+  background-color: $main-bg-color;
+  box-shadow: 0 25px 30px -18px $main-drop-shadow;
+}
+
+@media screen and (max-width: 1300px) {
+  svg.vertical-middle {
+    display: none;
+  }
+}
+
+// Announcement banner------------------------------
+
+.announcement-banner {
+  background: $jumbo-bg-border;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: $jumbo-color-strong;
+  text-align: center;
+
+  a {
+    color: $jumbo-color;
+  }
+}
+
+.announcement-banner-contrast {
+  background: #eaf99f;
+  width: 70%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  margin-left: 15%;
+}

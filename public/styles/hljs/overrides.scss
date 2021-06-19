@@ -1,0 +1,66 @@
+// could remove placeholder selector if we take out
+// PRIMER-REMOVE-ME
+%markdown-pre {
+  overflow: visible;
+  position: relative;
+
+  .btn-group {
+    border: 1px #e5e5e5 solid;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+
+    button {
+      border-right: 1px #e5e5e5 solid;
+    }
+
+    button:last-child {
+      border-right: none;
+    }
+  }
+
+  .btn-launch,
+  .btn-clipboard {
+    background-color: #f8f8f8;
+    border: none;
+    outline: 0;
+    padding: 0.25rem 0.5rem;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: #eee;
+    }
+
+    &:active {
+      background-color: #dfdfdf;
+    }
+  }
+}
+
+.markdown-body pre {
+  @extend %markdown-pre;
+
+  .PRIMER-REMOVE-ME & {
+    @extend %markdown-pre;
+  }
+}
+
+.hljs {
+  padding: $spacer-5 $spacer-3;
+  display: block;
+  overflow: auto;
+  position: relative;
+  line-height: 1.6;
+
+  &::before {
+    letter-spacing: inherit;
+    content: '';
+  }
+
+  .PRIMER-REMOVE-ME .markdown-body & {
+    @extend .hljs;
+  }
+}
