@@ -136,7 +136,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   box-sizing: border-box;
 }
 html {
-  background: #f4f5f6;
+  background: #303338;
   height: 100%;
   min-width: 320px;
 }
@@ -169,6 +169,7 @@ button, input, textarea {
 }
 p {
   margin: 0;
+  color: #ffffff;
 }
 .header {
   background: #f8f8f8;
@@ -604,6 +605,7 @@ p {
 }
 .profile-description {
   padding-bottom: 0.64286em;
+  color: #FFFFFF;
   text-align: center;
 }
 .profile-description:before {
@@ -619,6 +621,7 @@ p {
   line-height: 1.45455em;
   font-weight: 300;
   margin: 0 auto;
+  color: #FFFFFF;
 }
 /* menu */.menu-navigation {
   margin-top: 0.5em;
@@ -985,9 +988,11 @@ p {
     margin-left: 0;
     min-height: 0;
     text-align: center;
+    color: #FFFFFF;
   }
   .profile-name h1 {
     vertical-align: bottom;
+    color: #FFFFFF;
   }
   .profile-summary {
     margin-top: 0.07143em;
@@ -1059,6 +1064,7 @@ p {
   .profile-description p {
     font-size: 1.14286em;
     line-height: 1.5em;
+    color: #FFFFFF;
   }
   .profile-menu {
     margin-top: 0.64286em;
@@ -1327,6 +1333,7 @@ p {
   .profile-description p {
     font-size: 1.14286em;
     line-height: 1.5em;
+    color: #FFFFFF;
   }
   .profile-menu {
     margin-top: 0.64286em;
