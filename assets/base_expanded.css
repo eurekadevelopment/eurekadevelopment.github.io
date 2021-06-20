@@ -136,7 +136,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   box-sizing: border-box;
 }
 html {
-  background: #303338;
+  background: #f4f5f6;
   height: 100%;
   min-width: 320px;
 }
@@ -169,7 +169,6 @@ button, input, textarea {
 }
 p {
   margin: 0;
-  color: #ffffff;
 }
 .header {
   background: #f8f8f8;
