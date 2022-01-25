@@ -162,11 +162,11 @@ a {
         border-radius: 50px;
         border: 0px solid white;
         padding: 20px; 
-        height: 22px; 
+        height: 16px; 
         position: fixed;
         border: 0;
         border-radius: 28px;
         box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
-        font-size: 14px;
+        font-size: 10px;
     }
 }
