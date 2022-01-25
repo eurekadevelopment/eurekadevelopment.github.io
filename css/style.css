@@ -320,13 +320,13 @@ div.box2 {
     }
     .image__title {
         font-weight: bold;
-        font-size: 2em;
+        font-size: 1.8em;
         text-align:center;
     }
     .image__description {
         font-size: 8px;
         margin-top: 0.25em;
-        padding-top: 15px;
+        padding-top: 0px;
         padding-right: 15px;
         padding-bottom: 15px;
         padding-left: 15px;
