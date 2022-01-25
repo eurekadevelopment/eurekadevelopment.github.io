@@ -16,6 +16,7 @@
     border: 0;
     border-radius: 28px;
     box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
+    
 }
 .topnav a {
     color: #f2f2f2;
@@ -26,7 +27,7 @@
     padding: 10px;
     height: 15px; 
     transition: 0.8s;
-
+    font-size: 16px;
 }
 .topnav a:hover {
     background-color: #08f;
@@ -70,13 +71,13 @@ footer p {
     display: -moz-flex;
     z-index: -1;
     top: 80px;
-    margin-bottom: 120px;
+    
 }
 .flexelement {
     background: black;
     color: white;
     text-align: center;
-    margin: 3% 0 3% 0;
+    margin: 3% 0% 3% 0;
     width: 250px;
     padding: 50px 50px 50px 50px;
 }
@@ -114,6 +115,14 @@ footer p {
     margin-top: 30px;
     margin-bottom: 50px;
 }
+.box4 {
+    text-align: left;
+    border-radius: 50px;
+    font-size: 150%;
+    border: 0;
+    box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
+    width: 300px;
+}
 #logo2 {
     float: left;
     }
@@ -127,6 +136,7 @@ p {
 }
 a {
     color:#08f;
+    font-size: 20px;
 }
 @media screen and (max-width: 600px) {
     .box1 {
@@ -163,13 +173,14 @@ a {
         overflow: hidden;
         border-radius: 50px;
         border: 0px solid white;
-        padding: 20px; 
+        padding: 17px; 
         height: 16px; 
         position: fixed;
         border: 0;
         border-radius: 28px;
         box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
         font-size: 10px;
+        width: 388px;
     }
     h1 {
         text-align: left;
@@ -180,6 +191,10 @@ a {
         animation-duration: 0.7s;
         animation-name: slidein;
       }
+      a {
+        color:#08f;
+        font-size: 10px;
+    } 
 }
 h1 {
     text-align: left;
