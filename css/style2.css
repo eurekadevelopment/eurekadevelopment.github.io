@@ -51,7 +51,6 @@ footer {
     border: 0;
     box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
 }
-
 footer p {
 	float: right;
 	margin: 0;
@@ -71,6 +70,7 @@ footer p {
     display: -moz-flex;
     z-index: -1;
     top: 80px;
+    margin-bottom: 120px;
 }
 .flexelement {
     background: black;
@@ -168,5 +168,8 @@ a {
         border-radius: 28px;
         box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
         font-size: 10px;
+    }
+    h1 {
+        text-align: left;
     }
 }
