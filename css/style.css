@@ -7,6 +7,8 @@
 }
 h1 {
     text-align: center;
+    animation-duration: 0.7s;
+    animation-name: slidein1;
 }
 li {
     font-size: 16px;
@@ -86,6 +88,7 @@ ul li::before {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-left: 15%;
+    animation: textwelle 1.0s;
 }
 .flexbox > div {
     margin: 1% 1% 1% 1%;
@@ -305,6 +308,8 @@ div.box2 {
     }   
     .flexbox_rom {
      top: 230px;
+     animation-duration: 0s;
+     animation-name: slidein2;
     } 
     .image__img {
         display: block;
@@ -357,7 +362,13 @@ div.box2 {
     }
     h1 {
         text-align: left;
+        animation-duration: 0.7s;
+        animation-name: slidein1;
     }
+    p {
+        animation-duration: 0.7s;
+        animation-name: slidein;
+      }
   }
 .glow{
     background:#1f2227;
@@ -365,4 +376,56 @@ div.box2 {
     text-shadow:1px 1px 10px #08f, 1px 1px 10px #08f;
     font-size:48px;
     text-align:center;
+  }
+  p {
+    animation-duration: 1.5s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 200%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  @keyframes slidein1 {
+    from {
+      margin-left: -200%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: -0%;
+      width: 100%;
+    }
+  }
+  @keyframes slidein2 {
+    from {
+      margin-top: -200%;
+      width: 300%;
+    }
+  
+    to {
+      margin-top: -0%;
+      width: 100%;
+    }
+  }
+  @keyframes textwelle {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }  
+    70% {
+      transform: scale(1.25);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;	
+    }
   }

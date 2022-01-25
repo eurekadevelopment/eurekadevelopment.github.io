@@ -122,6 +122,8 @@ footer p {
     }
 p {
     font-size: 16px;
+    animation-duration: 0.7s;
+    animation-name: slidein;
 }
 a {
     color:#08f;
@@ -171,5 +173,39 @@ a {
     }
     h1 {
         text-align: left;
+        animation-duration: 0.7s;
+        animation-name: slidein1;
     }
+    p {
+        animation-duration: 0.7s;
+        animation-name: slidein;
+      }
 }
+h1 {
+    text-align: left;
+    animation-duration: 0.7s;
+    animation-name: slidein1;
+  }
+@keyframes slidein {
+    from {
+      margin-left: 200%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  @keyframes slidein1 {
+    from {
+      margin-left: -200%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: -0%;
+      width: 100%;
+    }
+  }
+  
