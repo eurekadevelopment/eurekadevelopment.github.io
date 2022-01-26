@@ -12,6 +12,9 @@
     <script async src="https://arc.io/widget.min.js#3LCgJWKk"></script>
 </head>
 <body>
+    <body onload="myFunction()" style="margin:0;">
+        <div id="loader"></div>
+        <div id="overlay"></div>
     <section>
     <h1>&nbsp;</h1>
     <div class="flexbox">
@@ -25,7 +28,11 @@
             <a href="about.html">About</a>
         </div>     
     </div>
-    
+    <div class ="flexelement box1 harlow">
+        <h1 id="tg">Guide</h1>
+        <hr />
+      </div>
+    </div>
     <footer>
         <div class="wrapper"><img src="images/logo.png" width="22px" height="22px" id="logo2">
             <div style="text-align: right;">© 2021-2022 Eureka Team. All rights reserved.</div>
@@ -33,4 +40,19 @@
       </footer>
     </section>
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>
+  var myVar;
+  
+  function myFunction() {
+    myVar = setTimeout(showPage, 2000);
+  }
+  
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+
+  $('#overlay').fadeOut(2000);
+  </script>
 </html>

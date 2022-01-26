@@ -7,12 +7,23 @@
     <title>Eureka-Development - HOME</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
     <body style=" background-color: #1f2227;">
     <style>
        .slideshow-container {
          max-width: 1000px;
-         position: center;
+         position: right;
          margin: auto;
+       }
+
+       .text {
+         color: #f2f2f2;
+         font-size: 15px;
+         padding: 8px 12px;
+         position: absolute;
+         bottom: 8px;
+         width: 100%;
+         text-align: center;
        }
 
        .fade {
@@ -36,6 +47,9 @@
     <script async src="https://arc.io/widget.min.js#3LCgJWKk"></script>  
 </head>
 <body>
+  <body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div id="overlay"></div>
     <div class="flexbox">
         <div class="topnav harlow"> 
             <a class="active" href="#home">Home</a> 
@@ -51,22 +65,28 @@
         <div class ="flexelement box1 harlow"><img src="images/logo.png" width="70px" height="70px" id="logo">
            <div class="slideshow-container">
              <div class="slideshow1 fade">
-               <img src="images/sm_a10.png" id="logo1" width="241px" height="499px" style = "position:relative; top:60px;">
+               <img src="images/sm_a10.png" id="logo1" style="solid;margin-top: 75px;margin-bottom: 75px;" width="210px" height="444px">
+               <div class="text">A10</div>
              </div>
              <div class="slideshow1 fade">
-               <img src="images/sm_a20.png" id="logo1" width="241px" height="499px" style = "position:relative; top:60px;">
+               <img src="images/sm_a20.png" id="logo1" style="solid;margin-top: 75px;margin-bottom: 75px;" width="210px" height="444px">
+               <div class="text">A20</div>
              </div>
              <div class="slideshow1 fade">
-               <img src="images/sm_a20e.png" id="logo1" width="241px" height="499px" style = "position:relative; top:60px;">
+               <img src="images/sm_a20e.png" id="logo1" style="solid;margin-top: 75px;margin-bottom: 75px;" width="210px" height="444px">
+               <div class="text">A20e</div>
              </div>
              <div class="slideshow1 fade">
-               <img src="images/sm_a30.png" id="logo1" width="241px" height="499px" style = "position:relative; top:60px;">
+               <img src="images/sm_a30.png" id="logo1" style="solid;margin-top: 75px;margin-bottom: 75px;" width="210px" height="444px">
+               <div class="text">A30</div>
              </div>
              <div class="slideshow1 fade">
-               <img src="images/sm_a30s.png" id="logo1" width="241px" height="499px" style = "position:relative; top:60px;">
+               <img src="images/sm_a30s.png" id="logo1" style="solid;margin-top: 75px;margin-bottom: 75px;" width="210px" height="444px">
+               <div class="text">A30s</div>
              </div>
              <div class="slideshow1 fade">
-               <img src="images/sm_a40.png" id="logo1" width="241px" height="499px" style = "position:relative; top:60px;">
+               <img src="images/sm_a40.png" id="logo1" style="solid;margin-top: 75px;margin-bottom: 75px;" width="210px" height="444px">
+               <div class="text">A40</div>
              </div>
            </div>
           
@@ -96,7 +116,6 @@
     <footer>
         <div class="wrapper"><img src="images/logo.png" width="22px" height="22px" id="logo">
             <div style="text-align: right;">© 2021-2022 Eureka Team. All rights reserved.</div>
-            
         </div>
     </footer>
     <script>
@@ -112,8 +131,23 @@
     slideIndex++;
     if (slideIndex > slides.length) {slideIndex = 1}    
        slides[slideIndex-1].style.display = "block";  
-       setTimeout(showSlides, 3000); // Change image every 3 seconds
+       setTimeout(showSlides, 2000); // Change image every 2 seconds
     }
     </script>
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>
+  var myVar;
+  
+  function myFunction() {
+    myVar = setTimeout(showPage, 2000);
+  }
+  
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+
+  $('#overlay').fadeOut(2000);
+  </script>
 </html>

@@ -7,21 +7,25 @@
     <title>Eureka-Development - ROM-A11</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
     <body style=" background-color: #1f2227;">
     <script async src="https://arc.io/widget.min.js#3LCgJWKk"></script>
 </head>
 <body>
+  <body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div id="overlay"></div>
     <div class="flexbox">
-        <div class="topnav harlow"> 
-            <a href="index.html">Home</a> 
-            <a class="active" href="rom11.html">ROM</a>
-            <a href="kernel.html">Kernel</a> 
-            <a href="recovery.html">Recovery</a>
-            <a href="support.html">Support</a> 
-            <a href="guide.html">Guides</a> 
-            <a href="about.html">About</a>
-        </div>     
-    </div>
+      <div class="topnav harlow"> 
+          <a href="index.html">Home</a> 
+          <a class="active" href="rom11.html">ROM</a>
+          <a href="kernel.html">Kernel</a> 
+          <a href="recovery.html">Recovery</a>
+          <a href="support.html">Support</a> 
+          <a href="guide.html">Guides</a> 
+          <a href="about.html">About</a>
+      </div>     
+  </div>
     <div class="flexbox">
       <div class="topnav harlow"> 
           <a class="active" href="rom11.html">Android 11</a> 
@@ -1699,6 +1703,22 @@
           <div style="text-align: right;">© 2021-2022 Eureka Team. All rights reserved.</div>
         </div>
       </footer>
+    </div>
 </body>
 <script src="js/dropdown.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>
+  var myVar;
+  
+  function myFunction() {
+    myVar = setTimeout(showPage, 2000);
+  }
+  
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+
+  $('#overlay').fadeOut(2000);
+  </script>
 </html>
