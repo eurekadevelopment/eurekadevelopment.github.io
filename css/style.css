@@ -116,6 +116,12 @@ ul li::before {
     width: 128px;
     height: 128px;
  }
+ #logo6 {
+    float: left;
+    margin: -150px 0px 0px 0px;
+    width: 128px;
+    height: 128px;
+ }
 .image {
     position: relative;
     width: 210px;

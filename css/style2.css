@@ -5,6 +5,7 @@
 .harlow{
     font-family: myFirstFont;
 }
+
 .topnav {
     background-color: black;
     overflow: hidden;
@@ -69,13 +70,11 @@ footer p {
     display: -webkit-flex;
     display: -moz-flex;
     z-index: -1;
-    top: 80px;
     
 }
 .flexelement {
     background: black;
     color: white;
-    text-align: center;
     margin: 3% 0% 3% 0;
     width: 250px;
     padding: 50px 50px 50px 50px;
@@ -115,13 +114,15 @@ footer p {
     margin-bottom: 50px;
 }
 .box4 {
-    text-align: left;
     border-radius: 50px;
     font-size: 150%;
     border: 0;
     box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
-    width: 300px;
+    width: 290px;
+    height: 280px;
+    text-align: center;
 }
+
 #logo2 {
     float: left;
     }
@@ -135,7 +136,11 @@ p {
 }
 a {
     color:#08f;
-    font-size: 20px;
+    font-size: 16px;
+}
+ul {
+    list-style-type: none;
+    margin-left: -50px;
 }
 @media screen and (max-width: 600px) {
     .box1 {
@@ -193,6 +198,19 @@ a {
         color:#08f;
         font-size: 9px;
     }
+    .box4 {
+        border-radius: 50px;
+        font-size: 150%;
+        border: 0;
+        box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
+        width: 290px;
+        height: 280px;
+        text-align: left;
+    }
+    ul {
+        list-style-type: none;
+        margin-left: 7px;
+    }
 }
 h1 {
     text-align: left;
@@ -221,4 +239,4 @@ h1 {
       width: 100%;
     }
   }
-  
+

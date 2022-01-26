@@ -26,7 +26,18 @@
         <h1 id="features">Eureka Kernel Features</h1><img src="images/logo.png" width="64px" height="64px" id="logo5"> 
         <hr /> 
         <ul>
-        <li>OneUI2/3(4) - AOSP/LineageOS(Android 11/Android 12) compatible.</li>
+          <h3>OFFICIAL FEATURES OF EUREKA R8.0</h3>
+          <li>Upstream Linux Kernel Version from 4.4.277 to 4.4.288</li>
+          <li>Added ondemandplus CPU governor.</li>
+          <li>Added BFQ and ZEN v2 I/O schedulers.</li>
+          <li>Added a new backlight brightness controller. [Feature can be used when new EKM app is released] [Experimental]</li>
+          <li>"Samsung A10 1.2A input charging current" feature has been hardcoded in kernel.</li>
+          <li>Nuked CPU quiet and reverted back to Exynos Hotplug. It should fix issue of cores randomly turning off.</li>
+          <li>Fixed GPU frequency being limited to 1100 MHz after being throttled (v2.0).</li>
+          <li>Some optimizations for better FS performance for EXT4 file-system.</li>
+          <li>Fixed non-detection of some gamepad controllers (such as chinese ones).</li>
+          <li>Patched kernel for android 12 (S).</li>
+          <li>Some other minor optimizations.</li>
       </ul>
       </div>
       </div>
