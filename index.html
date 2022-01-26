@@ -8,6 +8,31 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <body style=" background-color: #1f2227;">
+    <style>
+       .slideshow-container {
+         max-width: 1000px;
+         position: center;
+         margin: auto;
+       }
+
+       .fade {
+         -webkit-animation-name: fade;
+         -webkit-animation-duration: 1.5s;
+         animation-name: fade;
+         animation-duration: 1.5s;
+       }
+
+       @-webkit-keyframes fade {
+         from {opacity: .4} 
+         to {opacity: 1}
+       }
+
+       @keyframes fade {
+         from {opacity: .4} 
+         to {opacity: 1}
+       }
+    </style>
+
     <script async src="https://arc.io/widget.min.js#3LCgJWKk"></script>  
 </head>
 <body>
@@ -20,11 +45,31 @@
             <a href="support.html">Support</a> 
             <a href="guide.html">Guides</a> 
             <a href="about.html">About</a>
-        </div>     
+        </div>
     </div>
     <div class="flexbox">
         <div class ="flexelement box1 harlow"><img src="images/logo.png" width="70px" height="70px" id="logo">
-        <img src="images/sm.png" id="logo1" style="solid;margin-top: 80px;" width="210px" height="444px">
+           <div class="slideshow-container">
+             <div class="slideshow1 fade">
+               <img src="images/sm_a10.png" id="logo1" width="241px" height="499px" style = "position:relative; top:60px;">
+             </div>
+             <div class="slideshow1 fade">
+               <img src="images/sm_a20.png" id="logo1" width="241px" height="499px" style = "position:relative; top:60px;">
+             </div>
+             <div class="slideshow1 fade">
+               <img src="images/sm_a20e.png" id="logo1" width="241px" height="499px" style = "position:relative; top:60px;">
+             </div>
+             <div class="slideshow1 fade">
+               <img src="images/sm_a30.png" id="logo1" width="241px" height="499px" style = "position:relative; top:60px;">
+             </div>
+             <div class="slideshow1 fade">
+               <img src="images/sm_a30s.png" id="logo1" width="241px" height="499px" style = "position:relative; top:60px;">
+             </div>
+             <div class="slideshow1 fade">
+               <img src="images/sm_a40.png" id="logo1" width="241px" height="499px" style = "position:relative; top:60px;">
+             </div>
+           </div>
+          
         <p style="width: 55%;">Eureka-Development
           <br>
           <br>Welcome to Eureka,<br> <br> 
@@ -53,6 +98,22 @@
             <div style="text-align: right;">© 2021-2022 Eureka Team. All rights reserved.</div>
             
         </div>
-      </footer>
+    </footer>
+    <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+       var i;
+       var slides = document.getElementsByClassName("slideshow1");
+       for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+       slides[slideIndex-1].style.display = "block";  
+       setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+    </script>
 </body>
 </html>
