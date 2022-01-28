@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
 
 h2{
-  color:#000;
+  color:#fff;
   text-align:center;
-  font-size:2em;
+  font-size:1.5em;
+  animation-duration: 0.7s;
+  animation-name: slidein1;
 }
+p {
+    animation-duration: 0.7s;
+    animation-name: slidein;
+  }
+h1 {
+    font-size: 22px;
+    animation-duration: 0.7s;
+    animation-name: slidein1;
+}
+
 .warpper{
   display:flex;
   flex-direction: column;
@@ -34,7 +46,7 @@ h2{
   border-radius:50px;
   overflow:hidden;
   padding:20px;  
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .panel{
   display:none;
@@ -119,7 +131,7 @@ h2{
   }
   @media screen and (max-width: 700px) {
     .tab {
-        font-size: 10px;
+        font-size: 16px;
     }
     .panels{
         background:#1f2227;
