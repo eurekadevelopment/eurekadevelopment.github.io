@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/tabs.css">
     <body style=" background-color: #1f2227;">
     <script async src="https://arc.io/widget.min.js#3LCgJWKk"></script>
 </head>
@@ -26,11 +27,83 @@
             <a href="about.html">About</a>
         </div>     
     </div>
-    <div class ="flexelement box1 harlow">
-        <h1 id="tg">Guide</h1>
-        <hr />
+    <div class="warpper">
+      <input class="radio" id="one" name="group" type="radio" checked>
+      <input class="radio" id="two" name="group" type="radio">
+      <input class="radio" id="three" name="group" type="radio">
+      <div class="tabs">
+      <label class="tab" id="one-tab" for="one">Main</label>
+      <label class="tab" id="two-tab" for="two">Downloads</label>
+      <label class="tab" id="three-tab" for="three">Guides</label>
+        </div>
+      <div class="panels">
+      <div class="panel" id="one-panel">
+        <div class="flexbox">
+            <div class ="flexelement box1 harlow">
+                <h1 id="guide">Here u will find some Guides / Downloads.</h1>
+            <hr />
+            <ul>
+                <h1>Guides:</h1>
+                <li>How to flash a Custom ROM if u came not from Stock ROM (Custom ROM)</li>
+                <li>How to flash a Custom ROM if u came from Stock ROM (OneUI)</li>
+                <li>How to flash a Custom Recovery (like TWRP,SHRP,PBRP,OFOX)</li>
+                <li>What ToDo if i get a BSOD (Black Screen of Death)?</li>
+                <li>How i give Developer LOGS and Reporting Bugs.</li>  
+                <li>What ToDo if i get a Bootloop?</li>
+                <li>How to ROOT my Device?</li>   
+                <h1>Downloads:</h1>    
+                <li>ODIN Samsung Flash Tool</li>
+                <li>Minimal ADB/Fastboot</li>
+                <li>Samsung USB Driver</li>
+                <li>Magisk-latest.zip</li>
+                <li>DM-Verity.zip</li>
+             </ul>
+            </div>
+        </div>
+      </div>
+      <div class="panel" id="two-panel">
+        <div class="flexbox">
+            <div class ="flexelement box1 harlow">
+                <h1 id="tg" style="font-size: 36px;">Flash Custom-ROM <br>(comming from Stock)</h1>
+                <hr />
+                code<br>
+                code<br>
+                code<br>
+                code<br>
+                code<br>
+                code<br>
+                code<br>
+                code<br>
+                code<br>
+                code<br>
+                code<br>
+              </div>
+      </div>
+      
+      <div class="panel" id="three-panel">
+        <div class ="flexelement box1 harlow">
+            <h1 id="tg" style="font-size: 36px;">Flash Custom-ROM <br>(comming not from Stock)</h1>
+            <hr />
+            code<br>
+          code<br>
+          code<br>
+          code<br>
+          code<br>
+          code<br>
+          code<br>
+          code<br>
+          code<br>
+          code<br>
+          code<br>
+        </div>
+        </div>
+      </div>
       </div>
     </div>
+    
+   
+  
+      
     <footer>
         <div class="wrapper"><img src="images/logo.png" width="22px" height="22px" id="logo2">
             <div style="text-align: right;">© 2021-2022 Eureka Team. All rights reserved.</div>

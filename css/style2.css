@@ -12,7 +12,7 @@
     border-radius: 50px;
     border: 0px solid white;
     padding: 20px; 
-    height: 22px; 
+    height: 18px; 
     position: fixed;
     border: 0;
     border-radius: 28px;
@@ -142,10 +142,27 @@ a {
     color:#08f;
     font-size: 16px;
 }
-ul {
-    list-style-type: none;
-    margin-left: -50px;
+li {
+    font-size: 16px;
+    list-style: none;
 }
+ul li::before {
+    content: "\2022";
+    color: #08f;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+  li span {
+    color: #08f;
+  }
+h1 {
+    text-align: center;
+    animation-duration: 0.7s;
+    animation-name: slidein1;
+}
+
 @media screen and (max-width: 900px) {
     .box1 {
         text-align: left;
@@ -188,7 +205,7 @@ ul {
       }
       a {
         color:#08f;
-        font-size: 9px;
+        font-size: 16px;
     }
     .box4 {
         border-radius: 50px;

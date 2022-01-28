@@ -81,6 +81,7 @@ ul li::before {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-left: 15%;
+    
 }
 .flexbox_rom {
     display: flex;
@@ -92,6 +93,8 @@ ul li::before {
 }
 .flexbox > div {
     margin: 1% 1% 1% 1%;
+    border-style: solid;
+    
 }
 #logo {
     float: left;
@@ -226,7 +229,7 @@ ul li::before {
     border-radius: 50px;
     border: 0px solid white;
     padding: 20px; 
-    height: 22px; 
+    height: 18px; 
     position: fixed;
     border: 0;
     border-radius: 28px;

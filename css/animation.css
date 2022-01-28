@@ -9,7 +9,7 @@ section {
     background: linear-gradient(-45deg, #253349, #1f2227, #253349, #1f2227 );
     background-size: 2000% 2000%;
     animation: change 8s ease-in-out infinite;
-    margin-top: -45px
+    margin-top: -45px;
 }
 
 @keyframes change {
