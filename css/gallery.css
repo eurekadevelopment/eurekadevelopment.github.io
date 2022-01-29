@@ -4,6 +4,7 @@ body {
 }
 .slider {
 	width: 100%;
+   
 }
 .slider input {
 	display: none;
@@ -17,7 +18,9 @@ body {
 	perspective: 800px;
 	overflow: hidden;
     z-index: -1;
+
 }
+
 .testimonials .item {
 	top: 25px;
 	position: absolute;
@@ -31,7 +34,10 @@ body {
 	user-select: none;
 	cursor: pointer;
     border-radius: 50px;
+    
+    
 }
+
 .testimonials .item img {
 	width: 240px;
     border-radius: 50px;
@@ -49,13 +55,14 @@ body {
 }
 .dots label {
 	display: block;
-	height: 5px;
-	width: 5px;
+	height: 12px;
+	width: 12px;
 	border-radius: 50%;
 	cursor: pointer;
 	background-color: #005fb2;
 	margin: 7px;
 	transition: transform 0.2s, color 0.2s;
+	
 }
 
 /* First */
