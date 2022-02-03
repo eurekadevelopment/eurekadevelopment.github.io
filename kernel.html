@@ -31,19 +31,39 @@
         <h1 id="features">Eureka Kernel Features</h1><img src="images/logo.png" width="64px" height="64px" id="logo5"> 
         <hr /> 
         <ul>
-          <h3>FEATURE PREVIEW LIST FOR EUREKA R8.5</h3>
-          <li>Upstream Linux Kernel from 4.4.288 to 4.4.299</li>
-          <li>Implemented EurekaSound (ESOUND) v1.0, a basic headphone audio controller (mostly for AOSP).</li>
+          <h3>FEATURE PREVIEW LIST FOR EUREKA R9.0</h3>
+          <li>Upstream Linux Kernel Version from 4.4.288 to 4.4.302 (latest and last update from Linux).</li>
+          <li>Implemented EurekaSound (ESOUND) v1.0, a basic headphone audio controller (For AOSP only).</li>
           <li>Implemented Eureka Display Control (EKCAL) which is based on Samsung mDNIE driver (Not available for A20e).</li>
-          <li>Modified DT2W driver for A20 and A40 so as to fix issue with AOSP ROMs.</li>
-          <li> Fixed all remaining warnings in kernel source.</li>
-          <li> For permissive kernel, SElinux can be switched to enforcing after boot now.</li>
+          <li>Modified DT2W driver for A20 and A40 so as to fix DT2W issue on AOSP ROMs.</li>
+          <li>Fixed all remaining warnings in kernel source.</li>
+          <li>For permissive selinux, selinux can be switched to enforcing after boot.</li>
           <li>Further improvements to SElinux code to fix some warnings in kernel log.</li>
-          <li> Fixed custom flashlight controller for A10.</li>
-          <li> Updated WireGuard VPN driver to latest version (1.0.20211208)</li>
-          <li>Merged 98 % audio and camera changes from R kernel source into Q/R/S kernels. </li>
-          <li> [NOTE: EKCAL and ESOUND will only be available after EKM app is updated by Royna. Right now, the app is unstable for release]</li>
-          <li> This feature list may be amended by us as required.</li>
+          <li>Fixed custom flashlight controller for A10.</li>
+          <li>Updated WireGuard VPN driver to latest version (1.0.20211208)</li>
+          <li>Merged 98 % audio and camera changes from R kernel source into Q/R/S (AOSP/OneUI2) kernels.</li>
+          <li>AROMA Installer is now used to facilitate the installation of Eureka Kernel.</li>
+          <li>OneUI and AOSP kernels & custom DTBs have been merged into 1 zip (kept size as small as possible).</li>
+          <li>Built with Vortex Clang & LTO which is based on the latest version of Clang 14 (20220201).</li>
+          <br>
+          <li>Two kernel versions with different schedulers are now available:</li>
+          <li>   → Implemented EMS (Exynos Mobile Scheduler) which is a scheduler based on EAS (Energy Aware Scheduling).</li>
+          <li>   → The normal kernel version has the stock HMP (Heterogeneous Multi-Processing) scheduler.</li>
+          <br>
+          <li>Eureka kernel R9.0 heavily depends on DTB (not DTBO) for the following features:</li>
+          <li>   → CPU and GPU overclock & underclock</li>
+          <li>   → SELinux state (enforcing or permissive)</li>
+          <li>   → Sound driver compatibility (AOSP, OneUI2 or OneUI3)</li>
+          <li>   → Energy model and parameters for EMS kernels</li>
+          <br>
+          <li>EMS kernel works best with schedutil based governors. The following governors were added:</li>
+          <li>   → Blu Schedutil</li>
+          <li>   → ElectroUtilX</li>
+          <li>   → PwrUtilX</li>
+          <br>
+          <li>Updated spectrum files.
+          <li>Other minor changes.
+          <li>Skipped R8.5 xD
           <br>
           <hr /> 
           <br>
