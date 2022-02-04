@@ -49,10 +49,26 @@ ul li::before {
   li span {
     color: #08f;
   }
+  .flexbox_main {
+    width: 70%;
+    margin: 1%;
+    background: transparent;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    top: 80px;
+
+}
 .flexbox {
     width: 70%;
     margin: 1%;
-    background: #1f2227;;
+    background: transparent;
     margin-bottom: 100px;
     margin-top: 20px;
     display: flex;
@@ -91,6 +107,14 @@ ul li::before {
     width: 250px;
     padding: 50px 50px 50px 50px;
 }
+.flexelement {
+  background: black;
+  color: white;
+  text-align: center;
+  margin: 3% 0 3% 0;
+  width: 250px;
+  padding: 50px 50px 50px 50px;
+}
 .flexelement_rom {
     background: black;
     color: white;
@@ -107,6 +131,14 @@ ul li::before {
     margin-left: 15%;
     
 }
+.flexbox_main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 15%;
+  
+}
 .flexbox_rom {
     display: flex;
     flex-direction: row;
@@ -114,11 +146,17 @@ ul li::before {
     justify-content: space-around;
     margin-left: 15%;
     animation: textwelle 1.0s;
+    
 }
 .flexbox > div {
     margin: 1% 1% 1% 1%;
     border-style: solid;
     
+}
+.flexbox_main > div {
+  margin: 1% 1% 1% 1%;
+  border-style: solid;
+  
 }
 #logo {
     float: left;
@@ -176,14 +214,14 @@ ul li::before {
     font-size: 90%;
 }
 .image__overlay--blur {
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(0px);
 }
 .image__overlay > * {
     transform:translateY(20px);
     transition: transform 0.20s;
 }
 .image__overlay:hover {
-    opacity: 0.9;
+    opacity: 1;
 }
 .image__overlay:hover > * {
     transform:translateY(0px);
@@ -228,6 +266,7 @@ ul li::before {
     border: 0;
     box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
 }
+
 .box_rom {
     text-align: left;
     border-radius: 50px;
@@ -245,19 +284,43 @@ ul li::before {
   -moz-box-shadow: 0 0 10px #fff;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 1 1 4px #fff;
-  opacity: 0.4;
+  opacity: 0.6;
+}
+.topnav_main {
+  background-color: black;
+  overflow: hidden;
+  border-radius: 50px;
+  border: 0px solid white;
+  padding: 20px; 
+  height: 18px; 
+  position: relative;
+  border: 0;
+  border-radius: 28px;
+  box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
+  
 }
 .topnav {
-    background-color: black;
-    overflow: hidden;
-    border-radius: 50px;
-    border: 0px solid white;
-    padding: 20px; 
-    height: 18px; 
-    position: fixed;
-    border: 0;
-    border-radius: 28px;
-    box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
+  background-color: black;
+  overflow: hidden;
+  border-radius: 50px;
+  border: 0px solid white;
+  padding: 20px; 
+  height: 18px; 
+  position: fixed;
+  border: 0;
+  border-radius: 28px;
+  box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
+  
+}
+.topnav_main a {
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  border: 0px solid grey;
+  padding: 10px;
+  height: 15px; 
+  transition: 0.6s;
 }
 .topnav a {
     color: #f2f2f2;
@@ -269,11 +332,21 @@ ul li::before {
     height: 15px; 
     transition: 0.6s;
 }
+.topnav_main a:hover {
+  background-color: #08f;
+  color: black;
+  border: 0;
+  box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
+}
 .topnav a:hover {
     background-color: #08f;
     color: black;
     border: 0;
     box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
+}
+.topnav_main a.active {
+  background-color: #08f;
+  color: white;
 }
 .topnav a.active {
     background-color: #08f;
@@ -447,6 +520,15 @@ div.box2 {
           animation-duration: 0.7s;
           animation-name: slidein;
         }
+        .flexbox_main {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          margin-left: 20px;
+          width: 750px;
+          
+        }
     }
       @media screen and (max-width: 800px) {
         .flexbox_rom {
@@ -534,6 +616,16 @@ div.box2 {
         animation-duration: 0.7s;
         animation-name: slidein;
       }
+      .flexbox_main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: -10px;
+        width: 700px;
+        
+      }
+      
   }
   @media screen and (max-width: 700px) {
     .flexbox_rom {
@@ -633,6 +725,15 @@ div.box2 {
           animation-duration: 0.7s;
           animation-name: slidein;
         }
+        .flexbox_main {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          margin-left: 30px;
+          width: 600px;
+          
+        }
     }
    @media screen and (max-width: 650px) {
     .flexbox_rom {
@@ -711,6 +812,18 @@ div.box2 {
           width: 64px;
           height: 64px;
        }
+       .topnav_main {
+        background-color: black;
+        overflow: hidden;
+        border-radius: 50px;
+        border: 0px solid white;
+        padding: 15px; 
+        height: 12px; 
+        border: 0;
+        border-radius: 25px;
+        box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
+        font-size: 9px;
+    }
        .topnav {
         background-color: black;
         overflow: hidden;
@@ -732,6 +845,15 @@ div.box2 {
       p {
           animation-duration: 0.7s;
           animation-name: slidein;
+        }
+        .flexbox_main {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          margin-left: 30px;
+          width: 520px;
+          
         }
     }
   @media screen and (max-width: 500px) {
@@ -811,6 +933,19 @@ div.box2 {
         width: 64px;
         height: 64px;
      }
+     .topnav_main {
+      background-color: black;
+      overflow: hidden;
+      border-radius: 50px;
+      border: 0px solid white;
+      padding: 15px; 
+      height: 12px; 
+      border: 0;
+      border-radius: 25px;
+      box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
+      font-size: 9px;
+
+  }
      .topnav {
         background-color: black;
         overflow: hidden;
@@ -831,6 +966,15 @@ div.box2 {
     p {
         animation-duration: 0.7s;
         animation-name: slidein;
+      }
+      .flexbox_main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 25px;
+        width: 420px;
+        
       }
   }
   @media screen and (max-width: 300px) {
@@ -910,6 +1054,18 @@ div.box2 {
         width: 64px;
         height: 64px;
      }
+     .topnav_main {
+      background-color: black;
+      overflow: hidden;
+      border-radius: 50px;
+      border: 0px solid white;
+      padding: 15px; 
+      height: 12px; 
+      border: 0;
+      border-radius: 25px;
+      box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
+      font-size: 7px;
+  }
      .topnav {
         background-color: black;
         overflow: hidden;
@@ -930,6 +1086,15 @@ div.box2 {
     p {
         animation-duration: 0.7s;
         animation-name: slidein;
+      }
+      .flexbox_main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 50px;
+        width: 400px;
+        
       }
   }
 .glow{

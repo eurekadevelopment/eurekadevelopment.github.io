@@ -11,22 +11,23 @@
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/gallery.css">
     <body style="background-color: #1f2227;">
-
   <style>
        .slideshow-container {
          max-width: 1000px;
-         position: right;
+         position: relative;
          margin: auto;
+
        }
 
        .text {
          color: #f2f2f2;
          font-size: 15px;
          padding: 8px 12px;
-         position: absolute;
+         position: relative;
          bottom: 8px;
          width: 100%;
          text-align: center;
+
        }
 
        .fade {
@@ -34,6 +35,7 @@
          -webkit-animation-duration: 1.5s;
          animation-name: fade;
          animation-duration: 1.5s;
+         position: relative;
        }
 
        @-webkit-keyframes fade {
@@ -52,8 +54,8 @@
   <body onload="myFunction()" style="margin:0;">
     <div id="loader"></div>
     <div id="overlay"></div>
-    <div class="flexbox">
-        <div class="topnav harlow"> 
+    <div class="flexbox_main">
+        <div class="topnav_main harlow"> 
             <a class="active" href="#home">Home</a> 
             <a href="rom11.html">ROM</a>
             <a href="kernel.html">Kernel</a> 
@@ -63,8 +65,9 @@
             <a href="about.html">About</a>
         </div>
     </div>
-    <div class="flexbox">
-        <div class ="flexelement box1 harlow"><img src="images/logo.png" width="70px" height="70px" id="logo">
+  </div>
+    <div class="flexbox body">
+        <div class ="flexelement box1 harlow body"><img src="images/logo.png" width="70px" height="70px" id="logo">
            <div class="slideshow-container">
              <div class="slideshow1 fade">
                <img src="images/sm_a10.png" id="logo1" style="solid;margin-top: 75px;margin-bottom: 75px;" width="210px" height="444px">
@@ -99,38 +102,21 @@
           Eureka Team</p>
         </div>
         </div>
-        <div class="slider">
-          <input type="radio" name="testimonial" id="t-1">
-          <input type="radio" name="testimonial" id="t-2">
-          <input type="radio" name="testimonial" id="t-3" checked>
-          <input type="radio" name="testimonial" id="t-4">
-          <input type="radio" name="testimonial" id="t-5">
-          <div class="testimonials">
-            <label class="item" for="t-1">
-              <img src="screenshots/3.jpg" alt="picture">
-            </label>
-            <label class="item" for="t-2">
-              <img src="screenshots/2.jpg" alt="picture">
-            </label>
-            <label class="item" for="t-3">
-              <img src="screenshots/1.jpg" alt="picture">
-            </label>
-            <label class="item" for="t-4">
-              <img src="screenshots/5.jpg" alt="picture">
-            </label>
-            <label class="item" for="t-5">
-              <img src="screenshots/4.jpg" alt="picture">
-            </label>
-          </div>
-          <div class="dots">
-            <label for="t-1"></label>
-            <label for="t-2"></label>
-            <label for="t-3"></label>
-            <label for="t-4"></label>
-            <label for="t-5"></label>
-          </div>
-        </div>
-        <h2 class="harlow glow" style="color:#FFFFFF"><font size="+4"><center>The Team</center></font></h2>
+      </head>
+      <body>
+      <section id="slider">
+        <input type="radio" name="slider" id="s1" checked>
+        <input type="radio" name="slider" id="s2">
+        <input type="radio" name="slider" id="s3">
+        <input type="radio" name="slider" id="s4">
+        <input type="radio" name="slider" id="s5">
+        <label for="s1" id="slide1"><img src="screenshots/3.jpg" alt=""></label>
+        <label for="s2" id="slide2"><img src="screenshots/2.jpg" alt=""></label>
+        <label for="s3" id="slide3"><img src="screenshots/1.jpg" alt=""></label>
+        <label for="s4" id="slide4"><img src="screenshots/5.jpg" alt=""></label>
+        <label for="s5" id="slide5"><img src="screenshots/4.jpg" alt=""></label>
+      </section>
+        <h2 class="harlow glow" style="color:#FFFFFF; background-color:transparent" ><font size="+4"><center>The Team</center></font></h2>
     <div class="flexbox">
         <div class ="flexelement box2 harlow"><img src="https://avatars.githubusercontent.com/u/69016406?v=4" width="90px" height="90px" id="logo2"><p>&nbsp;Chatur Baji<br>&nbsp;Leader/Dev.<br>&nbsp;Galaxy A10<br><img src="images/tg.png" style="margin-left: 15px;" width="28px" height="28px" id="logo"><img src="images/gh.png" style="margin-left: 12px;" width="28px" height="28px" id="logo"></p></div>
         <div class ="flexelement box2 harlow"><img src="https://avatars.githubusercontent.com/u/88463214?v=4" width="90px" height="90px" id="logo2"><p>&nbsp;Gabriel260br<br>&nbsp;CO.Lead/Dev.<br>&nbsp;Galaxy A10<br><img src="images/tg.png" style="margin-left: 15px;" width="28px" height="28px" id="logo"><img src="images/gh.png" style="margin-left: 12px;" width="28px" height="28px" id="logo"></p></div>
@@ -138,7 +124,7 @@
         <div class ="flexelement box2 harlow"><img src="https://avatars.githubusercontent.com/u/10536991?v=4" width="90px" height="90px" id="logo2"><p>&nbsp;Kevios12<br>&nbsp;Developer<br>&nbsp;Galaxy A40<br><img src="images/tg.png" style="margin-left: 15px;" width="28px" height="28px" id="logo"><img src="images/gh.png" style="margin-left: 12px;" width="28px" height="28px" id="logo"></p></div>
         <div class ="flexelement box2 harlow"><img src="https://avatars.githubusercontent.com/u/76120412?v=4" width="90px" height="90px" id="logo2"><p>&nbsp;Chris Sunil<br>&nbsp;Developer<br>&nbsp;Galaxy A10<br><img src="images/tg.png" style="margin-left: 15px;" width="28px" height="28px" id="logo"><img src="images/gh.png" style="margin-left: 12px;" width="28px" height="28px" id="logo"></p></div>
         <div class ="flexelement box2 harlow"><img src="https://avatars.githubusercontent.com/u/51184041?v=4" width="90px" height="90px" id="logo2"><p>&nbsp;Neel0210<br>&nbsp;Developer<br>&nbsp;Phonemodel<br><img src="images/tg.png" style="margin-left: 15px;" width="28px" height="28px" id="logo"><img src="images/gh.png" style="margin-left: 12px;" width="28px" height="28px" id="logo"></p></div>
-      </div>
+      </div>  
     <footer>
         <div class="wrapper"><img src="images/logo.png" width="22px" height="22px" id="logo">
             <div style="text-align: right;">© 2021-2022 Eureka Team. All rights reserved.</div>
