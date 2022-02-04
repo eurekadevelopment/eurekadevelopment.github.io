@@ -17,7 +17,8 @@ body {
 	min-height: 600px;
 	perspective: 800px;
 	overflow: hidden;
-    z-index: -1;
+	position: relative;
+	z-index: -1;
 
 }
 
@@ -52,6 +53,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+	z-index: -1;
 }
 .dots label {
 	display: block;
