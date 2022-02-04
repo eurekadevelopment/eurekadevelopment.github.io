@@ -43,7 +43,7 @@ input[type=radio]:checked {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: transform 2s ease;
+	transition: transform 1s ease-in-out;
 	border-radius: 28px;
 
   }
@@ -77,6 +77,7 @@ input[type=radio]:checked {
 	margin-right: 250px;
 	border-style: solid;
 	border-color: #005fb2;
+	transition: all 2s;
 	
   }
   
@@ -94,6 +95,7 @@ input[type=radio]:checked {
 	margin-right: 550px;
 	border-style: solid;
 	border-color: #005fb2;
+	transition: all 2s;
 
   }
   
@@ -111,6 +113,7 @@ input[type=radio]:checked {
 	margin-right: -550px;
 	border-style: solid;
 	border-color: #005fb2;
+	transition: all 2s;
   }
   
   /* Previous Slide */
@@ -127,6 +130,7 @@ input[type=radio]:checked {
 	margin-right: -250px;
 	border-style: solid;
 	border-color: #005fb2;
+	transition: all 2s;
   }
   @media screen and (max-width: 1200px) {
 
@@ -150,6 +154,7 @@ input[type=radio]:checked {
 	-webkit-filter: blur(2px);
 	margin-left: -0px;
 	margin-right: -0px;
+	transition: all 2s;
   }
 	/* Next Slide */
 	#s1:checked ~ #slide2,
@@ -163,6 +168,7 @@ input[type=radio]:checked {
 	 -webkit-filter: blur(2px);
 	 margin-left: 150px;
 	 margin-right: 150px;
+	 transition: all 2s;
  
    }
 	 /* Next to Next Slide */
@@ -177,6 +183,7 @@ input[type=radio]:checked {
 	 -webkit-filter: blur(2px);
 	 margin-left: -50px;
 	 margin-right: -50px;
+	 transition: all 2s;
    }
 	 /* Previous Slide */
 	 #s1:checked ~ #slide5,
@@ -190,6 +197,7 @@ input[type=radio]:checked {
 	-webkit-filter: blur(2px);
 	margin-left: -150px;
 	  margin-right: -150px;
+	  transition: all 2s;
 	}
 	 #slider {
 		 width: 30%;
@@ -212,6 +220,7 @@ input[type=radio]:checked {
 	 -webkit-filter: blur(2px);
 	 margin-left: 150px;
 	 margin-right: 150px;
+	 transition: all 2s;
  
    }
 	 /* Next to Next Slide */
@@ -226,6 +235,7 @@ input[type=radio]:checked {
 	 -webkit-filter: blur(2px);
 	 margin-left: -50px;
 	 margin-right: -50px;
+	 transition: all 2s;
    }
 	 /* Previous Slide */
 	 #s1:checked ~ #slide5,
@@ -239,6 +249,7 @@ input[type=radio]:checked {
 	-webkit-filter: blur(2px);
 	margin-left: -150px;
 	  margin-right: -150px;
+	  transition: all 2s;
 	}
 	 #slider {
 		 width: 40%;
@@ -261,6 +272,7 @@ input[type=radio]:checked {
 	-webkit-filter: blur(2px);
 	margin-left: 150px;
 	margin-right: 150px;
+	transition: all 2s;
 
   }
 	/* Next to Next Slide */
@@ -275,6 +287,7 @@ input[type=radio]:checked {
 	-webkit-filter: blur(2px);
 	margin-left: -550px;
 	margin-right: -550px;
+	transition: all 2s;
   }
     /* Previous Slide */
 	#s1:checked ~ #slide5,
@@ -288,6 +301,7 @@ input[type=radio]:checked {
    -webkit-filter: blur(2px);
    margin-left: -150px;
 	 margin-right: -150px;
+	 transition: all 2s;
    }
 	#slider {
 		width: 40%;
@@ -310,6 +324,7 @@ input[type=radio]:checked {
 	 -webkit-filter: blur(2px);
 	 margin-left: 150px;
 	 margin-right: 150px;
+	 transition: all 2s;
  
    }
 	 /* Next to Next Slide */
@@ -324,6 +339,7 @@ input[type=radio]:checked {
 	 -webkit-filter: blur(2px);
 	 margin-left: -550px;
 	 margin-right: -550px;
+	 transition: all 2s;
    }
 	 /* Previous Slide */
 	 #s1:checked ~ #slide5,
@@ -337,6 +353,7 @@ input[type=radio]:checked {
 	-webkit-filter: blur(2px);
 	margin-left: -150px;
 	  margin-right: -150px;
+	  transition: all 2s;
 	}
 	 #slider {
 		 width: 30%;
@@ -359,6 +376,7 @@ input[type=radio]:checked {
 	 -webkit-filter: blur(2px);
 	 margin-left: 120px;
 	 margin-right: 120px;
+	 transition: all 2s;
  
    }
 	 /* Next to Next Slide */
@@ -373,6 +391,7 @@ input[type=radio]:checked {
 	 -webkit-filter: blur(2px);
 	 margin-left: -580px;
 	 margin-right: -580px;
+	 transition: all 2s;
    }
 	 /* Previous Slide */
 	 #s1:checked ~ #slide5,
@@ -386,6 +405,7 @@ input[type=radio]:checked {
 	-webkit-filter: blur(2px);
 	margin-left: -120px;
 	  margin-right: -120px;
+	  transition: all 2s;
 	}
 	 #slider {
 		 width: 25%;
