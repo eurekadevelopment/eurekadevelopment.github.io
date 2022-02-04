@@ -1,3 +1,5 @@
+
+
 #slider {
 	position: relative;
 	width: 20%;
@@ -5,7 +7,7 @@
 	margin: 150px auto;
 	perspective: 500px;
 	transform-style: preserve-3d;
-  }
+}
   
 input[type=radio] {
 	position: relative;
@@ -14,7 +16,7 @@ input[type=radio] {
 	width: 18px;
 	height: 18px;
 	margin: 0 15px 0 0;
-	opacity: 0.4;
+	opacity: 1;
 	transform: translateX(-83px);
 	cursor: pointer;
   }
@@ -41,13 +43,11 @@ input[type=radio]:checked {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: transform 0.1s;
+	transition: transform 2s ease;
 	border-radius: 28px;
 
   }
-  
-  
-  
+
   /* Slider Functionality */
   
   /* Active Slide */
@@ -70,15 +70,15 @@ input[type=radio]:checked {
 	 #s4:checked ~ #slide5,
 	  #s5:checked ~ #slide1 {
 	box-shadow: 0 6px 10px #005fb2;
-	transform: translate3d(0%, 0, -100px);
+	transform: translate3d(40%, 0, -100px);
 	filter: blur(2px);
 	-webkit-filter: blur(2px);
 	margin-left: 250px;
 	margin-right: 250px;
 	border-style: solid;
 	border-color: #005fb2;
+	
   }
-  
   
   /* Next to Next Slide */
   #s1:checked ~ #slide3,
@@ -87,7 +87,7 @@ input[type=radio]:checked {
 	 #s4:checked ~ #slide1,
 	  #s5:checked ~ #slide2 {
 		box-shadow: 0 6px 10px #005fb2;
-	transform: translate3d(0%, 0, -250px);
+	transform: translate3d(60%, 0, -250px);
 	filter: blur(2px);
 	-webkit-filter: blur(2px);
 	margin-left: 550px;
@@ -103,8 +103,8 @@ input[type=radio]:checked {
 	#s3:checked ~ #slide1,
 	 #s4:checked ~ #slide2,
 	  #s5:checked ~ #slide3 {
-		box-shadow: 0 6px 10px #005fb2;
-	transform: translate3d(0%, 0, -250px);
+		  	box-shadow: 0 6px 10px #005fb2;
+	transform: translate3d(-60%, 0, -250px);
 	filter: blur(2px);
 	-webkit-filter: blur(2px);
 	margin-left: -550px;
@@ -120,7 +120,7 @@ input[type=radio]:checked {
 	 #s4:checked ~ #slide3,
 	  #s5:checked ~ #slide4 {
 	box-shadow: 0 6px 10px #005fb2;
-	transform: translate3d(0, 0, -100px);
+	transform: translate3d(-40%, 0, -100px);
 	filter: blur(2px);
   -webkit-filter: blur(2px);
   margin-left: -250px;
@@ -145,7 +145,7 @@ input[type=radio]:checked {
 	#s3:checked ~ #slide1,
 	 #s4:checked ~ #slide2,
 	  #s5:checked ~ #slide3 {
-	transform: translate3d(0%, 0, -250px);
+		transform: translate3d(-60%, 0, -250px);
 	filter: blur(2px);
 	-webkit-filter: blur(2px);
 	margin-left: -0px;
@@ -158,7 +158,7 @@ input[type=radio]:checked {
 	  #s4:checked ~ #slide5,
 	   #s5:checked ~ #slide1 {
 	 box-shadow: 0 6px 10px #005fb2;
-	 transform: translate3d(0%, 0, -100px);
+	 transform: translate3d(40%, 0, -100px);
 	 filter: blur(2px);
 	 -webkit-filter: blur(2px);
 	 margin-left: 150px;
@@ -172,7 +172,7 @@ input[type=radio]:checked {
 	  #s4:checked ~ #slide1,
 	   #s5:checked ~ #slide2 {
 	 box-shadow: 0 1px 4px #005fb2;
-	 transform: translate3d(0%, 0, -250px);
+	 transform: translate3d(60%, 0, -250px);
 	 filter: blur(2px);
 	 -webkit-filter: blur(2px);
 	 margin-left: -50px;
@@ -185,7 +185,7 @@ input[type=radio]:checked {
 	   #s4:checked ~ #slide3,
 		#s5:checked ~ #slide4 {
 	  box-shadow: 0 6px 10px #005fb2;
-	  transform: translate3d(0, 0, -100px);
+	  transform: translate3d(-40%, 0, -100px);
 	  filter: blur(2px);
 	-webkit-filter: blur(2px);
 	margin-left: -150px;
@@ -207,7 +207,7 @@ input[type=radio]:checked {
 	  #s4:checked ~ #slide5,
 	   #s5:checked ~ #slide1 {
 	 box-shadow: 0 6px 10px #005fb2;
-	 transform: translate3d(0%, 0, -100px);
+	 transform: translate3d(40%, 0, -100px);
 	 filter: blur(2px);
 	 -webkit-filter: blur(2px);
 	 margin-left: 150px;
@@ -221,7 +221,7 @@ input[type=radio]:checked {
 	  #s4:checked ~ #slide1,
 	   #s5:checked ~ #slide2 {
 	 box-shadow: 0 1px 4px #005fb2;
-	 transform: translate3d(0%, 0, -250px);
+	 transform: translate3d(60%, 0, -250px);
 	 filter: blur(2px);
 	 -webkit-filter: blur(2px);
 	 margin-left: -50px;
@@ -234,7 +234,7 @@ input[type=radio]:checked {
 	   #s4:checked ~ #slide3,
 		#s5:checked ~ #slide4 {
 	  box-shadow: 0 6px 10px #005fb2;
-	  transform: translate3d(0, 0, -100px);
+	  transform: translate3d(-40%, 0, -100px);
 	  filter: blur(2px);
 	-webkit-filter: blur(2px);
 	margin-left: -150px;
@@ -256,7 +256,7 @@ input[type=radio]:checked {
 	 #s4:checked ~ #slide5,
 	  #s5:checked ~ #slide1 {
 	box-shadow: 0 6px 10px #005fb2;
-	transform: translate3d(0%, 0, -100px);
+	transform: translate3d(5%, 0, -100px);
 	filter: blur(2px);
 	-webkit-filter: blur(2px);
 	margin-left: 150px;
@@ -270,7 +270,7 @@ input[type=radio]:checked {
 	 #s4:checked ~ #slide1,
 	  #s5:checked ~ #slide2 {
 	box-shadow: 0 1px 4px #005fb2;
-	transform: translate3d(0%, 0, -250px);
+	transform: translate3d(25%, 0, -250px);
 	filter: blur(2px);
 	-webkit-filter: blur(2px);
 	margin-left: -550px;
@@ -283,7 +283,7 @@ input[type=radio]:checked {
 	  #s4:checked ~ #slide3,
 	   #s5:checked ~ #slide4 {
 	 box-shadow: 0 6px 10px #005fb2;
-	 transform: translate3d(0, 0, -100px);
+	 transform: translate3d(-5%, 0, -100px);
 	 filter: blur(2px);
    -webkit-filter: blur(2px);
    margin-left: -150px;
@@ -305,7 +305,7 @@ input[type=radio]:checked {
 	  #s4:checked ~ #slide5,
 	   #s5:checked ~ #slide1 {
 	 box-shadow: 0 6px 10px #005fb2;
-	 transform: translate3d(0%, 0, -100px);
+	 transform: translate3d(5%, 0, -100px);
 	 filter: blur(2px);
 	 -webkit-filter: blur(2px);
 	 margin-left: 150px;
@@ -319,7 +319,7 @@ input[type=radio]:checked {
 	  #s4:checked ~ #slide1,
 	   #s5:checked ~ #slide2 {
 	 box-shadow: 0 1px 4px #005fb2;
-	 transform: translate3d(0%, 0, -250px);
+	 transform: translate3d(25%, 0, -250px);
 	 filter: blur(2px);
 	 -webkit-filter: blur(2px);
 	 margin-left: -550px;
@@ -332,14 +332,14 @@ input[type=radio]:checked {
 	   #s4:checked ~ #slide3,
 		#s5:checked ~ #slide4 {
 	  box-shadow: 0 6px 10px #005fb2;
-	  transform: translate3d(0, 0, -100px);
+	  transform: translate3d(-5%, 0, -100px);
 	  filter: blur(2px);
 	-webkit-filter: blur(2px);
 	margin-left: -150px;
 	  margin-right: -150px;
 	}
 	 #slider {
-		 width: 35%;
+		 width: 30%;
 		 height: 400px;
 		 perspective: 500px;
 		 transform-style: preserve-3d;
@@ -354,7 +354,7 @@ input[type=radio]:checked {
 	  #s4:checked ~ #slide5,
 	   #s5:checked ~ #slide1 {
 	 box-shadow: 0 6px 10px #005fb2;
-	 transform: translate3d(0%, 0, -100px);
+	 transform: translate3d(5%, 0, -100px);
 	 filter: blur(2px);
 	 -webkit-filter: blur(2px);
 	 margin-left: 120px;
@@ -368,7 +368,7 @@ input[type=radio]:checked {
 	  #s4:checked ~ #slide1,
 	   #s5:checked ~ #slide2 {
 	 box-shadow: 0 1px 4px #005fb2;
-	 transform: translate3d(0%, 0, -250px);
+	 transform: translate3d(25%, 0, -250px);
 	 filter: blur(2px);
 	 -webkit-filter: blur(2px);
 	 margin-left: -580px;
@@ -381,7 +381,7 @@ input[type=radio]:checked {
 	   #s4:checked ~ #slide3,
 		#s5:checked ~ #slide4 {
 	  box-shadow: 0 6px 10px #005fb2;
-	  transform: translate3d(0, 0, -100px);
+	  transform: translate3d(-5%, 0, -100px);
 	  filter: blur(2px);
 	-webkit-filter: blur(2px);
 	margin-left: -120px;
