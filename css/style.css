@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: myFirstFont;
     src:url("/fonts/SamsungSharpSans-Bold.ttf");
@@ -1099,8 +1100,8 @@ div.box2 {
   }
 .glow{
     background:#1f2227;
-    color:#fff;
-    text-shadow:1px 1px 10px #08f, 1px 1px 10px #08f;
+    color:rgb(216, 214, 214);
+    text-shadow:-5px -5px 5px #000, 5px 5px 5px #005fb2;
     font-size:48px;
     text-align:center;
   }
