@@ -130,6 +130,35 @@ input[type=radio]:checked {
 	border-color: #005fb2;
 	transition: all 2s;
   }
+  @media screen and (max-width: 1920px),
+         screen and (max-height: 1080px) {
+	#slider {
+		width:15%;
+		height: 550px;
+		perspective: 500px;
+		transform-style: preserve-3d;
+		
+	  }
+  }
+  @media screen and (max-width: 1700px) {
+	#slider {
+		width: 20%;
+		height: 650px;
+		perspective: 500px;
+		transform-style: preserve-3d;
+		
+	  }
+  }
+  @media screen and (max-width: 1400px) {
+
+	#slider {
+		width: 25%;
+		height: 600px;
+		perspective: 500px;
+		transform-style: preserve-3d;
+		
+	  }
+  }
   @media screen and (max-width: 1200px) {
 
 	 #slider {

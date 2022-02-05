@@ -322,6 +322,7 @@ ul li::before {
   padding: 10px;
   height: 15px; 
   transition: 0.6s;
+  
 }
 .topnav a {
     color: #f2f2f2;
@@ -852,7 +853,7 @@ div.box2 {
           flex-direction: row;
           flex-wrap: wrap;
           justify-content: space-around;
-          margin-left: 30px;
+          margin-left: 1px;
           width: 520px;
           
         }
