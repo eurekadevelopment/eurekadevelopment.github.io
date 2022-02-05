@@ -379,7 +379,7 @@ input[type=radio]:checked {
 	  transition: all 2s;
 	}
 	 #slider {
-		 width: 30%;
+		 width: 50%;
 		 height: 400px;
 		 perspective: 500px;
 		 transform-style: preserve-3d;
