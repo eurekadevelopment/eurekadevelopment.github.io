@@ -70,7 +70,7 @@ input[type=radio]:checked {
 	 #s4:checked ~ #slide5,
 	  #s5:checked ~ #slide1 {
 	box-shadow: 0 6px 10px #005fb2;
-	transform: translate3d(40%, 0, -100px);
+	transform: translate3d(40%, 0, -250px);
 	filter: blur(2px);
 	-webkit-filter: blur(2px);
 	margin-left: 250px;
@@ -78,7 +78,6 @@ input[type=radio]:checked {
 	border-style: solid;
 	border-color: #005fb2;
 	transition: all 2s;
-	
   }
   
   /* Next to Next Slide */
@@ -95,7 +94,6 @@ input[type=radio]:checked {
 	margin-right: 550px;
 	border-style: solid;
 	border-color: #005fb2;
-	transition: all 2s;
 
   }
   
@@ -123,7 +121,7 @@ input[type=radio]:checked {
 	 #s4:checked ~ #slide3,
 	  #s5:checked ~ #slide4 {
 	box-shadow: 0 6px 10px #005fb2;
-	transform: translate3d(-40%, 0, -100px);
+	transform: translate3d(-40%, 0, -250px);
 	filter: blur(2px);
   -webkit-filter: blur(2px);
   margin-left: -250px;
@@ -163,7 +161,7 @@ input[type=radio]:checked {
 	  #s4:checked ~ #slide5,
 	   #s5:checked ~ #slide1 {
 	 box-shadow: 0 6px 10px #005fb2;
-	 transform: translate3d(40%, 0, -100px);
+	 transform: translate3d(40%, 0, -250px);
 	 filter: blur(2px);
 	 -webkit-filter: blur(2px);
 	 margin-left: 150px;
@@ -183,7 +181,6 @@ input[type=radio]:checked {
 	 -webkit-filter: blur(2px);
 	 margin-left: -50px;
 	 margin-right: -50px;
-	 transition: all 2s;
    }
 	 /* Previous Slide */
 	 #s1:checked ~ #slide5,
@@ -192,7 +189,7 @@ input[type=radio]:checked {
 	   #s4:checked ~ #slide3,
 		#s5:checked ~ #slide4 {
 	  box-shadow: 0 6px 10px #005fb2;
-	  transform: translate3d(-40%, 0, -100px);
+	  transform: translate3d(-40%, 0, -250px);
 	  filter: blur(2px);
 	-webkit-filter: blur(2px);
 	margin-left: -150px;
@@ -215,7 +212,7 @@ input[type=radio]:checked {
 	  #s4:checked ~ #slide5,
 	   #s5:checked ~ #slide1 {
 	 box-shadow: 0 6px 10px #005fb2;
-	 transform: translate3d(40%, 0, -100px);
+	 transform: translate3d(40%, 0, -250px);
 	 filter: blur(2px);
 	 -webkit-filter: blur(2px);
 	 margin-left: 150px;
@@ -235,7 +232,6 @@ input[type=radio]:checked {
 	 -webkit-filter: blur(2px);
 	 margin-left: -50px;
 	 margin-right: -50px;
-	 transition: all 2s;
    }
 	 /* Previous Slide */
 	 #s1:checked ~ #slide5,
@@ -244,7 +240,7 @@ input[type=radio]:checked {
 	   #s4:checked ~ #slide3,
 		#s5:checked ~ #slide4 {
 	  box-shadow: 0 6px 10px #005fb2;
-	  transform: translate3d(-40%, 0, -100px);
+	  transform: translate3d(-40%, 0, -250px);
 	  filter: blur(2px);
 	-webkit-filter: blur(2px);
 	margin-left: -150px;
@@ -267,7 +263,7 @@ input[type=radio]:checked {
 	 #s4:checked ~ #slide5,
 	  #s5:checked ~ #slide1 {
 	box-shadow: 0 6px 10px #005fb2;
-	transform: translate3d(5%, 0, -100px);
+	transform: translate3d(5%, 0, -250px);
 	filter: blur(2px);
 	-webkit-filter: blur(2px);
 	margin-left: 150px;
@@ -287,7 +283,6 @@ input[type=radio]:checked {
 	-webkit-filter: blur(2px);
 	margin-left: -550px;
 	margin-right: -550px;
-	transition: all 2s;
   }
     /* Previous Slide */
 	#s1:checked ~ #slide5,
@@ -296,7 +291,7 @@ input[type=radio]:checked {
 	  #s4:checked ~ #slide3,
 	   #s5:checked ~ #slide4 {
 	 box-shadow: 0 6px 10px #005fb2;
-	 transform: translate3d(-5%, 0, -100px);
+	 transform: translate3d(-5%, 0, -250px);
 	 filter: blur(2px);
    -webkit-filter: blur(2px);
    margin-left: -150px;
@@ -319,7 +314,7 @@ input[type=radio]:checked {
 	  #s4:checked ~ #slide5,
 	   #s5:checked ~ #slide1 {
 	 box-shadow: 0 6px 10px #005fb2;
-	 transform: translate3d(5%, 0, -100px);
+	 transform: translate3d(5%, 0, -250px);
 	 filter: blur(2px);
 	 -webkit-filter: blur(2px);
 	 margin-left: 150px;
@@ -339,7 +334,6 @@ input[type=radio]:checked {
 	 -webkit-filter: blur(2px);
 	 margin-left: -550px;
 	 margin-right: -550px;
-	 transition: all 2s;
    }
 	 /* Previous Slide */
 	 #s1:checked ~ #slide5,
@@ -348,7 +342,7 @@ input[type=radio]:checked {
 	   #s4:checked ~ #slide3,
 		#s5:checked ~ #slide4 {
 	  box-shadow: 0 6px 10px #005fb2;
-	  transform: translate3d(-5%, 0, -100px);
+	  transform: translate3d(-5%, 0, -250px);
 	  filter: blur(2px);
 	-webkit-filter: blur(2px);
 	margin-left: -150px;
@@ -371,7 +365,7 @@ input[type=radio]:checked {
 	  #s4:checked ~ #slide5,
 	   #s5:checked ~ #slide1 {
 	 box-shadow: 0 6px 10px #005fb2;
-	 transform: translate3d(5%, 0, -100px);
+	 transform: translate3d(5%, 0, -250px);
 	 filter: blur(2px);
 	 -webkit-filter: blur(2px);
 	 margin-left: 120px;
@@ -391,7 +385,6 @@ input[type=radio]:checked {
 	 -webkit-filter: blur(2px);
 	 margin-left: -580px;
 	 margin-right: -580px;
-	 transition: all 2s;
    }
 	 /* Previous Slide */
 	 #s1:checked ~ #slide5,
@@ -400,7 +393,7 @@ input[type=radio]:checked {
 	   #s4:checked ~ #slide3,
 		#s5:checked ~ #slide4 {
 	  box-shadow: 0 6px 10px #005fb2;
-	  transform: translate3d(-5%, 0, -100px);
+	  transform: translate3d(-5%, 0, -250px);
 	  filter: blur(2px);
 	-webkit-filter: blur(2px);
 	margin-left: -120px;
