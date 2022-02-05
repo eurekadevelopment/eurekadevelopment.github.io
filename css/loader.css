@@ -11,9 +11,35 @@
     border-radius: 50%;
     border-top: 16px solid #005fb2;
     -webkit-animation: spin 0.7s linear infinite;
-    animation: spin 0.7s linear infinite;
+    animation: spin 2s linear infinite;
+    background: linear-gradient(45deg,transparent,transparent 40%, #005fb2);
   }
   
+  #loader:before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    z-index: 1000;
+  }
+  #loader:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: linear-gradient(45deg,transparent,transparent 40%, #005fb2);
+    background: #005fb200;
+    border-radius: 100%;
+    z-index: 1000;
+    z-index: 1;
+    filter: blur(50px);
+  }
   @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
