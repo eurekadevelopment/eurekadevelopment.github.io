@@ -27,7 +27,7 @@ body {
     position: absolute;
     background: #000;
     width: 200px;
-    height: 400px;
+    height: 425px;
     line-height: 200px;
     text-align: center;
     opacity: 1;
@@ -90,67 +90,3 @@ body {
   }
   .next { right: 5em; }
   .prev { left: 5em; }
-
-
-@media screen and (max-width: 1920px) {
-        img {
-            width: 205px;
-            height: 500px;
-        }
-}
-@media screen and (max-width: 1700px) {
-    img {
-        width: 205px;
-        height: 400px;
-    }
-}
-@media screen and (max-width: 1400px) {
-    img {
-        width: 200px;
-        height: 400px;
-    }
-}
-@media screen and (max-width: 1200px) {
-    img {
-        width: 200px;
-        height: 400px;
-    }
-}
-@media screen and (max-width: 1000px) {
-    img {
-        width: 200px;
-        height: 400px;
-    }
-}
-@media screen and (max-width: 650px) {
-    img {
-        width: 200px;
-        height: 400px;
-    }
-}
-@media screen and (max-width: 500px) {
-    img {
-        width: 200px;
-        height: 400px;
-    }
-}
-@media screen and (max-width: 450px) {
-    img {
-        width: 200px;
-        height: 400px;
-    }
-}
-@media screen and (max-width: 400px) {
-    img {
-        width: 150px;
-        height: 350px;
-    }
-
-}
-@media screen and (max-width: 300px) {
-    img {
-        width: 100px;
-        height: 300px;   
-    }
-
-}
