@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: myFirstFont;
-    src:url("/fonts/SamsungSharpSans-Bold.ttf");
+    src:url("../fonts/SamsungSharpSans-Bold.ttf");
 }
 .harlow{
     font-family: myFirstFont;
