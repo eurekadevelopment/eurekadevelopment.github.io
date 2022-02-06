@@ -155,7 +155,6 @@ footer p {
     box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
     margin: auto;
     width: 600px;
-    
 }
 .box2 {
     text-align: left;
@@ -466,11 +465,8 @@ h1 {
         text-align: left;
         border-radius: 50px;
         font-size: 150%;
-        flex: 1;
         min-height: 40vh;
-        border: 0;
         box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
-        margin: auto;
         width: 300px;
     }
     #logo {
@@ -553,6 +549,7 @@ h1 {
         width: 400px;
     }
 }
+
 h1 {
     text-align: left;
     animation-duration: 0.7s;
