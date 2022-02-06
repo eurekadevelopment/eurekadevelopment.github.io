@@ -155,6 +155,7 @@ h1 {
         overflow:hidden;
         padding:0px;  
         margin-top: 15px;
+        
       }
       h2{
         color:#fff;
@@ -184,11 +185,12 @@ h1 {
     .panels{
         background:#1f2227;
         min-height:400px;
-        width:400px;
+        width:450px;
         border-radius:50px;
         overflow:hidden;
         padding:20px;  
         margin-top: 15px;
+        
       }
       h2{
         color:#fff;
@@ -223,6 +225,7 @@ h1 {
         overflow:hidden;
         padding:20px;  
         margin-top: 15px;
+        
       }
       h2{
         color:#fff;
