@@ -44,16 +44,17 @@
         <hr />
         <ul>
             <h1><u>Index: Guides</u></h1>
-            <li>How to flash a Custom ROM if u came not from Stock ROM (Custom ROM)</li>
-            <li>How to flash a Custom ROM if u came from Stock ROM (OneUI)</li>
-            <li>How to flash a Custom Recovery (like TWRP,SHRP,PBRP,OFOX)</li>
-            <li>What ToDo if i get a BSOD (Black Screen of Death)?</li>
-            <li>How i give Developer LOGS and Reporting Bugs.</li>  
-            <li>What ToDo if i get a Bootloop?</li>
             <li>How to Unlock Bootloader?</li>
-            <li>How to ROOT my Device?</li>   
+            <li>How to flash Custom Recovery?</li>
+            <li>How to ROOT my Device?</li>
+            <li>How to flash a ROM if you comming from Stock?</li>
+            <li>How to Flash a ROM if you comming from Custom ROM?</li>  
+            <li>How to Report a BUG?</li>
+            <li>BSOD - Black Screen Of Death !</li>
+            <li>Bootloop?</li>   
             <h1><u>Index: Downloads</u></h1>    
-            <li>ODIN Samsung Flash Tool</li>
+            <li>ODIN Samsung Flash Tool</li>`
+            <li>Heimdall Samsung Flash Tool</li>
             <li>Minimal ADB/Fastboot</li>
             <li>Samsung USB Driver</li>
             <li>Magisk-latest.zip</li>
@@ -167,7 +168,6 @@
             <li style="margin-left: -30px;">After u booted, Open Magisk APP and Wait until it finished.</li>
             <hr style="margin-left: -30px;" />
             <li style="margin-left: -30px;">If everything fine, u are ROOTED now.</li>
-            <hr style="margin-left: -30px;" />
          </ul>
         </div>
         <div class ="flexelement box1 harlow">
@@ -187,7 +187,6 @@
             <li style="margin-left: -30px;">Optional: Flash Magisk / GAPPS</li>
             <hr style="margin-left: -30px;" />
             <li style="margin-left: -30px;">After flash is completed, reboot!</li>
-            <hr style="margin-left: -30px;" />
         </ul>
         </div>
     </div>
@@ -207,27 +206,59 @@
             <li style="margin-left: -30px;">Optional: Flash Magisk / GAPPS</li>
             <hr style="margin-left: -30px;" />
             <li style="margin-left: -30px;">After flash is completed, reboot!</li>
-            <hr style="margin-left: -30px;" />
         </ul>
         </div>
         <div class ="flexelement box1 harlow">
             <h2 id="guide">How to Report a BUG?</h2>
             <hr />
             <ul>
-            <li style="margin-left: -30px;"></li>
+            <li style="margin-left: -30px;">First go into Eureka Support or Device Specific group and ask if someone else have the same issue. If no one has this Issue, Download from PlayStore or APKPure Logcat App. (magisk needed)[<a href="https://play.google.com/store/apps/details?id=com.dp.logcatapp" target="_blank">PlayStore][</a><a href="https://m.apkpure.com/de/logcat-reader/com.dp.logcatapp" target="_blank">APKPure]</a></li>
             <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;"></li>
+            <li style="margin-left: -30px;">Open that App and press the Record button. (Accept ROOT Permissions)</li>
             <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;"></li>
+            <li style="margin-left: -30px;">Reproduce the Issue (like force close app or something else)</li>
             <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;"></li>
+            <li style="margin-left: -30px;">After that, press on Stop and send us your Log via Share!</li>
+        </ul>
+        </div>
+    </div>
+    <div class="flexbox">
+        <div class ="flexelement box1 harlow">
+            <h2 id="guide">BSOD - Black Screen Of Death !</h2>
+            <hr />
+            <ul>
+            <p style="margin-left: -30px;">You can't go into download or recovery mode? Well then, you are stuck in BSOD. Note: your phone is turned on but the screen is off (black) Bellow is how to fix.</p>
+            <li style="margin-left: -30px;">Connect a usb cable to your pc but don't connect it to your phone yet!</li>
             <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;"></li>
+            <li style="margin-left: -30px;">Force restart your phone by holding all buttons. As soon as you press buttons, start counting.</li>
             <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;"></li>
+            <li style="margin-left: -30px;">The phone will vibrate about on the 12 secs</li>
             <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;"></li>
+            <li style="margin-left: -30px;">Now, when your screen is black, hold all buttons and count again. When you reach 11 secs, quickly release all buttons and hold only power + vol up button. Also connect the usb cable to the phone.</li>
             <hr style="margin-left: -30px;" />
+            <li style="margin-left: -30px;">Your phone will then boot into download mode where u can flash stock firmware again. P.S: It's hard to get the right timing. So you have to keep trying till you are able to get it else you have to wait your battery to be 0% so that it turns off automatically..</li>
+        </ul>
+        </div>
+        <div class ="flexelement box1 harlow">
+            <h2 id="guide">Bootloop?</h2>
+            <hr />
+            <p>ROM Bootlooping at first Boot (or generally)?</p>
+            <ul>
+            <li style="margin-left: -30px;">Force restarting your Phone by Hold vol- and power about 12 Seconds.</li>
+            <hr style="margin-left: -30px;" />
+            <li style="margin-left: -30px;">Boot via Combination into Recovery.</li>
+            <hr style="margin-left: -30px;" />
+            <li style="margin-left: -30px;">Go into Terminal and type: 'touch data/debug/logcat' and 'touch data/debug/kmsg'.</li>
+            <hr style="margin-left: -30px;" />
+            <li style="margin-left: -30px;">After that, reboot your Phone and wait one minute in the Bootloop and force restarting your Phone by Hold vol- and power about 12 Seconds.</li>
+            <hr style="margin-left: -30px;" />
+            <li style="margin-left: -30px;">Boot again via Combination into Recovery and go into Filemanager and copy both files (kmsg,logcat) from data/debug/logs to your SD-Card</li>
+            <hr style="margin-left: -30px;" />
+            <li style="margin-left: -30px;">Send us your Logs. (if u cannot wait, flash another ROM in this Time!) </li>
+            <p>Bootloop after Magisk Module?</p>
+            <li style="margin-left: -30px;">Force restarting your Phone by Hold vol- and power about 12 Seconds and boot into your Recovery by holding Key Combination.</li>
+            <hr style="margin-left: -30px;" />
+            <li style="margin-left: -30px;">Mount System, Go into Filemanager and then into data/adb/modules and Delete the Folder which causes bootloop.</li>
         </ul>
         </div>
     </div>
