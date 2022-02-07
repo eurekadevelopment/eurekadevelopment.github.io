@@ -34,71 +34,11 @@
           <a class="active" href="stats">Stats</a>
       </div>     
   </div>
-  <div id="align_canvas"style="width:66%;">
-  <canvas id="myChart" width="400" height="200"></canvas>
+  <div id="align_canvas" style="width:75%;">
+  <canvas id="myChart" style="position: relative; height:60vh; width:80vw"></canvas>
 </div>
 <script>
-// fetch block
-function updateChart() {
-async function fetchData(){
-    const url = 'https://sourceforge.net/projects/eurekaroms/files/stats/json?start_date=2021-01-01&end_date=2022-01-01';
-    const response = await fetch(url);
-    const datapoints = await response.json();
-    console.log(datapoints);
-    return datapoints;
-};
 
-fetchData().then(datapoints => {
-    const month = datapoints.downloads.map(
-        function(index) {
-            return index[1];
-        })
-        console.log(month);
-        myChart.config.data.labels = ["January",'February','March','May','June','July','August','September','October','November','December'];
-        myChart.config.data.datasets[0].data = month;
-        myChart.update();
-});
-}
-
-const data = {
-  labels: ["January",'February','March','May','June','July','August','September','October','November','December'],
-  datasets: [{
-    label: 'Downloads 2021',
-    data: [],
-    backgroundColor: [
-      'rgba(255, 99, 132, 0.2)',
-      'rgba(255, 159, 64, 0.2)',
-      'rgba(255, 205, 86, 0.2)',
-      'rgba(75, 192, 192, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(153, 102, 255, 0.2)',
-      'rgba(201, 203, 207, 0.2)'
-    ],
-    borderColor: [
-      'rgb(255, 99, 132)',
-      'rgb(255, 159, 64)',
-      'rgb(255, 205, 86)',
-      'rgb(75, 192, 192)',
-      'rgb(54, 162, 235)',
-      'rgb(153, 102, 255)',
-      'rgb(201, 203, 207)'
-    ],
-    borderWidth: 2
-  }]
-};
-
-  const config = {
-    type: 'line',
-    data: data,
-    options: {}
-  };
-
-  const myChart = new Chart(
-    document.getElementById('myChart'),
-    config
-  );
-
-  document.onload = updateChart()
 </script>
     <footer>
         <div class="wrapper"><img src="images/logo.png" width="22px" height="22px" id="logo">
@@ -112,6 +52,7 @@ const data = {
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="js/loader.js"></script>
 <script src="js/stats.js"></script>
+<script src="js/stats-monthly.js"></script>
 <script>
   window.matchMedia("(prefers-color-scheme: dark)").matches
 </script>
