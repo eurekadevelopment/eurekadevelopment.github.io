@@ -6,7 +6,7 @@ $(document).ready(function() {
     var timer;
     
     function start() {
-      timer = setInterval(next, 3000);
+      timer = setInterval(next, 4000);
     }
     
     function next() {

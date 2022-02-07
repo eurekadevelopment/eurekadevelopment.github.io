@@ -40,7 +40,6 @@ h1 {
     box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 10px #005fb2;
 }
 .panels{
-  background:#1f2227;
   min-height:400px;
   width:1200px;
   border-radius:50px;
@@ -86,7 +85,6 @@ h1 {
 
 @media screen and (max-width: 1300px) {
     .panels{
-        background:#1f2227;
         min-height:400px;
         width:1000px;
         border-radius:50px;
@@ -98,7 +96,6 @@ h1 {
   
   @media screen and (max-width: 1024px) {
     .panels{
-        background:#1f2227;
         min-height:400px;
         width:900px;
         border-radius:50px;
@@ -109,7 +106,6 @@ h1 {
   }
   @media screen and (max-width: 900px) {
     .panels{
-        background:#1f2227;
         min-height:400px;
         width:900px;
         border-radius:50px;
@@ -120,7 +116,6 @@ h1 {
     }
       @media screen and (max-width: 800px) {
         .panels{
-            background:#1f2227;
             min-height:400px;
             width:900px;
             border-radius:50px;
@@ -134,7 +129,6 @@ h1 {
         font-size: 16px;
     }
     .panels{
-        background:#1f2227;
         min-height:400px;
         width:700px;
         border-radius:50px;
@@ -148,7 +142,6 @@ h1 {
         font-size: 10px;
     }
     .panels{
-        background:#1f2227;
         min-height:400px;
         width:500px;
         border-radius:50px;
@@ -183,7 +176,6 @@ h1 {
         font-size: 10px;
     }
     .panels{
-        background:#1f2227;
         min-height:400px;
         width:450px;
         border-radius:50px;
@@ -218,7 +210,6 @@ h1 {
         font-size: 10px;
     }
     .panels{
-        background:#1f2227;
         min-height:400px;
         width:400px;
         border-radius:50px;
@@ -248,4 +239,9 @@ h1 {
         margin-left: -50px;
     }
       
+  }
+  @media (prefers-color-scheme: dark) {
+    body {
+     background: #1f2227;
+    }
   }

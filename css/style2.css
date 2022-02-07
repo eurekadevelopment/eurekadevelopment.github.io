@@ -115,7 +115,6 @@ footer p {
 .flexbox {
     width: 70%;
     margin: 1%;
-    background: #1f2227;;
     margin-bottom: 100px;
     margin-top: 20px;
     display: flex;
@@ -582,9 +581,13 @@ h1 {
   }
 
   .glow{
-    background:#1f2227;
-    color:rgb(216, 214, 214);
+    color:black;
     text-shadow:-5px -5px 5px #000, 5px 5px 5px #005fb2;
     font-size:48px;
     text-align:center;
+  }
+  @media (prefers-color-scheme: dark) {
+    body {
+     background: #1f2227;
+    }
   }

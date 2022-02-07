@@ -1,5 +1,4 @@
 body {
-    background: #333;
     font: 15px/20px Arial, sans-serif;
     height: 1820px;
   }
@@ -37,35 +36,35 @@ body {
   
   .a {
     transform: rotateY(0deg) translateZ(250px);
-    background: #ed1c24;
+    background: white;
   }
   .b {
     transform: rotateY(45deg) translateZ(250px);
-    background: #0072bc;
+    background: white;
   }
   .c {
     transform: rotateY(90deg) translateZ(250px);
-    background: #39b54a;
+    background: white;
   }
   .d {
     transform: rotateY(135deg) translateZ(250px);
-    background: #f26522;
+    background: white;
   }
   .e {
     transform: rotateY(180deg) translateZ(250px);
-    background: #630460;
+    background: white;
   } 
   .f {
     transform: rotateY(225deg) translateZ(250px);
-    background: #8c6239;
+    background: white;
   }
   .g {
     transform: rotateY(270deg) translateZ(250px);
-    background: #8c6239;
+    background: white;
   }
   .h {
     transform: rotateY(315deg) translateZ(250px);
-    background: #8c6239;
+    background: white;
   }
 
   .next, .prev {
@@ -90,3 +89,9 @@ body {
   }
   .next { right: 5em; }
   .prev { left: 5em; }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+     background: #1f2227;
+    }
+  }
