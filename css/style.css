@@ -1279,3 +1279,8 @@ div.box2 {
      background: #1f2227;
   }
 }
+#align_canvas {
+  width: 100px;
+  height:100px;
+  margin: 0px auto;
+}
