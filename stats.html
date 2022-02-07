@@ -34,15 +34,14 @@
           <a class="active" href="stats">Stats</a>
       </div>     
   </div>
-  <div id="align_canvas" style="width:66%;">
-  <canvas style="align-content: center; align-items: center; justify-content: center;"id="myChart" width="400" height="200"></canvas>
-  <button onclick="updateChart()">Fetch</button>
+  <div id="align_canvas"style="width:66%;">
+  <canvas id="myChart" width="400" height="200"></canvas>
 </div>
 <script>
 // fetch block
 function updateChart() {
 async function fetchData(){
-    const url = 'https://sourceforge.net/projects/eurekaroms/files/stats/json?start_date=2021-01-01&end_date=2021-12-31';
+    const url = 'https://sourceforge.net/projects/eurekaroms/files/stats/json?start_date=2021-01-01&end_date=2022-01-01';
     const response = await fetch(url);
     const datapoints = await response.json();
     console.log(datapoints);
@@ -52,20 +51,20 @@ async function fetchData(){
 fetchData().then(datapoints => {
     const month = datapoints.downloads.map(
         function(index) {
-            return index;
+            return index[1];
         })
         console.log(month);
-
-        myChart.config.data.labels = month;
+        myChart.config.data.labels = ["January",'February','March','May','June','July','August','September','October','November','December'];
+        myChart.config.data.datasets[0].data = month;
         myChart.update();
 });
 }
 
 const data = {
-  labels: [],
+  labels: ["January",'February','March','May','June','July','August','September','October','November','December'],
   datasets: [{
     label: 'Downloads 2021',
-    data: [0, 2000, 4000, 6000, 8000, 10000, 12000, 14000, 15000, 16000, 18000, 20000],
+    data: [],
     backgroundColor: [
       'rgba(255, 99, 132, 0.2)',
       'rgba(255, 159, 64, 0.2)',
@@ -84,12 +83,12 @@ const data = {
       'rgb(153, 102, 255)',
       'rgb(201, 203, 207)'
     ],
-    borderWidth: 1
+    borderWidth: 2
   }]
 };
 
   const config = {
-    type: 'bar',
+    type: 'line',
     data: data,
     options: {}
   };
@@ -98,6 +97,8 @@ const data = {
     document.getElementById('myChart'),
     config
   );
+
+  document.onload = updateChart()
 </script>
     <footer>
         <div class="wrapper"><img src="images/logo.png" width="22px" height="22px" id="logo">
