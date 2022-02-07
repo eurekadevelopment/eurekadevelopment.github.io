@@ -46,19 +46,19 @@
           <li>Built with Vortex Clang & LTO which is based on the latest version of Clang 14 (20220201).</li>
           <br>
           <li>Two kernel versions with different schedulers are now available:</li>
-          <li>   → Implemented EMS (Exynos Mobile Scheduler) which is a scheduler based on EAS (Energy Aware Scheduling).</li>
-          <li>   → The normal kernel version has the stock HMP (Heterogeneous Multi-Processing) scheduler.</li>
+          <li>→ Implemented EMS (Exynos Mobile Scheduler) which is a scheduler based on EAS (Energy Aware Scheduling).</li>
+          <li>→ The normal kernel version has the stock HMP (Heterogeneous Multi-Processing) scheduler.</li>
           <br>
           <li>Eureka kernel R9.0 heavily depends on DTB (not DTBO) for the following features:</li>
-          <li>   → CPU and GPU overclock & underclock</li>
-          <li>   → SELinux state (enforcing or permissive)</li>
-          <li>   → Sound driver compatibility (AOSP, OneUI2 or OneUI3)</li>
-          <li>   → Energy model and parameters for EMS kernels</li>
+          <li>→ CPU and GPU overclock & underclock</li>
+          <li>→ SELinux state (enforcing or permissive)</li>
+          <li>→ Sound driver compatibility (AOSP, OneUI2 or OneUI3)</li>
+          <li>→ Energy model and parameters for EMS kernels</li>
           <br>
           <li>EMS kernel works best with schedutil based governors. The following governors were added:</li>
-          <li>   → Blu Schedutil</li>
-          <li>   → ElectroUtilX</li>
-          <li>   → PwrUtilX</li>
+          <li>→ Blu Schedutil</li>
+          <li>→ ElectroUtilX</li>
+          <li>→ PwrUtilX</li>
           
           <li>Updated spectrum files.
           <li>Other minor changes.
@@ -85,7 +85,7 @@
       <div class ="flexelement box1 harlow">
         <h1 id="download">Download Eureka Kernel</h1><img src="images/logo.png" width="64px" height="64px" id="logo5"> 
         <hr /> 
-        <p>→ R8.0 - AOSP</p>
+        <p>→ R9.0 - AOSP</p>
         <ul>
         <li><a href="404.html" style="color: #005fb2">Download A10</a></li>
         <li><a href="405.html" style="color: #005fb2">Download A20</a></li>
@@ -94,7 +94,7 @@
         <li><a href="404.html" style="color: #005fb2">Download A30s</a></li>
         <li><a href="404.html" style="color: #005fb2">Download A40</a></li>
       </ul>
-        <p>→ R8.0 - OneUI</p>
+        <p>→ R9.0 - OneUI</p>
         <ul>
         <li><a href="404.html" style="color: #005fb2">Download A10</a></li>
         <li><a href="404.html" style="color: #005fb2">Download A20</a></li>
@@ -109,6 +109,28 @@
       <div class ="flexelement box1 harlow">
         <h1 id="changelog">Eureka Kernel Changelog</h1><img src="images/logo.png" width="64px" height="64px" id="logo5"> 
         <hr />
+        <h3 id="R9.02022-03-02">R9.0 2022&#8211;02&#8211;03</h3>
+        <ul>
+         <li>Upstream Linux Kernel Version from 4.4.288 to 4.4.302 (latest and last update from Linux).</li>
+         <li>Implemented EurekaSound (ESOUND) v1.0, a basic headphone audio controller (For AOSP only).</li>
+         <li>Implemented Eureka Display Control (EKCAL) which is based on Samsung mDNIE driver (Not available for A20e).</li>
+         <li>Modified DT2W driver for A20 and A40 so as to fix DT2W issue on AOSP ROMs.</li>
+         <li>Fixed all remaining warnings in kernel source.</li>
+         <li>For permissive selinux, selinux can be switched to enforcing after boot.</li>
+         <li>Further improvements to SElinux code to fix some warnings in kernel log.</li>
+         <li>Updated WireGuard VPN driver to latest version (1.0.20211208)</li>
+         <li>Merged 98 % audio and camera changes from R kernel source into Q/R/S (AOSP/OneUI2) kernels.</li>
+         <li>AROMA Installer is now used to facilitate the installation of Eureka Kernel.</li>
+         <li>OneUI and AOSP kernels & custom DTBs have been merged into 1 zip (kept size as small as possible).</li>
+         <li>Built with Vortex Clang & LTO which is based on the latest version of Clang 14 (20220201).</li>
+         <li>Two kernel versions with different schedulers are now available: EMS/HMP (see features above).</li>
+         <li>EMS shedutil governors: Blu, Electro, PWR (see features above).</li>
+         <li>Eureka kernel R9.0 heavily depends on DTB (not DTBO): OC/UC, SELinux=Enf./Permis., EMS,... See Features above.</li>
+         <li>Updated spectrum files.</li>
+         <li>Other minor changes.</li>
+         <li>Skipped R8.5</li>
+        </ul>
+        <br>
         <h3 id="R8.02021-10-14">R8.0 2021&#8211;10&#8211;14</h3>
       <ul>
       <li>Upstream Linux Kernel Version from 4.4.277 to 4.4.288</li>
