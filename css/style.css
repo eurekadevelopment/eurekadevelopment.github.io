@@ -891,6 +891,7 @@ div.box2 {
   @media screen and (max-width: 500px) {
     div.box2  {
       font-size: 15px;
+      margin-top: 25px;
     }
     div.box1  {
         font-size: 15px;
@@ -1011,6 +1012,7 @@ div.box2 {
   @media screen and (max-width: 450px) {
     div.box2  {
       font-size: 15px;
+      margin-top: 25px;
     }
     div.box1  {
         font-size: 15px;
@@ -1131,6 +1133,7 @@ div.box2 {
   @media screen and (max-width: 300px) {
     div.box2  {
       font-size: 15px;
+      margin-top: 25px;
     }
     div.box1  {
         font-size: 15px;
