@@ -1286,15 +1286,6 @@ div.box2 {
   
 }
 
-b {
-  width: 100px;
-  height:100px;
-  margin: 0px auto;
-  color: white;
-  font-size: 36px;
-}
-
 .centered {
-  z-index: -1;
   position: relative;
 }
