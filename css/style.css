@@ -13,6 +13,22 @@ html {
 ::-webkit-scrollbar {
   width: 10px;
 }
+.button {
+  display: flex;
+  height: 50px;
+  padding: 0;
+  background: #000000;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 50px;
+}
+
 select {
   border-radius: 28px;
   box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
@@ -45,7 +61,7 @@ li {
 }
 ul li::before {
     content: "\2022";
-    color: #08f;
+    color: rgba(0, 136, 255, 0);
     font-weight: bold;
     display: inline-block; 
     width: 1em;
@@ -165,6 +181,7 @@ ul li::before {
 #logo {
     float: left;
     }
+
 #logo1 {
     float: right;
     border: 0;
@@ -268,6 +285,21 @@ ul li::before {
     padding:30px 30px 30px 30px;
     border: 0;
     box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
+}
+.box4 {
+  border-radius: 50px;
+  border: 2px solid black;
+  padding:30px 30px 30px 30px;
+  border: 0;
+  box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 5px;
+}
+.box4 img {
+  border-radius: 50px;
 }
 
 .box_rom {
@@ -1214,6 +1246,7 @@ div.box2 {
         width: 400px;
         
       }
+      
   }
 .glow{
     background:#1f2227;
@@ -1287,4 +1320,27 @@ div.box2 {
 
 .centered {
   position: relative;
+}
+
+
+
+.button:hover {
+  background: #343535;
+}
+
+.button:active {
+  background: #494949;
+}
+
+.button__text,
+.button__icon {
+  display: inline-flex;
+  padding: 6px 1px 0px 0px;
+  color: #fff;
+  height: 100%;
+}
+
+.button__icon {
+  font-size: 1.5em;
+  background: rgba(0, 0, 0, 0.08);
 }
