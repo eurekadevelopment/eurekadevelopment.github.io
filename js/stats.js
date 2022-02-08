@@ -13,6 +13,7 @@ $(document).ready(function() {
         }).catch(err => console.error(err));
     }
 
+
     function aex_r_stats() {
         filepath = 'Samsung/A20/R/aex/';
         apiUrl = 'https://sourceforge.net/projects/eurekaroms/files/' + filepath + 'stats/json?start_date=2020-01-01&end_date=2023-01-01';
@@ -22,6 +23,7 @@ $(document).ready(function() {
                 console.log(json_a20);
                 document.getElementById("aex_stats").innerHTML = "Stats: " + json_a20.total;
         }).catch(err => console.error(err));
+
     }
 
     function aosip_r_stats() {
@@ -47,6 +49,19 @@ $(document).ready(function() {
         }).catch(err => console.error(err));
     }
 
+    function stats_all() {
+        filepath = '/';
+        apiUrl = 'https://sourceforge.net/projects/eurekaroms/files/' + filepath + 'stats/json?start_date=2021-01-01&end_date=2023-01-01';
+        fetch(apiUrl)
+                .then(response => response.json())
+                .then(json_all => {
+                console.log(json_all);
+                document.getElementById("full_stats").innerHTML = "Eureka ROM Files was Downloaded: " + json_all.total + " times.";
+        }).catch(err => console.error(err));
+
+    }
+  
+    stats_all();
     aicp_r_stats();
     aex_r_stats();
     aosip_r_stats();
