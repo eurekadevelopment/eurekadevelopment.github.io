@@ -10,6 +10,29 @@
     <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="css/tabs.css">
     <script async src="https://arc.io/widget.min.js#3LCgJWKk"></script>
+    <style>
+        #myBtn {
+          display: none;
+          position: fixed;
+          bottom: 60px;
+          right: 30px;
+          z-index: 99;
+          font-size: 18px;
+          border: none;
+          outline: none;
+          /*background-color: #005fb2;*/
+          background-color: black;
+          color: white;
+          cursor: pointer;
+          padding: 15px;
+          border-radius: 4px;
+          box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
+        }
+        
+        #myBtn:hover {
+          background-color: #005fb2;
+        }
+        </style>
 </head>
 <body>
     <body onload="myFunction()" style="margin:0;">
@@ -261,6 +284,35 @@
             <li style="margin-left: -30px;">Mount System, Go into Filemanager and then into data/adb/modules and Delete the Folder which causes bootloop.</li>
         </ul>
         </div>
+        <button onclick="topFunction()" id="myBtn" type="button" class="button2" style="display: inline-block; border-radius: 50px;">
+            <span class="button__icon2" style="margin-bottom: 20px;">
+              <ion-icon name="arrow-up-circle-outline" style="pointer-events:none"></ion-icon>
+              </a>
+            </span>
+          </ion-icon>
+          </button>
+        
+        <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
     </div>
   </div>
   </div>
@@ -273,6 +325,7 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="js/loader.js"></script>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 <script>
     window.matchMedia("(prefers-color-scheme: dark)").matches
   </script>

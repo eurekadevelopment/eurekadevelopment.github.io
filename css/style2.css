@@ -591,3 +591,49 @@ h1 {
      background: #1f2227;
     }
   }
+
+  .button2 {
+    display: flex;
+    height: 65px;
+    padding: 0;
+    background: #000000;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    overflow: hidden;
+    font-family: "Quicksand", sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 65px;
+  }
+  .button:hover {
+    background: #343535;
+  }
+  
+  .button:active {
+    background: #494949;
+  }
+  .button__text2,
+  .button__icon2 {
+    display: inline-flex;
+    padding: 0px 0px 0px 0px;
+    color: #fff;
+    height: 100%;
+  }
+  .button__text,
+  .button__icon {
+    display: inline-flex;
+    padding: 6px 1px 0px 0px;
+    color: #fff;
+    height: 100%;
+  }
+  .button__icon2 {
+    font-size: 2em;
+    background: rgba(0, 0, 0, 0);
+  }
+  .button__icon {
+    font-size: 1.5em;
+    background: rgba(0, 0, 0, 0.08);
+  }
+  
