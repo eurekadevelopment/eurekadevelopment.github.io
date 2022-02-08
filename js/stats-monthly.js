@@ -24,7 +24,7 @@ function updateChart() {
     const data = {
       labels: ["January",'February','March','May','June','July','August','September','October','November','December'],
       datasets: [{
-        label: 'Downloadstatistics Eureka Development 2021-2022',
+        label: 'Download Statistics - Eureka ROM - 2021-2022 [Monthly]',
         data: [],
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
