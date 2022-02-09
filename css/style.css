@@ -1370,3 +1370,55 @@ div.box2 {
   font-size: 1.5em;
   background: rgba(0, 0, 0, 0.08);
 }
+
+.popup {
+  width: 100%;
+  left: 0;
+  color: rgb(255, 0, 0);
+  background: #1f2227;
+  position: absolute;
+  z-index: 10001;
+  font-weight: 700;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.26);
+  z-index: 10000;
+  display :none;
+}
+
+@media (min-width: 768px) {
+  .popup {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .popup {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .popup {
+    width: 100%;
+  }
+}
+
+.dialog-btn {
+  background-color:#005fb200;
+  color: white;
+  font-weight: 700;
+  height: 30px;
+margin-bottom: 10px;
+}
+.dialog-btn:hover {
+  background-color:#1f2227;
+  cursor: pointer;
+}

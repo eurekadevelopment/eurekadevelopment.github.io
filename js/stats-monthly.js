@@ -4,7 +4,6 @@ function updateChart() {
         const url = 'https://sourceforge.net/projects/eurekaroms/files/stats/json?start_date=2021-02-01&end_date=2023-01-01&period=monthly';
         const response = await fetch(url);
         const datapoints = await response.json();
-        console.log(datapoints);
         return datapoints;
     };
     
@@ -13,11 +12,11 @@ function updateChart() {
             function(index) {
                 return index[1];
             })
-            console.log(monthly);
             myChart.config.data.labels = ['February/21','March/21','May/21','June/21','July/21','August/21','September/21','October/21','November/21','December/21',
             'January/22','February/22','March/22','May/22','June/22','July/22','August/22','September/22','October/22','November/22','December/22'];
             myChart.config.data.datasets[0].data = monthly;
             myChart.update();
+          
     });
     }
     
@@ -61,3 +60,27 @@ function updateChart() {
       );
     
       document.onload = updateChart()
+
+   // Call function when show dialog btn is clicked
+document.getElementById("btn-show-dialog").onclick = function(){show_dialog()};
+var overlayme = document.getElementById("dialog-container");
+
+function show_dialog() {
+ /* A function to show the dialog window */
+    overlayme.style.display = "block";
+}
+
+// If confirm btn is clicked , the function confim() is executed
+document.getElementById("confirm").onclick = function(){confirm()};
+function confirm() {
+ /* code executed if confirm is clicked */   
+    overlayme.style.display = "none";
+}
+
+      //some output of error
+      fetch("https://sourceforge.net/projects/eurekaroms/files/stats/json?start_date=2021-02-01&end_date=2023-01-01&period=monthly")
+    .then(function() {
+        console.log('Pass!')
+    }).catch(function() {
+        show_dialog()
+    });
