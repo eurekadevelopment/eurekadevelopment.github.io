@@ -1,4 +1,7 @@
 
+body {
+  overflow-x: hidden;
+}
 @font-face {
     font-family: myFirstFont;
     src:url("../fonts/SamsungSharpSans-Bold.ttf");
@@ -1343,6 +1346,7 @@ div.box2 {
 
 .button:hover {
   background: #343535;
+  height: 48px;
 }
 
 .button:active {
@@ -1358,7 +1362,7 @@ div.box2 {
 .button__text,
 .button__icon {
   display: inline-flex;
-  padding: 6px 1px 0px 0px;
+  padding: 5px 0px 0px 0px;
   color: #fff;
   height: 100%;
 }
