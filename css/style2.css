@@ -640,15 +640,16 @@ h1 {
   .btn1 {
     border-radius: 50px;
     height: 40px;
-    box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
     border: 50px;
-    background-color: black;
+    background-color: #08f;
+    border: 2px solid rgb(58, 57, 57);
     color: white;
     animation: fadein .8s;
 }
 
 .btn1:hover {
     background-color: #08f;
+    box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
     transition: 0.4s;
     border: 0;
     animation: fadein .6s;
