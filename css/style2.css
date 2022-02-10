@@ -636,3 +636,29 @@ h1 {
     font-size: 1.5em;
     background: rgba(0, 0, 0, 0.08);
   }
+
+  .btn1 {
+    border-radius: 50px;
+    height: 40px;
+    box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
+    border: 50px;
+    background-color: black;
+    color: white;
+    animation: fadein .8s;
+}
+
+.btn1:hover {
+    background-color: #08f;
+    transition: 0.4s;
+    border: 0;
+    animation: fadein .6s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
