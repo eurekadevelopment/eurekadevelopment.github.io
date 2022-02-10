@@ -349,7 +349,7 @@ ul li::before {
   border: 0;
   border-radius: 28px;
   box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
-  
+  margin: 0 auto;
 }
 .topnav {
   background-color: black;
@@ -457,6 +457,19 @@ div.box2 {
     p {
         animation-duration: 0.7s;
         animation-name: slidein;
+      }
+      .topnav_main {
+        background-color: black;
+        overflow: hidden;
+        border-radius: 50px;
+        border: 0px solid white;
+        padding: 20px; 
+        height: 18px; 
+        position: relative;
+        border: 0;
+        border-radius: 28px;
+        box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
+        margin-left: 100px;
       }
   }
   

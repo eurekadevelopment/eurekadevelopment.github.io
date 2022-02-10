@@ -10,9 +10,15 @@
     <link rel="stylesheet" href="css/loader.css">
     <script async src="https://arc.io/widget.min.js#3LCgJWKk"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
 </head>
-<body style="height: 1500px;">
+<style>
+   @media screen and (max-height: 768px) {
+     body {
+       height: 500px;
+     }
+   }
+</style>
+<body style="height: 1800px;">
   <body onload="myFunction()" style="margin:0;">
     <div id="loader"></div>
     <div id="overlay"></div>
@@ -27,7 +33,6 @@
           <a href="about">About</a>
       </div>     
   </div>
-
     <div class="flexbox">
       <div class="topnav_main harlow"> 
           <a href="rom11.html">Android 11</a> 
