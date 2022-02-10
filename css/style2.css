@@ -645,6 +645,7 @@ h1 {
     border: 2px solid rgb(58, 57, 57);
     color: white;
     animation: fadein .8s;
+    margin-bottom: 5px;
 }
 
 .btn1:hover {
@@ -663,3 +664,4 @@ h1 {
         opacity:1;
     }
 }
+
