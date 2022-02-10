@@ -216,7 +216,20 @@ h1 {
     animation-duration: 0.7s;
     animation-name: slidein1;
 }
-
+@media screen and (max-width: 1400px) {
+    #logo2 {
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    #logo2 {
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+    }
+}
 @media screen and (max-width: 900px) {
     .box1 {
         text-align: left;
@@ -461,6 +474,11 @@ h1 {
         margin-left: 15%;
         
     }
+    #logo2 {
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+    }
 }
 @media screen and (max-width: 600px) {
     .box1 {
@@ -528,6 +546,11 @@ h1 {
       a {
         color:#08f;
         font-size: 9px;
+    }
+    #logo2 {
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
     }
     .box4 {
         border-radius: 50px;

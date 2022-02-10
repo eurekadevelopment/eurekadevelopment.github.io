@@ -103,6 +103,17 @@ h1 {
         padding:20px;  
         margin-top: 15px;
       }
+      h2{
+        color:#fff;
+        text-align:left;
+        font-size:1.0em;
+        animation-duration: 0.7s;
+        animation-name: slidein1;
+      }
+      img {
+        width: 96px;
+        height: 96px;
+      }
   }
   @media screen and (max-width: 900px) {
     .panels{
@@ -122,6 +133,17 @@ h1 {
             overflow:hidden;
             padding:20px;  
             margin-top: 15px;
+          }
+          h2{
+            color:#fff;
+            text-align:left;
+            font-size:1.0em;
+            animation-duration: 0.7s;
+            animation-name: slidein1;
+          }
+          img {
+            width: 96px;
+            height: 96px;
           }
   }
   @media screen and (max-width: 700px) {
@@ -192,7 +214,7 @@ h1 {
         animation-name: slidein1;
       }
       h1 {
-          font-size: 16px;
+          font-size: 12px;
           animation-duration: 0.7s;
           animation-name: slidein1;
           margin: auto;
@@ -200,9 +222,9 @@ h1 {
 
       }
       img{
-          width: 42px;
-          height: 42px;
-          margin-left: -50px;
+          width: 64px;
+          height: 64px;
+          margin-left: -20px;
       }
   }
   @media screen and (max-width: 300px) {
