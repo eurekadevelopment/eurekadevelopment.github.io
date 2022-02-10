@@ -138,159 +138,93 @@
   <div class="panel" id="three-panel">
     <div class="flexbox">
         <div class ="flexelement box1 harlow">
-            <h2 id="guide" style="text-align: center;">How to Unlock Bootloader?</h2>
-        <hr />
+            <p><center>If you don't want to scroll the whole page, press a button to jump there.</center></p>
+          <div class="spring" style="text-align: center;">
+            <a href="#unlock">Unlock BL</a>
+            <a href="#recovery">Flash Recovery</a>
+            <a href="#root">ROOT</a>
+            <a href="#flash1">Flash ROM 1</a>
+            <a href="#flash2">Flash ROM 2</a>
+            <a href="#report">Report</a>
+            <a href="#bsod">BSOD</a>
+            <a href="#bootloop">Bootloop</a>
+        </div>
+            <h2 id="guide unlock" style="text-align: center;">Guides</h2>
+        <hr/>
+        <h2 id="guide" style="text-align: center;"><u>How to Unlock Bootloader?</u></h2>
         <ul>
-        <li style="margin-left: -30px;">Go into Settings > About Phone > Softwareinfo.</li>
-        <hr style="margin-left: -30px;" />
-        <li style="margin-left: -30px;">Tab 10-15x on Buildnumber to unlock Dev. Options.</li>
-        <hr style="margin-left: -30px;" />
-        <li style="margin-left: -30px;">Enable OEM Unlock.</li>
-        <hr style="margin-left: -30px;" />
-        <li style="margin-left: -30px;">Turn off your Phone.</li>
-        <hr style="margin-left: -30px;" />
-        <li style="margin-left: -30px;">Hold Vol+ and Vol- together and plug your USB Cable in.</li>
-        <hr style="margin-left: -30px;" />
-        <li style="margin-left: -30px;">Now a Blue Screen appears, follow the Screen instructions to UNLOCK (Attention: Your Knox Status will 0x1 triggered and your Waranty is now void.).</li>
-        <hr style="margin-left: -30px;" />
-        <li style="margin-left: -30px;">After u following everything right, it will reboot. It will not Format your DATA.</li>
-        <hr style="margin-left: -30px;" />
-        <li style="margin-left: -30px;">After u booted to System, u can Setup everything!</li>
-         </ul>
-        </div>
-        <div class ="flexelement box1 harlow">
-            <h2 id="guide" style="text-align: center;">How to flash Custom Recovery?</h2>
-        <hr />
-        <ul>
-            <li style="margin-left: -30px;">Download: ODIN or Heimdall, USB Drivers, TWRP.tar, VBMeta, DM-Verity to your PC.</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Extract ODIN or Heimdall, Install USB Drivers.</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Turn off your Phone.</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Hold Vol+ and Vol- together and plug your USB Cable in.</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Now a Blue Screen appears, Press Vol+ button.</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Open ODIN or Heimdall. Now u can see a blue COM Port detected. If not, reboot your Computer and force Restart your phone by hold vol+ and Power button until it reboots. Repeat step 3/4.</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Click on the AP Slot and seach your TWRP.tar and put in CP your VBMeta file, goto Options Tab, uncheck factory reset.</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Click Start. If u see a green sign with "PASSED" and the Phone reboots, is everything fine.</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Boot into TWRP by Poweroff your Phone and if u turn on hold powerkey + vol- until it boots into TWRP. After that, flash DM-Verity to Keep the TWRP on Phone.</li>
-         </ul>
-        </div>
-    </div>
-    <div class="flexbox">
-        <div class ="flexelement box1 harlow">
-            <h2 id="guide" style="text-align: center;">How to ROOT my Device?</h2>
-        <hr />
-        <ul>
-            <li style="margin-left: -30px;">Download: Magisk.zip and put it on your SD-Card.</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Reboot your Phone, until the Phone Screen goes black, hold Powerkey + vol- key to Enter TWRP.</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Click on Install, select the Magisk.zip, swipe to Install.</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Reboot your Phone.</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">After u booted, Open Magisk APP and Wait until it finished.</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">If everything fine, u are ROOTED now.</li>
-         </ul>
-        </div>
-        <div class ="flexelement box1 harlow">
-            <h2 id="guide" style="text-align: center;">How to flash a ROM if you comming from Stock?</h2>
-            <hr />
-            <ul>
-            <li style="margin-left: -30px;">Follow: How to Unlock Bootloader? and How to flash Custom Recovery?</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Download a ROM (optional GAPPS too) and put in on your Phone (SD-Card or Internal)</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Boot into Recovery</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Wipe DATA,CACHE,SYSTEM</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Go to Install > Select ROM Zip and Swipe for Flash</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Optional: Flash Magisk / GAPPS</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">After flash is completed, reboot!</li>
-        </ul>
-        </div>
-    </div>
-    <div class="flexbox">
-        <div class ="flexelement box1 harlow">
-            <h2 id="guide" style="text-align: center;">How to flash a ROM if you comming from Custom ROM?</h2>
-            <hr />
-            <ul>
-            <li style="margin-left: -30px;">Download a ROM (optional GAPPS too) and put in on your Phone (SD-Card or Internal)</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Boot into Recovery</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Wipe DATA,CACHE,SYSTEM</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Go to Install > Select ROM Zip and Swipe for Flash</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Optional: Flash Magisk / GAPPS</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">After flash is completed, reboot!</li>
-        </ul>
-        </div>
-        <div class ="flexelement box1 harlow">
-            <h2 id="guide" style="text-align: center;">How to Report a BUG?</h2>
-            <hr />
-            <ul>
-            <li style="margin-left: -30px;">First go into Eureka Support or Device Specific group and ask if someone else have the same issue. If no one has this Issue, Download from PlayStore or APKPure Logcat App. (magisk needed)[<a href="https://play.google.com/store/apps/details?id=com.dp.logcatapp" target="_blank">PlayStore][</a><a href="https://m.apkpure.com/de/logcat-reader/com.dp.logcatapp" target="_blank">APKPure]</a></li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Open that App and press the Record button. (Accept ROOT Permissions)</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Reproduce the Issue (like force close app or something else)</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">After that, press on Stop and send us your Log via Share!</li>
+        <li>Go into Settings > About Phone > Softwareinfo.</li>
+        <li>Tab 10-15x on Buildnumber to unlock Dev. Options.</li>
+        <li>Enable OEM Unlock.</li>
+        <li id="recovery">Turn off your Phone.</li>
+        <li>Hold Vol+ and Vol- together and plug your USB Cable in.</li>
+        <li>Now a Blue Screen appears, follow the Screen instructions to UNLOCK (Attention: Your Knox Status will 0x1 triggered and your Waranty is now void.).</li>
+        <li>After u following everything right, it will reboot. It will not Format your DATA.</li>
+        <li>After u booted to System, u can Setup everything!</li>
+        <br>
+            <h2 id="guide " style="text-align: center;"><u>How to flash Custom Recovery?</u></h2>
+            <li>Download: ODIN or Heimdall, USB Drivers, TWRP.tar, VBMeta, DM-Verity to your PC.</li>
+            <li>Extract ODIN or Heimdall, Install USB Drivers.</li>
+            <li>Turn off your Phone.</li>
+            <li>Hold Vol+ and Vol- together and plug your USB Cable in.</li>
+            <li>Now a Blue Screen appears, Press Vol+ button.</li>
+            <li id="root">Open ODIN or Heimdall. Now u can see a blue COM Port detected. If not, reboot your Computer and force Restart your phone by hold vol+ and Power button until it reboots. Repeat step 3/4.</li>
+            <li>Click on the AP Slot and seach your TWRP.tar and put in CP your VBMeta file, goto Options Tab, uncheck factory reset.</li>
+            <li>Click Start. If u see a green sign with "PASSED" and the Phone reboots, is everything fine.</li>
+            <li>Boot into TWRP by Poweroff your Phone and if u turn on hold powerkey + vol- until it boots into TWRP. After that, flash DM-Verity to Keep the TWRP on Phone.</li>
+            <br>
+            <h2 id="guide" style="text-align: center;"><u>How to ROOT my Device?</u></h2>
+                <li>Download: Magisk.zip and put it on your SD-Card.</li>
+                <li id="flash1">Reboot your Phone, until the Phone Screen goes black, hold Powerkey + vol- key to Enter TWRP.</li>
+                <li>Click on Install, select the Magisk.zip, swipe to Install.</li>
+                <li>Reboot your Phone.</li>
+                <li>After u booted, Open Magisk APP and Wait until it finished.</li>
+                <li>If everything fine, u are ROOTED now.</li>
+                <br>
+                <h2 id="guide" style="text-align: center;"><u>How to flash a ROM if you comming from Stock?</u></h2>
+                <li>Follow: How to Unlock Bootloader? and How to flash Custom Recovery?</li>
+                <li id="flash2">Download a ROM (optional GAPPS too) and put in on your Phone (SD-Card or Internal)</li>
+                <li>Boot into Recovery</li>
+                <li>Wipe DATA,CACHE,SYSTEM</li>
+                <li>Go to Install > Select ROM Zip and Swipe for Flash</li>
+                <li>Optional: Flash Magisk / GAPPS</li>
+                <li>After flash is completed, reboot!</li>
+                <br id="report">
+                <h2 id="guide" style="text-align: center;"><u>How to flash a ROM if you comming from Custom ROM?</u></h2>
+                <li>Download a ROM (optional GAPPS too) and put in on your Phone (SD-Card or Internal)</li>
+                <li>Boot into Recovery</li>
+                <li>Wipe DATA,CACHE,SYSTEM</li>
+                <li>Go to Install > Select ROM Zip and Swipe for Flash</li>
+                <li>Optional: Flash Magisk / GAPPS</li>
+                <li>After flash is completed, reboot!</li>
+                <h2 id="guide" style="text-align: center;"><u>How to Report a BUG?</u></h2>
+            <li id="bsod">First go into Eureka Support or Device Specific group and ask if someone else have the same issue. If no one has this Issue, Download from PlayStore or APKPure Logcat App. (magisk needed)[<a href="https://play.google.com/store/apps/details?id=com.dp.logcatapp" target="_blank">PlayStore][</a><a href="https://m.apkpure.com/de/logcat-reader/com.dp.logcatapp" target="_blank">APKPure]</a></li>
+            <li>Open that App and press the Record button. (Accept ROOT Permissions)</li>
+            <li>Reproduce the Issue (like force close app or something else)</li>
+            <li>After that, press on Stop and send us your Log via Share!</li>
+            <br>
+            <h2 id="guide" style="text-align: center;"><u>BSOD - Black Screen Of Death !</u></h2>
+            <p><u>You can't go into download or recovery mode? Well then, you are stuck in BSOD. Note: your phone is turned on but the screen is off (black) Bellow is how to fix.</u></p>
+            <li>Connect a usb cable to your pc but don't connect it to your phone yet!</li>
+            <li>Force restart your phone by holding all buttons. As soon as you press buttons, start counting.</li>
+            <li>The phone will vibrate about on the 12 secs</li>
+            <li>Now, when your screen is black, hold all buttons and count again. When you reach 11 secs, quickly release all buttons and hold only power + vol up button. Also connect the usb cable to the phone.</li>
+            <li>Your phone will then boot into download mode where u can flash stock firmware again. P.S: It's hard to get the right timing. So you have to keep trying till you are able to get it else you have to wait your battery to be 0% so that it turns off automatically..</li>
+            <h2 id="guide" style="text-align: center;"><u>Bootloop?</u></h2>
+            <p><center><u>ROM Bootlooping at first Boot (or generally)?</u></center></p>
+            <li id="bootloop">Force restarting your Phone by Hold vol- and power about 12 Seconds.</li>
+            <li>Boot via Combination into Recovery.</li>
+            <li>Go into Terminal and type: 'touch data/debug/logcat' and 'touch data/debug/kmsg'.</li>
+            <li>After that, reboot your Phone and wait one minute in the Bootloop and force restarting your Phone by Hold vol- and power about 12 Seconds.</li>
+            <li>Boot again via Combination into Recovery and go into Filemanager and copy both files (kmsg,logcat) from data/debug/logs to your SD-Card</li>
+            <li>Send us your Logs. (if u cannot wait, flash another ROM in this Time!) </li>
+           <br>
+            <p><center><u>Bootloop after Magisk Module?</u></center></p>
+            <li>Force restarting your Phone by Hold vol- and power about 12 Seconds and boot into your Recovery by holding Key Combination.</li>
+            <li>Mount System, Go into Filemanager and then into data/adb/modules and Delete the Folder which causes bootloop.</li>
         </ul>
         </div>
     </div>
-    <div class="flexbox">
-        <div class ="flexelement box1 harlow">
-            <h2 id="guide" style="text-align: center;">BSOD - Black Screen Of Death !</h2>
-            <hr />
-            <ul>
-            <p style="margin-left: -30px;">You can't go into download or recovery mode? Well then, you are stuck in BSOD. Note: your phone is turned on but the screen is off (black) Bellow is how to fix.</p>
-            <li style="margin-left: -30px;">Connect a usb cable to your pc but don't connect it to your phone yet!</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Force restart your phone by holding all buttons. As soon as you press buttons, start counting.</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">The phone will vibrate about on the 12 secs</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Now, when your screen is black, hold all buttons and count again. When you reach 11 secs, quickly release all buttons and hold only power + vol up button. Also connect the usb cable to the phone.</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Your phone will then boot into download mode where u can flash stock firmware again. P.S: It's hard to get the right timing. So you have to keep trying till you are able to get it else you have to wait your battery to be 0% so that it turns off automatically..</li>
-        </ul>
-        </div>
-        <div class ="flexelement box1 harlow">
-            <h2 id="guide" style="text-align: center;">Bootloop?</h2>
-            <hr />
-            <p>ROM Bootlooping at first Boot (or generally)?</p>
-            <ul>
-            <li style="margin-left: -30px;">Force restarting your Phone by Hold vol- and power about 12 Seconds.</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Boot via Combination into Recovery.</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Go into Terminal and type: 'touch data/debug/logcat' and 'touch data/debug/kmsg'.</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">After that, reboot your Phone and wait one minute in the Bootloop and force restarting your Phone by Hold vol- and power about 12 Seconds.</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Boot again via Combination into Recovery and go into Filemanager and copy both files (kmsg,logcat) from data/debug/logs to your SD-Card</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Send us your Logs. (if u cannot wait, flash another ROM in this Time!) </li>
-            <p>Bootloop after Magisk Module?</p>
-            <li style="margin-left: -30px;">Force restarting your Phone by Hold vol- and power about 12 Seconds and boot into your Recovery by holding Key Combination.</li>
-            <hr style="margin-left: -30px;" />
-            <li style="margin-left: -30px;">Mount System, Go into Filemanager and then into data/adb/modules and Delete the Folder which causes bootloop.</li>
-        </ul>
-        </div>
         <button onclick="topFunction()" id="myBtn" type="button" class="button2" style="border-radius: 50px;">
             <span class="button__icon2">
               <ion-icon name="arrow-up-circle-outline" style="pointer-events:none"></ion-icon>
@@ -298,14 +232,11 @@
             </span>
           </ion-icon>
           </button>
-        
         <script>
         //Get the button
         var mybutton = document.getElementById("myBtn");
-        
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function() {scrollFunction()};
-        
         function scrollFunction() {
           if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             mybutton.style.display = "block";
@@ -313,7 +244,6 @@
             mybutton.style.display = "none";
           }
         }
-        
         // When the user clicks on the button, scroll to the top of the document
         function topFunction() {
           document.body.scrollTop = 0;
