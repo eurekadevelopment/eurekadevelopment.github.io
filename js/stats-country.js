@@ -23,6 +23,18 @@ function updateChart3() {
             myChart3.config.data.datasets[0].data = countries.slice(0, 20);
             myChart3.update();
     });
+
+    function global_stats() {
+        apiUrl = 'https://sourceforge.net/projects/eurekaroms/files/stats/json?start_date=2021-03-01&end_date=2023-01-01';
+        fetch(apiUrl)
+                .then(response => response.json())
+                .then(json_all => {
+                console.log(json_all);
+                document.getElementById("full_stats").innerHTML = "Eureka ROM files were downloaded: " + json_all.total + " times.";
+        }).catch(err => console.error(err));
+    }
+
+    global_stats();
     }
     
     const data3 = {
