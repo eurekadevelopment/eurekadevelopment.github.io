@@ -134,7 +134,7 @@ input[type=radio]:checked {
          screen and (max-height: 1080px) {
 	#slider {
 		width:15%;
-		height: 550px;
+		height: 600px;
 		perspective: 500px;
 		transform-style: preserve-3d;
 		
@@ -143,7 +143,7 @@ input[type=radio]:checked {
   @media screen and (max-width: 1700px) {
 	#slider {
 		width: 20%;
-		height: 650px;
+		height: 600px;
 		perspective: 500px;
 		transform-style: preserve-3d;
 		
@@ -163,7 +163,7 @@ input[type=radio]:checked {
 
 	 #slider {
 		 width: 25%;
-		 height: 650px;
+		 height: 600px;
 		 perspective: 500px;
 		 transform-style: preserve-3d;
 		 
@@ -226,8 +226,8 @@ input[type=radio]:checked {
 	  transition: all 2s;
 	}
 	 #slider {
-		 width: 30%;
-		 height: 650px;
+		 width: 35%;
+		 height: 600px;
 		 perspective: 500px;
 		 transform-style: preserve-3d;
 		 
@@ -328,7 +328,7 @@ input[type=radio]:checked {
 	 transition: all 2s;
    }
 	#slider {
-		width: 45%;
+		width: 40%;
 		height: 430px;
 		perspective: 500px;
 		transform-style: preserve-3d;
@@ -379,7 +379,7 @@ input[type=radio]:checked {
 	  transition: all 2s;
 	}
 	 #slider {
-		 width: 55%;
+		 width: 40%;
 		 height: 450px;
 		 perspective: 500px;
 		 transform-style: preserve-3d;
