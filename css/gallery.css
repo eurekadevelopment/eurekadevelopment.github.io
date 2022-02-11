@@ -152,6 +152,16 @@ input[type=radio]:checked {
   @media screen and (max-width: 1400px) {
 
 	#slider {
+		width: 20%;
+		height: 600px;
+		perspective: 500px;
+		transform-style: preserve-3d;
+		
+	  }
+  }
+  @media screen and (max-width: 1350px) {
+
+	#slider {
 		width: 25%;
 		height: 600px;
 		perspective: 500px;
@@ -169,6 +179,70 @@ input[type=radio]:checked {
 		 
 	   }
    }
+   @media screen and (max-width: 1100px) {
+	/* Previous to Previous Slide */
+	#s1:checked ~ #slide4,
+	 #s2:checked ~ #slide5,
+	  #s3:checked ~ #slide1,
+	   #s4:checked ~ #slide2,
+		#s5:checked ~ #slide3 {
+		  transform: translate3d(-60%, 0, -250px);
+	  filter: blur(2px);
+	  -webkit-filter: blur(2px);
+	  margin-left: -0px;
+	  margin-right: -0px;
+	  transition: all 2s;
+	}
+	  /* Next Slide */
+	  #s1:checked ~ #slide2,
+	  #s2:checked ~ #slide3,
+	   #s3:checked ~ #slide4,
+		#s4:checked ~ #slide5,
+		 #s5:checked ~ #slide1 {
+	   box-shadow: 0 6px 10px #005fb2;
+	   transform: translate3d(40%, 0, -250px);
+	   filter: blur(2px);
+	   -webkit-filter: blur(2px);
+	   margin-left: 150px;
+	   margin-right: 150px;
+	   transition: all 2s;
+   
+	 }
+	   /* Next to Next Slide */
+	 #s1:checked ~ #slide3,
+	  #s2:checked ~ #slide4,
+	   #s3:checked ~ #slide5,
+		#s4:checked ~ #slide1,
+		 #s5:checked ~ #slide2 {
+	   box-shadow: 0 1px 4px #005fb2;
+	   transform: translate3d(60%, 0, -250px);
+	   filter: blur(2px);
+	   -webkit-filter: blur(2px);
+	   margin-left: -50px;
+	   margin-right: -50px;
+	 }
+	   /* Previous Slide */
+	   #s1:checked ~ #slide5,
+	   #s2:checked ~ #slide1,
+		#s3:checked ~ #slide2,
+		 #s4:checked ~ #slide3,
+		  #s5:checked ~ #slide4 {
+		box-shadow: 0 6px 10px #005fb2;
+		transform: translate3d(-40%, 0, -250px);
+		filter: blur(2px);
+	  -webkit-filter: blur(2px);
+	  margin-left: -150px;
+		margin-right: -150px;
+		transition: all 2s;
+	  }
+	   #slider {
+		   width: 27%;
+		   height: 600px;
+		   perspective: 500px;
+		   transform-style: preserve-3d;
+		   
+		 }
+	 }
   @media screen and (max-width: 1000px) {
   /* Previous to Previous Slide */
   #s1:checked ~ #slide4,
@@ -226,7 +300,7 @@ input[type=radio]:checked {
 	  transition: all 2s;
 	}
 	 #slider {
-		 width: 35%;
+		 width: 30%;
 		 height: 600px;
 		 perspective: 500px;
 		 transform-style: preserve-3d;
