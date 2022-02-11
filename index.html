@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="css/gallery.css">
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-database.js"></script>
  <style>
        .slideshow-container {
          max-width: 1000px;
@@ -145,7 +147,6 @@
             </span>
           </ion-icon>
           </button>
-          
         </div>
         </div>
       </div>
@@ -174,6 +175,9 @@
         <div class ="flexelement box2 harlow" style="height: 120px; width: 220px;"><img src="https://avatars.githubusercontent.com/u/98711335?v=4" width="90px" height="90px" id="logo2"><p>&nbsp;Kinesight<br>&nbsp;Designer<br>&nbsp;Galaxy A20<br><button type="button" class="button" style="display: inline-block; margin-left: -9px;"><span class="button__icon"><a href="#" target="_blank"><ion-icon name="logo-github" style="pointer-events:none"></a></span></ion-icon></button><button type="button" class="button" style="display: inline-block;"><span class="button__icon"><a href="https://t.me/KineSight" target="_blank"><ion-icon name="paper-plane-outline" style="pointer-events:none"></a></span></ion-icon></button></p></div></a>
       </div> 
     </div>
+    <div class="views harlow glow">
+      <h2 id="view_count_text">Total Visits:</h2>
+    </div>
     <footer class="harlow">
         <div class="wrapper"><img src="images/logo.png" width="22px" height="22px" id="logo">
             <div style="text-align: right;">© 2021-2022 Eureka Team. All rights reserved.</div>
@@ -185,6 +189,44 @@
 <script src="js/slideshow.js"></script>
 <script src="js/slider.js"></script>
 <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+<script type="application/javascript">
+  var firebaseConfig = {
+    apiKey: "AIzaSyAH1rtwQNO5BHMZy_DdMTVGDh4y7DrGKyc",
+    authDomain: "eurekadevelopment-f98df.firebaseapp.com",
+    databaseURL: "https://eurekadevelopment-f98df-default-rtdb.firebaseio.com",
+    projectId: "eurekadevelopment-f98df",
+    storageBucket: "eurekadevelopment-f98df.appspot.com",
+    messagingSenderId: "596745833779",
+    appId: "1:596745833779:web:be65d396200e77148f4246",
+    measurementId: "G-0T83M2F2QK"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  function get_viewers_ip(json) {
+      viewers_ip = json.ip;
+      //view count with ip
+      count_view(viewers_ip);
+  }
+
+  function count_view(viewers_ip) {
+        var views;
+        var ip_to_string = viewers_ip.toString();
+
+        for(var i, i = 0; i < ip_to_string.length; i++){
+            ip_to_string = ip_to_string.replace(".", "-");
+        }
+
+        firebase.database().ref().child("page_views/" + ip_to_string).set({
+            viewers_ip: viewers_ip
+        });
+
+        firebase.database().ref().child("page_views").on("value", function(snapshot){
+            views = snapshot.numChildren();
+            document.getElementById("view_count_text").innerHTML = "Total Visits: " + views;
+        });
+  }
+</script>
+<script src="https://api.ipify.org?format=jsonp&callback=get_viewers_ip"></script>
 <script>
   window.matchMedia("(prefers-color-scheme: dark)").matches
 </script>
