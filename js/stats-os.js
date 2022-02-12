@@ -14,7 +14,7 @@ function updateChart2() {
                 return index[1];
             })
             console.log(oses);
-            myChart2.config.data.labels = ["Android",'Windows','Linux','Unkown','Macintosh'];
+            myChart2.config.data.labels = ["Android",'Windows','Linux','Unknown','Macintosh'];
             myChart2.config.data.datasets[0].data = oses;
             myChart2.update();
     });
