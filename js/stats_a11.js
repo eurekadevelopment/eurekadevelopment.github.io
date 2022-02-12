@@ -27,7 +27,7 @@ $(document).ready(function() {
                 a10_arm_data = 0;
             }
             try {
-                filepath = 'Samsung/A10/R/arm64/' + rom;
+                filepath = 'Samsung/A10/' + android + '/arm64/' + rom;
                 a10_arm64_data = await fetchData();
             } catch(e) {
                 a10_arm64_data = 0;
@@ -67,24 +67,13 @@ $(document).ready(function() {
         }
 
         const android_list = ['R'];
-        const rom_list = ['aex', 'aicp', 'aosip', 'aospa', 'arrowos', 'bliss', 'carbon', 'cesium', 'cherish', 'cipheros', 'corvus', 'crdroid', 'descendant', 'dot', 'dotfe', 'falcon', 'fluid', 'havoc', 'kang', 'lineage', 'lineagefe', 'nezuko', 'nusantara', 'octavi', 'palladium', 'pe', 'peplus', 'peext', 'revengeos', 'sakura', 'spark', 'spice', 'superior', 'aospext', 'evox', 'posp', 'wave', 'pixyos', 'shapeshift', 'hycon', 'mokee', 'styx', 'awaken', 'yaap', 'legion', 'msm-xtended', 'colt', 'radiant', 'tenx', 'derp', 'lighthouse'];
+        const rom_list = ['aex', 'aicp', 'aosip', 'aospa', 'arrowos', 'awaken', 'bliss', 'carbon', 'cesium', 'cherish', 'cipheros', 'colt', 'corvus', 'crdroid', 'derp', 'descendant', 'dot', 'dotfe', 'evox', 'falcon', 'fluid', 'havoc', 'hycon', 'kang', 'legion', 'lighthouse', 'lineage', 'lineagefe', 'mokee', 'msm-xtended', 'nezuko', 'nusantara', 'octavi', 'palladium', 'pe', 'peplus', 'peext', 'pixysos', 'posp', 'radiant', 'revengeos', 'sakura', 'shapeshift', 'spark', 'spice', 'styx', 'superior', 'tenx', 'wave', 'yaap'];
         for (let i = 0; i < 1; i++) {
-            for (let j = 0; j < 52; j++) {
+            for (let j = 0; j < 50; j++) {
                 setTimeout(() => { downloads_per_rom(android_list[i], rom_list[j]); }, 2500);
             }
         }
     }
 
-    function global_stats() {
-        apiUrl = 'https://sourceforge.net/projects/eurekaroms/files/stats/json?start_date=2021-03-01&end_date=2023-01-01';
-        fetch(apiUrl)
-                .then(response => response.json())
-                .then(json_all => {
-                console.log(json_all);
-                document.getElementById("full_stats").innerHTML = "Eureka ROM files were downloaded: " + json_all.total + " times.";
-        }).catch(err => console.error(err));
-    }
-
     rom_stats();
-    global_stats();
   });

@@ -26,7 +26,7 @@ $(document).ready(function() {
             var lineage = largedata.lineage[0];
             var nitrogen = largedata.nitrogen[0];
             var octavi = largedata.octavi[0];
-            var pixyos = largedata.pixyos[0];
+            var pixysos = largedata.pixysos[0];
             var potato = largedata.potato[0];
             var ppui = largedata.ppui[0];
             var radiant = largedata.radiant[0];
@@ -34,9 +34,9 @@ $(document).ready(function() {
             var superior = largedata.superior[0];
             var yaap = largedata.yaap[0];
 
-            const rom_data = [aex, aicp, arcana, arrow, awaken, bliss, cherish, cipher, crdroid, derp, evolution, exthmui, hentai, lighthouse, lineage, nitrogen, octavi, pixyos, potato, ppui, radiant, spark, superior, yaap];
+            const rom_data = [aex, aicp, arcana, arrow, awaken, bliss, cherish, cipher, crdroid, derp, evolution, exthmui, hentai, lighthouse, lineage, nitrogen, octavi, pixysos, potato, ppui, radiant, spark, superior, yaap];
 
-            const rom_list = ['aex', 'aicp', 'arcana', 'arrow', 'awaken', 'bliss', 'cherish', 'cipher', 'crdroid', 'derp', 'evolution', 'exthmui', 'hentai', 'lighthouse', 'lineage', 'nitrogen', 'octavi', 'pixyos', 'potato', 'ppui', 'radiant', 'spark', 'superior',  'yaap'];
+            const rom_list = ['aex', 'aicp', 'arcana', 'arrow', 'awaken', 'bliss', 'cherish', 'cipher', 'crdroid', 'derp', 'evolution', 'exthmui', 'hentai', 'lighthouse', 'lineage', 'nitrogen', 'octavi', 'pixysos', 'potato', 'ppui', 'radiant', 'spark', 'superior',  'yaap'];
 
             // i < (number of roms in rom_list + 1)
             // i starts at 0.
