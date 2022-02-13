@@ -44,7 +44,7 @@ $(document).ready(function() {
                 var target_rom = rom_data[i];
                 if (device == "A10") {
                     if (arch == "arm") {
-                        if ((rom_list[i] == 'cherish') | (rom_list[i] == 'crdroid') | (rom_list[i] == 'derp') | (rom_list[i] == 'evolution') | (rom_list[i] == 'hentai') | (rom_list[i] == 'potato') | (rom_list[i] == 'ppui') | (rom_list[i] == 'radiant')) {
+                        if ((rom_list[i] == 'cherish') | (rom_list[i] == 'crdroid') | (rom_list[i] == 'derp') | (rom_list[i] == 'evolution') | (rom_list[i] == 'hentai') | (rom_list[i] == 'pixysos') | (rom_list[i] == 'potato') | (rom_list[i] == 'ppui') | (rom_list[i] == 'radiant')) {
                             console.log('ARM version of ' + rom_list[i] + ' is not available for A10. Skipped');
                         } else {
                             var target_url = target_rom.a10_arm_url;
@@ -84,7 +84,7 @@ $(document).ready(function() {
                         var direct_link = entries[0].link;
                         if (device == "A10") {
                             try {
-                                if ((rom_list[i] == 'cherish') | (rom_list[i] == 'crdroid') | (rom_list[i] == 'derp') | (rom_list[i] == 'evolution') | (rom_list[i] == 'hentai') | (rom_list[i] == 'potato') | (rom_list[i] == 'ppui') | (rom_list[i] == 'radiant')) {
+                                if ((rom_list[i] == 'cherish') | (rom_list[i] == 'crdroid') | (rom_list[i] == 'derp') | (rom_list[i] == 'evolution') | (rom_list[i] == 'hentai') | (rom_list[i] == 'pixysos') | (rom_list[i] == 'potato') | (rom_list[i] == 'ppui') | (rom_list[i] == 'radiant')) {
                                     // Do nothing
                                 } else {
                                     document.getElementById(device + '_' + arch + '_' + rom_list[i] + '_link').outerHTML = "<option value = " + direct_link + "> " + device + " " + arch;

@@ -22,37 +22,61 @@ $(document).ready(function() {
             var a40_data;
             try {
                 filepath = 'Samsung/A10/' + android + '/arm/' + rom;
-                a10_arm_data = await fetchData();
+                if ((rom == 'aospa') | (rom == 'awaken') | (rom == 'crdroid') | (rom == 'derp') | (rom == 'descendant') | (rom == 'evox') | (rom == 'falcon') | (rom == 'hycon') | (rom == 'legion') | (rom == 'lighthouse') | (rom == 'mokee') | (rom == 'nezuko') | (rom == 'octavi') | (rom == 'pe') | (rom == 'peplus') | (rom == 'peext') | (rom == 'pixysos') | (rom == 'posp') | (rom == 'shapeshift') | (rom == 'tenx') | (rom == 'yaap')) {
+                    a10_arm_data = 0;
+                } else {
+                    a10_arm_data = await fetchData();
+                }
             } catch(e) {
                 a10_arm_data = 0;
             }
             try {
                 filepath = 'Samsung/A10/' + android + '/arm64/' + rom;
-                a10_arm64_data = await fetchData();
+                if ((rom == 'awaken') | (rom == 'falcon') | (rom == 'lighthouse') | (rom == 'mokee') | (rom == 'pixysos') | (rom == 'posp') | (rom == 'shapeshift') | (rom == 'tenx') | (rom == 'yaap')) {
+                    a10_arm64_data = 0;
+                } else {
+                    a10_arm64_data = await fetchData();
+                }
             } catch(e) {
                 a10_arm64_data = 0;
             }
             try {
                 filepath = 'Samsung/A20/' + android + '/' + rom;
-                a20_data = await fetchData();
+                if ((rom == 'awaken') | (rom == 'falcon') | (rom == 'lighthouse') | (rom == 'mokee') | (rom == 'pixysos') | (rom == 'posp') | (rom == 'shapeshift') | (rom == 'tenx') | (rom == 'yaap')) {
+                    a20_data = 0;
+                } else {
+                    a20_data = await fetchData();
+                }
             } catch(e) {
                 a20_data = 0;
             }
             try {
                 filepath = 'Samsung/A20e/' + android + '/' + rom;
-                a20e_data = await fetchData();
+                if ((rom == 'aex') | (rom == 'aospa') | (rom == 'arrowos') | (rom == 'cherish') | (rom == 'corvus') | (rom == 'crdroid') | (rom == 'derp') | (rom == 'evox') | (rom == 'havoc') | (rom == 'legion') | (rom == 'lineage') | (rom == 'nusantara') | (rom == 'pe') | (rom == 'revengeos') | (rom == 'sakura')) {
+                    a20e_data = await fetchData();
+                } else {
+                    a20e_data = 0;
+                }
             } catch(e) {
                 a20e_data = 0;
             }
             try {
                 filepath = 'Samsung/A30/' + android + '/' + rom;
-                a30_data = await fetchData();
+                if ((rom == 'awaken') | (rom == 'falcon') | (rom == 'lighthouse') | (rom == 'mokee') | (rom == 'pixysos') | (rom == 'posp') | (rom == 'shapeshift') | (rom == 'tenx') | (rom == 'yaap')) {
+                    a30_data = 0;
+                } else {
+                    a30_data = await fetchData();
+                }
             } catch(e) {
                 a30_data = 0;
             }
             try {
                 filepath = 'Samsung/A40/' + android + '/' + rom;
-                a40_data = await fetchData();
+                if ((rom == 'havoc') | (rom == 'lineage') | (rom == 'crdroid')) {
+                    a40_data = await fetchData();
+                } else {
+                    a40_data = 0;
+                }
             } catch(e) {
                 a40_data = 0;
             }

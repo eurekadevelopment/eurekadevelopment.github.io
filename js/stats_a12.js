@@ -22,7 +22,11 @@ $(document).ready(function() {
             var a40_data;
             try {
                 filepath = 'Samsung/A10/' + android + '/arm/' + rom;
-                a10_arm_data = await fetchData();
+                if ((rom == 'cherish') | (rom == 'crdroid') | (rom == 'derp') | (rom == 'evolution') | (rom == 'hentai') | (rom == 'potato') | (rom == 'ppui') | (rom == 'pixysos') | (rom == 'radiant')) {
+                    a10_arm_data = 0;
+                } else {
+                    a10_arm_data = await fetchData();
+                }
             } catch(e) {
                 a10_arm_data = 0;
             }
@@ -34,13 +38,21 @@ $(document).ready(function() {
             }
             try {
                 filepath = 'Samsung/A20/' + android + '/' + rom;
-                a20_data = await fetchData();
+                if (rom == 'derp') {
+                    a20_data = 0;
+                } else {
+                    a20_data = await fetchData();
+                }
             } catch(e) {
                 a20_data = 0;
             }
             try {
                 filepath = 'Samsung/A20e/' + android + '/' + rom;
-                a20e_data = await fetchData();
+                if (rom == 'derp') {
+                    a20e_data = 0;
+                } else {
+                    a20e_data = await fetchData();
+                }
             } catch(e) {
                 a20e_data = 0;
             }
@@ -52,7 +64,11 @@ $(document).ready(function() {
             }
             try {
                 filepath = 'Samsung/A40/' + android + '/' + rom;
-                a40_data = await fetchData();
+                if (rom == 'crdroid') {
+                    a40_data = 0;
+                } else {
+                    a40_data = await fetchData();
+                }
             } catch(e) {
                 a40_data = 0;
             }
