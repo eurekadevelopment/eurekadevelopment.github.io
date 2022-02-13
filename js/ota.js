@@ -40,37 +40,71 @@ $(document).ready(function() {
 
             // i < (number of roms in rom_list + 1)
             // i starts at 0.
-            for (let i = 0; i <24; i++) {
+            for (let i = 0; i < 24; i++) {
                 var target_rom = rom_data[i];
                 if (device == "A10") {
                     if (arch == "arm") {
-                        var target_url = target_rom.a10_arm_url;
+                        if ((rom_list[i] == 'cherish') | (rom_list[i] == 'crdroid') | (rom_list[i] == 'derp') | (rom_list[i] == 'evolution') | (rom_list[i] == 'hentai') | (rom_list[i] == 'potato') | (rom_list[i] == 'ppui') | (rom_list[i] == 'radiant')) {
+                            console.log('ARM version of ' + rom_list[i] + ' is not available for A10. Skipped');
+                        } else {
+                            var target_url = target_rom.a10_arm_url;
+                        }
                     } else {
                         var target_url = target_rom.a10_arm64_url;
                     }
                 } else if (device == "A20") {
-                    var target_url = target_rom.a20_url;
+                    if (rom_list[i] == 'derp') {
+                        console.log('Official ' + rom_list[i] + ' is available for A20. Skipped');
+                    } else {
+                        var target_url = target_rom.a20_url;
+                    }
                 } else if (device == "A20e") {
-                    var target_url = target_rom.a20e_url;
+                    if (rom_list[i] == 'derp') {
+                        console.log('Official ' + rom_list[i] + ' is available for A20e. Skipped');
+                    } else {
+                        var target_url = target_rom.a20e_url;
+                    }
                 } else if (device == "A30") {
                     var target_url = target_rom.a30_url;
                 } else if (device == "A40") {
-                    var target_url = target_rom.a40_url;
-                }
-                console.log(target_url);
-                if (device == "A10") {
-                    try {
-                        document.getElementById(device + '_' + arch + '_' + rom_list[i] + '_link').outerHTML = "<option value = " + target_url + "> " + device + " " + arch;
-                    } catch(e) {
-                        console.log("Missing id in html for " + rom_list[i] + ". Please check!");
-                    }
-                } else {
-                    try {
-                        document.getElementById(device + '_' + rom_list[i] + '_link').outerHTML = "<option value = " + target_url + "> " + device;
-                    } catch(e) {
-                        console.log("Missing id in html for " + rom_list[i] + ". Please check!");
+                    if (rom_list[i] == 'crdroid') {
+                        console.log('Official ' + rom_list[i] + ' is available for A40. Skipped');
+                    } else {
+                        var target_url = target_rom.a40_url;
                     }
                 }
+
+                var rss_url = target_url.replace("files","rss?path=");
+                feednami.load(rss_url,function(result) {
+                    if (result.error) {
+                        console.log(result.error);
+                    } else {
+                        var entries = result.feed.entries;
+                        // We need only the latest zip. So, load only entries[0].
+                        var direct_link = entries[0].link;
+                        if (device == "A10") {
+                            try {
+                                if ((rom_list[i] == 'cherish') | (rom_list[i] == 'crdroid') | (rom_list[i] == 'derp') | (rom_list[i] == 'evolution') | (rom_list[i] == 'hentai') | (rom_list[i] == 'potato') | (rom_list[i] == 'ppui') | (rom_list[i] == 'radiant')) {
+                                    // Do nothing
+                                } else {
+                                    document.getElementById(device + '_' + arch + '_' + rom_list[i] + '_link').outerHTML = "<option value = " + direct_link + "> " + device + " " + arch;
+                                }
+                            } catch(e) {
+                                console.log("Missing id in html for " + rom_list[i] + ". Please check!");
+                            }
+                        } else {
+                            try {
+                                if (((rom_list[i] == 'derp') && (device == "A20")) | ((rom_list[i] == 'derp') && (device == "A20e")) | ((rom_list[i] == 'crdroid') && (device == "A40"))) {
+                                    // Do nothing
+                                } else {
+                                    document.getElementById(device + '_' + rom_list[i] + '_link').outerHTML = "<option value = " + direct_link + "> " + device;
+                                }
+                            } catch(e) {
+                                console.log("Missing id in html for " + device + rom_list[i] + ". Please check!");
+                            }
+                        }
+                    }
+                });
             }
 
             /* Not used for the time being
@@ -96,7 +130,7 @@ $(document).ready(function() {
         };
 
         const device_list = ['A10', 'A20', 'A20e', 'A30', 'A40'];
-        for (let i = 0; i <5; i++) {
+        for (let i = 0; i < 5; i++) {
             if (device_list[i] == "A10") {
                 loadData("url", device_list[i], "arm");
                 loadData("url", device_list[i], "arm64");
