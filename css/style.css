@@ -1034,7 +1034,7 @@ div.box2 {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        margin-left: 20px;
+        margin-left: 28px;
         width: 420px;
         
       }
@@ -1149,6 +1149,7 @@ div.box2 {
     p {
         animation-duration: 0.7s;
         animation-name: slidein;
+        font-size: 15px;
       }
       .flexbox_main {
         display: flex;
@@ -1158,6 +1159,9 @@ div.box2 {
         margin-left: -10px;
         width: 420px;
         
+      }
+      #logo {
+        margin-top: -3px;
       }
   }
   @media screen and (max-width: 300px) {
