@@ -471,6 +471,7 @@ h1 {
         min-height: 40vh;
         box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
         width: 300px;
+        margin-bottom: 50px;
     }
     #logo {
         width: 48px;
@@ -553,7 +554,7 @@ h1 {
         border: 0;
         box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
         width: 290px;
-        height: 320px;
+        height: 420px;
         text-align: center;
     }
     ul {
@@ -576,6 +577,9 @@ h1 {
     }
     #mobilebox {
         width: 250px;
+    }
+    #myBtn {
+        margin-right: 20px;
     }
 }
 @media screen and (max-width: 400px) {

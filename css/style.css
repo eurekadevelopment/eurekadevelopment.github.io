@@ -1041,6 +1041,9 @@ div.box2 {
       ul {
         margin-left: -2.5em;
           }
+      #move {
+        margin-left: 10px;
+      }
   }
   @media screen and (max-width: 450px) {
     div.box2  {
@@ -1167,6 +1170,12 @@ div.box2 {
       }
       ul {
     margin-left: -2.5em;
+      }
+      li {
+        list-style:circle;
+      }
+      #move {
+        margin-left: 15px;
       }
   }
   
@@ -1364,7 +1373,6 @@ div.box2 {
 .centered {
   position: relative;
 }
-
 
 
 .button:hover {

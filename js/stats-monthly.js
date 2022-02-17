@@ -21,7 +21,7 @@ function updateChart() {
     }
     
     const data = {
-      labels: ["January",'February','March','May','June','July','August','September','October','November','December'],
+      labels: ['January','February','March','May','June','July','August','September','October','November','December'],
       datasets: [{
         label: 'Downloads Eureka ROM - 2021-2022 [Monthly]',
         data: [],
