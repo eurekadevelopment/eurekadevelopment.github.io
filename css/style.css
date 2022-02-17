@@ -1038,6 +1038,9 @@ div.box2 {
         width: 420px;
         
       }
+      ul {
+        margin-left: -2.5em;
+          }
   }
   @media screen and (max-width: 450px) {
     div.box2  {
@@ -1127,7 +1130,6 @@ div.box2 {
       border-radius: 25px;
       box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
       font-size: 9px;
-
   }
      .topnav {
         background-color: black;
@@ -1163,7 +1165,11 @@ div.box2 {
       #logo {
         margin-top: -3px;
       }
+      ul {
+    margin-left: -2.5em;
+      }
   }
+  
   @media screen and (max-width: 300px) {
     div.box2  {
       font-size: 15px;
