@@ -82,7 +82,11 @@ h1 {
   border-right: 12px solid #000;
   border-bottom: 12px solid #000;
 }
-
+@media screen and (max-width: 1980px) {
+  #padding {
+    margin-top: -70px;
+  }
+}
 @media screen and (max-width: 1300px) {
     .panels{
         min-height:400px;
@@ -92,6 +96,7 @@ h1 {
         padding:20px;  
         margin-top: 15px;
       }
+     
   }
   
   @media screen and (max-width: 1024px) {
@@ -124,6 +129,9 @@ h1 {
         padding:20px;  
         margin-top: 15px;
       }
+      #padding {
+        margin-top: 0px;
+      }
     }
       @media screen and (max-width: 800px) {
         .panels{
@@ -138,12 +146,13 @@ h1 {
             color:#fff;
             text-align:left;
             font-size:1.0em;
-            animation-duration: 0.7s;
-            animation-name: slidein1;
           }
           img {
             width: 96px;
             height: 96px;
+          }
+          #padding {
+            margin-top: -0px;
           }
   }
   @media screen and (max-width: 700px) {
@@ -176,13 +185,9 @@ h1 {
         color:#fff;
         text-align:left;
         font-size:1.0em;
-        animation-duration: 0.7s;
-        animation-name: slidein1;
       }
       h1 {
         font-size: 16px;
-        animation-duration: 0.7s;
-        animation-name: slidein1;
         margin: auto;
         text-align: left;
 
@@ -192,7 +197,10 @@ h1 {
         height: 42px;
         margin-left: -50px;
     }
+    #padding {
+      margin-top: 0px;
     }
+        }
   @media screen and (max-width: 500px) {
     .tab {
         font-size: 10px;
@@ -210,13 +218,9 @@ h1 {
         color:#fff;
         text-align:left;
         font-size:1.0em;
-        animation-duration: 0.7s;
-        animation-name: slidein1;
       }
       h1 {
           font-size: 12px;
-          animation-duration: 0.7s;
-          animation-name: slidein1;
           margin: auto;
           text-align: left;
 
@@ -244,13 +248,9 @@ h1 {
         color:#fff;
         text-align:left;
         font-size:1.0em;
-        animation-duration: 0.7s;
-        animation-name: slidein1;
       }
       h1 {
         font-size: 14px;
-        animation-duration: 0.7s;
-        animation-name: slidein1;
         margin: auto;
         text-align: left;
 
