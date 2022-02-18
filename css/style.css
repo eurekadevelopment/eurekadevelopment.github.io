@@ -694,8 +694,6 @@ div.box2 {
   @media screen and (max-width: 700px) {
     .flexbox_rom {
         top: 230px;
-        animation-duration: 0s;
-        animation-name: slidein2;
        } 
     div.box2  {
         font-size: 15px;
@@ -781,13 +779,7 @@ div.box2 {
     }
       h1 {
           text-align: left;
-          animation-duration: 0.7s;
-          animation-name: slidein1;
       }
-      p {
-          animation-duration: 0.7s;
-          animation-name: slidein;
-        }
         .flexbox_main {
           display: flex;
           flex-direction: row;
