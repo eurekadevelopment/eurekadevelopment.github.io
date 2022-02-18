@@ -468,6 +468,11 @@ h1 {
         margin-top: -5px;
         margin-left: -55px;
     }
+    #logo3 {
+        width: 200px;
+        height: 430px;
+
+    }
     #logo2 {
         width: 24px;
         height: 24px;
@@ -583,6 +588,10 @@ h1 {
         height: 26px;
         margin-top: -5px;
         margin-left: -50px;
+    }
+    #logo3 {
+        width: 200px;
+        height: 430px;
     }
     #logo2 {
         width: 24px;
