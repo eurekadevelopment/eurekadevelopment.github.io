@@ -430,13 +430,7 @@ h1 {
     }
     h1 {
         text-align: left;
-        animation-duration: 0.7s;
-        animation-name: slidein1;
     }
-    p {
-        animation-duration: 0.7s;
-        animation-name: slidein;
-      }
       a {
         color:#08f;
         font-size: 9px;
@@ -535,15 +529,9 @@ h1 {
     }
     h1 {
         text-align: left;
-        animation-duration: 0.7s;
-        animation-name: slidein1;
         margin-top: 35px;
         font-size: 32px;
     }
-    p {
-        animation-duration: 0.7s;
-        animation-name: slidein;
-      }
       a {
         color:#08f;
         font-size: 9px;
@@ -653,14 +641,10 @@ h1 {
     }
     h1 {
         text-align: left;
-        animation-duration: 0.7s;
-        animation-name: slidein1;
         font-size: 22px;
         margin-top: 10px;
     }
     p {
-        animation-duration: 0.7s;
-        animation-name: slidein;
         font-size: 15px;
       }
       a {

@@ -801,8 +801,6 @@ div.box2 {
    @media screen and (max-width: 650px) {
     .flexbox_rom {
         top: 230px;
-        animation-duration: 0s;
-        animation-name: slidein2;
        } 
     div.box2  {
         font-size: 15px;
@@ -899,15 +897,8 @@ div.box2 {
         font-size: 9px;
     }
       h1 {
-          text-align: left;
-          animation-duration: 0.7s;
-          animation-name: slidein1;
-          
+          text-align: left;   
       }
-      p {
-          animation-duration: 0.7s;
-          animation-name: slidein;
-        }
         .flexbox_main {
           display: flex;
           flex-direction: row;
@@ -956,8 +947,6 @@ div.box2 {
     }   
     .flexbox_rom {
      top: 230px;
-     animation-duration: 0s;
-     animation-name: slidein2;
     } 
     .image__img {
         display: block;
@@ -1022,13 +1011,7 @@ div.box2 {
     }
     h1 {
         text-align: left;
-        animation-duration: 0.7s;
-        animation-name: slidein1;
     }
-    p {
-        animation-duration: 0.7s;
-        animation-name: slidein;
-      }
       .flexbox_main {
         display: flex;
         flex-direction: row;
@@ -1083,8 +1066,6 @@ div.box2 {
     }   
     .flexbox_rom {
      top: 230px;
-     animation-duration: 0s;
-     animation-name: slidein2;
     } 
     .image__img {
         display: block;
@@ -1148,12 +1129,8 @@ div.box2 {
     }
     h1 {
         text-align: left;
-        animation-duration: 0.7s;
-        animation-name: slidein1;
     }
     p {
-        animation-duration: 0.7s;
-        animation-name: slidein;
         font-size: 15px;
       }
       .flexbox_main {
@@ -1217,8 +1194,6 @@ div.box2 {
     }   
     .flexbox_rom {
      top: 230px;
-     animation-duration: 0s;
-     animation-name: slidein2;
     } 
     .image__img {
         display: block;
@@ -1282,13 +1257,7 @@ div.box2 {
     }
     h1 {
         text-align: left;
-        animation-duration: 0.7s;
-        animation-name: slidein1;
     }
-    p {
-        animation-duration: 0.7s;
-        animation-name: slidein;
-      }
       .flexbox_main {
         display: flex;
         flex-direction: row;
