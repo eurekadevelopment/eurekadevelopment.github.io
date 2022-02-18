@@ -1027,6 +1027,12 @@ div.box2 {
       #move {
         margin-left: 10px;
       }
+      #tt {
+        margin-left: 100px;
+      }
+      #center {
+        margin-left: 25px;
+      }
   }
   @media screen and (max-width: 450px) {
     div.box2  {
@@ -1140,7 +1146,6 @@ div.box2 {
         justify-content: space-around;
         margin-left: -10px;
         width: 420px;
-        
       }
       #logo {
         margin-top: -3px;
@@ -1153,6 +1158,13 @@ div.box2 {
       }
       #move {
         margin-left: 15px;
+      }
+      #tt {
+        margin-left: 120px;
+        font-size: 14px;
+      }
+      #center {
+        margin-left: 25px;
       }
   }
   
@@ -1265,9 +1277,10 @@ div.box2 {
         justify-content: space-around;
         margin-left: 50px;
         width: 400px;
-        
       }
-      
+      #center {
+        margin-left: 20px;
+      }
   }
 .glow{
     background:#1f2227;

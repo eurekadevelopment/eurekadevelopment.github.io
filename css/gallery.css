@@ -453,8 +453,8 @@ input[type=radio]:checked {
 	  transition: all 2s;
 	}
 	 #slider {
-		 width: 40%;
-		 height: 450px;
+		 width: 45%;
+		 height: 400px;
 		 perspective: 500px;
 		 transform-style: preserve-3d;
 		 
