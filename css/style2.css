@@ -141,7 +141,14 @@ footer p {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-left: 15%;
-    
+}
+.flexbox_main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+    margin-top: 20px;
+    margin-bottom: 120px;
 }
 .flexbox > div {
     margin: 1% 1% 1% 1%;
@@ -364,6 +371,14 @@ h1 {
         margin-left: 15%;
         
     }
+    .flexbox_main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;  
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
     p {
         animation-duration: 0s;
     }
@@ -452,6 +467,14 @@ h1 {
         justify-content: space-around;
         margin-left: 15%;
     }
+    .flexbox_main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;  
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
     p {
         animation-duration: 0s;
     }
@@ -511,12 +534,11 @@ h1 {
         border: 0px solid white;
         padding: 15px; 
         height: 12px; 
-        position: fixed;
+        position: relative;
         border: 0;
         border-radius: 28px;
         box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
         font-size: 8px;
-        width: 365px;
     }
     .topnav {
         background-color: black;
@@ -557,6 +579,14 @@ h1 {
     .flexbox {
         margin-left: 15%;
     }
+    .flexbox_main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;  
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
     .low_res {
         list-style-type: none;
     }
@@ -577,7 +607,7 @@ h1 {
         margin-right: 20px;
     }
     #size {
-        height: 320px;
+        height: 350px;
         margin-top: 40px;
         margin-bottom: 10px;
     }
@@ -637,7 +667,7 @@ h1 {
         border: 0px solid white;
         padding: 15px; 
         height: 12px; 
-        position: fixed;
+        position: relative;
         border: 0;
         border-radius: 28px;
         box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
@@ -689,6 +719,14 @@ h1 {
     }
     .flexbox {
         margin-left: 17%;
+    }
+    .flexbox_main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;  
+        margin-top: 20px;
+        margin-bottom: 50px;
     }
     #logo9 {
         margin-left: 60px;
