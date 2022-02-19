@@ -431,7 +431,6 @@ div.box2 {
     .flexbox_rom {
         top: 230px;
         animation-duration: 0s;
-        animation-name: slidein2;
        } 
     #logo1 {
         float: right;
@@ -450,13 +449,11 @@ div.box2 {
      }
     h1 {
         text-align: left;
-        animation-duration: 0.7s;
-        animation-name: slidein1;
+        animation-duration: 0s;
         font-size: 25px;
     }
     p {
-        animation-duration: 0.7s;
-        animation-name: slidein;
+        animation-duration: 0s;
       }
       .topnav_main {
         background-color: black;
@@ -491,19 +488,16 @@ div.box2 {
      }
     h1 {
         text-align: left;
-        animation-duration: 0.7s;
-        animation-name: slidein1;
+        animation-duration: 0s;
     }
     p {
-        animation-duration: 0.7s;
-        animation-name: slidein;
+        animation-duration: 0s;
       }
   }
   @media screen and (max-width: 900px) {
     .flexbox_rom {
         top: 230px;
         animation-duration: 0s;
-        animation-name: slidein2;
        } 
     div.box2  {
         font-size: 15px;
@@ -577,13 +571,11 @@ div.box2 {
        }
       h1 {
           text-align: left;
-          animation-duration: 0.7s;
-          animation-name: slidein1;
+          animation-duration: 0s;
           font-size: 25px;
       }
       p {
-          animation-duration: 0.7s;
-          animation-name: slidein;
+          animation-duration: 0s;
         }
         .flexbox_main {
           display: flex;
@@ -599,7 +591,6 @@ div.box2 {
         .flexbox_rom {
             top: 230px;
             animation-duration: 0s;
-            animation-name: slidein2;
            } 
         div.box2  {
       font-size: 15px;
@@ -673,12 +664,10 @@ div.box2 {
      }
     h1 {
         text-align: left;
-        animation-duration: 0.7s;
-        animation-name: slidein1;
+        animation-duration: 0s;
     }
     p {
-        animation-duration: 0.7s;
-        animation-name: slidein;
+        animation-duration: 0s;
       }
       .flexbox_main {
         display: flex;
@@ -777,9 +766,13 @@ div.box2 {
         box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
         font-size: 9px;
     }
-      h1 {
-          text-align: left;
-      }
+    h1 {
+      text-align: left;
+      animation-duration: 0s;
+  }
+  p {
+      animation-duration: 0s;
+    }
         .flexbox_main {
           display: flex;
           flex-direction: row;
@@ -888,9 +881,13 @@ div.box2 {
         box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
         font-size: 9px;
     }
-      h1 {
-          text-align: left;   
-      }
+    h1 {
+      text-align: left;
+      animation-duration: 0s;
+  }
+  p {
+      animation-duration: 0s;
+    }
         .flexbox_main {
           display: flex;
           flex-direction: row;
@@ -1002,7 +999,11 @@ div.box2 {
         font-size: 9px;
     }
     h1 {
-        text-align: left;
+      text-align: left;
+      animation-duration: 0s;
+  }
+  p {
+      animation-duration: 0s;
     }
       .flexbox_main {
         display: flex;
@@ -1126,11 +1127,13 @@ div.box2 {
         font-size: 8px;
     }
     h1 {
-        text-align: left;
+      text-align: left;
+      animation-duration: 0s;
+  }
+  p {
+    font-size: 15px;
+      animation-duration: 0s;
     }
-    p {
-        font-size: 15px;
-      }
       .flexbox_main {
         display: flex;
         flex-direction: row;
@@ -1260,7 +1263,12 @@ div.box2 {
         font-size: 7px;
     }
     h1 {
-        text-align: left;
+      text-align: left;
+      animation-duration: 0s;
+  }
+  p {
+    font-size: 15px;
+      animation-duration: 0s;
     }
       .flexbox_main {
         display: flex;
