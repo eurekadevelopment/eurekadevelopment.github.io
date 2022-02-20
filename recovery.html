@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="css/dload.css">
+    <link rel="stylesheet" href="css/dropdown.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script async src="https://arc.io/widget.min.js#3LCgJWKk"></script>    
 </head>
@@ -28,80 +29,115 @@
         </div>     
     </div>
     <div class="flexbox" id="mobilebox3">
-        <div class ="flexelement box4 harlow">
+        <div class ="flexelement box4 harlow noselect">
             <center>
-            <img src="images/twrp.png" width="64px" height="64px" id="logo6"> 
-            <p id="download"><p>TWRP 3.6_9.0/11.0 (TeamWin)</p></p>
+            <img src="images/twrp.png" width="48px" height="48px" id="logo6" style="margin-top: -25px;"> 
+            <p id="download" style="margin-top: -15px;"><p>TWRP 3.6_9.0/11.0 (TeamWin)</p></p>
         </center>
-        <form>
-            <label><a style="color: #005fb2">Download A10&nbsp;</a> </label>
-            <select name="menu1" id="menu1">
-            <option value = "">Select a Version ...
-            </option>
-            <option value = "https://eu.dl.twrp.me/a10/twrp-3.6.0_9-0-a10.img.html"> TWRP 3.6_9.0 IMG
-            </option>
-            <option value = "https://eu.dl.twrp.me/a10/twrp-3.6.0_9-0-a10.img.tar.html"> TWRP 3.6_9.0 TAR
-            </option>
-            <option value = "https://sourceforge.net/projects/eurekaroms/files/Recoveries/A10/TWRP/twrp-3.6.0_11-a10.img/download"> TWRP 3.6_11.0 IMG
-            </option>
-            <option value = "https://sourceforge.net/projects/eurekaroms/files/Recoveries/A10/TWRP/twrp-3.6.0_11-a10.tar/download"> TWRP 3.6_11.0 TAR
-            </option>
-            </select>
-            </form>
-                    <form>
-                        <br>
-                        <label><a style="color: #005fb2">Download A20&nbsp;</a> </label>
-                        <select name="menu2" id="menu2">
-                        <option value = "">Select a Version ...
-                        </option>
-                        <option value = "https://eu.dl.twrp.me/a20/twrp-3.6.0_9-0-a20.img.html"> TWRP 3.6_9.0 IMG
-                        </option>
-                        <option value = "https://eu.dl.twrp.me/a20/twrp-3.6.0_9-0-a20.img.tar.html"> TWRP 3.6_9.0 TAR
-                        </option>
-                        </select>
-                        </form>
-                    <form>
-                        <br>
-                        <label><a style="color: #005fb2">Download A20e</a> </label>
-                        <select name="menu5" id="menu5">
-                        <option value = "">Select a Version ...
-                        </option>
-                        <option value = "https://eu.dl.twrp.me/a20e/twrp-3.6.0_9-0-a20e.img.html"> TWRP 3.6_9.0 IMG
-                        </option>
-                        <option value = "https://eu.dl.twrp.me/a20e/twrp-3.6.0_9-0-a20e.img.tar.html"> TWRP 3.6_9.0 TAR
-                        </option>
-                        </select>
-                        </form>
-                <form>
-                    <br>
-                    <label><a style="color: #005fb2">Download A30&nbsp;</a> </label>
-                    <select name="menu3" id="menu3">
-                    <option value = "">Select a Version ...
-                    </option>
-                    <option value = "https://eu.dl.twrp.me/a30/twrp-3.6.0_9-0-a30.img.html"> TWRP 3.6_9.0 IMG
-                    </option>
-                    <option value = "https://eu.dl.twrp.me/a30/twrp-3.6.0_9-0-a30.img.tar.html"> TWRP 3.6_9.0 TAR
-                    </option>
-                    </select>
-                    </form>
-                <form>
-                    <br>
-                    <label><a style="color: #005fb2">Download A40&nbsp;</a> </label>
-                    <select name="menu4" id="menu4">
-                    <option value = "">Select a Version ...
-                    </option>
-                    <option value = "https://sourceforge.net/projects/eurekaroms/files/Recoveries/A40/TWRP/TWRP-3.6.0_9-a40.img/download"> TWRP 3.6_9.0 IMG
-                    </option>
-                    <option value = "https://sourceforge.net/projects/eurekaroms/files/Recoveries/A40/TWRP/TWRP-3.6.0_9-a40.tar/download"> TWRP 3.6_9.0 TAR
-                    </option>
-                    <option value = "https://sourceforge.net/projects/eurekaroms/files/Recoveries/A40/TWRP/TWRP-3.6.0_11-a40.img/download"> TWRP 3.6_11.0 IMG
-                    </option>
-                    <option value = "https://sourceforge.net/projects/eurekaroms/files/Recoveries/A40/TWRP/TWRP-3.6.0_11-a40.tar/download"> TWRP 3.6_11.0 TAR
-                    </option>
-                    </select>
-                    </form>
+          <details class="custom-select">
+            <summary class="radios">
+              <input type="radio" name="item"><b>A10: select your file..</b>
+              <input type="radio" name="item" id="item1" title="Item 1">
+              <input type="radio" name="item" id="item2" title="Item 2">
+              <input type="radio" name="item" id="item3" title="Item 3">
+              <input type="radio" name="item" id="item4" title="Item 4">
+              <input type="radio" name="item" id="item5" title="Item 5">
+            </summary>
+            <ul class="list">
+              <li>
+                 <a for="item1" href="https://eu.dl.twrp.me/a10/twrp-3.6.0_9-0-a10.img.html">TWRP 3.6_9.0 IMG</a>
+              </li>
+              <li>
+                <a for="item1" href="https://eu.dl.twrp.me/a10/twrp-3.6.0_9-0-a10.img.tar.html">TWRP 3.6_9.0 TAR</a>
+              </li>
+              <li>
+                <a for="item1" href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A10/TWRP/twrp-3.6.0_11-a10.img/download">TWRP 3.6_11.0 IMG</a>
+              </li>
+              <li>
+                <a for="item1" href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A10/TWRP/twrp-3.6.0_11-a10.tar/download">TWRP 3.6_11.0 TAR</a>
+              </li>
+            </ul>
+          </details>
+          <details class="custom-select">
+            <summary class="radios">
+              <input type="radio" name="item"><b>A20: select your file..</b>
+              <input type="radio" name="item" id="item1" title="Item 1">
+              <input type="radio" name="item" id="item2" title="Item 2">
+              <input type="radio" name="item" id="item3" title="Item 3">
+              <input type="radio" name="item" id="item4" title="Item 4">
+              <input type="radio" name="item" id="item5" title="Item 5">
+            </summary>
+            <ul class="list">
+              <li>
+                 <a for="item1" href="https://eu.dl.twrp.me/a20/twrp-3.6.0_9-0-a20.img.html">TWRP 3.6_9.0 IMG</a>
+              </li>
+              <li>
+                <a for="item1" href="https://eu.dl.twrp.me/a20/twrp-3.6.0_9-0-a20.img.tar.html">TWRP 3.6_9.0 TAR</a>
+              </li>
+            </ul>
+          </details>
+          <details class="custom-select">
+            <summary class="radios">
+              <input type="radio" name="item"><b>A20e:select your file.</b>
+              <input type="radio" name="item" id="item1" title="Item 1">
+              <input type="radio" name="item" id="item2" title="Item 2">
+              <input type="radio" name="item" id="item3" title="Item 3">
+              <input type="radio" name="item" id="item4" title="Item 4">
+              <input type="radio" name="item" id="item5" title="Item 5">
+            </summary>
+            <ul class="list">
+              <li>
+                 <a for="item1" href="https://eu.dl.twrp.me/a20e/twrp-3.6.0_9-0-a20e.img.html">TWRP 3.6_9.0 IMG</a>
+              </li>
+              <li>
+                <a for="item1" href="https://eu.dl.twrp.me/a20e/twrp-3.6.0_9-0-a20e.img.tar.html">TWRP 3.6_9.0 TAR</a>
+              </li>
+            </ul>
+          </details>
+          <details class="custom-select">
+            <summary class="radios">
+              <input type="radio" name="item"><b>A30: select your file..</b>
+              <input type="radio" name="item" id="item1" title="Item 1">
+              <input type="radio" name="item" id="item2" title="Item 2">
+              <input type="radio" name="item" id="item3" title="Item 3">
+              <input type="radio" name="item" id="item4" title="Item 4">
+              <input type="radio" name="item" id="item5" title="Item 5">
+            </summary>
+            <ul class="list">
+              <li>
+                 <a for="item1" href="https://eu.dl.twrp.me/a30/twrp-3.6.0_9-0-a30.img.html">TWRP 3.6_9.0 IMG</a>
+              </li>
+              <li>
+                <a for="item1" href="https://eu.dl.twrp.me/a30/twrp-3.6.0_9-0-a30.img.tar.html">TWRP 3.6_9.0 TAR</a>
+              </li>
+            </ul>
+          </details>          
+          <details class="custom-select">
+            <summary class="radios">
+              <input type="radio" name="item"><b>A40: select your file..</b>
+              <input type="radio" name="item" id="item1" title="Item 1">
+              <input type="radio" name="item" id="item2" title="Item 2">
+              <input type="radio" name="item" id="item3" title="Item 3">
+              <input type="radio" name="item" id="item4" title="Item 4">
+              <input type="radio" name="item" id="item5" title="Item 5">
+            </summary>
+            <ul class="list">
+              <li>
+                 <a for="item1" href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A40/TWRP/TWRP-3.6.0_9-a40.img/download">TWRP 3.6_9.0 IMG</a>
+              </li>
+              <li>
+                <a for="item1" href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A40/TWRP/TWRP-3.6.0_9-a40.tar/download">TWRP 3.6_9.0 TAR</a>
+              </li>
+              <li>
+                <a for="item1" href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A40/TWRP/TWRP-3.6.0_11-a40.img/download">TWRP 3.6_11.0 IMG</a>
+              </li>
+              <li>
+                <a for="item1" href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A40/TWRP/TWRP-3.6.0_11-a40.tar/download">TWRP 3.6_11.0 TAR</a>
+              </li>
+            </ul>
+          </details>
         </div>
-        <div class ="flexelement box4 harlow" id="size">
+        <div class ="flexelement box4 harlow noselect" id="size">
             <center>
                 <img src="images/ofox.jpg" width="64px" height="64px" id="logo6" style="margin-top: -30px;"> 
                 <p style="margin-top: -5px;">OFOX R11.1 (OrangeFox)</p>
@@ -134,7 +170,7 @@
                   </a>
                 </div>
         </div>
-        <div class ="flexelement box4 harlow" id="size">
+        <div class ="flexelement box4 harlow noselect" id="size">
             <center>
                 <img src="images/shrp.png" width="64px" height="64px" id="logo6" style="margin-top: -30px;"> 
                 <p style="margin-top: -5px;">SHRP (SkyHawk)</p>
@@ -167,7 +203,7 @@
                   </a>
                 </div>
         </div>
-        <div class ="flexelement box4 harlow" id="size">
+        <div class ="flexelement box4 harlow noselect" id="size">
             <center>
                 <img src="images/pbrp.png" width="64px" height="64px" id="logo6" style="margin-top: -30px;"> 
                 <p style="margin-top: -5px;">PBRP (PitchBlack)</p>
