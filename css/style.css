@@ -1,4 +1,9 @@
-
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
 body {
   overflow-x: hidden;
 }
@@ -69,8 +74,6 @@ select {
 }
 h1 {
     text-align: center;
-    animation-duration: 0.7s;
-    animation-name: slidein1;
 }
 li {
     font-size: 16px;
@@ -897,6 +900,7 @@ div.box2 {
           width: 520px;
           
         }
+        
     }
   @media screen and (max-width: 500px) {
     div.box2  {
@@ -1025,6 +1029,12 @@ div.box2 {
       }
       #center {
         margin-left: 25px;
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
       }
   }
   @media screen and (max-width: 450px) {
@@ -1161,6 +1171,12 @@ div.box2 {
       #center {
         margin-left: 25px;
       }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+      }
   }
   
   @media screen and (max-width: 300px) {
@@ -1280,6 +1296,12 @@ div.box2 {
       }
       #center {
         margin-left: 20px;
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
       }
   }
 .glow{
