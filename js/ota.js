@@ -33,10 +33,11 @@ $(document).ready(function() {
             var spark = largedata.spark[0];
             var superior = largedata.superior[0];
             var yaap = largedata.yaap[0];
+            var ancient = largedata.ancient[0];
 
-            const rom_data = [aex, aicp, arcana, arrow, awaken, bliss, cherish, cipher, crdroid, derp, evolution, exthmui, hentai, lighthouse, lineage, nitrogen, octavi, pixysos, potato, ppui, radiant, spark, superior, yaap];
+            const rom_data = [aex, aicp, arcana, arrow, awaken, bliss, cherish, cipher, crdroid, derp, evolution, exthmui, hentai, lighthouse, lineage, nitrogen, octavi, pixysos, potato, ppui, radiant, spark, superior, yaap, ancient];
 
-            const rom_list = ['aex', 'aicp', 'arcana', 'arrow', 'awaken', 'bliss', 'cherish', 'cipher', 'crdroid', 'derp', 'evolution', 'exthmui', 'hentai', 'lighthouse', 'lineage', 'nitrogen', 'octavi', 'pixysos', 'potato', 'ppui', 'radiant', 'spark', 'superior',  'yaap'];
+            const rom_list = ['aex', 'aicp', 'arcana', 'arrow', 'awaken', 'bliss', 'cherish', 'cipher', 'crdroid', 'derp', 'evolution', 'exthmui', 'hentai', 'lighthouse', 'lineage', 'nitrogen', 'octavi', 'pixysos', 'potato', 'ppui', 'radiant', 'spark', 'superior',  'yaap', 'ancient'];
 
             // i < (number of roms in rom_list + 1)
             // i starts at 0.
