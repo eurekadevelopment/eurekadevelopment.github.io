@@ -41,11 +41,11 @@ $(document).ready(function() {
 
             // i < (number of roms in rom_list + 1)
             // i starts at 0.
-            for (let i = 0; i < 24; i++) {
+            for (let i = 0; i < 25; i++) {
                 var target_rom = rom_data[i];
                 if (device == "A10") {
                     if (arch == "arm") {
-                        if ((rom_list[i] == 'cherish') | (rom_list[i] == 'crdroid') | (rom_list[i] == 'derp') | (rom_list[i] == 'evolution') | (rom_list[i] == 'hentai') | (rom_list[i] == 'pixysos') | (rom_list[i] == 'potato') | (rom_list[i] == 'ppui') | (rom_list[i] == 'radiant')) {
+                        if ((rom_list[i] == 'ancient') | (rom_list[i] == 'cherish') | (rom_list[i] == 'crdroid') | (rom_list[i] == 'derp') | (rom_list[i] == 'evolution') | (rom_list[i] == 'hentai') | (rom_list[i] == 'pixysos') | (rom_list[i] == 'potato') | (rom_list[i] == 'ppui') | (rom_list[i] == 'radiant')) {
                             console.log('ARM version of ' + rom_list[i] + ' is not available for A10. Skipped');
                         } else {
                             var target_url = target_rom.a10_arm_url;
@@ -56,20 +56,30 @@ $(document).ready(function() {
                 } else if (device == "A20") {
                     if (rom_list[i] == 'derp') {
                         console.log('Official ' + rom_list[i] + ' is available for A20. Skipped');
+                    } else if (rom_list[i] == 'ancient') {
+                        console.log(rom_list[i] + ' is not available for A20. Skipped');
                     } else {
                         var target_url = target_rom.a20_url;
                     }
                 } else if (device == "A20e") {
                     if (rom_list[i] == 'derp') {
                         console.log('Official ' + rom_list[i] + ' is available for A20e. Skipped');
+                    } else if (rom_list[i] == 'ancient') {
+                        console.log(rom_list[i] + ' is not available for A20e. Skipped');
                     } else {
                         var target_url = target_rom.a20e_url;
                     }
                 } else if (device == "A30") {
-                    var target_url = target_rom.a30_url;
+                    if (rom_list[i] == 'ancient') {
+                        console.log(rom_list[i] + ' is not available for A30. Skipped');
+                    } else {
+                        var target_url = target_rom.a30_url;
+                    }
                 } else if (device == "A40") {
                     if (rom_list[i] == 'crdroid') {
                         console.log('Official ' + rom_list[i] + ' is available for A40. Skipped');
+                    } else if (rom_list[i] == 'ancient') {
+                        console.log(rom_list[i] + ' is not available for A40. Skipped');
                     } else {
                         var target_url = target_rom.a40_url;
                     }
