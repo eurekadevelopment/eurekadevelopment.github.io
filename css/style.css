@@ -781,8 +781,8 @@ div.box2 {
         }
         div.box_rom  {
           font-size: 15px;
-          width: 100px;
-          height: 100px;
+          width: 200px;
+          height: 200px;
           display: flex; 
           justify-content: center; 
           align-items: center;
@@ -890,8 +890,8 @@ div.box2 {
       }
       div.box_rom  {
         font-size: 15px;
-        width: 95px;
-        height: 95px;
+        width: 150px;
+        height: 150px;
         display: flex; 
         justify-content: center; 
         align-items: center;
@@ -929,7 +929,7 @@ div.box2 {
     }
     .image__title {
         font-weight: bold;
-        font-size: 1.8em;
+        font-size: 3em;
         text-align:center;
     }
     .image__description {
@@ -1023,8 +1023,8 @@ div.box2 {
       }
       div.box_rom  {
         font-size: 15px;
-        width: 95px;
-        height: 95px;
+        width: 150px;
+        height: 150px;
         display: flex; 
         justify-content: center; 
         align-items: center;
@@ -1055,19 +1055,18 @@ div.box2 {
     } 
     .image__img {
         display: block;
-        width: 93px;
-        height: 93px;
-        margin-left: -30px;
+        width: 120px;
+        height: 120px;
+        margin-left: -42px;
         margin-bottom: 27px;
     }
     .image__title {
         font-weight: bold;
-        font-size: 1.8em;
+        font-size: 2.9em;
         text-align:center;
     }
     .image__description {
-        font-size: 8px;
-        margin-top: 0.25em;
+        font-size: 10px;
         padding-top: 0px;
         padding-right: 15px;
         padding-bottom: 15px;
@@ -1165,8 +1164,8 @@ div.box2 {
       }
       div.box_rom  {
         font-size: 15px;
-        width: 95px;
-        height: 95px;
+        width: 135px;
+        height: 135px;
         display: flex; 
         justify-content: center; 
         align-items: center;
@@ -1197,14 +1196,14 @@ div.box2 {
     } 
     .image__img {
         display: block;
-        width: 93px;
-        height: 93px;
+        width: 110px;
+        height: 110px;
         margin-left: -30px;
         margin-bottom: 27px;
     }
     .image__title {
         font-weight: bold;
-        font-size: 1.8em;
+        font-size: 2.5em;
         text-align:center;
     }
     .image__description {
