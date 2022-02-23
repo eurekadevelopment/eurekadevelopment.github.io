@@ -188,6 +188,7 @@ ul li::before {
     animation: textwelle 1.0s;
     
 }
+
 .flexbox > div {
     margin: 1% 1% 1% 1%;
     border-style: solid;
@@ -430,10 +431,10 @@ div.box2 {
     background-color: black;
     padding: 20px;
   }
+
   @media screen and (max-width: 1300px) {
     .flexbox_rom {
         top: 230px;
-        animation-duration: 0s;
        } 
     #logo1 {
         float: right;
@@ -452,12 +453,8 @@ div.box2 {
      }
     h1 {
         text-align: left;
-        animation-duration: 0s;
         font-size: 25px;
     }
-    p {
-        animation-duration: 0s;
-      }
       .topnav_main {
         background-color: black;
         overflow: hidden;
@@ -491,16 +488,11 @@ div.box2 {
      }
     h1 {
         text-align: left;
-        animation-duration: 0s;
     }
-    p {
-        animation-duration: 0s;
-      }
   }
   @media screen and (max-width: 900px) {
     .flexbox_rom {
         top: 230px;
-        animation-duration: 0s;
        } 
     div.box2  {
         font-size: 15px;
@@ -574,12 +566,8 @@ div.box2 {
        }
       h1 {
           text-align: left;
-          animation-duration: 0s;
           font-size: 25px;
       }
-      p {
-          animation-duration: 0s;
-        }
         .flexbox_main {
           display: flex;
           flex-direction: row;
@@ -587,13 +575,12 @@ div.box2 {
           justify-content: space-around;
           margin-left: 20px;
           width: 750px;
-          
+          margin-bottom: 35px;
         }
     }
       @media screen and (max-width: 800px) {
         .flexbox_rom {
             top: 230px;
-            animation-duration: 0s;
            } 
         div.box2  {
       font-size: 15px;
@@ -667,11 +654,7 @@ div.box2 {
      }
     h1 {
         text-align: left;
-        animation-duration: 0s;
     }
-    p {
-        animation-duration: 0s;
-      }
       .flexbox_main {
         display: flex;
         flex-direction: row;
@@ -679,13 +662,16 @@ div.box2 {
         justify-content: space-around;
         margin-left: -10px;
         width: 700px;
-        
+        margin-bottom: 35px;
       }
-      
+      .flexbox_rom {
+        animation: textwelle 0s;
+      }
   }
   @media screen and (max-width: 700px) {
     .flexbox_rom {
         top: 230px;
+        animation: textwelle 0s;
        } 
     div.box2  {
         font-size: 15px;
@@ -771,11 +757,7 @@ div.box2 {
     }
     h1 {
       text-align: left;
-      animation-duration: 0s;
   }
-  p {
-      animation-duration: 0s;
-    }
         .flexbox_main {
           display: flex;
           flex-direction: row;
@@ -783,12 +765,13 @@ div.box2 {
           justify-content: space-around;
           margin-left: 30px;
           width: 600px;
-          
+          margin-bottom: 35px;
         }
     }
    @media screen and (max-width: 650px) {
     .flexbox_rom {
         top: 230px;
+        animation: textwelle 0s;
        } 
     div.box2  {
         font-size: 15px;
@@ -886,11 +869,7 @@ div.box2 {
     }
     h1 {
       text-align: left;
-      animation-duration: 0s;
   }
-  p {
-      animation-duration: 0s;
-    }
         .flexbox_main {
           display: flex;
           flex-direction: row;
@@ -898,9 +877,8 @@ div.box2 {
           justify-content: space-around;
           margin-left: 1px;
           width: 520px;
-          
+          margin-bottom: 35px;
         }
-        
     }
   @media screen and (max-width: 500px) {
     div.box2  {
@@ -940,6 +918,7 @@ div.box2 {
     }   
     .flexbox_rom {
      top: 230px;
+     animation: textwelle 0s;
     } 
     .image__img {
         display: block;
@@ -1004,11 +983,7 @@ div.box2 {
     }
     h1 {
       text-align: left;
-      animation-duration: 0s;
   }
-  p {
-      animation-duration: 0s;
-    }
       .flexbox_main {
         display: flex;
         flex-direction: row;
@@ -1016,6 +991,7 @@ div.box2 {
         justify-content: space-around;
         margin-left: 28px;
         width: 420px;
+        margin-bottom: 35px;
         
       }
       ul {
@@ -1075,6 +1051,7 @@ div.box2 {
     }   
     .flexbox_rom {
      top: 230px;
+     animation: textwelle 0s;
     } 
     .image__img {
         display: block;
@@ -1138,11 +1115,9 @@ div.box2 {
     }
     h1 {
       text-align: left;
-      animation-duration: 0s;
   }
   p {
     font-size: 15px;
-      animation-duration: 0s;
     }
       .flexbox_main {
         display: flex;
@@ -1151,6 +1126,7 @@ div.box2 {
         justify-content: space-around;
         margin-left: -10px;
         width: 420px;
+        margin-bottom: 35px;
       }
       #logo {
         margin-top: -3px;
@@ -1217,6 +1193,7 @@ div.box2 {
     }   
     .flexbox_rom {
      top: 230px;
+     animation: textwelle 0s;
     } 
     .image__img {
         display: block;
@@ -1280,11 +1257,9 @@ div.box2 {
     }
     h1 {
       text-align: left;
-      animation-duration: 0s;
   }
   p {
     font-size: 15px;
-      animation-duration: 0s;
     }
       .flexbox_main {
         display: flex;
@@ -1310,10 +1285,6 @@ div.box2 {
     text-shadow:-5px -5px 5px #000, 5px 5px 5px #005fb2;
     font-size:48px;
     text-align:center;
-  }
-  p {
-    animation-duration: 1.5s;
-    animation-name: slidein;
   }
   
   @keyframes slidein {

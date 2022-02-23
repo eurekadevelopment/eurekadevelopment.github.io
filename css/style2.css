@@ -151,7 +151,7 @@ footer p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;  
-    margin-top: 20px;
+    margin-top: 35px;
     margin-bottom: 120px;
 }
 .flexbox > div {
@@ -201,8 +201,6 @@ footer p {
     }
 p {
     font-size: 16px;
-    animation-duration: 0.7s;
-    animation-name: slidein;
 }
 a {
     color:#08f;
@@ -225,8 +223,6 @@ ul li::before {
   }
 h1 {
     text-align: left;
-    animation-duration: 0.7s;
-    animation-name: slidein1;
 }
 #mobilebox {
     margin-top: -70px;
@@ -286,7 +282,6 @@ h1 {
 
     h1 {
         text-align: left;
-        animation-duration: 0s;
     }
       a {
         color:#08f;
@@ -304,9 +299,6 @@ h1 {
     ul {
         list-style-type: none;
         margin-left: 7px;
-    }
-    p {
-        animation-duration: 0s;
     }
     #txt {
         font-size: 0px;
@@ -356,10 +348,8 @@ h1 {
         margin-top: 30px;
         margin-bottom: 50px;
     }
-
     h1 {
         text-align: left;
-        animation-duration: 0s;
     }
       a {
         color:#08f;
@@ -377,9 +367,6 @@ h1 {
     ul {
         list-style-type: none;
         margin-left: 7px;
-    }
-    p {
-        animation-duration: 0s;
     }
     #txt {
         font-size: 0px;
@@ -457,7 +444,6 @@ h1 {
     }
     h1 {
         text-align: left;
-        animation-duration: 0s;
     }
       a {
         color:#08f;
@@ -489,11 +475,8 @@ h1 {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;  
-        margin-top: 20px;
-        margin-bottom: 50px;
-    }
-    p {
-        animation-duration: 0s;
+        margin-top: 27px;
+        margin-bottom: 60px;
     }
     #txt {
         font-size: 0px;
@@ -571,7 +554,6 @@ h1 {
     }
     h1 {
         text-align: left;
-        animation-duration: 0s;
     }
       a {
         color:#08f;
@@ -603,11 +585,8 @@ h1 {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;  
-        margin-top: 20px;
-        margin-bottom: 50px;
-    }
-    p {
-        animation-duration: 0s;
+        margin-top: 25px;
+        margin-bottom: 65px;
     }
     #txt {
         font-size: 0px;
@@ -685,7 +664,6 @@ h1 {
     }
     h1 {
         text-align: left;
-        animation-duration: 0s;
     }
       a {
         color:#08f;
@@ -716,11 +694,8 @@ h1 {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;  
-        margin-top: 20px;
-        margin-bottom: 50px;
-    }
-    p {
-        animation-duration: 0s;
+        margin-top: 24px;
+        margin-bottom: 70px;
     }
     svg {
         width: 72px;
@@ -817,7 +792,6 @@ h1 {
         text-align: left;
         margin-top: 35px;
         font-size: 32px;
-        animation-duration: 0s;
     }
       a {
         color:#08f;
@@ -844,8 +818,8 @@ h1 {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;  
-        margin-top: 20px;
-        margin-bottom: 50px;
+        margin-top: 23px;
+        margin-bottom: 70px;
     }
     .low_res {
         list-style-type: none;
@@ -873,9 +847,6 @@ h1 {
         height: 350px;
         margin-top: 40px;
         margin-bottom: 10px;
-    }
-    p {
-        animation-duration: 0s;
     }
     #left1 {
         margin-right: 100px;
@@ -972,7 +943,6 @@ h1 {
         text-align: left;
         margin-top: 35px;
         font-size: 32px;
-        animation-duration: 0s;
     }
       a {
         color:#08f;
@@ -999,8 +969,8 @@ h1 {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;  
-        margin-top: 20px;
-        margin-bottom: 50px;
+        margin-top: 23px;
+        margin-bottom: 70px;
     }
     .low_res {
         list-style-type: none;
@@ -1028,9 +998,6 @@ h1 {
         height: 350px;
         margin-top: 40px;
         margin-bottom: 10px;
-    }
-    p {
-        animation-duration: 0s;
     }
     #left1 {
         margin-right: 100px;
@@ -1122,11 +1089,9 @@ h1 {
         text-align: left;
         font-size: 22px;
         margin-top: 10px;
-        animation-duration: 0s;
     }
     p {
         font-size: 15px;
-        animation-duration: 0s;
       }
       a {
         color:#08f;
@@ -1156,8 +1121,8 @@ h1 {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;  
-        margin-top: 20px;
-        margin-bottom: 50px;
+        margin-top: 23px;
+        margin-bottom: 70px;
     }
     #logo9 {
         margin-left: 60px;
