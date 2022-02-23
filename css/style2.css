@@ -735,6 +735,9 @@ h1 {
     #txt {
         font-size: 0px;
     }
+    #mobile1 {
+        width: 150px;
+    }
 }
 @media screen and (max-width: 600px) {
     .box1 {
@@ -849,6 +852,9 @@ h1 {
     }
     #mobile {
         margin-left: -0.5em;
+    }
+    #mobile1 {
+        width: 150px;
     }
     #mobile2 {
         margin-left: -1em;
@@ -1001,6 +1007,9 @@ h1 {
     }
     #mobile {
         margin-left: -0.5em;
+    }
+    #mobile1 {
+        width: 150px;
     }
     #mobile2 {
         margin-left: -1em;
@@ -1163,6 +1172,9 @@ h1 {
       }
       #mobile {
         margin-left: -0.5em;
+    }
+    #mobile1 {
+        width: 150px;
     }
     #mobile2 {
         margin-left: -1em;

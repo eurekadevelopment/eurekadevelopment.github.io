@@ -3,9 +3,9 @@
     position: relative;
     width: 250px;
     border: solid 2px #005fb2;
-    border-radius: 50px;
+    border-radius: 28px;
     margin-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
   }
   
   details[open] {
@@ -15,10 +15,10 @@
   summary {
     padding: 10px;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 28px;
     background-color: black;
     list-style: none;
-    height: 30px;
+    height: 25px;
   }
   
   summary::-webkit-details-marker {
@@ -52,41 +52,25 @@
   details[open] summary:after {
     transform: rotate(-45deg) translate(0%, 0%);
   }
-  
+  #large {
+    max-height: 300px;
+  }
   ul {
-    width: 100%;
-    background: #1f2227;
+    width: 102%;
+    background-image: radial-gradient(rgb(6, 45, 82), rgb(0, 0, 0));
     position: absolute;
-    top: calc(100% + .5rem);
-    left: 0;
+    top: calc(100% + .9rem);
+    left: -2px;
     padding: 1rem;
-    margin: 0;
+    margin: 0 auto;
     box-sizing: border-box;
-    border-radius: 10px;
-    max-height: 150px;
+    border-radius: 28px;
+    max-height: 160px;
     overflow-y: auto;
+    overflow-x: auto;
     border: solid 2px #005fb2;
   }
-  ul.demo {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  li {
-    margin: 0;
-    padding: 1rem 0;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  li:first-child {
-    padding-top: 0;
-  }
-  
-  li:last-child {
-    padding-bottom: 0;
-    border-bottom: none;
-  }
-  
+
   /* FAKE SELECT */
   
   summary.radios {
@@ -133,38 +117,54 @@ b {
         position: relative;
         width: 200px;
         border: solid 2px #005fb2;
-        border-radius: 50px;
+        border-radius: 28px;
         margin-left: 0px;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
       }
+      #font_mobile {
+        font-size: 9px;
+        margin-left: -15px;
+    }
   }
   @media screen and (max-width: 600px) {
     details {
         position: relative;
         width: 200px;
         border: solid 2px #005fb2;
-        border-radius: 50px;
+        border-radius: 28px;
         margin-left: 0px;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
       }
+      #font_mobile {
+        font-size: 9px;
+        margin-left: -15px;
+    }
 }
 @media screen and (max-width: 400px) {
     details {
         position: relative;
         width: 200px;
         border: solid 2px #005fb2;
-        border-radius: 50px;
+        border-radius: 28px;
         margin-left: 0px;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
       }
+      #font_mobile {
+        font-size: 9px;
+        margin-left: -15px;
+    }
 }
 @media screen and (max-width: 300px) {
     details {
         position: relative;
         width: 200px;
         border: solid 2px #005fb2;
-        border-radius: 50px;
+        border-radius: 28px;
         margin-left: 0px;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
       }
+      #font_mobile {
+        font-size: 9px;
+        margin-left: -15px;
+    }
 }
