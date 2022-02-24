@@ -17,6 +17,10 @@ body {
 html {
   scroll-behavior: smooth;
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -983,6 +987,7 @@ div.box2 {
     }
     h1 {
       text-align: left;
+      font-size: 22px;
   }
       .flexbox_main {
         display: flex;
@@ -1446,4 +1451,41 @@ margin-bottom: 10px;
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
+}
+
+.Center {
+  position: relative;
+  align-items: center;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  transition: all 2s;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  position: relative;
+  transition: all 2s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }

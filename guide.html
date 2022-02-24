@@ -10,32 +10,6 @@
     <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="css/tabs.css">
     <script async src="https://arc.io/widget.min.js#3LCgJWKk"></script>
-    <style>
-        #myBtn {
-          display: none;
-          position: fixed;
-          bottom: 60px;
-          right: 30px;
-          z-index: 99;
-          font-size: 18px;
-          border: none;
-          outline: none;
-          /*background-color: #005fb2;*/
-          background-color: black;
-          color: white;
-          cursor: pointer;
-          padding: 15px;
-          border-radius: 4px;
-          box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
-        }
-        #myBtn:hover {
-          background-color: #005fb2;
-        }
-        html, body {
-          width: 100%;
-          overflow-x: hidden;
-        }
-        </style>
 </head>
 <body>
     <body onload="myFunction()" style="margin:0;">
@@ -89,21 +63,6 @@
         </div>
     </div>
   </div>
-  <style>
-        @media screen and (max-height: 768px) {
-          img {
-              height: 96px;
-              width: 96px;
-          }
-      }
-      @media screen and (max-height: 600px) {
-          img {
-              height: 96px;
-              width: 96px;
-          }
-          
-      }
-  </style>
   <div class="panel" id="two-panel">
     <div class="flexbox">
         <div class ="flexelement box1 harlow">
@@ -255,24 +214,6 @@
             </span>
           </ion-icon>
           </button>
-        <script>
-        //Get the button
-        var mybutton = document.getElementById("myBtn");
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-        </script>
     </div>
   </div>
   </div>
@@ -285,6 +226,7 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="js/loader.js"></script>
+<script src="js/lazybtn.js"></script>
 <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 <script>
     window.matchMedia("(prefers-color-scheme: dark)").matches
