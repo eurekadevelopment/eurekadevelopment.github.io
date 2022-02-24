@@ -1310,3 +1310,10 @@ h1 {
     width: 100%;
     overflow-x: hidden;
   }
+
+  hr {
+    border: 0;
+    height: 3px;
+    background: #333;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), #08f, rgb(0, 0, 0));
+}
