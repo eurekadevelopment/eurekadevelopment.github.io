@@ -1,143 +1,139 @@
 li.hm2 {
-    /* Textfluss ändern */
     float:left;
-    /* Aufzählungspunkte entfernen */
     list-style-type:none;
-    /* Abstand */
     margin-right:50px;
 }
+
 @media screen and (max-width: 1024px) {
-  li.hm2 {
-    /* Textfluss ändern */
-    float:left;
-    /* Aufzählungspunkte entfernen */
-    list-style-type:none;
-    /* Abstand */
-    margin-right:20px;
+li.hm2 {
+    margin-right:150px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+li.hm2 {
+    margin-right:140px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 975px) {
+li.hm2 {
+    margin-right:120px;
     margin-bottom: 10px;
+  }
 }
-}
+
 @media screen and (max-width: 950px) {
-    li.hm2 {
-      /* Textfluss ändern */
-      float:left;
-      /* Aufzählungspunkte entfernen */
-      list-style-type:none;
-      /* Abstand */
-      margin-right:30px;
+li.hm2 {
+      margin-right:70%;
       margin-bottom: 10px;
-      display:inline;
   }
-  }
+}
+
 @media screen and (max-width: 900px) {
-  li.hm2 {
-    /* Textfluss ändern */
-    float:left;
-    /* Aufzählungspunkte entfernen */
-    list-style-type:none;
-    /* Abstand */
-    margin-right:300px;
+li.hm2 {
+    margin-right:70%;
     margin-bottom: 10px;
-    display:inline;
+  }
 }
+
+@media screen and (max-width: 850px) {
+li.hm2 {
+    margin-right:70%;
+    margin-bottom: 10px;
+  }
 }
+  
+@media screen and (max-width: 825px) {
+li.hm2 {
+    margin-right:67%;
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (max-width: 800px) {
-  li.hm2 {
-    /* Textfluss ändern */
-    float:left;
-    /* Aufzählungspunkte entfernen */
-    list-style-type:none;
-    /* Abstand */
-    margin-right:250px;
+li.hm2 {
+    margin-right:65%;
     margin-bottom: 10px;
+  }
 }
+
+@media screen and (max-width: 775px) {
+li.hm2 {
+    margin-right:65%;
+    margin-bottom: 10px;
+  }
 }
+
 @media screen and (max-width: 750px) {
-    li.hm2 {
-      /* Textfluss ändern */
-      float:left;
-      /* Aufzählungspunkte entfernen */
-      list-style-type:none;
-      /* Abstand */
-      margin-right:210px;
-      margin-bottom: 10px;
-  }
-  }
-@media screen and (max-width: 700px) {
-  li.hm2 {
-    /* Textfluss ändern */
-    float:left;
-    /* Aufzählungspunkte entfernen */
-    list-style-type:none;
-    /* Abstand */
-    margin-right:200px;
+li.hm2 {
+    margin-right:65%;
     margin-bottom: 10px;
+  }
 }
-}
-@media screen and (max-width: 650px) {
-    li.hm2 {
-      /* Textfluss ändern */
-      float:left;
-      /* Aufzählungspunkte entfernen */
-      list-style-type:none;
-      /* Abstand */
-      margin-right:190px;
+
+  @media screen and (max-width: 725px) {
+li.hm2 {
+      margin-right:60%;
       margin-bottom: 10px;
   }
+}
+
+@media screen and (max-width: 700px) {
+li.hm2 {
+    margin-right:60%;
+    margin-bottom: 10px;
   }
+}
+
+@media screen and (max-width: 675px) {
+li.hm2 {
+    margin-right:55%;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+li.hm2 {
+    margin-right:55%;
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (max-width: 600px) {
-  li.hm2 {
-    /* Textfluss ändern */
-    float:left;
-    /* Aufzählungspunkte entfernen */
-    list-style-type:none;
-    /* Abstand */
-    margin-right:122px;
+li.hm2 {
+    margin-right:50%;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+li.hm2 {
+    margin-right:40%;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+li.hm2 {
+    margin-right:45%;
     margin-bottom: 10px;
     display:inline;
+  }
 }
-}
-@media screen and (max-width: 550px) {
-    li.hm2 {
-      /* Textfluss ändern */
-      float:left;
-      /* Aufzählungspunkte entfernen */
-      list-style-type:none;
-      /* Abstand */
-      margin-right:122px;
-      margin-bottom: 10px;
-  }
-  }
-@media screen and (max-width: 500px) {
-    li.hm2 {
-      /* Textfluss ändern */
-      float:left;
-      /* Aufzählungspunkte entfernen */
-      list-style-type:none;
-      /* Abstand */
-      margin-right:122px;
-      margin-bottom: 10px;
-  }
-  }
+
 @media screen and (max-width: 450px) {
-    li.hm2 {
-      /* Textfluss ändern */
-      float:left;
-      /* Aufzählungspunkte entfernen */
-      list-style-type:none;
-      /* Abstand */
-      margin-right:122px;
-      margin-bottom: 10px;
-  }
-  }
-@media screen and (max-width: 400px) {
-  li.hm2 {
-    /* Textfluss ändern */
-    float:left;
-    /* Aufzählungspunkte entfernen */
-    list-style-type:none;
-    /* Abstand */
-    margin-right:122px;
+li.hm2 {
+    margin-right:50%;
     margin-bottom: 10px;
+  }
 }
+
+@media screen and (max-width: 400px) {
+li.hm2 {
+    margin-right:50%;
+    margin-bottom: 10px;
+  }
 }
