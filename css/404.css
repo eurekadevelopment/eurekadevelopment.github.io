@@ -25,7 +25,8 @@
 }
 body{
 		background:black;
-	}
+}
+
 .st0{font-family:'FootlightMTLight';}
 .st1{font-size:83.0285px;}
 .st2{fill:gray;}
@@ -35,10 +36,10 @@ svg{
     height: 400px;
     text-align: center;
     fill: #005fb2;
-    
+    margin-top: -100px;
 }
+
 path#XMLID_5_ {
-   
     fill: #005fb2;
     filter: url(#blurFilter4);
 }
@@ -55,6 +56,7 @@ path#XMLID_11_ ,path#XMLID_2_ {
 }
 .message{
 	color:#005fb2;
+  font-size: 22px;
 }
 .message:after{
 	content:"]";
@@ -64,7 +66,6 @@ path#XMLID_11_ ,path#XMLID_2_ {
 }
 
 .message:after, .message:before {
-  
   color: #005fb2;
   font-size: 20px;
   -webkit-animation-name: opacity;
@@ -104,14 +105,21 @@ path#XMLID_11_ ,path#XMLID_2_ {
   75%{r:15;opacity:0.1;}
  	100% {r:20;opacity:0;}
 }
-
+#topping {
+  margin-top: 23px;
+}
 @media screen and (max-width: 600px) {
     svg{
         width: 300px;
           height: 200px;
-          text-align: left;
-          fill: #005fb2;
-          
+          margin-left: -10px;
+          margin-top: -50px;
+      }
+      #topping {
+        margin-top: -25px;
+      }
+      .message{
+        font-size: 14px;
       }
  .message:after, .message:before {
   
