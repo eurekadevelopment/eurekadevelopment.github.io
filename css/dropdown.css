@@ -1,31 +1,31 @@
   
-  details {
+details {
     position: relative;
     width: 250px;
     border: solid 2px #005fb2;
     border-radius: 28px;
     margin-left: 20px;
     margin-bottom: 16px;
-  }
+}
   
-  details[open] {
+details[open] {
     z-index: 1;
-  }
+}
   
-  summary {
+summary {
     padding: 10px;
     cursor: pointer;
     border-radius: 28px;
     background-color: black;
     list-style: none;
     height: 25px;
-  }
+}
   
-  summary::-webkit-details-marker {
+summary::-webkit-details-marker {
     display: none;
-  }
+}
   
-  details[open] summary:before {
+details[open] summary:before {
     content: '';
     display: block;
     width: 100vw;
@@ -34,28 +34,30 @@
     position: fixed;
     top: 0;
     left: 0;
-  }
+}
   
-  summary:after {
+summary:after {
     content: '';
     display: inline-block;
     width: .5rem;
     height: .5rem;
     transform-origin: center center;
     transition: transform ease-in-out 100ms
-  }
+}
   
-  summary:focus {
+summary:focus {
     outline: none;
-  }
+}
   
-  details[open] summary:after {
+details[open] summary:after {
     transform: rotate(-45deg) translate(0%, 0%);
-  }
-  #large {
+}
+
+#large {
     max-height: 300px;
-  }
-  ul {
+}
+
+ul {
     width: 102%;
     background-image: radial-gradient(rgb(6, 45, 82), rgb(0, 0, 0));
     position: absolute;
@@ -69,102 +71,107 @@
     overflow-y: auto;
     overflow-x: auto;
     border: solid 2px #005fb2;
-  }
+}
 
-  /* FAKE SELECT */
+/* FAKE SELECT */
   
-  summary.radios {
+summary.radios {
     counter-reset: radios;
-  }
+}
   
-  input[type=radio] {
+input[type=radio] {
     counter-increment: radios;
     appearance: none;
     display: none;
-  }
+}
   
-  input[type=radio]:checked {
+input[type=radio]:checked {
     display: inline;
-  }
+}
   
-  input[type=radio]:after {
+input[type=radio]:after {
     content: attr(title);
     display: inline;
     font-size: 1rem;
-  }
+}
   
-  ul.list {
+ul.list {
     counter-reset: labels;
-  }
+}
   
-  label {
+label {
     width: 100%;
     display: block;
     cursor: pointer;
     font-size: 24px;
     margin-top: -10px;
-  }
+}
+
 b {
     margin-left: 15px;
     color: #005fb2;
     font-size: 14px;
 }
 #big {
-    font-size: 16px;
+  font-size: 16px;
 }
-  @media screen and (max-width: 700px) {
-    details {
-        position: relative;
-        width: 200px;
-        border: solid 2px #005fb2;
-        border-radius: 28px;
-        margin-left: 0px;
-        margin-bottom: 25px;
-      }
-      #font_mobile {
-        font-size: 9px;
-        margin-left: -15px;
-    }
+
+@media screen and (max-width: 700px) {
+details {
+    position: relative;
+    width: 200px;
+    border: solid 2px #005fb2;
+    border-radius: 28px;
+    margin-left: 0px;
+    margin-bottom: 25px;
+}
+#font_mobile {
+    font-size: 9px;
+    margin-left: -15px;
   }
-  @media screen and (max-width: 600px) {
-    details {
-        position: relative;
-        width: 200px;
-        border: solid 2px #005fb2;
-        border-radius: 28px;
-        margin-left: 0px;
-        margin-bottom: 25px;
-      }
-      #font_mobile {
-        font-size: 9px;
-        margin-left: -15px;
-    }
 }
+
+@media screen and (max-width: 600px) {
+details {
+    position: relative;
+    width: 200px;
+    border: solid 2px #005fb2;
+    border-radius: 28px;
+    margin-left: 0px;
+    margin-bottom: 25px;
+}
+#font_mobile {
+    font-size: 9px;
+    margin-left: -15px;
+  }
+}
+
 @media screen and (max-width: 400px) {
-    details {
-        position: relative;
-        width: 200px;
-        border: solid 2px #005fb2;
-        border-radius: 28px;
-        margin-left: 0px;
-        margin-bottom: 25px;
-      }
-      #font_mobile {
-        font-size: 9px;
-        margin-left: -15px;
-    }
+details {
+    position: relative;
+    width: 200px;
+    border: solid 2px #005fb2;
+    border-radius: 28px;
+    margin-left: 0px;
+    margin-bottom: 25px;
+}  
+#font_mobile {
+    font-size: 9px;
+    margin-left: -15px;
+  }
 }
+
 @media screen and (max-width: 300px) {
-    details {
-        position: relative;
-        width: 200px;
-        border: solid 2px #005fb2;
-        border-radius: 28px;
-        margin-left: 0px;
-        margin-bottom: 25px;
-      }
-      #font_mobile {
-        font-size: 9px;
-        margin-left: -15px;
-    }
+details {
+    position: relative;
+    width: 200px;
+    border: solid 2px #005fb2;
+    border-radius: 28px;
+    margin-left: 0px;
+    margin-bottom: 25px;
+}
+#font_mobile {
+    font-size: 9px;
+    margin-left: -15px;
+  }
 }

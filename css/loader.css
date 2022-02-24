@@ -13,9 +13,9 @@
     -webkit-animation: spin 0.7s linear infinite;
     animation: spin 2s linear infinite;
     background: linear-gradient(45deg,transparent,transparent 40%, #005fb2);
-  }
+}
   
-  #loader:before {
+#loader:before {
     content: '';
     position: absolute;
     top: 6px;
@@ -25,8 +25,9 @@
     background: rgba(255, 255, 255, 0);
     border-radius: 50%;
     z-index: 1000;
-  }
-  #loader:after {
+}
+
+#loader:after {
     content: '';
     position: absolute;
     top: 0px;
@@ -39,41 +40,43 @@
     z-index: 1000;
     z-index: 1;
     filter: blur(50px);
-  }
-  @-webkit-keyframes spin {
+}
+
+@-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
-  }
+}
   
-  @keyframes spin {
+@keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-  }
+}
   
-  /* Add animation to "page content" */
-  .animate-bottom {
+/* Add animation to "page content" */
+.animate-bottom {
     position: relative;
     -webkit-animation-name: animatebottom;
     -webkit-animation-duration: 0.7s;
     animation-name: animatebottom;
     animation-duration: 0.7s
-  }
+}
   
-  @-webkit-keyframes animatebottom {
+@-webkit-keyframes animatebottom {
     from { bottom:-100px; opacity:0 } 
     to { bottom:0px; opacity:1 }
-  }
+}
   
-  @keyframes animatebottom { 
+@keyframes animatebottom { 
     from{ bottom:-100px; opacity:0 } 
     to{ bottom:0; opacity:1 }
-  }
+}
   
-  #myDiv {
+#myDiv {
     display: none;
     text-align: center;
-  }
-  #overlay {
+}
+
+#overlay {
     position: fixed; 
     height: 100%; 
     width: 100%; 
@@ -86,4 +89,4 @@
     -ms-filter: blur(8px);
     -o-filter: blur(8px);
     filter: blur(8px);
-  }
+}

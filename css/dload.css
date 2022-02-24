@@ -67,8 +67,8 @@
 }
 
 .btn-slide span.title,
-  .btn-slide span.title-hover, .btn-slide2 span.title2,
-  .btn-slide2 span.title-hover2 {
+.btn-slide span.title-hover, .btn-slide2 span.title2,
+.btn-slide2 span.title-hover2 {
     position: absolute;
     left: 90px;
     margin: 0 auto;
@@ -79,10 +79,10 @@
 }
 
 .btn-slide2 span.title2,
-  .btn-slide2 span.title-hover2 {
+.btn-slide2 span.title-hover2 {
     color: #005fb2;
     left: 80px;
-  }
+}
 
 .btn-slide span.title-hover, .btn-slide2 span.title-hover2 {
     left: 80px;
