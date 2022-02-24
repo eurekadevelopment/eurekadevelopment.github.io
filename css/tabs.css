@@ -4,17 +4,9 @@ h2{
   color:#fff;
   text-align:center;
   font-size:1.5em;
-  animation-duration: 0.7s;
-  animation-name: slidein1;
 }
-p {
-    animation-duration: 0.7s;
-    animation-name: slidein;
-  }
 h1 {
     font-size: 22px;
-    animation-duration: 0.7s;
-    animation-name: slidein1;
 }
 
 .warpper{
@@ -22,6 +14,7 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
+
 .tab{
   cursor: pointer;
   padding:10px 20px;
@@ -33,12 +26,14 @@ h1 {
   box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
   transition: 0.6s;
 }
+
 .tab:hover {
     background-color: #08f;
     color: black;
     border: 0;
     box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 10px #005fb2;
 }
+
 .panels{
   min-height:400px;
   width:1200px;
@@ -50,8 +45,8 @@ h1 {
 .panel{
   display:none;
   animation: fadein .8s;
-  
 }
+
 @keyframes fadein {
     from {
         opacity:0;
@@ -60,10 +55,12 @@ h1 {
         opacity:1;
     }
 }
+
 .panel-title{
   font-size:1.5em;
   font-weight:bold
 }
+
 .radio{
   display:none;
 }
@@ -82,24 +79,25 @@ h1 {
   border-right: 12px solid #000;
   border-bottom: 12px solid #000;
 }
+
 @media screen and (max-width: 1980px) {
   #padding {
     margin-top: -70px;
   }
 }
+
 @media screen and (max-width: 1300px) {
-    .panels{
-        min-height:400px;
-        width:1000px;
-        border-radius:50px;
-        overflow:hidden;
-        padding:20px;  
-        margin-top: 15px;
-      }
-     
+  .panels{
+    min-height:400px;
+    width:1000px;
+    border-radius:50px;
+    overflow:hidden;
+    padding:20px;  
+    margin-top: 15px;
   }
+}
   
-  @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .panels{
         min-height:400px;
         width:900px;
@@ -112,21 +110,13 @@ h1 {
         color:#fff;
         text-align:left;
         font-size:1.0em;
-        animation-duration: 0s;
-        animation-name: slidein1;
       }
       img {
         width: 96px;
         height: 96px;
       }
-      h1 {
-        animation-duration: 0s;
-      }
-      p {
-        animation-duration: 0s;
-      }
   }
-  @media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
     .tabs {
       margin-top: -70px;
     }
@@ -144,14 +134,8 @@ h1 {
       #padding {
         margin-top: 0px;
       }
-      h1 {
-        animation-duration: 0s;
-      }
-      p {
-        animation-duration: 0s;
-      }
     }
-    @media screen and (max-width: 850px) {
+  @media screen and (max-width: 850px) {
       .tabs {
         margin-top: -0px;
       }
@@ -169,14 +153,8 @@ h1 {
         #padding {
           margin-top: 0px;
         }
-        h1 {
-          animation-duration: 0s;
-        }
-        p {
-          animation-duration: 0s;
-        }
       }
-      @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
         .tabs {
           margin-top: 0px;
         }
@@ -195,7 +173,6 @@ h1 {
             color:#fff;
             text-align:left;
             font-size:1.0em;
-            animation-duration: 0s;
           }
           img {
             width: 96px;
@@ -203,12 +180,6 @@ h1 {
           }
           #padding {
             margin-top: -10px;
-          }
-          h1 {
-            animation-duration: 0s;
-          }
-          p {
-            animation-duration: 0s;
           }
   }
   @media screen and (max-width: 700px) {
@@ -225,15 +196,6 @@ h1 {
         overflow:hidden;
         padding:20px;  
         margin-top: 15px;
-      }
-      h1 {
-        animation-duration: 0s;
-      }
-      h2 {
-        animation-duration: 0s;
-      }
-      p {
-        animation-duration: 0s;
       }
     }
    @media screen and (max-width: 650px) {
@@ -254,13 +216,11 @@ h1 {
         color:#fff;
         text-align:left;
         font-size:1.0em;
-        animation-duration: 0s;
       }
       h1 {
         font-size: 16px;
         margin: auto;
         text-align: left;
-        animation-duration: 0s;
     }
     img{
         width: 42px;
@@ -269,9 +229,6 @@ h1 {
     }
     #padding {
       margin-top: 0px;
-    }
-    p {
-      animation-duration: 0s;
     }
         }
   @media screen and (max-width: 500px) {
@@ -292,21 +249,16 @@ h1 {
         color:#fff;
         text-align:left;
         font-size:1.0em;
-        animation-duration: 0s;
       }
       h1 {
           font-size: 12px;
           margin: auto;
           text-align: left;
-          animation-duration: 0s;
       }
       img{
           width: 64px;
           height: 64px;
           margin-left: -20px;
-      }
-      p {
-        animation-duration: 0s;
       }
       #padding {
         margin-top: 0px;
@@ -330,21 +282,16 @@ h1 {
         color:#fff;
         text-align:left;
         font-size:1.0em;
-        animation-duration: 0s;
       }
       h1 {
         font-size: 14px;
         margin: auto;
         text-align: left;
-        animation-duration: 0s;
     }
     img{
         width: 42px;
         height: 42px;
         margin-left: -50px;
-    }
-    p {
-      animation-duration: 0s;
     }
   }
   @media (prefers-color-scheme: dark) {
