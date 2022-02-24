@@ -48,12 +48,12 @@ h1 {
 }
 
 @keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
 }
 
 .panel-title{
@@ -160,145 +160,116 @@ img {
 }
 
 @media screen and (max-width: 800px) {
-        .tabs {
-          margin-top: 0px;
-        }
-        .tab {
-            font-size: 16px;
-        }
-        .panels{
-            min-height:400px;
-            width:900px;
-            border-radius:50px;
-            overflow:hidden;
-            padding:20px;  
-            margin-top: 15px;
-          }
-          h2{
-            color:#fff;
-            text-align:left;
-            font-size:1.0em;
-          }
-          img {
-            width: 96px;
-            height: 96px;
-          }
-          #padding {
-            margin-top: -10px;
-          }
+.tabs {
+    margin-top: 0px;
+}
+.tab {
+    font-size: 16px;
+}
+.panels{
+    min-height:400px;
+    width:900px;
+    border-radius:50px;
+    overflow:hidden;
+    padding:20px;  
+    margin-top: 15px;
+}
+img {
+    width: 96px;
+    height: 96px;
+}
+#padding {
+    margin-top: -10px;
   }
-  @media screen and (max-width: 700px) {
-    .tabs {
-      margin-top: -20px;
-    }
-    .tab {
-        font-size: 16px;
-    }
-    .panels{
-        min-height:400px;
-        width:700px;
-        border-radius:50px;
-        overflow:hidden;
-        padding:20px;  
-        margin-top: 15px;
-      }
-    }
-   @media screen and (max-width: 650px) {
-    .tab {
-        font-size: 10px;
-        margin-top: -20px;
-    }
-    .panels{
-        min-height:400px;
-        width:500px;
-        border-radius:50px;
-        overflow:hidden;
-        padding:0px;  
-        margin-top: 15px;
-        
-      }
-      h2{
-        color:#fff;
-        text-align:left;
-        font-size:1.0em;
-      }
-      h1 {
-        font-size: 16px;
-        margin: auto;
-        text-align: left;
-    }
-    img{
-        width: 42px;
-        height: 42px;
-        margin-left: -50px;
-    }
-    #padding {
-      margin-top: 0px;
-    }
-        }
-  @media screen and (max-width: 500px) {
-    .tabs {
-      margin-top: -20px;
-    }
-    .tab {
-        font-size: 10px;
-        margin-top: -10px;
-    }
-    .panels{
-        min-height:400px;
-        width:450px;
-        border-radius:50px;
-        overflow: hidden;        
-      }
-      h2{
-        color:#fff;
-        text-align:left;
-        font-size:1.0em;
-      }
-      h1 {
-          font-size: 12px;
-          margin: auto;
-          text-align: left;
-      }
-      img{
-          width: 64px;
-          height: 64px;
-          margin-left: -20px;
-      }
-      #padding {
-        margin-top: 0px;
-      }
+}
+
+@media screen and (max-width: 700px) {
+.tabs {
+margin-top: -20px;
+}
+.tab {
+font-size: 16px;
+}
+.panels{
+    min-height:400px;
+    width:700px;
+    border-radius:50px;
+    overflow:hidden;
+    padding:20px;  
+    margin-top: 15px;
   }
-  @media screen and (max-width: 300px) {
-    .tabs {
-      margin-top: -20px;
-    }
-    .tab {
-        font-size: 10px;
-        margin-top: -10px;
-    }
-    .panels{
-        min-height:400px;
-        width:400px;
-        border-radius:50px;
-        overflow:hidden;        
-      }
-      h2{
-        color:#fff;
-        text-align:left;
-        font-size:1.0em;
-      }
-      h1 {
-        font-size: 14px;
-        margin: auto;
-        text-align: left;
-    }
-    img{
-        width: 42px;
-        height: 42px;
-        margin-left: -50px;
-    }
+}
+
+@media screen and (max-width: 650px) {
+.tab {
+    font-size: 10px;
+    margin-top: -20px;
+}
+.panels{
+    min-height:400px;
+    width:500px;
+    border-radius:50px;
+    overflow:hidden;
+    padding:0px;  
+    margin-top: 15px;       
+}
+h1 {
+    font-size: 16px;
+    margin: auto;
+    text-align: left;
+}
+img{
+    width: 42px;
+    height: 42px;
+    margin-left: -50px;
+}
+#padding {
+    margin-top: 0px;
   }
+}
+
+@media screen and (max-width: 500px) {
+.tabs {
+    margin-top: -20px;
+}
+.tab {
+    font-size: 10px;
+    margin-top: -10px;
+}
+.panels{
+    min-height:400px;
+    width:450px;
+    border-radius:50px;
+    overflow: hidden;        
+}
+h1 {
+    font-size: 12px;
+    margin: auto;
+    text-align: left;
+}
+img{
+    width: 64px;
+    height: 64px;
+    margin-left: -20px;
+}
+#padding {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+.panels{
+    min-height:400px;
+    width:400px;
+    border-radius:50px;
+    overflow:hidden;        
+}
+img{
+    width: 42px;
+    height: 42px;
+    margin-left: -50px;
+  }
+}
 
 @media (prefers-color-scheme: dark) {
 body {

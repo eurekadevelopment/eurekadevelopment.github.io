@@ -601,6 +601,9 @@ h1 {
     #svg_align_mobile {
         display: flex; justify-content: center; align-items: center;
     }
+    #mobilebox {
+        height: 700px;
+    }
 }
   @media screen and (max-width: 700px) {
     .box1 {

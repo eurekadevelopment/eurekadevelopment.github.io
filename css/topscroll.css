@@ -13,7 +13,7 @@
     padding: 15px;
     border-radius: 4px;
     box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #005fb2;
-  }
-  #myBtn:hover {
+}
+#myBtn:hover {
     background-color: #005fb2;
-  }
+}
