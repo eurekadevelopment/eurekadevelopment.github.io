@@ -667,6 +667,7 @@ h1 {
     }
     h1 {
         text-align: left;
+        font-size: 44px;
     }
       a {
         color:#08f;
@@ -765,6 +766,7 @@ h1 {
         margin-top: 30px;
         margin-bottom: 50px;
     }
+
     .topnav2 {
         background-color: black;
         overflow: hidden;
@@ -840,8 +842,14 @@ h1 {
         width: 250px;
         margin-top: -10px;
     }
+    #mobilebox2 {
+        height: 420px;
+    }
     #mobilebox3 {
         margin-top: -10px;
+    }
+    #mobilebox4 {
+        height: 200px;
     }
     #myBtn {
         margin-right: 20px;
