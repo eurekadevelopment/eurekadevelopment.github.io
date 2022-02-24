@@ -1,0 +1,143 @@
+li.hm2 {
+    /* Textfluss ändern */
+    float:left;
+    /* Aufzählungspunkte entfernen */
+    list-style-type:none;
+    /* Abstand */
+    margin-right:50px;
+}
+@media screen and (max-width: 1024px) {
+  li.hm2 {
+    /* Textfluss ändern */
+    float:left;
+    /* Aufzählungspunkte entfernen */
+    list-style-type:none;
+    /* Abstand */
+    margin-right:20px;
+    margin-bottom: 10px;
+}
+}
+@media screen and (max-width: 950px) {
+    li.hm2 {
+      /* Textfluss ändern */
+      float:left;
+      /* Aufzählungspunkte entfernen */
+      list-style-type:none;
+      /* Abstand */
+      margin-right:30px;
+      margin-bottom: 10px;
+      display:inline;
+  }
+  }
+@media screen and (max-width: 900px) {
+  li.hm2 {
+    /* Textfluss ändern */
+    float:left;
+    /* Aufzählungspunkte entfernen */
+    list-style-type:none;
+    /* Abstand */
+    margin-right:300px;
+    margin-bottom: 10px;
+    display:inline;
+}
+}
+@media screen and (max-width: 800px) {
+  li.hm2 {
+    /* Textfluss ändern */
+    float:left;
+    /* Aufzählungspunkte entfernen */
+    list-style-type:none;
+    /* Abstand */
+    margin-right:250px;
+    margin-bottom: 10px;
+}
+}
+@media screen and (max-width: 750px) {
+    li.hm2 {
+      /* Textfluss ändern */
+      float:left;
+      /* Aufzählungspunkte entfernen */
+      list-style-type:none;
+      /* Abstand */
+      margin-right:210px;
+      margin-bottom: 10px;
+  }
+  }
+@media screen and (max-width: 700px) {
+  li.hm2 {
+    /* Textfluss ändern */
+    float:left;
+    /* Aufzählungspunkte entfernen */
+    list-style-type:none;
+    /* Abstand */
+    margin-right:200px;
+    margin-bottom: 10px;
+}
+}
+@media screen and (max-width: 650px) {
+    li.hm2 {
+      /* Textfluss ändern */
+      float:left;
+      /* Aufzählungspunkte entfernen */
+      list-style-type:none;
+      /* Abstand */
+      margin-right:190px;
+      margin-bottom: 10px;
+  }
+  }
+@media screen and (max-width: 600px) {
+  li.hm2 {
+    /* Textfluss ändern */
+    float:left;
+    /* Aufzählungspunkte entfernen */
+    list-style-type:none;
+    /* Abstand */
+    margin-right:122px;
+    margin-bottom: 10px;
+    display:inline;
+}
+}
+@media screen and (max-width: 550px) {
+    li.hm2 {
+      /* Textfluss ändern */
+      float:left;
+      /* Aufzählungspunkte entfernen */
+      list-style-type:none;
+      /* Abstand */
+      margin-right:122px;
+      margin-bottom: 10px;
+  }
+  }
+@media screen and (max-width: 500px) {
+    li.hm2 {
+      /* Textfluss ändern */
+      float:left;
+      /* Aufzählungspunkte entfernen */
+      list-style-type:none;
+      /* Abstand */
+      margin-right:122px;
+      margin-bottom: 10px;
+  }
+  }
+@media screen and (max-width: 450px) {
+    li.hm2 {
+      /* Textfluss ändern */
+      float:left;
+      /* Aufzählungspunkte entfernen */
+      list-style-type:none;
+      /* Abstand */
+      margin-right:122px;
+      margin-bottom: 10px;
+  }
+  }
+@media screen and (max-width: 400px) {
+  li.hm2 {
+    /* Textfluss ändern */
+    float:left;
+    /* Aufzählungspunkte entfernen */
+    list-style-type:none;
+    /* Abstand */
+    margin-right:122px;
+    margin-bottom: 10px;
+}
+}
