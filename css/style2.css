@@ -9,6 +9,10 @@
   font-size: 48px;
 }
 
+#guide {
+  font-size: 26px;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -239,6 +243,9 @@ svg {
 }
 #svg_align_mobile {
  display: flex; justify-content: center; align-items: center;
+ }
+#guide {
+ font-size: 16px;
  }
 }
 
@@ -711,6 +718,9 @@ svg {
 #txt {
   font-size: 0px;
  }
+ #guide {
+    font-size: 14px;
+}
 }
 
 @media screen and (max-width: 500px) {
@@ -831,6 +841,9 @@ svg {
 #txt {
   font-size: 0px;
  }
+ #guide {
+    font-size: 14px;
+}
 }
 
 @media screen and (max-width: 400px) {
@@ -952,6 +965,9 @@ svg {
 }
 #txt {
   font-size: 0px;
+ }
+ #guide {
+  font-size: 14px;
  }
 }
 
@@ -1097,9 +1113,25 @@ html, body {
   overflow-x: hidden;
 }
 
+/* new hr/u style */
 hr {
   border: 0;
   height: 3px;
   background: #333;
   background-image: linear-gradient(to right, rgb(0, 0, 0), #08f, rgb(0, 0, 0));
 }
+.gradient-underline {
+  padding-bottom: 4px;
+  position: relative;
+  text-decoration: none;
+}
+
+.gradient-underline::after {
+  background: linear-gradient(to right, rgb(0, 0, 0), #08f, rgb(0, 0, 0));
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+ }
