@@ -308,9 +308,15 @@ svg {
  #size {
     height: 5%;
 }
+.flexbox {
+    height: 1%;
+}
 }
 
 @media screen and (max-width: 900px) {
+    .flexbox {
+        height: 1%;
+    }
 .box1 {
   text-align: left;
   font-size: 150%;
@@ -419,7 +425,8 @@ ul {
   margin-left: 7px;
 }
 .flexbox {
-  margin-left: 15%;     
+  margin-left: 15%; 
+  height: 1%;    
 }
 .flexbox_main {
   margin-top: 27px;
@@ -492,7 +499,8 @@ ul {
   margin-left: 7px;
 }
 .flexbox {
-  margin-left: 15%;     
+  margin-left: 15%;    
+  height: 10%; 
 }
  .flexbox_main {
   margin-top: 25px;
@@ -573,6 +581,7 @@ ul {
 }
 .flexbox {
   margin-left: 15%;
+  height: 1%;
 }
 .flexbox_main {
   margin-top: 24px;
@@ -674,6 +683,7 @@ ul {
 }
 .flexbox {
   margin-left: 15%;
+  height: 1%;
 }
 .flexbox_main {
   margin-top: 23px;
@@ -694,6 +704,7 @@ ul {
 #mobilebox {
   width: 250px;
   margin-top: -10px;
+  height: 50%;
 }
 #mobilebox2 {
   height: 450px;
@@ -868,6 +879,7 @@ svg {
  #mobile_nav {
   margin-bottom: 80px;
  } 
+ 
 }
 
 @media screen and (max-width: 400px) {
