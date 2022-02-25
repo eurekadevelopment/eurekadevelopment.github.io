@@ -1134,4 +1134,6 @@ hr {
   left: 0;
   height: 2px;
   width: 100%;
- }
+}
+
+a { text-decoration: none; }
