@@ -4,7 +4,7 @@ details {
   border: solid 2px #08f;
   border-radius: 28px;
   margin-left: 20px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
   
 details[open] {
@@ -75,6 +75,7 @@ ul {
 /* FAKE SELECT */  
 summary.radios {
   counter-reset: radios;
+  height: 28px;
 }
   
 input[type=radio] {
