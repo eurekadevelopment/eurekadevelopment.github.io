@@ -8,7 +8,9 @@ h2{
 h1 {
   font-size: 22px;
 }
-
+.tabs {
+  margin-top: 3%;
+}
 .warpper{
   display:flex;
   flex-direction: column;
@@ -100,6 +102,9 @@ to {
 }
   
 @media screen and (max-width: 1024px) {
+.tabs {
+  margin-top: 7%;
+}
 .panels{
   min-height:400px;
   width:900px;
@@ -121,7 +126,7 @@ img {
 
 @media screen and (max-width: 900px) {
 .tabs {
-  margin-top: -70px;
+  margin-top: 0%;
 }
 .tab {
   font-size: 16px;
@@ -141,7 +146,7 @@ img {
 
 @media screen and (max-width: 850px) {
 .tabs {
-  margin-top: -0px;
+  margin-top: 2%;
 }
 .tab {
   font-size: 16px;
@@ -161,7 +166,7 @@ img {
 
 @media screen and (max-width: 800px) {
 .tabs {
-  margin-top: 0px;
+  margin-top: 5%;
 }
 .tab {
   font-size: 16px;
@@ -185,7 +190,7 @@ img {
 
 @media screen and (max-width: 700px) {
 .tabs {
-  margin-top: -20px;
+  margin-top: 1%;
 }
 .tab {
   font-size: 16px;
@@ -203,7 +208,6 @@ img {
 @media screen and (max-width: 650px) {
 .tab {
   font-size: 10px;
-  margin-top: -20px;
 }
 .panels{
   min-height:400px;
@@ -229,12 +233,8 @@ img{
 }
 
 @media screen and (max-width: 500px) {
-.tabs {
-  margin-top: -20px;
-}
 .tab {
   font-size: 10px;
-  margin-top: -10px;
 }
 .panels{
   min-height:400px;

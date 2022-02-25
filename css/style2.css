@@ -8,11 +8,9 @@
 #txt {
   font-size: 48px;
 }
-
 #guide {
   font-size: 26px;
 }
-
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -45,10 +43,11 @@ select {
   border: 0px solid white;
   padding: 20px; 
   height: 19px; 
-  position: relative;
+  position: fixed;
   border: 0;
   border-radius: 28px;
   box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #08f;
+  z-index: 999;
 }
 .topnav {
   background-color: black;
@@ -61,6 +60,7 @@ select {
   border: 0;
   border-radius: 28px;
   box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #08f;
+  z-index: 999;
 }
 .topnav2 a {
   color: #f2f2f2;
@@ -122,7 +122,7 @@ footer p {
 .flexbox {
   width: 70%;
   margin: 1%;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -229,7 +229,9 @@ h1 {
 #mobilebox3 {
   margin-top: -90px;
 }
-
+#mobile_nav {
+    margin-bottom: 205px;
+}
 @media screen and (max-width: 1300px) {
 #txt {
   font-size: 0px;
@@ -303,6 +305,9 @@ svg {
 #svg_align_mobile {
   display: flex; justify-content: center; align-items: center;
  }
+ #size {
+    height: 5%;
+}
 }
 
 @media screen and (max-width: 900px) {
@@ -389,13 +394,11 @@ svg {
 .topnav2 {
   padding: 15px; 
   height: 15px; 
-  position: relative;
   font-size: 8px;
 }
 .topnav {
   padding: 15px; 
   height: 12px; 
-  position: fixed;
   font-size: 8px;
 }
 h1 {
@@ -464,13 +467,11 @@ svg {
 .topnav2 {
   padding: 15px; 
   height: 15px; 
-  position: relative;
   font-size: 8px;
 }
 .topnav {
   padding: 15px; 
   height: 12px; 
-  position: fixed;
   font-size: 8px;
 }
 h1 {
@@ -513,6 +514,9 @@ svg {
 #mobilebox {
   height: 700px;
  }
+#mobile_nav {
+  margin-bottom: 180px;
+ }
 }
 
 @media screen and (max-width: 700px) {
@@ -542,13 +546,11 @@ svg {
 .topnav2 {
   padding: 15px; 
   height: 15px; 
-  position: relative;
   font-size: 8px;
 }
 .topnav {
   padding: 15px; 
   height: 12px; 
-  position: fixed;
   font-size: 8px;
 }
 h1 {
@@ -591,6 +593,13 @@ svg {
 }
 #mobile1 {
   width: 150px;
+}
+#size {
+  height: 1%;
+  width: 70%;
+}
+#mobile_nav {
+  margin-bottom: 180px;
  }
 }
 
@@ -637,13 +646,11 @@ svg {
 .topnav2 {
   padding: 15px; 
   height: 12px; 
-  position: relative;
   font-size: 8px;
 }
 .topnav {
   padding: 15px; 
   height: 12px; 
-  position: fixed;
   font-size: 8px;
 }
 h1 {
@@ -689,7 +696,12 @@ ul {
   margin-top: -10px;
 }
 #mobilebox2 {
-  height: 420px;
+  height: 450px;
+  width: 250px;
+}
+#mobilebox4 {
+  height: 350px;
+  width: 250px;
 }
 #mobilebox3 {
   margin-top: -10px;
@@ -718,9 +730,16 @@ svg {
 #txt {
   font-size: 0px;
  }
- #guide {
-    font-size: 14px;
+#guide {
+  font-size: 14px;
 }
+#size {
+  height: 1%;
+  width: 70%;
+}
+#mobile_nav {
+  margin-bottom: 100px;
+ }
 }
 
 @media screen and (max-width: 500px) {
@@ -766,13 +785,11 @@ svg {
 .topnav2 {
   padding: 15px; 
   height: 12px; 
-  position: relative;
   font-size: 8px;
 }
 .topnav {
   padding: 15px; 
   height: 12px; 
-  position: fixed;
   font-size: 8px;
 }
 h1 {
@@ -841,9 +858,16 @@ svg {
 #txt {
   font-size: 0px;
  }
- #guide {
-    font-size: 14px;
+#guide {
+  font-size: 14px;
+ }
+ #size {
+    height: 1%;
+    width: 70%;
 }
+ #mobile_nav {
+  margin-bottom: 80px;
+ } 
 }
 
 @media screen and (max-width: 400px) {
@@ -884,14 +908,12 @@ svg {
 .topnav2 {
   padding: 15px; 
   height: 12px; 
-  position: relative;
   font-size: 8px;
   width: 370px;
 }
 .topnav {
   padding: 15px; 
   height: 12px; 
-  position: fixed;
   font-size: 8px;
 }
 h1 {
@@ -966,9 +988,12 @@ svg {
 #txt {
   font-size: 0px;
  }
- #guide {
+#guide {
   font-size: 14px;
- }
+}
+#mobile_nav {
+  margin-bottom: 130px;
+}
 }
 
 @keyframes slidein {

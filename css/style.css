@@ -100,7 +100,7 @@ li span {
   width: 70%;
   margin: 1%;
   background: transparent;
-  margin-bottom: 10px;
+  margin-bottom: 120px;
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -131,7 +131,7 @@ li span {
   width: 70%;
   margin: 1%;
   margin-bottom: 100px;
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   display: -moz-box;
@@ -217,7 +217,7 @@ li span {
 }
 #logo5 {
   float: left;
-  margin: -150px 0px 0px 0px;
+  margin: -158px 0px 0px 0px;
   width: 128px;
   height: 128px;
 }
@@ -348,11 +348,11 @@ li span {
   border: 0px solid white;
   padding: 20px; 
   height: 18px; 
-  position: relative;
+  position: fixed;
   border: 0;
   border-radius: 28px;
   box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #08f;
-  margin: 0 auto;
+  z-index: 999;
 }
 .topnav {
   background-color: black;
@@ -365,6 +365,7 @@ li span {
   border: 0;
   border-radius: 28px;
   box-shadow: 0 0 3px #08f, 0 0 7px #08f, 0 0 20px #08f;
+  z-index: 999;
 }
 .topnav_main a {
   color: #f2f2f2;
@@ -452,7 +453,6 @@ h1 {
 .topnav_main {
   padding: 20px; 
   height: 18px; 
-  position: relative;
   margin-left: 100px;
  }
 }
@@ -534,9 +534,9 @@ h1 {
   font-size: 25px;
 }
 .flexbox_main {
-  margin-left: 20px;
+  margin-left: 5%;
   width: 750px;
-  margin-bottom: 35px;
+  margin-bottom: 100px;
  }
 }
 
@@ -599,9 +599,9 @@ h1 {
   text-align: left;
 }
 .flexbox_main {
-  margin-left: -10px;
+  margin-left: 5%;
   width: 700px;
-  margin-bottom: 35px;
+  margin-bottom: 100px;
 }
 .flexbox_rom {
   animation: textwelle 0s;
@@ -675,7 +675,7 @@ h1 {
 .flexbox_main {
   margin-left: 30px;
   width: 600px;
-  margin-bottom: 35px;
+  margin-bottom: 100px;
  }
 }
 
@@ -749,9 +749,9 @@ h1 {
   text-align: left;
 }
 .flexbox_main {
-  margin-left: 1px;
+  margin-left: 7%;
   width: 520px;
-  margin-bottom: 35px;
+  margin-bottom: 100px;
  }
 }
 
@@ -827,9 +827,9 @@ h1 {
   font-size: 22px;
 }
 .flexbox_main {
-  margin-left: 28px;
+  margin-left: 7%;
   width: 420px;
-  margin-bottom: 35px;      
+  margin-bottom: 100px;      
 }
 ul {
   margin-left: -2.5em;
@@ -908,7 +908,7 @@ div.box_rom  {
   padding: 15px; 
   height: 12px; 
   border-radius: 25px;
-  font-size: 9px;
+  font-size: 8px;
 }
 .topnav {
   padding: 15px; 
@@ -924,7 +924,7 @@ p {
 .flexbox_main {
   margin-left: -10px;
   width: 420px;
-  margin-bottom: 35px;
+  margin-bottom: 100px;
 }
 #logo {
   margin-top: -3px;

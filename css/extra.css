@@ -97,7 +97,7 @@ li.hm2 {
 
 @media screen and (max-width: 650px) {
 li.hm2 {
-  margin-right:55%;
+  margin-right:50%;
   margin-bottom: 10px;
  }
 }
@@ -125,8 +125,11 @@ li.hm2 {
 
 @media screen and (max-width: 450px) {
 li.hm2 {
-  margin-right:50%;
+  margin-right:45%;
   margin-bottom: 10px;
+ }
+ #lower {
+     font-size: 12px;
  }
 }
 
@@ -134,5 +137,8 @@ li.hm2 {
 li.hm2 {
   margin-right:50%;
   margin-bottom: 10px;
+ }
+#lower {
+  font-size: 12px;
  }
 }
