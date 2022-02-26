@@ -76,10 +76,8 @@ $(document).ready(function() {
                         var target_url = target_rom.a30_url;
                     }
                 } else if (device == "A40") {
-                    if (rom_list[i] == 'crdroid') {
+                    if ((rom_list[i] == 'crdroid')) {
                         console.log('Official ' + rom_list[i] + ' is available for A40. Skipped');
-                    } else if (rom_list[i] == 'ancient') {
-                        console.log(rom_list[i] + ' is not available for A40. Skipped');
                     } else {
                         var target_url = target_rom.a40_url;
                     }
@@ -105,7 +103,7 @@ $(document).ready(function() {
                             }
                         } else {
                             try {
-                                if (((rom_list[i] == 'derp') && (device == "A20")) | ((rom_list[i] == 'derp') && (device == "A20e")) | ((rom_list[i] == 'crdroid') && (device == "A40"))) {
+                                if (((rom_list[i] == 'derp') && (device == "A20")) | ((rom_list[i] == 'derp') && (device == "A20e")) | ((rom_list[i] == 'crdroid') && (device == "A40")) | ((rom_list[i] == 'crdroid') && (device == "A40"))) {
                                     // Do nothing
                                 } else {
                                     document.getElementById(device + '_' + rom_list[i] + '_link').outerHTML = "<option value = " + direct_link + "> " + device;
