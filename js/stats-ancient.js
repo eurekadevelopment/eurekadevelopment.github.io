@@ -13,14 +13,21 @@ $(document).ready(function() {
 
         async function downloads_per_rom() {
             var a10_data;
+            var a40_data;
             try {
                 filepath = 'a10';
                 a10_data = await fetchData();
             } catch(e) {
                 a10_data = 0;
             }
+            try {
+                filepath = 'a40';
+                a40_data = await fetchData();
+            } catch(e) {
+                a40_data = 0;
+            }
 
-            var sum = a10_data;
+            var sum = a10_data + a40_data;
             if (sum == 0) {
                 document.getElementById('ancient_S_stats').innerHTML = "Stats Unavailable";
             } else {
