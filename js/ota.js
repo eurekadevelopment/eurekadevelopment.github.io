@@ -34,18 +34,24 @@ $(document).ready(function() {
             var superior = largedata.superior[0];
             var yaap = largedata.yaap[0];
             var ancient = largedata.ancient[0];
+            var pe = largedata.pe[0];
+            var ss = largedata.ss[0];
+            var elytra = largedata.elytra[0];
+            var elixier = largedata.elixier[0];
+            var aospk = largedata.aospk[0];
+            const rom_data = [aex, aicp, arcana, arrow, awaken, bliss, cherish, cipher, crdroid, derp, evolution, exthmui, hentai, lighthouse, lineage, nitrogen, octavi, pixysos, potato, ppui, radiant, spark, superior, yaap, ancient, pe, ss, elytra, elixier, aospk];
 
-            const rom_data = [aex, aicp, arcana, arrow, awaken, bliss, cherish, cipher, crdroid, derp, evolution, exthmui, hentai, lighthouse, lineage, nitrogen, octavi, pixysos, potato, ppui, radiant, spark, superior, yaap, ancient];
-
-            const rom_list = ['aex', 'aicp', 'arcana', 'arrow', 'awaken', 'bliss', 'cherish', 'cipher', 'crdroid', 'derp', 'evolution', 'exthmui', 'hentai', 'lighthouse', 'lineage', 'nitrogen', 'octavi', 'pixysos', 'potato', 'ppui', 'radiant', 'spark', 'superior',  'yaap', 'ancient'];
+            const rom_list = ['aex', 'aicp', 'arcana', 'arrow', 'awaken', 'bliss', 'cherish', 'cipher', 'crdroid', 'derp', 'evolution', 'exthmui', 'hentai', 'lighthouse', 'lineage', 'nitrogen', 'octavi', 'pixysos', 'potato', 'ppui', 'radiant', 'spark', 'superior',  'yaap', 'ancient', 'pe', 'ss', 'elytra',
+            'elixier', 'aospk'];
 
             // i < (number of roms in rom_list + 1)
             // i starts at 0.
-            for (let i = 0; i < 25; i++) {
+            for (let i = 0; i < 30; i++) {
                 var target_rom = rom_data[i];
                 if (device == "A10") {
                     if (arch == "arm") {
-                        if ((rom_list[i] == 'ancient') | (rom_list[i] == 'cherish') | (rom_list[i] == 'crdroid') | (rom_list[i] == 'derp') | (rom_list[i] == 'evolution') | (rom_list[i] == 'hentai') | (rom_list[i] == 'pixysos') | (rom_list[i] == 'potato') | (rom_list[i] == 'ppui') | (rom_list[i] == 'radiant')) {
+                        if ((rom_list[i] == 'ancient') | (rom_list[i] == 'cherish') | (rom_list[i] == 'crdroid') | (rom_list[i] == 'derp') | (rom_list[i] == 'evolution') | (rom_list[i] == 'hentai') | (rom_list[i] == 'pixysos') | (rom_list[i] == 'potato') | (rom_list[i] == 'ppui') | (rom_list[i] == 'radiant') | (rom_list[i] == 'pe') | (rom_list[i] == 'ss')
+                        | (rom_list[i] == 'elixier') | (rom_list[i] == 'elixier')) {
                             console.log('ARM version of ' + rom_list[i] + ' is not available for A10. Skipped');
                         } else {
                             var target_url = target_rom.a10_arm_url;
@@ -93,7 +99,8 @@ $(document).ready(function() {
                         var direct_link = entries[0].link;
                         if (device == "A10") {
                             try {
-                                if ((rom_list[i] == 'cherish') | (rom_list[i] == 'crdroid') | (rom_list[i] == 'derp') | (rom_list[i] == 'evolution') | (rom_list[i] == 'hentai') | (rom_list[i] == 'pixysos') | (rom_list[i] == 'potato') | (rom_list[i] == 'ppui') | (rom_list[i] == 'radiant')) {
+                                if ((rom_list[i] == 'cherish') | (rom_list[i] == 'crdroid') | (rom_list[i] == 'derp') | (rom_list[i] == 'evolution') | (rom_list[i] == 'hentai') | (rom_list[i] == 'pixysos') | (rom_list[i] == 'potato') | (rom_list[i] == 'ppui') | (rom_list[i] == 'radiant')  | (rom_list[i] == 'pe') | (rom_list[i] == 'ss')
+                                | (rom_list[i] == 'elixier') | (rom_list[i] == 'elixier')) {
                                     // Do nothing
                                 } else {
                                     document.getElementById(device + '_' + arch + '_' + rom_list[i] + '_link').outerHTML = "<option value = " + direct_link + "> " + device + " " + arch;
