@@ -22,7 +22,7 @@ $(document).ready(function() {
             var a40_data;
             try {
                 filepath = 'Samsung/A10/' + android + '/arm/' + rom;
-                if ((rom == 'cherish') | (rom == 'crdroid') | (rom == 'derp') | (rom == 'evolution') | (rom == 'hentai') | (rom == 'potato') | (rom == 'ppui') | (rom == 'pixysos') | (rom == 'radiant')) {
+                if ((rom == 'cherish') | (rom == 'crdroid') | (rom == 'derp') | (rom == 'evolution') | (rom == 'hentai') | (rom == 'potato') | (rom == 'ppui') | (rom == 'pixysos')  | (rom == 'pe') | (rom == 'ss') | (rom == 'elixier') | (rom == 'aospk')) {
                     a10_arm_data = 0;
                 } else {
                     a10_arm_data = await fetchData();
@@ -83,9 +83,10 @@ $(document).ready(function() {
         }
 
         const android_list = ['S'];
-        const rom_list = ['aex', 'aicp', 'arcana', 'arrow', 'awaken', 'bliss', 'cherish', 'cipher', 'crdroid', 'derp', 'evolution', 'exthmui', 'hentai', 'lighthouse', 'lineage', 'nitrogen', 'octavi', 'pixysos', 'potato', 'ppui', 'radiant', 'spark', 'superior',  'yaap'];
+        const rom_list = ['aex', 'aicp', 'arcana', 'arrow', 'awaken', 'bliss', 'cherish', 'cipher', 'crdroid', 'derp', 'evolution', 'exthmui', 'hentai', 'lighthouse', 'lineage', 'nitrogen', 'octavi', 'pixysos', 'potato', 'ppui', 'radiant', 'spark', 'superior',  'yaap', 'pe', 'ss',
+         'elytra', 'elixier', 'aospk'];
         for (let i = 0; i < 1; i++) {
-            for (let j = 0; j < 24; j++) {
+            for (let j = 0; j < 29; j++) {
                 setTimeout(() => { downloads_per_rom(android_list[i], rom_list[j]); }, 2500);
             }
         }
