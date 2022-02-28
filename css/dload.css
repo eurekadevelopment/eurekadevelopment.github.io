@@ -12,17 +12,18 @@
   padding: 0;
   border-radius: 50px;
   background: black;
-  border: 2px solid #0099cc;
+  border: 0px solid #0099cc;
   transition: .5s;
   z-index: 0;
 }
 
 .btn-slide2 {
-  border: 2px solid #08f;
+  border: 0px solid #08f;
 }
 
 .btn-slide2:hover {
   background-color: #08f;
+  opacity: 0.7;
 }
 
 .btn-slide:hover span.circle, .btn-slide2:hover span.circle2 {
