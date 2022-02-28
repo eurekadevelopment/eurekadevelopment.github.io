@@ -60,6 +60,7 @@
   left: 0;
   transition: .5s;
   border-radius: 50%;
+  font-size: 22px;
 }
 
 .btn-slide2 span.circle2 {

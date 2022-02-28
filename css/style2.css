@@ -226,8 +226,14 @@ h1 {
 #mobilebox {
   margin-top: -70px;
 }
+#mobilebox2 {
+  height: 330px;
+}
 #mobilebox3 {
   margin-top: -90px;
+}
+#mobilebox4 {
+  height: 220px;
 }
 #mobile_nav {
     margin-bottom: 205px;
@@ -310,6 +316,12 @@ svg {
 }
 .flexbox {
     height: 1%;
+}
+#mobilebox2 {
+  height: 470px;
+}
+#mobilebox4 {
+  height: 270px;
 }
 }
 
@@ -712,6 +724,10 @@ ul {
 }
 #mobilebox4 {
   height: 350px;
+  width: 250px;
+}
+#mobilebox5 {
+  height: 450px;
   width: 250px;
 }
 #mobilebox3 {
