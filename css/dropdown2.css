@@ -1,0 +1,81 @@
+.container {
+    width:150px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: -2px;
+}
+
+a {
+    color: #555d64;
+    font-weight: bold;  
+}
+
+.dropdown{
+    display:inline-block;
+    position:relative;
+    font-size: 14px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 3px 5px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 3px;
+    box-shadow: rgba(0, 0, 0, 0.336) 0px 56px 57px, rgba(0, 0, 0, 0.226) 0px -14px 32px, rgba(0, 0, 0, 0.192) 0px 6px 8px, rgba(0, 0, 0, 0.26) 0px 12px 13px, rgba(0, 0, 0, 0.185) 0px -3px 5px;
+  }
+
+  .dropdown button{
+    border:none;
+    padding:8px 16px;
+    background-color:#005fb2;
+    color:white;
+    transition:.3s;
+    cursor:pointer;
+    font-size: 13px;
+    border-radius: 8px;
+  }
+  
+  .dropdown:hover button{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    background-color:#024d8f;
+  }
+  
+  .dropdown div{
+    background-color:#2c2c2c;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    z-index:1;
+    visibility:hidden;
+    position:absolute;
+    min-width:100%;
+    opacity:0;
+    transition:.3s;
+  }
+  
+  .dropdown:hover div{
+    visibility:visible;
+    opacity:1;
+  }
+  
+  .dropdown div a{
+    display:block;
+    text-decoration:none;
+    padding:4px;
+    color:#000;
+    transition:.1s;
+    white-space:nowrap;
+    color:white;
+  }
+  
+  .dropdown div a:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 3px 5px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 3px;
+    box-shadow: rgba(0, 0, 0, 0.336) 0px 56px 57px, rgba(0, 0, 0, 0.226) 0px -14px 32px, rgba(0, 0, 0, 0.192) 0px 6px 8px, rgba(0, 0, 0, 0.26) 0px 12px 13px, rgba(0, 0, 0, 0.185) 0px -3px 5px;
+    transition: box-shadow 0.3s ease-in-out;
+    background-color:rgba(0, 136, 255, 0.644);
+    border-radius: 8px;
+  }
+
+  .linked {
+    border: 2px solid #024d8f;
+    box-shadow: inset 0px 0px 0px 10px red;
+    box-sizing: border-box; 
+    border-radius: 8px;
+  }

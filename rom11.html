@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="css/topscroll.css">
+    <link rel="stylesheet" href="css/dropdown2.css">
     <script async src="https://arc.io/widget.min.js#3LCgJWKk"></script>
 </head>
-<body>
   <body onload="myFunction()" style="margin:0;">
     <div id="loader"></div>
     <div id="overlay"></div>
     <div class="flexbox">
-      <div class="topnav harlow"> 
+      <div class="topnav harlow noselect"> 
           <a href="index">Home</a> 
           <a class="active" href="rom11">ROM</a>
           <a href="kernel">Kernel</a> 
@@ -27,8 +27,8 @@
       </div>     
   </div>
     <div class="flexbox">
-      <div class="topnav harlow"> 
-          <a class="active" href="rom11.html">Android 11</a> 
+      <div class="topnav harlow noselect"> 
+          <a class="active" href="rom11">Android 11</a> 
           <a href="rom12">Android 12</a>
           <a href="stats">Stats</a>
       </div>     
@@ -36,36 +36,31 @@
     <div class="flexbox_rom">
       <div class ="flexelement_rom box_rom harlow">
         <div class="image__img">
-          <img src="repo_images/aicp.png" height="225px" id="logo3">
+          <img src="repo_images/aicp.png" height="225px" width="100%" id="logo3">
         </div>
       <div class="image__overlay image__overlay--blur">
         <div class="image__title"><a style="color:#005fb2;" href="rom_assets/aicp/index.html">AICP</a>
-          <div class="image__description">
-            AICP is known by everyone as the Ice Cold Project that started on a Desire HD years ago and since then has evolved into a mature ROM.
+          <div class="image__description noselect">
+            <b>AICP is known by everyone as the Ice Cold Project that started on a Desire HD years ago and since then has evolved into a mature ROM.</b>
+           <br>
+           <br>
+           <div class="container">
+           <div class="dropdown">
+            <button>Download!</button>
+            <div class="linked">
+              <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/aicp/aicp_a10-arm_r-16.1-UNOFFICIAL-20210914.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+              <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/aicp/aicp_a10-arm64_r-16.1-UNOFFICIAL-20210914.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+              <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/aicp/aicp_a20_r-16.1-UNOFFICIAL-20210915.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+              <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/aicp/aicp_a30_r-16.1-UNOFFICIAL-20210915.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+              <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/aicp_a40_r-16.1-UNOFFICIAL-20210714.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+            </div>
+          </div>
+        </div>
             <br>
-            <br>
-            <a href=" http://www.aicp-rom.com" style="color: green">Website</a> | <a href="https://github.com/AICP" style="color: green">GitHub</a>
-            <form>
-              <label><a style="color: green">Download</a> </label>
-              <select name="menu1" id="menu1">
-              <option value = ""> - 
-              </option>
-              <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/aicp/aicp_a10-arm_r-16.1-UNOFFICIAL-20210914.zip/download"> A10 arm 
-              </option>
-              <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/aicp/aicp_a10-arm64_r-16.1-UNOFFICIAL-20210914.zip/download"> A10 arm64
-              </option>
-              <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/aicp/aicp_a20_r-16.1-UNOFFICIAL-20210915.zip/download"> A20
-              </option>
-              <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/aicp/aicp_a30_r-16.1-UNOFFICIAL-20210915.zip/download"> A30
-              </option>
-              <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/aicp_a40_r-16.1-UNOFFICIAL-20210714.zip/download"> A40
-              </option>
-              </select>
-              </form>
-              <br>
-              <b id="aicp_R_stats">Stats: -</b>
+            <a href="http://www.aicp-rom.com" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"><a id="mobile_rom"> | </a></a><a href="https://github.com/AICP" id="mobile_rom" style="color: green">GitHub</a>         
           </div>
       </div>
+      <b id="aicp_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
       </div>
     </div>
     <div class ="flexelement_rom box_rom harlow">
@@ -74,33 +69,27 @@
       </div>
     <div class="image__overlay image__overlay--blur">
       <div class="image__title"><a style="color:#005fb2;" href="rom_assets/aosip/index.html">AOSIP</a>
-        <div class="image__description">
-          AOSIP is a quality custom ROM based purely on AOSP. Twisted with the latest features. 
-          <br>
-            <br>
-            <a href="https://aosip.dev" style="color: green">Website</a> | <a href="https://github.com/AOSiP" style="color: green">GitHub</a>
-            <form>
-              <label><a style="color: green">Download</a> </label>
+        <div class="image__description noselect">
+          <b>AOSIP is a quality custom ROM based purely on AOSP. Twisted with the latest features.</b>
+           <br>
+           <br>
+           <div class="container">
+            <div class="dropdown">
+             <button>Download!</button>
+             <div class="linked">
+               <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/aosip/AOSiP-11-Ravioli-a10-arm-20210912.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+               <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/aosip/AOSiP-11-Ravioli-a10-arm64-20210912.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+               <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/aosip/AOSiP-11-Ravioli-a20-20210912.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+               <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/aosip/AOSiP-11-Ravioli-a30-20210912.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+               <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/AOSiP-11-Ravioli-a40-20210712-2108.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+             </div>
+           </div>
+         </div>
               <br>
-              <select name="menu2" id="menu2">
-              <option value = ""> - 
-              </option>
-              <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/aosip/AOSiP-11-Ravioli-a10-arm-20210912.zip/download"> A10 arm
-              </option>
-              <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/aosip/AOSiP-11-Ravioli-a10-arm64-20210912.zip/download"> A10 arm64
-              </option>
-              <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/aosip/AOSiP-11-Ravioli-a20-20210912.zip/download"> A20
-              </option>
-              <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/aosip/AOSiP-11-Ravioli-a30-20210912.zip/download"> A30
-              </option>
-              <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/AOSiP-11-Ravioli-a40-20210712-2108.zip/download"> A40
-              </option>
-              </select>
-              </form>
-              <br>
-              <b id="aosip_R_stats">Stats: -</b>
+              <a href="https://aosip.dev" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/AOSiP" id="mobile_rom" style="color: green">GitHub</a>
           </div>
     </div>
+    <b id="aosip_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
     </div>
   </div>
   <div class ="flexelement_rom box_rom harlow">
@@ -109,31 +98,27 @@
     </div>
   <div class="image__overlay image__overlay--blur">
     <div class="image__title"><a style="color:#005fb2;" href="rom_assets/aospa/index.html">AOSPA</a>
-      <div class="image__description">
-        Paranoid Android aims to extend the system, working on enhancing the already existing beauty of Android and following same design that were forward.
+      <div class="image__description noselect">
+        <b style="font-size: 12px;">Paranoid Android aims to extend the system, working on enhancing the already existing beauty of Android and following same design that were forward.</b>
         <br>
-        <a href="http://aospa.co/" style="color: green">Website</a> | <a href="https://github.com/AOSPA" style="color: green">GitHub</a>
-        <form>
-          <label><a style="color: green">Download</a> </label>
-          <select name="menu3" id="menu3">
-          <option value = ""> - 
-          </option>
-          <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/aospa/pa-ruby-1-a10-arm64-20210713-dev.zip/download"> A10 arm64
-          </option>
-          <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/aospa/pa-ruby-1-a20-20210713-dev.zip/download"> A20
-          </option>
-          <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/aospa/A20e_Patched_AOSPA.zip/download"> A20e
-          </option>
-          <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/aospa/pa-ruby-1-a30-20210713-dev.zip/download"> A30
-          </option>
-          <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/pa-ruby-1-a40-20210713-dev.zip/download"> A40
-          </option>
-          </select>
-          </form>
+        <br>
+        <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/aospa/pa-ruby-1-a10-arm64-20210713-dev.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/aospa/pa-ruby-1-a20-20210713-dev.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/aospa/A20e_Patched_AOSPA.zip" target="_blank"><u class="gradient-underline-rom">A20e</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/aospa/pa-ruby-1-a30-20210713-dev.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/pa-ruby-1-a40-20210713-dev.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
           <br>
-          <b id="aospa_R_stats">Stats: -</b>
+          <a href="http://aospa.co/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/AOSPA" id="mobile_rom" style="color: green">GitHub</a>
       </div>
   </div>
+  <b id="aospa_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
   </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -142,33 +127,28 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/arrow/index.html">ArrowOS</a>
-    <div class="image__description">
-      ArrowOS is an AOSP based project started with the aim of keeping things simple, clean and neat. We added just the right mostly stuff that will be actually USEFUL.
+    <div class="image__description noselect">
+      <b style="font-size: 12px;">ArrowOS is an AOSP based project started with the aim of keeping things simple, clean and neat. We added just the right mostly stuff that will be actually USEFUL.</b>
       <br>
-      <a href="https://www.arrowos.net/" style="color: green">Website</a> | <a href="https://github.com/arrowos" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu4" id="menu4">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/arrowos/Arrow-v11.0-a10-arm-UNOFFICIAL-20210910-VANILLA.zip/download"> A10 arm
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/arrowos/Arrow-v11.0-a10-arm64-UNOFFICIAL-20210910-VANILLA.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/arrowos/Arrow-v11.0-a20-UNOFFICIAL-20210910-VANILLA.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/arrowos/A20e_Patched_ArrowOS.zip/download"> A20e
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/arrowos/Arrow-v11.0-a30-UNOFFICIAL-20210910-VANILLA.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/Arrow-v11.0-a40-UNOFFICIAL-20210713-VANILLA.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <br>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/arrowos/Arrow-v11.0-a10-arm-UNOFFICIAL-20210910-VANILLA.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/arrowos/Arrow-v11.0-a10-arm64-UNOFFICIAL-20210910-VANILLA.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/arrowos/Arrow-v11.0-a20-UNOFFICIAL-20210910-VANILLA.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/arrowos/A20e_Patched_ArrowOS.zip" target="_blank"><u class="gradient-underline-rom">A20e</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/arrowos/Arrow-v11.0-a30-UNOFFICIAL-20210910-VANILLA.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/Arrow-v11.0-a40-UNOFFICIAL-20210713-VANILLA.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="arrowos_R_stats">Stats: -</b>
+        <a href="https://www.arrowos.net/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/arrowos" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="arrowos_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -177,32 +157,27 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/bliss/index.html">BlissROM</a>
-    <div class="image__description">
-      An open-source operating system based on Android with customizations, options and added security features.
+    <div class="image__description noselect">
+    <b>An open-source operating system based on Android with customizations, options and added security features.</b>
       <br>
       <br>
-      <a href="https://blissroms.org/" style="color: green">Website</a> | <a href="https://github.com/BlissRoms" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu5" id="menu5">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/bliss/Bliss-v14.7-a10-arm-UNOFFICIAL-vanilla-20210911.zip/download"> A10 arm
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/bliss/Bliss-v14.7-a10-arm64-UNOFFICIAL-vanilla-20210912.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/bliss/Bliss-v14.7-a20-UNOFFICIAL-vanilla-20210912.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/bliss/Bliss-v14.7-a30-UNOFFICIAL-vanilla-20210912.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/Bliss-v14.5-a40-UNOFFICIAL-gapps-20210715.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/bliss/Bliss-v14.7-a10-arm-UNOFFICIAL-vanilla-20210911.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/bliss/Bliss-v14.7-a10-arm64-UNOFFICIAL-vanilla-20210912.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/bliss/Bliss-v14.7-a20-UNOFFICIAL-vanilla-20210912.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/bliss/Bliss-v14.7-a30-UNOFFICIAL-vanilla-20210912.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/Bliss-v14.5-a40-UNOFFICIAL-gapps-20210715.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="bliss_R_stats">Stats: -</b>
+        <a href="https://blissroms.org/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/BlissRoms" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="bliss_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -211,32 +186,27 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/carbon/index.html">CarbonROM</a>
-    <div class="image__description">
-      It is an aftermarket firmware based on the AOSP created with the purpose of adding versatility and customization to stock Android.
+    <div class="image__description noselect">
+    <b>It is an aftermarket firmware based on the AOSP created with the purpose of adding versatility and customization to stock Android.</b>
       <br>
       <br>
-      <a href="https://www.carbonrom.org/" style="color: green">Website</a> | <a href="https://github.com/CarbonROM" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu6" id="menu6">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/carbon/CARBON-CR-9.0-R-UNOFFICIAL-a10-arm-20210916-1005.zip/download"> A10 arm
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/carbon/CARBON-CR-9.0-R-UNOFFICIAL-a10-arm64-20210916-0322.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/carbon/CARBON-CR-9.0-R-UNOFFICIAL-a20-20210916-0632.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/carbon/CARBON-CR-9.0-R-UNOFFICIAL-a30-20210916-0802.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/CARBON-CR-9.0-R-UNOFFICIAL-a40-20210712-1740.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/carbon/CARBON-CR-9.0-R-UNOFFICIAL-a10-arm-20210916-1005.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/carbon/CARBON-CR-9.0-R-UNOFFICIAL-a10-arm64-20210916-0322.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/carbon/CARBON-CR-9.0-R-UNOFFICIAL-a20-20210916-0632.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/carbon/CARBON-CR-9.0-R-UNOFFICIAL-a30-20210916-0802.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/CARBON-CR-9.0-R-UNOFFICIAL-a40-20210712-1740.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="carbon_R_stats">Stats: -</b>
+        <a href="https://www.carbonrom.org/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/CarbonROM" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="carbon_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -245,31 +215,27 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/cesium/index.html">CesiumOS</a>
-    <div class="image__description">
-      CesiumOS is a project that is something that was born out of a sea of similar-looking AOSP roms. We offer a unique, yet familiar experience for your phone.
+    <div class="image__description noselect">
+    <b style="font-size: 12px;">CesiumOS is a project that is something that was born out of a sea of similar-looking AOSP roms. We offer a unique, yet familiar experience for your phone.</b>
       <br>
-      <a href="#rom11.html" style="color: green">Website</a> | <a href="https://github.com/CesiumOS-org" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu7" id="menu7">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/cesium/CesiumOS-v3.4-a10-20210708-1133-UNOFFICIAL.zip/download"> A10 arm 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/cesium/CesiumOS-v3.4-a10-arm64-20210708-1447-UNOFFICIAL.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/cesium/CesiumOS-v3.4-a20-20210708-1949-UNOFFICIAL.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/cesium/CesiumOS-v3.4-a30-20210708-2009-UNOFFICIAL.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/CesiumOS-v3.4-a40-20210710-2240-UNOFFICIAL.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <br>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/cesium/CesiumOS-v3.4-a10-20210708-1133-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/cesium/CesiumOS-v3.4-a10-arm64-20210708-1447-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/cesium/CesiumOS-v3.4-a20-20210708-1949-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/cesium/CesiumOS-v3.4-a30-20210708-2009-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/CesiumOS-v3.4-a40-20210710-2240-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="cesium_R_stats">Stats: -</b>
+        <a href="#" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/CesiumOS-org" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="cesium_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -278,34 +244,28 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/cherish/index.html">CherishOS</a>
-    <div class="image__description">
-      Based on AOSP & inspired by Google Pixel, it has a refined Material Design 2 UI. So many features that you probably won't find in any other ROMs.
+    <div class="image__description noselect">
+    <b>Based on AOSP & inspired by Google Pixel, it has a refined Material Design 2 UI. So many features that you probably won't find in any other ROMs.</b>
       <br>
       <br>
-      <a href="https://cherishos.com/" style="color: green">Website</a> | <a href="https://github.com/CherishOS" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu8" id="menu8">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/cherish/Cherish-OS-v2.9-20210912-1215-a10-arm-UNOFFICIAL-Vanilla.zip/download"> A10 arm 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/cherish/Cherish-OS-v2.9-20210911-1741-a10-arm64-UNOFFICIAL-Vanilla.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/cherish/Cherish-OS-v2.9-20210912-0423-a20-UNOFFICIAL-Vanilla.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/cherish/A20e_Patched_CherishOS.zip/download"> A20e
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/cherish/Cherish-OS-v2.9-20210912-0819-a30-UNOFFICIAL-Vanilla.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/Cherish-OS-v2.7-20210710-1724-a40-UNOFFICIAL-GApps.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/cherish/Cherish-OS-v2.9-20210912-1215-a10-arm-UNOFFICIAL-Vanilla.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/cherish/Cherish-OS-v2.9-20210911-1741-a10-arm64-UNOFFICIAL-Vanilla.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/cherish/Cherish-OS-v2.9-20210912-0423-a20-UNOFFICIAL-Vanilla.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/cherish/A20e_Patched_CherishOS.zip" target="_blank"><u class="gradient-underline-rom">A20e</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/cherish/Cherish-OS-v2.9-20210912-0819-a30-UNOFFICIAL-Vanilla.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/Cherish-OS-v2.7-20210710-1724-a40-UNOFFICIAL-GApps.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="cherish_R_stats">Stats: -</b>
+        <a href="https://cherishos.com/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/CherishOS" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="cherish_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -314,32 +274,27 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/cipher/index.html">CipherOS</a>
-    <div class="image__description">
-      Android Custom OS, Fueled by Lineage.
+    <div class="image__description noselect">
+    <b>Android Custom OS, Fueled by Lineage.</b>
       <br>
       <br>
-      <a href="http://cipheros.site/" style="color: green">Website</a> | <a href="https://github.com/CipherOS" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu9" id="menu9">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/cipheros/CipherOS-1.7-ASTRA-20210917-1450-a10-arm-UNOFFICIAL-VANILLA.zip/download"> A10 arm
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/cipheros/CipherOS-1.7-ASTRA-20210916-1425-a10-arm64-UNOFFICIAL-VANILLA.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/cipheros/CipherOS-1.7-ASTRA-20210916-1744-a20-UNOFFICIAL-VANILLA.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/cipheros/CipherOS-1.7-ASTRA-20210916-1930-a30-UNOFFICIAL-VANILLA.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/CipherOS-1.7-ASTRA-20210918-1046-a40-UNOFFICIAL-VANILLA.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/cipheros/CipherOS-1.7-ASTRA-20210917-1450-a10-arm-UNOFFICIAL-VANILLA.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/cipheros/CipherOS-1.7-ASTRA-20210916-1425-a10-arm64-UNOFFICIAL-VANILLA.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/cipheros/CipherOS-1.7-ASTRA-20210916-1744-a20-UNOFFICIAL-VANILLA.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/cipheros/CipherOS-1.7-ASTRA-20210916-1930-a30-UNOFFICIAL-VANILLA.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/CipherOS-1.7-ASTRA-20210918-1046-a40-UNOFFICIAL-VANILLA.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="cipheros_R_stats">Stats: -</b>
+        <a href="http://cipheros.site/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/CipherOS" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="cipheros_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -348,34 +303,28 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/corvus/index.html">CorvusOS</a>
-    <div class="image__description">
-      AOSP based rom tailored for what a user needs!
+    <div class="image__description noselect">
+    <b>AOSP based rom tailored for what a user needs!</b>
       <br>
       <br>
-      <a href="#rom11.html" style="color: green">Website</a> | <a href="https://github.com/Corvus-ROM" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu10" id="menu10">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/corvus/Corvus_v16.7-Obsidian-a10-29072021-Unofficial-0110.zip/download"> A10 arm
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/corvus/Corvus_v16.7-Obsidian-a10-28072021-Unofficial-2200.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/corvus/Corvus_v16.7-Obsidian-a20-28072021-Unofficial-2259.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/corvus/Corvus_v16.0-Alpha-Centauri-a20e-14052021-Unofficial-1225.zip/download"> A20e
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/corvus/Corvus_v16.7-Obsidian-a30-29072021-Unofficial-0004.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/Corvus_v16.7-Obsidian-a40-27072021-Unofficial-1952.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/corvus/Corvus_v16.7-Obsidian-a10-29072021-Unofficial-0110.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/corvus/Corvus_v16.7-Obsidian-a10-28072021-Unofficial-2200.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/corvus/Corvus_v16.7-Obsidian-a20-28072021-Unofficial-2259.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/corvus/Corvus_v16.0-Alpha-Centauri-a20e-14052021-Unofficial-1225.zip" target="_blank"><u class="gradient-underline-rom">A20e</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/corvus/Corvus_v16.7-Obsidian-a30-29072021-Unofficial-0004.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/Corvus_v16.7-Obsidian-a40-27072021-Unofficial-1952.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="corvus_R_stats">Stats: -</b>
+        <a href="#" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/Corvus-ROM" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="corvus_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -384,34 +333,28 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/crd/index.html">crDroidAndroid</a>
-    <div class="image__description">
-      CrDroid is designed to improve the performance, reliability and customizability of stock Android.
+    <div class="image__description noselect">
+    <b>CrDroid is designed to improve the performance, reliability and customizability of stock Android.</b>
       <br>
       <br>
-      <a href="https://crdroid.net/" style="color: green">Website</a> | <a href="https://github.com/crdroidandroid" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu11" id="menu11">
-        <option value = ""> - 
-        </option>
-        <option value = "https://crdroid.net/downloads#a10"> A10 arm 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/crdroid/crDroidAndroid-11.0-20211115-a10-v7.12-ARM64.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/crdroid/crDroidAndroid-11.0-20211115-a20-v7.12.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/crdroid/crDroidAndroid-11.0-20211115-a20e-v7.12.zip/download"> A20e
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/crdroid/crDroidAndroid-11.0-20211115-a30-v7.12.zip/download"> A30
-        </option>
-        <option value = "https://crdroid.net/downloads#a40"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://crdroid.net/downloads#a10" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/crdroid/crDroidAndroid-11.0-20211115-a10-v7.12-ARM64.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/crdroid/crDroidAndroid-11.0-20211115-a20-v7.12.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/crdroid/crDroidAndroid-11.0-20211115-a20e-v7.12.zip" target="_blank"><u class="gradient-underline-rom">A20e</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/crdroid/crDroidAndroid-11.0-20211115-a30-v7.12.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://crdroid.net/downloads#a40" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="crdroid_R_stats">Stats: -</b>
+        <a href="https://crdroid.net/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/crdroidandroid" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="crdroid_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -420,30 +363,26 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/descendant/index.html">DescendantXI</a>
-    <div class="image__description">
-      Descendant is a different take on Android that aims to revolutionize Google’s Android AOSP experience.
+    <div class="image__description noselect">
+    <b>Descendant is a different take on Android that aims to revolutionize Google’s Android AOSP experience.</b>
       <br>
       <br>
-      <a href="https://downloads.descendant.me/" style="color: green">Website</a> | <a href="https://github.com/Descendant-XI" style="color: green">GitHub</a> 
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu12" id="menu12">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/descendant/descendant_a10-arm64-11.5-20210920-Community.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/descendant/descendant_a20-11.5-20210920-Community.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/descendant/descendant_a30-11.5-20210919-Community.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/descendant_a40-11.5-20210920-Community.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/descendant/descendant_a10-arm64-11.5-20210920-Community.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/descendant/descendant_a20-11.5-20210920-Community.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/descendant/descendant_a30-11.5-20210919-Community.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/descendant_a40-11.5-20210920-Community.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="descendant_R_stats">Stats: -</b>
+        <a href="https://downloads.descendant.me/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/Descendant-XI" id="mobile_rom" style="color: green">GitHub</a> 
     </div>
 </div>
+<b id="descendant_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -452,32 +391,27 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/dot/index.html">DotOS</a>
-    <div class="image__description">
-      Based on AOSP with hand-picked goodies, innovative ideas and creative things which are added in the rom to enhance user experience!
+    <div class="image__description noselect">
+    <b>Based on AOSP with hand-picked goodies, innovative ideas and creative things which are added in the rom to enhance user experience!</b>
       <br>
       <br>
-      <a href="https://www.droidontime.com/" style="color: green">Website</a> | <a href="https://github.com/DotOS" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu13" id="menu13">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/dot/dotOS-R-v5.2-a10-arm-UNOFFICIAL-20210915-1753.zip/download"> A10 arm 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/dot/dotOS-R-v5.2-a10-arm64-UNOFFICIAL-20210915-1941.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/dot/dotOS-R-v5.2-a20-UNOFFICIAL-20210915-1040.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/dot/dotOS-R-v5.2-a30-UNOFFICIAL-20210915-1221.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/dotOS-R-v5.2-a40-UNOFFICIAL-20210916-0840.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/dot/dotOS-R-v5.2-a10-arm-UNOFFICIAL-20210915-1753.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/dot/dotOS-R-v5.2-a10-arm64-UNOFFICIAL-20210915-1941.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/dot/dotOS-R-v5.2-a20-UNOFFICIAL-20210915-1040.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/dot/dotOS-R-v5.2-a30-UNOFFICIAL-20210915-1221.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/dotOS-R-v5.2-a40-UNOFFICIAL-20210916-0840.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="dot_R_stats">Stats: -</b>
+        <a href="https://www.droidontime.com/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/DotOS" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="dot_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -486,32 +420,27 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/dotfe/index.html">DotOS-FE</a>
-    <div class="image__description">
-      DroidOnTime is based on Google's AOSP with hand-picked goodies, FAN EDITITON!
+    <div class="image__description noselect">
+    <b>DroidOnTime is based on Google's AOSP with hand-picked goodies, FAN EDITITON!</b>
       <br>
       <br>
-      <a href="" style="color: green">Website</a> | <a href="https://github.com/DotOS-FE" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu13" id="menu13">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/dotfe/dotOS-FanEdition-R-v1.2-a10-arm-Community-20210806-0907.zip/download"> A10 arm 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/dotfe/dotOS-FanEdition-R-v1.2-a10-arm64-Community-20210806-0956.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/dotfe/dotOS-FanEdition-R-v1.2-a20-Community-20210805-2342.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/dotfe/dotOS-FanEdition-R-v1.2-a30-Community-20210806-0516.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/dotOS-FanEdition-R-v1.1-a40-Community-20210721-1910.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/dotfe/dotOS-FanEdition-R-v1.2-a10-arm-Community-20210806-0907.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/dotfe/dotOS-FanEdition-R-v1.2-a10-arm64-Community-20210806-0956.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/dotfe/dotOS-FanEdition-R-v1.2-a20-Community-20210805-2342.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/dotfe/dotOS-FanEdition-R-v1.2-a30-Community-20210806-0516.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/dotOS-FanEdition-R-v1.1-a40-Community-20210721-1910.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="dotfe_R_stats">Stats: -</b>
+        <a href="#" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/DotOS-FE" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="dotfe_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -520,24 +449,23 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/falcon/index.html">FalconOS</a>
-    <div class="image__description">
-      FalconOS - A CustomROM Redesign By Team Falcon-- Which Gives You Stable & Daily Usage Performance.
+    <div class="image__description noselect">
+    <b>FalconOS - A CustomROM Redesign By Team Falcon-- Which Gives You Stable & Daily Usage Performance.</b>
       <br>
       <br>
-      <a href="https://falconos.in/" style="color: green">Website</a> | <a href="https://github.com/Falcon-OS" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu14" id="menu14">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/FalconOS-11-Skyline-1.1-Unofficial-a40-20210604-0043.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/FalconOS-11-Skyline-1.1-Unofficial-a40-20210604-0043.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="falcon_R_stats">Stats: -</b>
+        <a href="https://falconos.in/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/Falcon-OS" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="falcon_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -546,32 +474,27 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/fluid/index.html">FluidROM</a>
-    <div class="image__description">
-      Bring in some punk to your phone with fluid, the smoothest aftermarket android. With latest patches and fresh user experience.
+    <div class="image__description noselect">
+    <b>Bring in some punk to your phone with fluid, the smoothest aftermarket android. With latest patches and fresh user experience.</b>
       <br>
       <br>
-      <a href="https://projectfluid.org/" style="color: green">Website</a> | <a href="https://github.com/project-fluid" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu15" id="menu15">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/fluid/Fluid-1.7-Rum-UNOFFICIAL-a10-20210719.zip/download"> A10 arm 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/fluid/Fluid-1.7-Rum-UNOFFICIAL-a10-20210719-arm64.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/fluid/Fluid-1.7-Rum-UNOFFICIAL-a20-20210719.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/fluid/Fluid-1.7-Rum-UNOFFICIAL-a30-20210719.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/Fluid-1.6-Rum-UNOFFICIAL-a40-20210610.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/fluid/Fluid-1.7-Rum-UNOFFICIAL-a10-20210719.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/fluid/Fluid-1.7-Rum-UNOFFICIAL-a10-20210719-arm64.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/fluid/Fluid-1.7-Rum-UNOFFICIAL-a20-20210719.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/fluid/Fluid-1.7-Rum-UNOFFICIAL-a30-20210719.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/Fluid-1.6-Rum-UNOFFICIAL-a40-20210610.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="fluid_R_stats">Stats: -</b>
+        <a href="https://projectfluid.org/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/project-fluid" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="fluid_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -580,34 +503,28 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/havoc/index.html">HavocOS</a>
-    <div class="image__description">
-      Havoc-OS is an after-market firmware based on Android Open Source Project, inspired by Google Pixel, refined Material Design 2 UI.
+    <div class="image__description noselect">
+    <b>Havoc-OS is an after-market firmware based on Android Open Source Project, inspired by Google Pixel, refined Material Design 2 UI.</b>
       <br>
       <br>
-      <a href="https://havoc-os.com/" style="color: green">Website</a> | <a href="https://github.com/Havoc-OS" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu16" id="menu16">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/havoc/Havoc-OS-v4.11-20211117-a10-Unofficial-arm.zip/download"> A10 arm 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/havoc/Havoc-OS-v4.11-20211117-a10-Unofficial-arm64.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/havoc/Havoc-OS-v4.11-20211116-a20-Unofficial.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/havoc/Havoc-OS-v4.11-20211116-a20e-Unofficial.zip/download"> A20e
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/havoc/Havoc-OS-v4.11-20211116-a30-Unofficial.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A40/R/havoc/Havoc-OS-v4.11-20211116-a40-Unofficial.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/havoc/Havoc-OS-v4.11-20211117-a10-Unofficial-arm.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/havoc/Havoc-OS-v4.11-20211117-a10-Unofficial-arm64.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/havoc/Havoc-OS-v4.11-20211116-a20-Unofficial.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/havoc/Havoc-OS-v4.11-20211116-a20e-Unofficial.zip" target="_blank"><u class="gradient-underline-rom">A20e</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/havoc/Havoc-OS-v4.11-20211116-a30-Unofficial.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A40/R/havoc/Havoc-OS-v4.11-20211116-a40-Unofficial.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="havoc_R_stats">Stats: -</b>
+        <a href="https://havoc-os.com/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/Havoc-OS" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="havoc_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -616,32 +533,27 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/kang/index.html">KangOS</a>
-    <div class="image__description">
-      Based on AOSP, it focuses on redefining the stock Android rom and provide a more tinted and elegant user experience.
+    <div class="image__description noselect">
+    <b>Based on AOSP, it focuses on redefining the stock Android rom and provide a more tinted and elegant user experience.</b>
       <br>
       <br>
-      <a href="#rom11.html" style="color: green">Website</a> | <a href="https://github.com/Kang-OS-R" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu17" id="menu17">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/kang/KangOS-2.1-R-Elixir-arm-UNOFFICIAL-a10-20210723-0210.zip/download"> A10 arm 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/kang/KangOS-2.1-R-Elixir-arm64-UNOFFICIAL-a10-20210723-0406.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/kang/KangOS-2.1-R-Elixir-UNOFFICIAL-a20-20210723-1822.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/kang/KangOS-2.1-R-Elixir-UNOFFICIAL-a30-20210723-2051.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/KangOS-2.1-R-Elixier-Gapps-UNOFFICIAL-a40-20210611-2108.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/kang/KangOS-2.1-R-Elixir-arm-UNOFFICIAL-a10-20210723-0210.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/kang/KangOS-2.1-R-Elixir-arm64-UNOFFICIAL-a10-20210723-0406.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/kang/KangOS-2.1-R-Elixir-UNOFFICIAL-a20-20210723-1822.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/kang/KangOS-2.1-R-Elixir-UNOFFICIAL-a30-20210723-2051.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/KangOS-2.1-R-Elixier-Gapps-UNOFFICIAL-a40-20210611-2108.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="kang_R_stats">Stats: -</b>
+        <a href="#" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/Kang-OS-R" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="kang_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -650,34 +562,28 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/los/index.html">LineageOS</a>
-    <div class="image__description">
-      A free and open-source operating system for various devices, based on the Android mobile platform.
+    <div class="image__description noselect">
+    <b>A free and open-source operating system for various devices, based on the Android mobile platform.</b>
       <br>
       <br>
-      <a href="http://www.lineageos.org/" style="color: green">Website</a> | <a href="https://github.com/LineageOS" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu18" id="menu18">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/lineage/lineage-18.1-20211115-UNOFFICIAL-a10-ARM.zip/download"> A10 arm 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/lineage/lineage-18.1-20211115-UNOFFICIAL-a10-ARM64.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/lineage/lineage-18.1-20211115-UNOFFICIAL-a20.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/lineage/lineage-18.1-20211115-UNOFFICIAL-a20e.zip/download"> A20e
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/lineage/lineage-18.1-20211115-UNOFFICIAL-a30.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A40/R/lineage/lineage-18.1-20211115-UNOFFICIAL-a40.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/lineage/lineage-18.1-20211115-UNOFFICIAL-a10-ARM.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/lineage/lineage-18.1-20211115-UNOFFICIAL-a10-ARM64.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/lineage/lineage-18.1-20211115-UNOFFICIAL-a20.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/lineage/lineage-18.1-20211115-UNOFFICIAL-a20e.zip" target="_blank"><u class="gradient-underline-rom">A20e</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/lineage/lineage-18.1-20211115-UNOFFICIAL-a30.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A40/R/lineage/lineage-18.1-20211115-UNOFFICIAL-a40.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="lineage_R_stats">Stats: -</b>
+        <a href="http://www.lineageos.org/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/LineageOS" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="lineage_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -686,32 +592,27 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/losfe/index.html">LineageOS-FE</a>
-    <div class="image__description">
-      This project brings some tiny features and UI tweaks to our beloved LineageOS.
+    <div class="image__description noselect">
+    <b>This project brings some tiny features and UI tweaks to our beloved LineageOS.</b>
       <br>
       <br>
-      <a href="#rom11.html" style="color: green">Website</a> | <a href="https://github.com/Los-FE" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu19" id="menu19">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/lineagefe/LineageFE-v11.69-20210710-a10-Isobar.zip/download"> A10 arm 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/lineagefe/LineageFE-v11.69-arm64-20210710-a10-Isobar.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/lineagefe/LineageFE-v11.69-20210710-a20-Isobar.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/lineagefe/LineageFE-v11.69-20210710-a30-Isobar.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/LineageFE-v11.69-20210710-a40-Isobar.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/lineagefe/LineageFE-v11.69-20210710-a10-Isobar.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/lineagefe/LineageFE-v11.69-arm64-20210710-a10-Isobar.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/lineagefe/LineageFE-v11.69-20210710-a20-Isobar.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/lineagefe/LineageFE-v11.69-20210710-a30-Isobar.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/LineageFE-v11.69-20210710-a40-Isobar.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="lineagefe_R_stats">Stats: -</b>
+        <a href="#" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/Los-FE" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="lineagefe_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -720,30 +621,26 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/nezuko/index.html">NezukoOS</a>
-    <div class="image__description">
-      NezukoOS is a fresh new ROM aiming to provide you a customisable and stable experience!
+    <div class="image__description noselect">
+    <b>NezukoOS is a fresh new ROM aiming to provide you a customisable and stable experience!</b>
       <br>
       <br>
-      <a href="#rom11.html" style="color: green">Website</a> | <a href="https://github.com/NezukoOS" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu20" id="menu20">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/nezuko/NezukoOS-1.4-VANILLA-a10-arm64-20210723-1305-UNOFFICIAL.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/nezuko/NEZUKO_a20-11.0-20210606-2356-STABLE-UNOFFICIAL.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/nezuko/NezukoOS-1.4-VANILLA-a30-20210725-1204-UNOFFICIAL.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/NezukoOS-1.4-a40-20210626-2034-UNOFFICIAL.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/nezuko/NezukoOS-1.4-VANILLA-a10-arm64-20210723-1305-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/nezuko/NEZUKO_a20-11.0-20210606-2356-STABLE-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/nezuko/NezukoOS-1.4-VANILLA-a30-20210725-1204-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/NezukoOS-1.4-a40-20210626-2034-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="nezuko_R_stats">Stats: -</b>
+        <a href="#" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/NezukoOS" id="mobile_rom" style="color: green">GitHub</a> 
     </div>
 </div>
+<b id="nezuko_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -752,34 +649,28 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/nusa/index.html">NusantaraOS</a>
-    <div class="image__description">
-      AOSP based project with alot of customisation. But mostly are broken.
+    <div class="image__description noselect">
+    <b>AOSP based project with alot of customisation. But mostly are broken.</b>
       <br>
       <br>
-      <a href="https://nusantaraproject.my.id/" style="color: green">Website</a> | <a href="https://github.com/NusantaraProject-ROM" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu21" id="menu21">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/nusantara/Nusantara_v3.1-11-a10-arm-27072021-UNOFFICIAL-1114.zip/download"> A10 arm 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/nusantara/Nusantara_v3.1-11-arm64-a10-27072021-UNOFFICIAL-1825.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/nusantara/Nusantara_v3.1-11-a20-28072021-UNOFFICIAL-0449.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/nusantara/Nusantara_v3.0-11-a20e-18062021-UNOFFICIAL-1919.zip/download"> A20e
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/nusantara/Nusantara_v3.1-11-a30-28072021-UNOFFICIAL-1114.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/Nusantara_v3.1-11-a40-29072021-UNOFFICIAL-1646.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/nusantara/Nusantara_v3.1-11-a10-arm-27072021-UNOFFICIAL-1114.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/nusantara/Nusantara_v3.1-11-arm64-a10-27072021-UNOFFICIAL-1825.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/nusantara/Nusantara_v3.1-11-a20-28072021-UNOFFICIAL-0449.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/nusantara/Nusantara_v3.0-11-a20e-18062021-UNOFFICIAL-1919.zip" target="_blank"><u class="gradient-underline-rom">A20e</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/nusantara/Nusantara_v3.1-11-a30-28072021-UNOFFICIAL-1114.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/Nusantara_v3.1-11-a40-29072021-UNOFFICIAL-1646.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="nusantara_R_stats">Stats: -</b>
+        <a href="https://nusantaraproject.my.id/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/NusantaraProject-ROM" id="mobile_rom" style="color: green">GitHub</a> 
     </div>
 </div>
+<b id="nusantara_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -788,30 +679,26 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/octavi/index.html">OctaviOS</a>
-    <div class="image__description">
-      OctaviOS is an AOSP based rom focusing on Unique and Smooth UI with handy features. OctaviOS is a reborn of pie based PearlOS.
+    <div class="image__description noselect">
+    <b>OctaviOS is an AOSP based rom focusing on Unique and Smooth UI with handy features. OctaviOS is a reborn of pie based PearlOS.</b>
       <br>
       <br>
-      <a href="http://www.octavi-os.com/" style="color: green">Website</a> | <a href="https://github.com/Octavi-OS" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu22" id="menu22">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/octavi/OctaviOS-v2.8-a10-20210809-1551-VANILLA-Unofficial.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/octavi/OctaviOS-v2.8-a20-20210809-1745-VANILLA-Unofficial.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/octavi/OctaviOS-v2.8-a30-20210809-1857-VANILLA-Unofficial.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/OctaviOS-v2.7-a40-20210714-1520-GAPPS-Unofficial.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/octavi/OctaviOS-v2.8-a10-20210809-1551-VANILLA-Unofficial.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/octavi/OctaviOS-v2.8-a20-20210809-1745-VANILLA-Unofficial.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/octavi/OctaviOS-v2.8-a30-20210809-1857-VANILLA-Unofficial.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/OctaviOS-v2.7-a40-20210714-1520-GAPPS-Unofficial.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="octavi_R_stats">Stats: -</b>
+        <a href="http://www.octavi-os.com/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/Octavi-OS" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="octavi_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -820,32 +707,27 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/palladium/index.html">PalladiumOS</a>
-    <div class="image__description">
-      Palladium OS is not yet another ubiquitous OS but a trendsetter of its own level. The Prime focus here is on speed, stability.
+    <div class="image__description noselect">
+    <b>Palladium OS is not yet another ubiquitous OS but a trendsetter of its own level. The Prime focus here is on speed, stability.</b>
       <br>
       <br>
-      <a href="https://palladiumos.com/" style="color: green">Website</a> | <a href="https://github.com/Palladium-OS" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu23" id="menu23">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/palladium/PalladiumOS-v1.3-arm-a10-20210523-UNOFFICIAL-VANILLA.zip/download"> A10 arm
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/palladium/PalladiumOS-v1.3-a10-arm64-20210524-UNOFFICIAL-VANILLA.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/palladium/PalladiumOS-v1.3-a20-20210525-UNOFFICIAL-VANILLA.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/palladium/PalladiumOS-v1.3-a30-20210525-UNOFFICIAL-VANILLA.zip/download"> A30
-        </option>
-        <option value = "https://drive.google.com/file/d/1qyGR4j8sN8YFcow4G1-LRTxYGzwvpO4Y/view?usp=sharing"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/palladium/PalladiumOS-v1.3-arm-a10-20210523-UNOFFICIAL-VANILLA.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/palladium/PalladiumOS-v1.3-a10-arm64-20210524-UNOFFICIAL-VANILLA.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/palladium/PalladiumOS-v1.3-a20-20210525-UNOFFICIAL-VANILLA.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/palladium/PalladiumOS-v1.3-a30-20210525-UNOFFICIAL-VANILLA.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://drive.google.com/file/d/1qyGR4j8sN8YFcow4G1-LRTxYGzwvpO4Y/view?usp=sharing" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="palladium_R_stats">Stats: -</b>
+        <a href="https://palladiumos.com/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/Palladium-OS" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="palladium_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -854,32 +736,27 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/pe/index.html">PixelExperience</a>
-    <div class="image__description">
-      AOSP based ROM, with Google apps included and all Pixel goodies.
+    <div class="image__description noselect">
+    <b>AOSP based ROM, with Google apps included and all Pixel goodies.</b>
       <br>
       <br>
-      <a href="https://download.pixelexperience.org/" style="color: green">Website</a> | <a href="https://github.com/PixelExperience" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu24" id="menu24">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/pe/PixelExperience_a10-arm64-11.0-20210912-1003-UNOFFICIAL.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/pe/PixelExperience_a20-11.0-20210912-2038-UNOFFICIAL.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/pe/A20e_Patched_PixelExperence.zip/download"> A20e
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/pe/PixelExperience_a30-11.0-20210913-0041-UNOFFICIAL.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/PixelExperience_Plus_a40-11.0-20210915-1101-UNOFFICIAL.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/pe/PixelExperience_a10-arm64-11.0-20210912-1003-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/pe/PixelExperience_a20-11.0-20210912-2038-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a> 
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/pe/A20e_Patched_PixelExperence.zip" target="_blank"><u class="gradient-underline-rom">A20e</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/pe/PixelExperience_a30-11.0-20210913-0041-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/PixelExperience_Plus_a40-11.0-20210915-1101-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="pe_R_stats">Stats: -</b>
+        <a href="https:/.pixelexperience.org/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/PixelExperience" id="mobile_rom" style="color: green">GitHub</a> 
     </div>
 </div>
+<b id="pe_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -888,30 +765,26 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/peplus/index.html">PixelExperience+</a>
-    <div class="image__description">
-      AOSP based ROM, with Google apps included and all Pixel goodies.
+    <div class="image__description noselect">
+    <b>AOSP based ROM, with Google apps included and all Pixel goodies.</b>
       <br>
       <br>
-      <a href="https://download.pixelexperience.org/" style="color: green">Website</a> | <a href="https://github.com/PixelExperience" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu24" id="menu24">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/peplus/PixelExperience_Plus_a10-arm64-11.0-20210913-0421-UNOFFICIAL.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/peplus/PixelExperience_Plus_a20-11.0-20210913-0442-UNOFFICIAL.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/peplus/PixelExperience_Plus_a30-11.0-20210913-0555-UNOFFICIAL.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/PixelExperience_Plus_a40-11.0-20210915-1101-UNOFFICIAL.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/peplus/PixelExperience_Plus_a10-arm64-11.0-20210913-0421-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/peplus/PixelExperience_Plus_a20-11.0-20210913-0442-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/peplus/PixelExperience_Plus_a30-11.0-20210913-0555-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/PixelExperience_Plus_a40-11.0-20210915-1101-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="peplus_R_stats">Stats: -</b>
+        <a href="https:/.pixelexperience.org/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/PixelExperience" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="peplus_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -920,30 +793,26 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/pixelext/index.html">PixelExtended</a>
-    <div class="image__description">
-      We started as a small project (Fan-Edition) based on PE. Now, we are trying to give you best PE by adding some necessary practical features.
+    <div class="image__description noselect">
+    <b>We started as a small project (Fan-Edition) based on PE. Now, we are trying to give you best PE by adding some necessary practical features.</b>
       <br>
       <br>
-      <a href="https://pixelextended.ninja/" style="color: green">Website</a> | <a href="https://github.com/PixelExtended" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu25" id="menu25">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/peext/PixelExtended_a10-11.0-20210917-0944-UNOFFICIAL.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/peext/PixelExtended_a20-11.0-20210917-1305-UNOFFICIAL.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/peext/PixelExtended_a30-11.0-20210917-1435-UNOFFICIAL.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/PixelExtended_a40-11.0-20210916-1037-UNOFFICIAL.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/peext/PixelExtended_a10-11.0-20210917-0944-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/peext/PixelExtended_a20-11.0-20210917-1305-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/peext/PixelExtended_a30-11.0-20210917-1435-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/PixelExtended_a40-11.0-20210916-1037-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="peext_R_stats">Stats: -</b>
+        <a href="https://pixelextended.ninja/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/PixelExtended" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="peext_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -952,34 +821,28 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/revenge/index.html">RevengeOS</a>
-    <div class="image__description">
-      RevengeOS is an aftermarket rom based on AOSP. We are dedicated to fast, stable and mininal customization rom.
+    <div class="image__description noselect">
+    <b>RevengeOS is an aftermarket rom based on AOSP. We are dedicated to fast, stable and mininal customization rom.</b>
       <br>
       <br>
-      <a href="https://revengeos.com/" style="color: green">Website</a> | <a href="https://github.com/RevengeOS" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu26" id="menu26">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/revengeos/RevengeOS-4.1-R-arm-UNOFFICIAL-a10-20210806-1051.zip/download"> A10 arm
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/revengeos/RevengeOS-4.1-R-arm64-UNOFFICIAL-a10-20210806-1122.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/revengeos/RevengeOS-4.1-R-UNOFFICIAL-a20-20210806-1339.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/revengeos/RevengeOS-4.1-R-UNOFFICIAL-a20e-20210709-0350.zip/download"> A20e
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/revengeos/RevengeOS-4.1-R-UNOFFICIAL-a30-20210806-1611.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/RevengeOS-4.1-R-UNOFFICIAL-a40-20210711-0829.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/revengeos/RevengeOS-4.1-R-arm-UNOFFICIAL-a10-20210806-1051.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/revengeos/RevengeOS-4.1-R-arm64-UNOFFICIAL-a10-20210806-1122.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/revengeos/RevengeOS-4.1-R-UNOFFICIAL-a20-20210806-1339.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/revengeos/RevengeOS-4.1-R-UNOFFICIAL-a20e-20210709-0350.zip" target="_blank"><u class="gradient-underline-rom">A20e</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/revengeos/RevengeOS-4.1-R-UNOFFICIAL-a30-20210806-1611.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/RevengeOS-4.1-R-UNOFFICIAL-a40-20210711-0829.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="revengeos_R_stats">Stats: -</b>
+        <a href="https://revengeos.com/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/RevengeOS" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="revengeos_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -988,34 +851,28 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/sakura/index.html">Project-Sakura</a>
-    <div class="image__description">
-      A Custom ROM based on Lineage OS. It provides timely updates and customizations with stability.
+    <div class="image__description noselect">
+    <b>A Custom ROM based on Lineage OS. It provides timely updates and customizations with stability.</b>
       <br>
       <br>
-      <a href="https://projectsakura.github.io/" style="color: green">Website</a> | <a href="https://github.com/ProjectSakura" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu27" id="menu27">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/sakura/ProjectSakura-5.2-VANILLA-20210914-1133-a10-arm-UNOFFICIAL.zip/download"> A10 arm
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/sakura/ProjectSakura-5.2-VANILLA-20210913-1704-a10-arm64-UNOFFICIAL.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/sakura/ProjectSakura-5.2-VANILLA-20210914-0526-a20-UNOFFICIAL.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/sakura/ProjectSakura-5.1-VANILLA-20210617-1730-a20e-UNOFFICIAL.zip/download"> A20e
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/sakura/ProjectSakura-5.2-VANILLA-20210914-1031-a30-UNOFFICIAL.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/ProjectSakura-5.2-VANILLA-20210919-1521-a40-UNOFFICIAL.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/sakura/ProjectSakura-5.2-VANILLA-20210914-1133-a10-arm-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/sakura/ProjectSakura-5.2-VANILLA-20210913-1704-a10-arm64-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/sakura/ProjectSakura-5.2-VANILLA-20210914-0526-a20-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/sakura/ProjectSakura-5.1-VANILLA-20210617-1730-a20e-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A20e</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/sakura/ProjectSakura-5.2-VANILLA-20210914-1031-a30-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/ProjectSakura-5.2-VANILLA-20210919-1521-a40-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="sakura_R_stats">Stats: -</b>
+        <a href="https://projectsakura.github.io/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/ProjectSakura" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="sakura_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1024,32 +881,27 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/spark/index.html">Spark-ROM</a>
-    <div class="image__description">
-      Everything began from a spark.
+    <div class="image__description noselect">
+    <b>Everything began from a spark.</b>
       <br>
       <br>
-      <a href="https://www.spark-os.live/" style="color: green">Website</a> | <a href="https://github.com/Spark-Rom" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu28" id="menu28">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/spark/Spark-vMist-a10-arm-Unofficial-vanilla-20210817arm.zip/download"> A10 arm
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/spark/Spark-vFlare-a10-arm64-UNOFFICIAL-vanilla-20210711.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/spark/Spark-vMist-a20-Unofficial-vanilla-20210817.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/spark/Spark-vMist-a30-Unofficial-vanilla-20210816.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/Spark-vFlare-a40-Unofficial-gapps-20210711.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/spark/Spark-vMist-a10-arm-Unofficial-vanilla-20210817arm.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/spark/Spark-vFlare-a10-arm64-UNOFFICIAL-vanilla-20210711.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/spark/Spark-vMist-a20-Unofficial-vanilla-20210817.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/spark/Spark-vMist-a30-Unofficial-vanilla-20210816.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/Spark-vFlare-a40-Unofficial-gapps-20210711.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="spark_R_stats">Stats: -</b>
+        <a href="https://www.spark-os.live/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/Spark-Rom" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="spark_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1058,32 +910,27 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/spice/index.html">SpiceOS</a>
-    <div class="image__description">
-      Just a spiced up LineageOS ;)
+    <div class="image__description noselect">
+    <b>Just a spiced up LineageOS ;)</b>
       <br>
       <br>
-      <a href="#rom11.html" style="color: green">Website</a> | <a href="https://github.com/SpiceOS" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu29" id="menu29">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/spice/SpiceOS-3.5-STABLE-20210918-a10-arm-UNOFFICIAL.zip/download"> A10 arm
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/spice/SpiceOS-3.5-STABLE-20210918-a10-arm64-UNOFFICIAL.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/spice/SpiceOS-3.5-STABLE-20210918-a20-UNOFFICIAL.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/spice/SpiceOS-3.5-STABLE-20210918-a30-UNOFFICIAL.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/SpiceOS-3.2-STABLE-20210614-a40-UNOFFICIAL.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/spice/SpiceOS-3.5-STABLE-20210918-a10-arm-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/spice/SpiceOS-3.5-STABLE-20210918-a10-arm64-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/spice/SpiceOS-3.5-STABLE-20210918-a20-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/spice/SpiceOS-3.5-STABLE-20210918-a30-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/SpiceOS-3.2-STABLE-20210614-a40-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="spice_R_stats">Stats: -</b>
+        <a href="#" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/SpiceOS" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="spice_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1092,32 +939,27 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/superior/index.html">SuperiorOS</a>
-    <div class="image__description">
-      Superior OS is a AOSP based custom ROM with some minimal features to fullfill the users demands nowadays.
+    <div class="image__description noselect">
+    <b>Superior OS is a AOSP based custom ROM with some minimal features to fullfill the users demands nowadays.</b>
       <br>
       <br>
-      <a href="http://downloads.superioros.org/" style="color: green">Website</a> | <a href="https://github.com/SuperiorOS" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu30" id="menu30">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/superior/SuperiorOS-Xcalibur-a10-arm-UNOFFICIAL-20210919-0028.zip/download"> A10 arm 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/superior/SuperiorOS-Xcalibur-a10-arm64-UNOFFICIAL-20210918-1718.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/superior/SuperiorOS-Xcalibur-a20-UNOFFICIAL-20210523-0546.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/superior/SuperiorOS-Xcalibur-a30-UNOFFICIAL-20210918-2253.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/SuperiorOS-Xcalibur-a40-UNOFFICIAL-20210923-1505.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/superior/SuperiorOS-Xcalibur-a10-arm-UNOFFICIAL-20210919-0028.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/superior/SuperiorOS-Xcalibur-a10-arm64-UNOFFICIAL-20210918-1718.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/superior/SuperiorOS-Xcalibur-a20-UNOFFICIAL-20210523-0546.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/superior/SuperiorOS-Xcalibur-a30-UNOFFICIAL-20210918-2253.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/SuperiorOS-Xcalibur-a40-UNOFFICIAL-20210923-1505.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="superior_R_stats">Stats: -</b>
+        <a href="http:/s.superioros.org/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/SuperiorOS" id="mobile_rom" style="color: green">GitHub</a>   
     </div>
 </div>
+<b id="superior_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1126,34 +968,28 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/aex/index.html">AospExtended</a>
-    <div class="image__description">
-      AOSP Extended provides stock UI/UX experience with useful customizations. We have added useful customizations.
+    <div class="image__description noselect">
+    <b>AOSP Extended provides stock UI/UX experience with useful customizations. We have added useful customizations.</b>
       <br>
       <br>
-      <a href="https://www.aospextended.com/" style="color: green">Website</a> | <a href="https://github.com/AospExtended" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu31" id="menu31">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/aex/AospExtended-v8.6-a10-UNOFFICIAL-20210922-0041-arm.zip/download"> A10 arm 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/aex/AospExtended-v8.6-a10-UNOFFICIAL-20210921-2359-arm64.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/aex/AospExtended-v8.6-a20-UNOFFICIAL-20210921-2227.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/aex/AospExtended-v8.6-a20e-UNOFFICIAL-20210921-2314.zip/download"> A20e
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/aex/AospExtended-v8.6-a30-UNOFFICIAL-20210921-2143.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/AospExtended-v8.6-a40-UNOFFICIAL-20210921-1003.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/aex/AospExtended-v8.6-a10-UNOFFICIAL-20210922-0041-arm.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/aex/AospExtended-v8.6-a10-UNOFFICIAL-20210921-2359-arm64.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/aex/AospExtended-v8.6-a20-UNOFFICIAL-20210921-2227.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/aex/AospExtended-v8.6-a20e-UNOFFICIAL-20210921-2314.zip" target="_blank"><u class="gradient-underline-rom">A20e</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/aex/AospExtended-v8.6-a30-UNOFFICIAL-20210921-2143.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/AospExtended-v8.6-a40-UNOFFICIAL-20210921-1003.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="aex_R_stats">Stats: -</b>
+        <a href="https://www.aospextended.com/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/AospExtended" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="aex_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1162,32 +998,27 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/evox/index.html">Evolution-X</a>
-    <div class="image__description">
-      Keep Evolving! Pixel UI, customization, and more, we are Evolution X!
+    <div class="image__description noselect">
+    <b>Keep Evolving! Pixel UI, customization, and more, we are Evolution X!</b>
       <br>
       <br>
-      <a href="https://evolution-x.org/" style="color: green">Website</a> | <a href="https://github.com/Evolution-X" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu32" id="menu32">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/evox/evolution_a10-ota-rq3a.210905.001-09221542-unofficial-unsigned.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/evox/evolution_a20-ota-rq3a.210905.001-09221757-unofficial-unsigned.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/evox/evolution_a20e-ota-rq3a.210905.001-09221911-unofficial-unsigned.zip/download"> A20e
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/evox/evolution_a30-ota-rq3a.210905.001-09222045-unofficial-unsigned.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/evolution_a40-ota-rq3a.210905.001-09191220-unofficial-unsigned.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/evox/evolution_a10-ota-rq3a.210905.001-09221542-unofficial-unsigned.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/evox/evolution_a20-ota-rq3a.210905.001-09221757-unofficial-unsigned.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/evox/evolution_a20e-ota-rq3a.210905.001-09221911-unofficial-unsigned.zip" target="_blank"><u class="gradient-underline-rom">A20e</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/evox/evolution_a30-ota-rq3a.210905.001-09222045-unofficial-unsigned.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/evolution_a40-ota-rq3a.210905.001-09191220-unofficial-unsigned.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="evox_R_stats">Stats: -</b>
+        <a href="https://evolution-x.org/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"></a><a id="mobile_rom"> | </a><a href="https://github.com/Evolution-X" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="evox_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1196,24 +1027,23 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/posp/index.html">POSP</a>
-    <div class="image__description">
-      POSP is a butter smooth Android aftermarket firmware. We handpicked the best features around and are adding our own sauce to it.
+    <div class="image__description noselect">
+    <b>POSP is a butter smooth Android aftermarket firmware. We handpicked the best features around and are adding our own sauce to it.</b>
       <br>
       <br>
-      <a href="https://potatoproject.co/" style="color: green">Website</a> | <a href="https://github.com/PotatoProject" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu33" id="menu33">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/potato_a40-11-20210915-dumaloo.v4.2.3%2B20.Community.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/potato_a40-11-20210915-dumaloo.v4.2.3%2B20.Community.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="posp_R_stats">Stats: -</b>
+        <a href="https://potatoproject.co/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/PotatoProject" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="posp_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1222,32 +1052,27 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/wave/index.html">WaveOS</a>
-    <div class="image__description">
-      Based on AOSP, WaveOS focuses on delivering a perfect blend of aesthetics, functionality and performance out of the box.
+    <div class="image__description noselect">
+    <b>Based on AOSP, WaveOS focuses on delivering a perfect blend of aesthetics, functionality and performance out of the box.</b>
       <br>
       <br>
-      <a href="#rom11.html" style="color: green">Website</a> | <a href="https://github.com/Wave-Project" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu34" id="menu34">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/wave/WaveOS_a10-arm-R-v4.5-20210626-1835-UNOFFICIAL.zip/download"> A10 arm
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/wave/WaveOS_a10-arm64-R-v4.8-20210921-0745-UNOFFICIAL-vanilla.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/wave/WaveOS_a20-R-v4.8-20210921-1102-UNOFFICIAL-vanilla.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/wave/WaveOS_a30-R-v4.8-20210921-1153-UNOFFICIAL-vanilla.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/RELEASEWaveOS_a40-R-v4.8-20210920-1543-UNOFFICIAL.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/wave/WaveOS_a10-arm-R-v4.5-20210626-1835-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/wave/WaveOS_a10-arm64-R-v4.8-20210921-0745-UNOFFICIAL-vanilla.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/wave/WaveOS_a20-R-v4.8-20210921-1102-UNOFFICIAL-vanilla.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/wave/WaveOS_a30-R-v4.8-20210921-1153-UNOFFICIAL-vanilla.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/RELEASEWaveOS_a40-R-v4.8-20210920-1543-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="wave_R_stats">Stats: -</b>
+        <a href="#" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/Wave-Project" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="wave_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1256,24 +1081,23 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/pixys/index.html">PixysOS</a>
-    <div class="image__description">
-      Pixys is a butter smooth Android aftermarket firmware. We handpicked the best features around and are adding our own juice into it.
+    <div class="image__description noselect">
+    <b>Pixys is a butter smooth Android aftermarket firmware. We handpicked the best features around and are adding our own juice into it.</b>
       <br>
       <br>
-      <a href="https://pixysos.com/" style="color: green">Website</a> | <a href="https://github.com/PixysOS" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu35" id="menu35">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/PixysOS-v4.0.10-a40-UNOFFICIAL-20210713-001748.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/PixysOS-v4.0.10-a40-UNOFFICIAL-20210713-001748.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="pixyos_R_stats">Stats: -</b>
+        <a href="https://pixysos.com/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/PixysOS" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="pixyos_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1282,24 +1106,23 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/ssos/index.html">ShapeShiftOS</a>
-    <div class="image__description">
-      Based on AOSP, ShapeShiftOS aims to provide a different user interface and experience than any other ROM on the market.
+    <div class="image__description noselect">
+    <b>Based on AOSP, ShapeShiftOS aims to provide a different user interface and experience than any other ROM on the market.</b>
       <br>
       <br>
-      <a href="#rom11.html" style="color: green">Website</a> | <a href="https://github.com/ShapeShiftOS" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu36" id="menu36">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/ShapeShiftOS-2.8-Duosion-UNOFFICIAL-a40-20210920-1542.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/ShapeShiftOS-2.8-Duosion-UNOFFICIAL-a40-20210920-1542.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="shapeshift_R_stats">Stats: -</b>
+        <a href="#" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/ShapeShiftOS" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="shapeshift_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1308,30 +1131,26 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/hycon/index.html">HyconOS</a>
-    <div class="image__description">
-      Hycon OS is AOSP ROM with many pixel features & Customizations. We always try to improve stability, performance.
+    <div class="image__description noselect">
+    <b>Hycon OS is AOSP ROM with many pixel features & Customizations. We always try to improve stability, performance.</b>
       <br>
       <br>
-      <a href="https://www.hyconos.in/" style="color: green">Website</a> | <a href="https://github.com/HyconOS" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu37" id="menu37">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/hycon/HyconOS_4.0_a10-11.0-20210721-1301-UNOFFICIAL-arm64.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/hycon/HyconOS_4.0_a20-11.0-20210721-0649-UNOFFICIAL.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/hycon/HyconOS_4.0_a30-11.0-20210720-1056-UNOFFICIAL.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/HyconOS_4.5.1_a40-11.0-20210919-2203-UNOFFICIAL.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/hycon/HyconOS_4.0_a10-11.0-20210721-1301-UNOFFICIAL-arm64.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/hycon/HyconOS_4.0_a20-11.0-20210721-0649-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/hycon/HyconOS_4.0_a30-11.0-20210720-1056-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/HyconOS_4.5.1_a40-11.0-20210919-2203-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="hycon_R_stats">Stats: -</b>
+        <a href="https://www.hyconos.in/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/HyconOS" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="hycon_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1340,24 +1159,23 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/mokee/index.html">MokeeOS</a>
-    <div class="image__description">
-      MoKee OpenSource is based on the Google AOSP. We update our source code frequently to keep up with the latest development.
+    <div class="image__description noselect">
+    <b>MoKee OpenSource is based on the Google AOSP. We update our source code frequently to keep up with the latest development.</b>
       <br>
       <br>
-      <a href="http://www.mokeedev.com/en" style="color: green">Website</a> | <a href="https://github.com/MoKee" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu38" id="menu38">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/MK110.1-a40-202106270006-EXPERIMENTAL.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/MK110.1-a40-202106270006-EXPERIMENTAL.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="mokee_R_stats">Stats: -</b>
+        <a href="http://www.mokeedev.com/en" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/MoKee" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="mokee_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1366,32 +1184,27 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/styx/index.html">Styx Project</a>
-    <div class="image__description">
-      The Styx Project is a custom rom distribution that aims to subtly enhance the beauty of stock Android while still keeping the stability.
+    <div class="image__description noselect">
+    <b>The Styx Project is a custom rom distribution that aims to subtly enhance the beauty of stock Android while still keeping the stability.</b>
       <br>
       <br>
-      <a href="https://styxproject.ml/" style="color: green">Website</a> | <a href="https://github.com/StyxProject" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu39" id="menu39">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/styx/styxOS-1.6-Athena-a10-UNOFFICIAL-20210710-1548.zip/download"> A10 arm
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/styx/styxOS-1.6-Athena-a10-arm64-UNOFFICIAL-20210710-1911.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/styx/styxOS-1.6-Athena-a20-UNOFFICIAL-20210711-0818.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/styx/styxOS-1.6-Athena-a30-UNOFFICIAL-20210711-1612.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/styxOS-1.8-Athena-a40-UNOFFICIAL-20210923-1511.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/styx/styxOS-1.6-Athena-a10-UNOFFICIAL-20210710-1548.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/styx/styxOS-1.6-Athena-a10-arm64-UNOFFICIAL-20210710-1911.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/styx/styxOS-1.6-Athena-a20-UNOFFICIAL-20210711-0818.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/styx/styxOS-1.6-Athena-a30-UNOFFICIAL-20210711-1612.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/styxOS-1.8-Athena-a40-UNOFFICIAL-20210923-1511.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="styx_R_stats">Stats: -</b>
+        <a href="https://styxproject.ml/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/StyxProject" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="styx_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1400,24 +1213,23 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/awaken/index.html">Project Awaken</a>
-    <div class="image__description">
-      AwakenOS aims to bring a more consistent, smooth experience with all your must-have customizations, for you & for the community.
+    <div class="image__description noselect">
+    <b>AwakenOS aims to bring a more consistent, smooth experience with all your must-have customizations, for you & for the community.</b>
       <br>
       <br>
-      <a href="#rom11.html" style="color: green">Website</a> | <a href="https://github.com/Project-Awaken" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu40" id="menu40">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/awaken_a40-1.9-Clover-UNOFFICIAL-20210711-1519.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/awaken_a40-1.9-Clover-UNOFFICIAL-20210711-1519.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="awaken_R_stats">Stats: -</b>
+        <a href="#" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/Project-Awaken" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="awaken_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1426,24 +1238,23 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/yaap/index.html">YAAP</a>
-    <div class="image__description">
-      a project founded by Adhitya Mohan & Ido Ben-Hur, the goal of staying close to AOSP in design goals, offer a clean interface.
+    <div class="image__description noselect">
+    <b>a project founded by Adhitya Mohan & Ido Ben-Hur, the goal of staying close to AOSP in design goals, offer a clean interface.</b>
       <br>
       <br>
-      <a href="#rom11.html" style="color: green">Website</a> | <a href="https://github.com/yaap" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu41" id="menu41">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/YAAP-11-HOMEMADE-a40-20210918.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/YAAP-11-HOMEMADE-a40-20210918.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="yaap_R_stats">Stats: -</b>
+        <a href="#" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/yaap" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="yaap_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1452,32 +1263,27 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/legion/index.html">LegionOS</a>
-    <div class="image__description">
-      LegionOS is an AOSP based ROM. Our mission is to offer the maximum possible stability and security and features.
+    <div class="image__description noselect">
+    <b>LegionOS is an AOSP based ROM. Our mission is to offer the maximum possible stability and security and features.</b>
       <br>
       <br>
-      <a href="http://legionos.org/" style="color: green">Website</a> | <a href="https://github.com/Project-LegionOS" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu42" id="menu42">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/legion/LegionOS-v3.13-a10-arm64-20210920-UNOFFICIAL-VANILLA.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/legion/LegionOS-v3.13-a20-20210920-UNOFFICIAL-VANILLA.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/legion/A20e_Patched_LegionOS.zip/download"> A20e
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/legion/LegionOS-v3.13-a30-20210920-UNOFFICIAL-VANILLA.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/LegionOS-v3.13-a40-20210919-UNOFFICIAL-VANILLA.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/legion/LegionOS-v3.13-a10-arm64-20210920-UNOFFICIAL-VANILLA.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/legion/LegionOS-v3.13-a20-20210920-UNOFFICIAL-VANILLA.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/legion/A20e_Patched_LegionOS.zip" target="_blank"><u class="gradient-underline-rom">A20e</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/legion/LegionOS-v3.13-a30-20210920-UNOFFICIAL-VANILLA.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/LegionOS-v3.13-a40-20210919-UNOFFICIAL-VANILLA.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="legion_R_stats">Stats: -</b>
+        <a href="http://legionos.org/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/Project-LegionOS" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="legion_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1486,32 +1292,27 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/msm/index.html">MSM-Xtended</a>
-    <div class="image__description">
-      A ROM Based on AOSP, with features from almost all Custom ROMs available.
+    <div class="image__description noselect">
+    <b>A ROM Based on AOSP, with features from almost all Custom ROMs available.</b>
       <br>
       <br>
-      <a href="https://project-xtended.org/" style="color: green">Website</a> | <a href="https://github.com/Project-Xtended" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu43" id="menu43">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/msm-xtended/Xtended-XR-v9.0-VANILLA-a10-UNOFFICIAL-20210809-arm.zip/download"> A10 arm 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/msm-xtended/Xtended-XR-vX.0-VANILLA-a10-arm64-UNOFFICIAL-20210919.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/msm-xtended/Xtended-XR-vX.0-VANILLA-a20-UNOFFICIAL-20210919.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/msm-xtended/Xtended-XR-vX.0-VANILLA-a30-UNOFFICIAL-20210919.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/Xtended-XR-v8.0-VANILLA-a40-UNOFFICIAL-20210715.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/msm-xtended/Xtended-XR-v9.0-VANILLA-a10-UNOFFICIAL-20210809-arm.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/msm-xtended/Xtended-XR-vX.0-VANILLA-a10-arm64-UNOFFICIAL-20210919.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/msm-xtended/Xtended-XR-vX.0-VANILLA-a20-UNOFFICIAL-20210919.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/msm-xtended/Xtended-XR-vX.0-VANILLA-a30-UNOFFICIAL-20210919.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/Xtended-XR-v8.0-VANILLA-a40-UNOFFICIAL-20210715.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="msm-xtended_R_stats">Stats: -</b>
+        <a href="https://project-xtended.org/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/Project-Xtended" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="msm-xtended_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1520,32 +1321,27 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/colt/index.html">ColtOS</a>
-    <div class="image__description">
-      ColtOS Project is presented by a team of learners and it is crafted from AOSP Source with all the necessary customizations.
+    <div class="image__description noselect">
+    <b>ColtOS Project is presented by a team of learners and it is crafted from AOSP Source with all the necessary customizations.</b>
       <br>
       <br>
-      <a href="#rom11.html" style="color: green">Website</a> | <a href="https://github.com/Colt-Enigma/" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu44" id="menu44">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/colt/ColtOS-11.0-v7.3.MARTINI-a10-arm-Unofficial-20210911-2027.zip/download"> A10 arm 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/colt/ColtOS-11.0-v7.3.MARTINI-a10-arm64-Unofficial-20210911-1356.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/colt/ColtOS-11.0-v7.3.MARTINI-a20-Unofficial-20210911-1657.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/colt/ColtOS-11.0-v7.3.MARTINI-a30-Unofficial-20210911-1820.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/ColtOS-11.0-v7.3.MARTINI-a40-Unofficial-20210920-1118.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/colt/ColtOS-11.0-v7.3.MARTINI-a10-arm-Unofficial-20210911-2027.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/colt/ColtOS-11.0-v7.3.MARTINI-a10-arm64-Unofficial-20210911-1356.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/colt/ColtOS-11.0-v7.3.MARTINI-a20-Unofficial-20210911-1657.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/colt/ColtOS-11.0-v7.3.MARTINI-a30-Unofficial-20210911-1820.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/ColtOS-11.0-v7.3.MARTINI-a40-Unofficial-20210920-1118.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="colt_R_stats">Stats: -</b>
+        <a href="#" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/Colt-Enigma/" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="colt_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1554,32 +1350,27 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/radiant/index.html">Project Radiant</a>
-    <div class="image__description">
-      NezukoOS is a fresh new ROM aiming to provide you a customisable and stable experience!
+    <div class="image__description noselect">
+    <b>NezukoOS is a fresh new ROM aiming to provide you a customisable and stable experience!</b>
       <br>
       <br>
-      <a href="#rom11.html" style="color: green">Website</a> | <a href="https://github.com/ProjectRadiant" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu45" id="menu45">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/radiant/ProjectRadiant-1.1-VANILLA-a10-arm-20210920-1625-UNOFFICIAL.zip/download"> A10 arm
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/radiant/ProjectRadiant-1.1-VANILLA-a10-arm64-20210920-0908-UNOFFICIAL.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/radiant/ProjectRadiant-1.1-VANILLA-a20-20210920-1244-UNOFFICIAL.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/radiant/ProjectRadiant-1.1-VANILLA-a30-20210920-1404-UNOFFICIAL.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/ProjectRadiant-1.1-GAPPS-a40-20210925-0854-UNOFFICIAL.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm/radiant/ProjectRadiant-1.1-VANILLA-a10-arm-20210920-1625-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/radiant/ProjectRadiant-1.1-VANILLA-a10-arm64-20210920-0908-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/radiant/ProjectRadiant-1.1-VANILLA-a20-20210920-1244-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/radiant/ProjectRadiant-1.1-VANILLA-a30-20210920-1404-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/ProjectRadiant-1.1-GAPPS-a40-20210925-0854-UNOFFICIAL.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="radiant_R_stats">Stats: -</b>
+        <a href="#" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/ProjectRadiant" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="radiant_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1588,24 +1379,23 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/tenx/index.html">TenX-OS</a>
-    <div class="image__description">
-      TenX-OS is an AOSP Based Custom ROM with mostly chery-picked customisations
+    <div class="image__description noselect">
+    <b>TenX-OS is an AOSP Based Custom ROM with mostly chery-picked customisations</b>
       <br>
       <br>
-      <a href="http://www.tenxos.me/" style="color: green">Website</a> | <a href="https://github.com/TenX-OS" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu46" id="menu46">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/TenX-OS-v3.2_a40-11.0-20210627-1842-Orange-UnOfficial.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/TenX-OS-v3.2_a40-11.0-20210627-1842-Orange-UnOfficial.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="tenx_R_stats">Stats: -</b>
+        <a href="http://www.tenxos.me/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/TenX-OS" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="tenx_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1614,32 +1404,27 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/derpfest/index.html">Derpfest</a>
-    <div class="image__description">
-      This is a project based on AOSP. We try to be a platform for beginners and support the ROM community with our own unique contributions as well.
+    <div class="image__description noselect">
+    <b>This is a project based on AOSP. We try to be a platform for beginners and support the ROM community with our own unique contributions as well.</b>
       <br>
       <br>
-      <a href="https://derpfest.org/" style="color: green">Website</a> | <a href="https://github.com/DerpFest-11" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu47" id="menu47">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/derp/DerpFest-11-Community-a10-20210923.zip/download"> A10 arm64
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/derp/DerpFest-11-Community-a20-20210923.zip/download"> A20
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/derp/DerpFest-11-Community-a20e-20210923.zip/download"> A20e
-        </option>
-        <option value = "https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/derp/DerpFest-11-Community-a30-20210923.zip/download"> A30
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/DerpFest-11-Community-a40-20210916-0939.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A10/R/arm64/derp/DerpFest-11-Community-a10-20210923.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20/R/derp/DerpFest-11-Community-a20-20210923.zip" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A20e/R/derp/DerpFest-11-Community-a20e-20210923.zip" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="https://sourceforge.net/projects/eurekaroms/files/Samsung/A30/R/derp/DerpFest-11-Community-a30-20210923.zip" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/RELEASE/DerpFest-11-Community-a40-20210916-0939.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="derp_R_stats">Stats: -</b>
+        <a href="https://derpfest.org/" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/DerpFest-11" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="derp_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1648,24 +1433,23 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#005fb2;" href="rom_assets/lighthouse/index.html">Project-Lighthouse</a>
-    <div class="image__description">
-      An opensourced Android Project based on LineageOS/AOSP
+    <div class="image__description noselect">
+      <b>An opensourced Android Project based on LineageOS/AOSP</b>
       <br>
       <br>
-      <a href="#rom11.html" style="color: green">Website</a> | <a href="https://github.com/lighthouse-os" style="color: green">GitHub</a>
-      <form>
-        <label><a style="color: green">Download</a> </label>
-        <select name="menu48" id="menu48">
-        <option value = ""> - 
-        </option>
-        <option value = "https://sourceforge.net/projects/kevios12a40roms/files/undefined/LighthouseOS-Raft-UNOFFICIAL-a40-20210621-1809-VANILLA.zip/download"> A40
-        </option>
-        </select>
-        </form>
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="https://sourceforge.net/projects/kevios12a40roms/files/undefined/LighthouseOS-Raft-UNOFFICIAL-a40-20210621-1809-VANILLA.zip" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
         <br>
-        <b id="lighthouse_R_stats">Stats: -</b>
+        <a href="#" id="mobile_rom" style="color: green">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/lighthouse-os" id="mobile_rom" style="color: green">GitHub</a>
     </div>
 </div>
+<b id="lighthouse_R_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 </div>
@@ -1685,7 +1469,6 @@
       </footer>
     </div>
 </body>
-<script src="js/dropdown.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="js/loader.js"></script>
 <script src="js/stats_a11.js"></script>
