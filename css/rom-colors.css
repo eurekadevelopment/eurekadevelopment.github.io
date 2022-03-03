@@ -1,0 +1,100 @@
+/* rom colors gradient */
+.cherish {
+    background: #ACE9FA;
+    background: -webkit-linear-gradient(to right, #ACE9FA 41%, #B58AC7 68%);
+    background: -moz-linear-gradient(to right, #ACE9FA 41%, #B58AC7 68%);
+    background: linear-gradient(to right, #ACE9FA 41%, #B58AC7 68%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .falcon {
+    background: #c72691;
+    background: -webkit-linear-gradient(to right, #c72691 25%, #2643d3 68%);
+    background: -moz-linear-gradient(to right, #c72691 25%, #2643d3 68%);
+    background: linear-gradient(to right, #c72691 25%, #2643d3 68%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .kangos {
+    background: #4CBEF5;
+    background: -webkit-linear-gradient(to right, #4CBEF5 25%, #526fe0 68%);
+    background: -moz-linear-gradient(to right, #4CBEF5 25%, #526fe0 68%);
+    background: linear-gradient(to right, #4CBEF5 25%, #526fe0 68%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .palladium {
+    background: #32bbb6;
+    background: -webkit-linear-gradient(to right, #44fcf6 70%, #f8f53a 100%);
+    background: -moz-linear-gradient(to right, #45fdf7 70%, #f8f53a 100%);
+    background: linear-gradient(to right, #44fdf7 70%, #f8f53a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .revenge {
+    background: #01FA52;
+    background: -webkit-linear-gradient(to right, #01FA52 0%, #01FBCF 78%);
+    background: -moz-linear-gradient(to right, #01FA52 0%, #01FBCF 78%);
+    background: linear-gradient(to right, #01FA52 0%, #01FBCF 78%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .spice {
+    background: #f96800;
+    background: -webkit-linear-gradient(to right, #f96800 0%, #978C00 87%);
+    background: -moz-linear-gradient(to right, #f96800 0%, #978C00 87%);
+    background: linear-gradient(to right, #f96800 0%, #978C00 87%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .superior {
+    background: #fc3276;
+    background: -webkit-linear-gradient(to right, #fc4180 0%, #fc634f 99%);
+    background: -moz-linear-gradient(to right, #fd3b7c 0%, #fd634f 99%);
+    background: linear-gradient(to right, #f83d7c 0%, #fd624d 99%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .posp {
+    background: #F68FA2;
+    background: -webkit-linear-gradient(to right, #F68FA2 10%, #fcb076 74%);
+    background: -moz-linear-gradient(to right, #F68FA2 10%, #fcb076 74%);
+    background: linear-gradient(to right, #F68FA2 10%, #fcb076 74%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .ssos {
+    background: #6534FF;
+    background: -webkit-linear-gradient(to right, #6534FF 0%, #8DC5FE 55%);
+    background: -moz-linear-gradient(to right, #6534FF 0%, #8DC5FE 55%);
+    background: linear-gradient(to right, #6534FF 0%, #8DC5FE 55%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hycon {
+    background: #F5CD05;
+    background: -webkit-linear-gradient(to right, #F5CD05 20%, #FF8904 55%);
+    background: -moz-linear-gradient(to right, #F5CD05 20%, #FF8904 55%);
+    background: linear-gradient(to right, #F5CD05 20%, #FF8904 55%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .legion {
+    background: #fa25b3;
+    background: -webkit-linear-gradient(to right, #fa25b3 1%, #faaa4e 75%);
+    background: -moz-linear-gradient(to right, #fa25b3 1%, #faaa4e 75%);
+    background: linear-gradient(to right, #fa25b3 1%, #faaa4e 75%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
