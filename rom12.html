@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="css/topscroll.css">
+    <link rel="stylesheet" href="css/dropdown2.css">
+    <link rel="stylesheet" href="css/rom-colors.css">
     <script async src="https://arc.io/widget.min.js#3LCgJWKk"></script>    
 </head>
 <body>
@@ -39,14 +41,28 @@
     <img src="repo_images/aex.png" height="225px" id="logo3">
   </div>
  <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/aex/index.html">AospEXtended</a>
-    <div class="image__description">
-      AOSP Extended is a ROM which provides stock UI/UX experience with useful customizations. We have added useful customizations.
+  <div class="image__title" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><a style="color:white;" href="rom_assets/aex/index.html">AospExtended</a>
+    <div class="image__description noselect">
+      <b>AOSP Extended is a ROM which provides stock UI/UX experience with useful customizations. We have added useful customizations.</b>
       <br>
       <br>
-      <a href="https://www.aospextended.com/" style="color: green">Website</a> | <a href="https://github.com/AospExtended" style="color: green">GitHub</a>
+      <!--new dropdown example begins here...
+      <div class="container">
+        <div class="dropdown">
+         <button>Download!</button>
+         <div class="linked">
+           <a href="" target="_blank"><u class="gradient-underline-rom">A10 ARM</u></a>
+           <a href="" target="_blank"><u class="gradient-underline-rom">A10 ARM64</u></a>
+           <a href="" target="_blank"><u class="gradient-underline-rom">A20</u></a>
+           <a href="" target="_blank"><u class="gradient-underline-rom">A20e</u></a>
+           <a href="" target="_blank"><u class="gradient-underline-rom">A30</u></a>
+           <a href="" target="_blank"><u class="gradient-underline-rom">A40</u></a>
+         </div>
+       </div>
+     </div>
+     ...and end here-->
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu1" id="menu1">
                 <option value = "url"> -
                 </option>
@@ -65,9 +81,10 @@
         </select>
         </form>
         <br>
-        <b id="aex_S_stats">Stats: -</b>
+        <a href="https://www.aospextended.com/" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/AospExtended" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
 </div>
 </div>
+<b class="noselect" id="aex_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -75,14 +92,13 @@
     <img src="repo_images/aicp.png" height="225px" id="logo3">
   </div>
   <div class="image__overlay image__overlay--blur">
-    <div class="image__title"><a style="color:#08f;" href="rom_assets/aicp/index.html">AICP</a>
-        <div class="image__description">
-        AICP is known by everyone as the Ice Cold Project that started on a Desire HD years ago and since then has evolved into a mature ROM!
+    <div class="image__title" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><a style="color:white;" href="rom_assets/aicp/index.html">AICP</a>
+        <div class="image__description noselect">
+        <b>AICP is known by everyone as the Ice Cold Project that started on a Desire HD years ago and since then has evolved into a mature ROM!</b>
         <br>
         <br>
-        <a href=" http://www.aicp-rom.com" style="color: green">Website</a> | <a href="https://github.com/AICP" style="color: green">GitHub</a>
         <form>
-            <label><a style="color: green">Download</a> </label>
+            <label><a style="color: #08f">Download</a> </label>
             <select name="menu2" id="menu2">
             <option value = ""> -
             </option>
@@ -101,9 +117,10 @@
             </select>
             </form>
             <br>
-            <b id="aicp_S_stats">Stats: -</b>
+            <a href="http://www.aicp-rom.com" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"><a id="mobile_rom"> | </a></a><a href="https://github.com/AICP" class="urlbtn" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
 </div>
 </div>
+<b class="noselect" id="aicp_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -111,14 +128,13 @@
     <img src="repo_images/arcana.jpg" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/arcana/index.html">Project Arcana</a>
-    <div class="image__description">
-      A custom operating system based on AOSP focused on improving user experience, with a little bit of spice.
+  <div class="image__title" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><a style="color:#e8333c;" href="rom_assets/arcana/index.html">Project Arcana</a>
+    <div class="image__description noselect">
+    <b>A custom operating system based on AOSP focused on improving user experience, with a little bit of spice.</b>
       <br>
       <br>
-      <a href="http://projectarcana-aosp.github.io/" style="color: green">Website</a> | <a href="https://github.com/projectarcana-aosp" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu3" id="menu3">
                 <option value = "url"> -
                 </option>
@@ -137,9 +153,10 @@
         </select>
         </form>
         <br>
-        <b id="arcana_S_stats">Stats: -</b>
+        <a href="http://projectarcana-aosp.github.io/" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"><a id="mobile_rom"> | </a></a><a href="https://github.com/projectarcana-aosp" class="urlbtn" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>         
 </div>
 </div>
+<b class="noselect" id="arcana_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -147,13 +164,13 @@
     <img src="repo_images/arrow.png" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/arrow/index.html">ArrowOS</a>
-    <div class="image__description">
-      ArrowOS is an AOSP based project started with the aim of keeping things simple, clean and neat. We added just the right and mostly used stuff that will be USEFUL.
+  <div class="image__title" style="text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;"><a style="color:white;" href="rom_assets/arrow/index.html">ArrowOS</a>
+    <div class="image__description noselect">
+    <b>ArrowOS is an AOSP based project started with the aim of keeping things simple, clean and neat. We added just the right and mostly used stuff that will be USEFUL.</b>
       <br>
-      <a href="https://www.arrowos.net/" style="color: green">Website</a> | <a href="https://github.com/arrowos" style="color: green">GitHub</a>
+     <br>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu4" id="menu4">
                 <option value = "url"> -
                 </option>
@@ -172,9 +189,10 @@
         </select>
         </form>
         <br>
-        <b id="arrow_S_stats">Stats: -</b>
+        <a href="https://www.arrowos.net/" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/arrowos" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="arrow_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -182,14 +200,13 @@
     <img src="repo_images/awaken.png" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/awaken/index.html">Project Awaken</a>
-    <div class="image__description">
-      Aims to bring a more consistent, fluent and smooth experience with all your must-have customizations.
+  <div class="image__title" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><a style="color:#3e85af;" href="rom_assets/awaken/index.html">Project Awaken</a>
+    <div class="image__description noselect">
+    <b>Aims to bring a more consistent, fluent and smooth experience with all your must-have customizations.</b>
       <br>
       <br>
-      <a href="#rom12.html" style="color: green">Website</a> | <a href="https://github.com/Project-Awaken" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu5" id="menu5">
                 <option value = "url"> -
                 </option>
@@ -208,9 +225,10 @@
         </select>
         </form>
         <br>
-        <b id="awaken_S_stats">Stats: -</b>
+        <a href="#" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/Project-Awaken" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
 </div>
 </div>
+<b class="noselect" id="awaken_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -218,14 +236,13 @@
     <img src="repo_images/bliss.jpg" height="225px" id="logo3">
   </div>
 <div class="image__overlay image_wakenOS a_overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/bliss/index.html">BlissROM</a>
-    <div class="image__description">
-      An open-source operating system based on Android with customizations, options and added security features.
+  <div class="image__title" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><a style="color:#01a8ec;" href="rom_assets/bliss/index.html">BlissROM</a>
+    <div class="image__description noselect">
+    <b>An open-source operating system based on Android with customizations, options and added security features.</b>
       <br>
       <br>
-      <a href="https://blissroms.org/" style="color: green">Website</a> | <a href="https://github.com/BlissRoms" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu6" id="menu6">
                 <option value = "url"> -
                 </option>
@@ -244,9 +261,10 @@
         </select>
         </form>
         <br>
-        <b id="bliss_S_stats">Stats: -</b>
+        <a href="https://blissroms.org/" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/BlissRoms" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="bliss_S_stats" style="font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -254,14 +272,13 @@
     <img src="repo_images/cherish.jpg" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/cherish/index.html">CherishOS</a>
-    <div class="image__description">
-      CherishOS based on AOSP, inspired by Google Pixel which has a refined Material Design 2 UI.
+  <div class="image__title"><a class="cherish" href="rom_assets/cherish/index.html">CherishOS</a>
+    <div class="image__description noselect">
+    <b>CherishOS based on AOSP, inspired by Google Pixel which has a refined Material Design 2 UI.</b>
       <br>
       <br>
-      <a href="https://cherishos.com/" style="color: green">Website</a> | <a href="https://github.com/CherishOS" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu7" id="menu7">
                 <option value = "url"> -
                 </option>
@@ -278,9 +295,10 @@
         </select>
         </form>
         <br>
-        <b id="cherish_S_stats">Stats: -</b>
+        <a href="https://cherishos.com/" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/CherishOS" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="cherish_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -288,14 +306,13 @@
     <img src="repo_images/cipher.png" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/cipher/index.html">CipherOS</a>
-    <div class="image__description">
-      Android Custom OS, Fueled by Lineage.
+  <div class="image__title" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><a style="color:#7e80f7;" href="rom_assets/cipher/index.html">CipherOS</a>
+    <div class="image__description noselect">
+    <b>Android Custom OS, Fueled by Lineage.</b>
       <br>
       <br>
-      <a href="http://cipheros.site/" style="color: green">Website</a> | <a href="https://github.com/CipherOS" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu8" id="menu8">
                 <option value = "url"> -
                 </option>
@@ -314,9 +331,10 @@
         </select>
         </form>
         <br>
-        <b id="cipher_S_stats">Stats: -</b>
+        <a href="http://cipheros.site/" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/CipherOS" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="cipher_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -324,14 +342,13 @@
     <img src="repo_images/crdroid.png" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/crd/index.html">crDroidAndroid</a>
-    <div class="image__description">
-      CrDroid is designed to improve the performance, reliability and customizability of stock Android.
+  <div class="image__title" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><a style="color:white;" href="rom_assets/crd/index.html">crDroidAndroid</a>
+    <div class="image__description noselect">
+    <b>CrDroid is designed to improve the performance, reliability and customizability of stock Android.</b>
       <br>
       <br>
-      <a href="https://crdroid.net/" style="color: green">Website</a> | <a href="https://github.com/crdroidandroid" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu9" id="menu9">
                 <option value = "url"> -
                 </option>
@@ -350,9 +367,10 @@
         </select>
         </form>
         <br>
-        <b id="crdroid_S_stats">Stats: -</b>
+        <a href="https://crdroid.net/" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/crdroidandroid" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="crdroid_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -360,14 +378,14 @@
     <img src="repo_images/derpfest.png" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/derpfest/index.html">Derpfest</a>
-    <div class="image__description">
-      Based on AOSP, we try to be a platform for beginners and support the Custom ROM community with our own unique contributions as well.
+  <div class="image__title" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><a href="rom_assets/derpfest/index.html">
+    <font color="white">Derp</font><font color="#eabf3f">fest</font></a>
+    <div class="image__description noselect">
+    <b>Based on AOSP, we try to be a platform for beginners and support the Custom ROM community with our own unique contributions as well.</b>
       <br>
       <br>
-      <a href="https://derpfest.org/" style="color: green">Website</a> | <a href="https://github.com/DerpFest-12" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu10" id="menu10">
                 <option value = "url"> -
                 </option>
@@ -384,9 +402,10 @@
         </select>
         </form>
         <br>
-        <b id="derp_S_stats">Stats: -</b>
+        <a href="https://derpfest.org/" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/DerpFest-11" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="derp_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -394,14 +413,13 @@
     <img src="repo_images/evox.png" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/evox/index.html">Evolution-X</a>
-    <div class="image__description">
-      Keep Evolving! Pixel UI, customization, and more, we are Evolution X!
+  <div class="image__title" style="text-shadow: -1px 0 #08f, 0 1px #08f, 1px 0 #08f, 0 -1px #08f;"><a style="color:white;"href="rom_assets/evox/index.html">Evolution-X</a>
+    <div class="image__description noselect">
+    <b>Keep Evolving! Pixel UI, customization, and more, we are Evolution X!</b>
       <br>
       <br>
-      <a href="https://evolution-x.org/" style="color: green">Website</a> | <a href="https://github.com/Evolution-X" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu11" id="menu11">
                 <option value = "url"> -
                 </option>
@@ -418,9 +436,10 @@
         </select>
         </form>
         <br>
-        <b id="evolution_S_stats">Stats: -</b>
+        <a href="https://evolution-x.org/" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"></a><a id="mobile_rom"> | </a><a href="https://github.com/Evolution-X" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="evolution_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -428,14 +447,13 @@
     <img src="repo_images/exthmui.jpg" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/exthmui/index.html">exThmUI</a>
-    <div class="image__description">
-      [PARTIAL ARCHIVED] An opensourced Android Project based on LineageOS/AOSP
+  <div class="image__title" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><a style="color:#dc4437;" href="rom_assets/exthmui/index.html">exThmUI</a>
+    <div class="image__description noselect">
+    <b>[PARTIAL ARCHIVED] An opensourced Android Project based on LineageOS/AOSP</b>
       <br>
       <br>
-      <a href="#rom12.html" style="color: green">Website</a> | <a href="https://github.com/exthmui" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu12" id="menu12">
                 <option value = "url"> -
                 </option>
@@ -454,9 +472,10 @@
         </select>
         </form>
         <br>
-        <b id="exthmui_S_stats">Stats: -</b>
+        <a href="#" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/exthmui" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="exthmui_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <!--
@@ -466,13 +485,13 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#08f;" href="rom_assets/descendant/index.html">DescendantXI</a>
-    <div class="image__description">
+    <div class="image__description noselect">
       Descendant is a different take on Android that aims to revolutionize Google’s Android AOSP experience.
       <br>
       <br>
-      <a href="https://downloads.descendant.me/" style="color: green">Website</a> | <a href="https://github.com/Descendant-XI" style="color: green">GitHub</a>
+      <a href="https://downloads.descendant.me/" style="color: #08f">Website</a> | <a href="https://github.com/Descendant-XI" style="color: #08f">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu9" id="menu9">
                 <option value = "url"> -
                 </option>
@@ -491,7 +510,7 @@
         </select>
         </form>
         <br>
-        <b id="descendant_S_stats">Stats: -</b>
+        <b class="noselect" id="descendant_S_stats">Stats: -</b>
     </div>
 </div>
 </div>
@@ -502,13 +521,13 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#08f;" href="rom_assets/dot/index.html">DotOS</a>
-    <div class="image__description">
+    <div class="image__description noselect">
       DroidOnTime is based on Google's AOSP with hand-picked goodies, innovative ideas and creative things which are added!
       <br>
       <br>
-      <a href="https://www.droidontime.com/" style="color: green">Website</a> | <a href="https://github.com/DotOS" style="color: green">GitHub</a>
+      <a href="https://www.droidontime.com/" style="color: #08f">Website</a> | <a href="https://github.com/DotOS" style="color: #08f">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu10" id="menu10">
                 <option value = "url"> -
                 </option>
@@ -527,7 +546,7 @@
         </select>
         </form>
         <br>
-        <b id="dot_S_stats">Stats: -</b>
+        <b class="noselect" id="dot_S_stats">Stats: -</b>
     </div>
 </div>
 </div>
@@ -538,13 +557,13 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#08f;" href="rom_assets/falcon/index.html">FalconOS</a>
-    <div class="image__description">
+    <div class="image__description noselect">
       FalconOS - A CustomROM Redesign By Team Falcon-- Which Gives You Stable & Daily Usage Performance.
       <br>
       <br>
-      <a href="https://falconos.in/" style="color: green">Website</a> | <a href="https://github.com/Falcon-OS" style="color: green">GitHub</a>
+      <a href="https://falconos.in/" style="color: #08f">Website</a> | <a href="https://github.com/Falcon-OS" style="color: #08f">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu11" id="menu11">
                 <option value = "url"> -
                 </option>
@@ -563,7 +582,7 @@
         </select>
         </form>
         <br>
-        <b>Stats: 0 [N/A]</b>
+        <b class="noselect">Stats: 0 [N/A]</b>
     </div>
 </div>
 </div>
@@ -574,13 +593,13 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#08f;" href="rom_assets/fluid/index.html">FluidROM</a>
-    <div class="image__description">
+    <div class="image__description noselect">
       Bring in some punk to your phone with fluid, the smoothest aftermarket android. With latest patches and fresh user experience.
       <br>
       <br>
-      <a href="https://projectfluid.org/" style="color: green">Website</a> | <a href="https://github.com/project-fluid" style="color: green">GitHub</a>
+      <a href="https://projectfluid.org/" style="color: #08f">Website</a> | <a href="https://github.com/project-fluid" style="color: #08f">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu12" id="menu12">
                 <option value = "url"> -
                 </option>
@@ -599,7 +618,7 @@
         </select>
         </form>
         <br>
-        <b id="fluid_S_stats">Stats: -</b>
+        <b class="noselect" id="fluid_S_stats">Stats: -</b>
     </div>
 </div>
 </div>
@@ -610,13 +629,13 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#08f;" href="rom_assets/kang/index.html">KangOS</a>
-    <div class="image__description">
+    <div class="image__description noselect">
       KangOS is a sophisticated AOSP inspired project, that focuses on redefining the stock Android rom and provide a more tinted and elegant user experience.
       <br>
       <br>
-      <a href="#rom12.html" style="color: green">Website</a> | <a href="https://github.com/KangOS-SnowCone" style="color: green">GitHub</a>
+      <a href="#rom12.html" style="color: #08f">Website</a> | <a href="https://github.com/KangOS-SnowCone" style="color: #08f">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu13" id="menu13">
                 <option value = "url"> -
                 </option>
@@ -635,7 +654,7 @@
         </select>
         </form>
         <br>
-        <b id="kang_S_stats">Stats: -</b>
+        <b class="noselect" id="kang_S_stats">Stats: -</b>
     </div>
 </div>
 </div>
@@ -646,14 +665,14 @@
     <img src="repo_images/hentai.png" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/hentai/index.html">HentaiOS</a>
-    <div class="image__description">
-      An opensourced Android Project based on LineageOS/AOSP with Anime/Hentai Caracteristics...
+    <div class="image__title" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><a href="rom_assets/hentai/index.html">
+      <font color="white">He</font><font color="#ff9a9a">nt</font><font color="#f15151">ai</font><font color="#d31d2c">OS</font></a>
+    <div class="image__description noselect">
+    <b>An opensourced Android Project based on LineageOS/AOSP with Anime/Hentai Caracteristics...</b>
       <br>
       <br>
-      <a href="https://hentaios.com/" style="color: green">Website</a> | <a href="https://github.com/hentaiOS" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu13" id="menu13">
                 <option value = "url"> -
                 </option>
@@ -670,9 +689,10 @@
         </select>
         </form>
         <br>
-        <b id="hentai_S_stats">Stats: -</b>
+        <a href="https://hentaios.com/" id="mobile_rom" class="urlbtn" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/hentaiOS" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="hentai_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -680,14 +700,13 @@
     <img src="repo_images/lighthouse.png" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/lighthouse/index.html">Project-Lighthouse</a>
-    <div class="image__description">
-      An opensourced Android Project based on LineageOS/AOSP
+  <div class="image__title" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><a style="color:white;" href="rom_assets/lighthouse/index.html">Project-Lighthouse</a>
+    <div class="image__description noselect">
+    <b>An opensourced Android Project based on LineageOS/AOSP</b>
       <br>
       <br>
-      <a href="#rom12.html" style="color: green">Website</a> | <a href="https://github.com/lighthouse-os" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu14" id="menu14">
                 <option value = "url"> -
                 </option>
@@ -706,9 +725,10 @@
         </select>
         </form>
         <br>
-        <b id="lighthouse_S_stats">Stats: -</b>
+        <a href="#" id="mobile_rom" class="urlbtn" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/lighthouse-os" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="lighthouse_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -716,14 +736,13 @@
     <img src="repo_images/lineage.jpg" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/los/index.html">LineageOS</a>
-    <div class="image__description">
-      A free and open-source operating system for various devices, based on the Android mobile platform.
+  <div class="image__title" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><a style="color:#157d7e;" href="rom_assets/los/index.html">LineageOS</a>
+    <div class="image__description noselect">
+    <b>A free and open-source operating system for various devices, based on the Android mobile platform.</b>
       <br>
       <br>
-      <a href="http://www.lineageos.org/" style="color: green">Website</a> | <a href="https://github.com/LineageOS" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu15" id="menu15">
                 <option value = "url"> -
                 </option>
@@ -742,9 +761,10 @@
         </select>
         </form>
         <br>
-        <b id="lineage_S_stats">Stats: -</b>
+          <a href="http://www.lineageos.org/" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/LineageOS" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="lineage_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <!--
@@ -754,13 +774,13 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#08f;" href="rom_assets/nusa/index.html">NusantaraOS</a>
-    <div class="image__description">
+    <div class="image__description noselect">
       AOSP based project with alot of customisation. But mostly are broken.
       <br>
       <br>
-      <a href="https://nusantaraproject.my.id/" style="color: green">Website</a> | <a href="https://github.com/NusantaraProject-ROM" style="color: green">GitHub</a>
+      <a href="https://nusantaraproject.my.id/" style="color: #08f">Website</a> | <a href="https://github.com/NusantaraProject-ROM" style="color: #08f">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu15" id="menu15">
                 <option value = "url"> -
                 </option>
@@ -779,7 +799,7 @@
         </select>
         </form>
         <br>
-        <b id="nusantara_S_stats">Stats: -</b>
+        <b class="noselect" id="nusantara_S_stats">Stats: -</b>
     </div>
 </div>
 </div>
@@ -790,14 +810,13 @@
     <img src="repo_images/nitro.png" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/nitro/index.html">NitrogenOS</a>
-    <div class="image__description">
-      An opensourced Android Project based on LineageOS/AOSP
+  <div class="image__title" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><a style="color:#27d5d8;" href="rom_assets/nitro/index.html">NitrogenOS</a>
+    <div class="image__description noselect">
+    <b>An opensourced Android Project based on LineageOS/AOSP</b>
       <br>
       <br>
-      <a href="#rom12.html" style="color: green">Website</a> | <a href="https://github.com/nitrogen-project" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu16" id="menu16">
                 <option value = "url"> -
                 </option>
@@ -816,9 +835,10 @@
         </select>
         </form>
         <br>
-        <b id="nitrogen_S_stats">Stats: -</b>
+        <a href="#" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/nitrogen-project" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="nitrogen_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -826,14 +846,14 @@
     <img src="repo_images/octavi-os.jpg" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/octavi/index.html">OctaviOS</a>
-    <div class="image__description">
-      OctaviOS is an AOSP based rom focusing on Unique and Smooth UI with handy features. OctaviOS is a reborn of pie based PearlOS.
+  <div class="image__title" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><a href="rom_assets/octavi/index.html">
+    <font color="white">Octavi</font><font color="#5f0706">OS</font></a>
+    <div class="image__description noselect">
+    <b>OctaviOS is an AOSP based rom focusing on Unique and Smooth UI with handy features. OctaviOS is a reborn of pie based PearlOS.</b>
       <br>
       <br>
-      <a href="http://www.octavi-os.com/" style="color: green">Website</a> | <a href="https://github.com/Octavi-OS" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu17" id="menu17">
                 <option value = "url"> -
                 </option>
@@ -852,9 +872,10 @@
         </select>
         </form>
         <br>
-        <b id="octavi_S_stats">Stats: -</b>
+        <a href="http://www.octavi-os.com/" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/Octavi-OS" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="octavi_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <!--
@@ -864,13 +885,13 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#08f;" href="rom_assets/palladium/index.html">PalladiumOS</a>
-    <div class="image__description">
+    <div class="image__description noselect">
       Palladium OS is not yet another ubiquitous OS but a trendsetter of its own level. The Prime focus here is on speed, stability.
       <br>
       <br>
-      <a href="https://palladiumos.com/" style="color: green">Website</a> | <a href="https://github.com/Palladium-OS" style="color: green">GitHub</a>
+      <a href="https://palladiumos.com/" style="color: #08f">Website</a> | <a href="https://github.com/Palladium-OS" style="color: #08f">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu17" id="menu17">
                 <option value = "url"> -
                 </option>
@@ -889,7 +910,7 @@
         </select>
         </form>
         <br>
-        <b id="palladium_S_stats">Stats: -</b>
+        <b class="noselect" id="palladium_S_stats">Stats: -</b>
     </div>
 </div>
 </div>
@@ -900,13 +921,13 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#08f;" href="rom_assets/pixelext/index.html">PixelExtended</a>
-    <div class="image__description">
+    <div class="image__description noselect">
       We started as a small project (Fan-Edition) based on PE. Now, we are trying to give you best pe by adding some necessary practical features.
       <br>
       <br>
-      <a href="https://pixelextended.ninja/" style="color: green">Website</a> | <a href="https://github.com/PixelExtended" style="color: green">GitHub</a>
+      <a href="https://pixelextended.ninja/" style="color: #08f">Website</a> | <a href="https://github.com/PixelExtended" style="color: #08f">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu19" id="menu19">
                 <option value = "url"> -
                 </option>
@@ -925,7 +946,7 @@
         </select>
         </form>
         <br>
-        <b id="peext_S_stats">Stats: -</b>
+        <b class="noselect" id="peext_S_stats">Stats: -</b>
     </div>
 </div>
 </div>
@@ -936,14 +957,14 @@
     <img src="repo_images/pixys.png" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/pixys/index.html">PixysOS</a>
-    <div class="image__description">
-      Pixys is a butter smooth Android aftermarket firmware. We handpicked the best features around and are adding our own juice into it.
+  <div class="image__title" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><a style="color:#4285f4;" href="rom_assets/pixys/index.html">PixysOS</a>
+    <div class="image__description noselect">
+    <b>Pixys is a butter smooth Android aftermarket firmware. We handpicked the best features around and are adding our own juice into it.</b>
       <br>
       <br>
-      <a href="https://pixysos.com/" style="color: green">Website</a> | <a href="https://github.com/PixysOS" style="color: green">GitHub</a>
+      <a href="https://pixysos.com/" style="color: #08f">Website</a> | <a href="https://github.com/PixysOS" style="color: #08f">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu18" id="menu18">
                 <option value = "url"> -
                 </option>
@@ -960,9 +981,10 @@
         </select>
         </form>
         <br>
-        <b id="pixysos_S_stats">Stats: -</b>
+        <a href="https://pixysos.com/" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/PixysOS" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="pixysos_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -970,14 +992,13 @@
     <img src="repo_images/posp.jpg" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/posp/index.html">POSP</a>
-    <div class="image__description">
-      POSP is a butter smooth Android aftermarket firmware. We handpicked the best features around and are adding our own sauce to it.
+  <div class="image__title"><a class="posp" href="rom_assets/posp/index.html">POSP</a>
+    <div class="image__description noselect">
+    <b>POSP is a butter smooth Android aftermarket firmware. We handpicked the best features around and are adding our own sauce to it.</b>
       <br>
       <br>
-      <a href="https://potatoproject.co/" style="color: green">Website</a> | <a href="https://github.com/PotatoProject" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu19" id="menu19">
                 <option value = "url"> -
                 </option>
@@ -994,9 +1015,10 @@
         </select>
         </form>
         <br>
-        <b id="potato_S_stats">Stats: -</b>
+        <a href="https://potatoproject.co/" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/PotatoProject" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="potato_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1004,14 +1026,13 @@
     <img src="repo_images/ppui.png" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/ppui/index.html">PixelPlusUI</a>
-    <div class="image__description">
-      PixelPlusUI is minimal UI & close to Stock Android ROM which offers great performance and stability with many useful features
+  <div class="image__title" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><a style="color:white;" href="rom_assets/ppui/index.html">PixelPlusUI</a>
+    <div class="image__description noselect">
+    <b>PixelPlusUI is minimal UI & close to Stock Android ROM which offers great performance and stability with many useful features</b>
       <br>
       <br>
-      <a href="#rom12.html" style="color: green">Website</a> | <a href="https://github.com/PixelPlusUI-SnowCone" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu20" id="menu20">
                 <option value = "url"> -
                 </option>
@@ -1028,9 +1049,10 @@
         </select>
         </form>
         <br>
-        <b id="ppui_S_stats">Stats: -</b>
+        <a href="#" id="mobile_rom" class="urlbtn" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/PixelPlusUI-SnowCone" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="ppui_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1038,14 +1060,13 @@
     <img src="repo_images/radiant.png" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/radiant/index.html">Project Radiant</a>
-    <div class="image__description">
-      NezukoOS is a fresh new ROM aiming to provide you a customisable and stable experience!
+  <div class="image__title" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><a style="color:white;" href="rom_assets/radiant/index.html">Project Radiant</a>
+    <div class="image__description noselect">
+    <b>NezukoOS is a fresh new ROM aiming to provide you a customisable and stable experience!</b>
       <br>
       <br>
-      <a href="#rom12.html" style="color: green">Website</a> | <a href="https://github.com/ProjectRadiant" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu21" id="menu21">
                 <option value = "url"> -
                 </option>
@@ -1062,9 +1083,10 @@
         </select>
         </form>
         <br>
-        <b id="radiant_S_stats">Stats: -</b>
+        <a href="#" id="mobile_rom" class="urlbtn" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/ProjectRadiant" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="radiant_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1072,14 +1094,13 @@
     <img src="repo_images/spark.jpg" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/spark/index.html">Spark-ROM</a>
-    <div class="image__description">
-      Everything began from a spark.
+  <div class="image__title" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><a style="color:#fff62f;" href="rom_assets/spark/index.html">Spark-ROM</a>
+    <div class="image__description noselect">
+    <b>Everything began from a spark.</b>
       <br>
       <br>
-      <a href="https://www.spark-os.live/" style="color: green">Website</a> | <a href="https://github.com/Spark-Rom" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu22" id="menu22">
         <option value = "url"> - 
                 <option value = "url"> -
@@ -1099,9 +1120,10 @@
         </select>
         </form>
         <br>
-        <b id="spark_S_stats">Stats: -</b>
+        <a href="https://www.spark-os.live/" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/Spark-Rom" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="spark_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1109,14 +1131,13 @@
     <img src="repo_images/superior.png" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/superior/index.html">SuperiorOS</a>
-    <div class="image__description">
-      Superior OS is an AOSP based custom ROM with some minimal features to fulfill the users demands nowadays.
+  <div class="image__title"><a class="superior" href="rom_assets/superior/index.html">SuperiorOS</a>
+    <div class="image__description noselect">
+    <b>Superior OS is an AOSP based custom ROM with some minimal features to fulfill the users demands nowadays.</b>
       <br>
       <br>
-      <a href="http://downloads.superioros.org/" style="color: green">Website</a> | <a href="https://github.com/SuperiorOS" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu23" id="menu23">
                 <option value = "url"> -
                 </option>
@@ -1135,9 +1156,10 @@
         </select>
         </form>
         <br>
-        <b id="superior_S_stats">Stats: -</b>
+        <a href="http:/s.superioros.org/" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/SuperiorOS" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>   
     </div>
 </div>
+<b class="noselect" id="superior_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <!--
@@ -1147,13 +1169,13 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#08f;" href="rom_assets/proton/index.html">ProtonAOSP</a>
-    <div class="image__description">
+    <div class="image__description noselect">
       A minimal custom Android ROM focused on UI/UX and performance, with a touch of privacy.
       <br>
       <br>
-      <a href="https://protonaosp.org/" style="color: green">Website</a> | <a href="https://github.com/ProtonAOSP" style="color: green">GitHub</a>
+      <a href="https://protonaosp.org/" style="color: #08f">Website</a> | <a href="https://github.com/ProtonAOSP" style="color: #08f">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu25" id="menu25">
                 <option value = "url"> -
                 </option>
@@ -1172,7 +1194,7 @@
         </select>
         </form>
         <br>
-        <b id="protonaosp_S_stats">Stats: -</b>
+        <b class="noselect" id="protonaosp_S_stats">Stats: -</b>
     </div>
 </div>
 </div>
@@ -1183,13 +1205,13 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#08f;" href="rom_assets/hycon/index.html">HyconOS</a>
-    <div class="image__description">
+    <div class="image__description noselect">
       Hycon OS is AOSP ROM with many pixel features & Customizations. We always try to improve it's stability and performance.
       <br>
       <br>
-      <a href="https://www.hyconos.in/" style="color: green">Website</a> | <a href="https://github.com/HyconOS" style="color: green">GitHub</a>
+      <a href="https://www.hyconos.in/" style="color: #08f">Website</a> | <a href="https://github.com/HyconOS" style="color: #08f">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu29" id="menu29">
                 <option value = "url"> -
                 </option>
@@ -1208,7 +1230,7 @@
         </select>
         </form>
         <br>
-        <b id="hycon_S_stats">Stats: -</b>
+        <b class="noselect" id="hycon_S_stats">Stats: -</b>
     </div>
 </div>
 </div>
@@ -1219,13 +1241,13 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#08f;" href="rom_assets/styx/index.html">Styx Project</a>
-    <div class="image__description">
+    <div class="image__description noselect">
       The Styx Project is a custom Android based distribution that aims to subtly enhance the beauty of stock Android while still keeping the smoothness.
       <br>
       <br>
-      <a href="https://styxproject.ml/" style="color: green">Website</a> | <a href="https://github.com/StyxProject" style="color: green">GitHub</a>
+      <a href="https://styxproject.ml/" style="color: #08f">Website</a> | <a href="https://github.com/StyxProject" style="color: #08f">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu30" id="menu30">
                 <option value = "url"> -
                 </option>
@@ -1244,7 +1266,7 @@
         </select>
         </form>
         <br>
-        <b id="styx_S_stats">Stats: -</b>
+        <b class="noselect" id="styx_S_stats">Stats: -</b>
     </div>
 </div>
 </div>
@@ -1255,13 +1277,13 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#08f;" href="rom_assets/legion/index.html">LegionOS</a>
-    <div class="image__description">
+    <div class="image__description noselect">
       LegionOS is an AOSP based ROM. Our mission is to offer the maximum possible stability and security, along with essential and useful features.
       <br>
       <br>
-      <a href="http://legionos.org/" style="color: green">Website</a> | <a href="https://github.com/Project-LegionOS" style="color: green">GitHub</a>
+      <a href="http://legionos.org/" style="color: #08f">Website</a> | <a href="https://github.com/Project-LegionOS" style="color: #08f">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu33" id="menu33">
                 <option value = "url"> -
                 </option>
@@ -1280,7 +1302,7 @@
         </select>
         </form>
         <br>
-        <b id="legion_S_stats">Stats: -</b>
+        <b class="noselect" id="legion_S_stats">Stats: -</b>
     </div>
 </div>
 </div>
@@ -1291,13 +1313,13 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#08f;" href="rom_assets/msm/index.html">MSM-Xtended</a>
-    <div class="image__description">
+    <div class="image__description noselect">
       A ROM Based on AOSP, with features from almost all Custom ROMs available.
       <br>
       <br>
-      <a href="https://project-xtended.org/" style="color: green">Website</a> | <a href="https://github.com/Project-Xtended" style="color: green">GitHub</a>
+      <a href="https://project-xtended.org/" style="color: #08f">Website</a> | <a href="https://github.com/Project-Xtended" style="color: #08f">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu34" id="menu34">
                 <option value = "url"> -
                 </option>
@@ -1316,7 +1338,7 @@
         </select>
         </form>
         <br>
-        <b>Stats: 0 [N/A]</b>
+        <b class="noselect">Stats: 0 [N/A]</b>
     </div>
 </div>
 </div>
@@ -1327,13 +1349,13 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#08f;" href="rom_assets/colt/index.html">ColtOS</a>
-    <div class="image__description">
+    <div class="image__description noselect">
       ColtOS Project is presented by a team of learners and it is crafted from AOSP Source with all the necessary customizations.
       <br>
       <br>
-      <a href="#rom12.html" style="color: green">Website</a> | <a href="https://github.com/Colt-Enigma/" style="color: green">GitHub</a>
+      <a href="#rom12.html" style="color: #08f">Website</a> | <a href="https://github.com/Colt-Enigma/" style="color: #08f">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu35" id="menu35">
                 <option value = "url"> -
                 </option>
@@ -1352,7 +1374,7 @@
         </select>
         </form>
         <br>
-        <b id="colt_S_stats">Stats: -</b>
+        <b class="noselect" id="colt_S_stats">Stats: -</b>
     </div>
 </div>
 </div>
@@ -1363,13 +1385,13 @@
   </div>
 <div class="image__overlay image__overlay--blur">
   <div class="image__title"><a style="color:#08f;" href="rom_assets/corvus/index.html">CorvusOS</a>
-    <div class="image__description">
+    <div class="image__description noselect">
       AOSP based rom tailored for what a user needs!
       <br>
       <br>
-      <a href="#rom12.html" style="color: green">Website</a> | <a href="https://github.com/Corvus-ROM" style="color: green">GitHub</a>
+      <a href="#rom12.html" style="color: #08f">Website</a> | <a href="https://github.com/Corvus-ROM" style="color: #08f">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu10" id="menu10">
                 <option value = "url"> -
                 </option>
@@ -1388,7 +1410,7 @@
         </select>
         </form>
         <br>
-        <b id="corvus_S_stats">Stats: -</b>
+        <b class="noselect" id="corvus_S_stats">Stats: -</b>
     </div>
 </div>
 </div>
@@ -1399,14 +1421,13 @@
     <img src="repo_images/yaap.png" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/yaap/index.html">YAAP</a>
-    <div class="image__description">
-      A project founded by Adhitya Mohan & Ido Ben-Hur, the goal of staying close to AOSP in design goals, offers a clean interface.
+  <div class="image__title" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><a style="color:white;" href="rom_assets/yaap/index.html">YAAP</a>
+    <div class="image__description noselect">
+    <b>A project founded by Adhitya Mohan & Ido Ben-Hur, the goal of staying close to AOSP in design goals, offers a clean interface.</b>
       <br>
       <br>
-      <a href="#rom12.html" style="color: green">Website</a> | <a href="https://github.com/yaap" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu24" id="menu24">
                 <option value = "url"> -
                 </option>
@@ -1425,9 +1446,10 @@
         </select>
         </form>
         <br>
-        <b id="yaap_S_stats">Stats: -</b>
+        <a href="#" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/yaap" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="yaap_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1435,14 +1457,13 @@
     <img src="repo_images/ancient.png" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/ancient/index.html">AncientOS</a>
-    <div class="image__description">
-      AncientOS is Custom ROM based on AOSP that aims to provide a unique UI with some useful feautures for customization.
+  <div class="image__title" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><a style="color:#85712a;" href="rom_assets/ancient/index.html">AncientOS</a>
+    <div class="image__description noselect">
+    <b>AncientOS is Custom ROM based on AOSP that aims to provide a unique UI with some useful feautures for customization.</b>
       <br>
       <br>
-      <a href="https://www.ancientrom.xyz" style="color: green">Website</a> | <a href="https://github.com/Ancient-Lab/manifest" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu25" id="menu25">
                 <option value = "url"> -
                 </option>
@@ -1453,9 +1474,10 @@
         </select>
         </form>
         <br>
-        <b id="ancient_S_stats">Stats: -</b>
+        <a href="https://www.ancientrom.xyz" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/Ancient-Lab" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="ancient_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1463,14 +1485,14 @@
     <img src="repo_images/pixelexperience.jpg" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/pe/index.html">PixelExperience</a>
-    <div class="image__description">
-      AOSP based ROM, with Google apps included and all Pixel goodies.
+  <div class="image__title" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><a href="rom_assets/pe/index.html"> 
+    <font color="#faba00">Pixel</font><font color="#e74133">Ex</font><font color="#08f">peri</font><font color="#31a952">ence</font></a>
+    <div class="image__description noselect">
+    <b>AOSP based ROM, with Google apps included and all Pixel goodies.</b>
       <br>
       <br>
-      <a href="https://download.pixelexperience.org/" style="color: green">Website</a> | <a href="https://github.com/PixelExperience" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu26" id="menu26">
                 <option value = "url"> -
                 </option>
@@ -1487,9 +1509,10 @@
         </select>
         </form>
         <br>
-        <b id="pe_S_stats">Stats: -</b>
+        <a href="https://pixelexperience.org/" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/PixelExperience" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a> 
     </div>
 </div>
+<b class="noselect" id="pe_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1497,14 +1520,13 @@
     <img src="repo_images/ssos.jpg" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/ssos/index.html">ShapeShiftOS</a>
-    <div class="image__description">
-      ShapeShiftOS is a custom-rom based on AOSP that aims to provide a different user interface and experience than any other ROM on the market.
+  <div class="image__title"><a class="ssos" href="rom_assets/ssos/index.html">ShapeShiftOS</a>
+    <div class="image__description noselect">
+    <b>ShapeShiftOS is a custom-rom based on AOSP that aims to provide a different user interface and experience than any other ROM on the market.</b>
       <br>
       <br>
-      <a href="#rom12.html" style="color: green">Website</a> | <a href="https://github.com/ShapeShiftOS" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu27" id="menu27">
                 <option value = "url"> -
                 </option>
@@ -1521,9 +1543,10 @@
         </select>
         </form>
         <br>
-        <b id="ss_S_stats">Stats: -</b>
+        <a href="#" id="mobile_rom" class="urlbtn" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/ShapeShiftOS" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="ss_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1531,14 +1554,13 @@
     <img src="repo_images/elytra.jpg" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/elytra/index.html">ElytraOS</a>
-    <div class="image__description">
-      ElytraOS. Let your Android experience fly.
+  <div class="image__title" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><a style="color:white;" href="rom_assets/elytra/index.html">ElytraOS</a>
+    <div class="image__description noselect">
+    <b>ElytraOS. Let your Android experience fly.</b>
       <br>
       <br>
-      <a href="https://t.me/elytraOS" style="color: green">Website</a> | <a href="https://github.com/elytraOS" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu28" id="menu28">
                 <option value = "url"> -
                 </option>
@@ -1557,9 +1579,10 @@
         </select>
         </form>
         <br>
-        <b id="elytra_S_stats">Stats: -</b>
+        <a href="https://t.me/elytraOS" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/elytraOS" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="elytra_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1567,14 +1590,13 @@
     <img src="repo_images/elixier.png" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/elixier/index.html">Project Elixir</a>
-    <div class="image__description">
-      Elixir basically offers a minimal UI enhancement & close to Stock Android ROM with great performance, security and stability
+    <div class="image__title" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><a style="color:#ffdbcf;" href="rom_assets/elixier/index.html">Project Elixir</a>
+    <div class="image__description noselect">
+    <b>Elixir basically offers a minimal UI enhancement & close to Stock Android ROM with great performance, security and stability</b>
       <br>
       <br>
-      <a href="https://projectelixiros.com/" style="color: green">Website</a> | <a href="https://github.com/Project-Elixir" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu29" id="menu29">
                 <option value = "url"> -
                 </option>
@@ -1591,9 +1613,10 @@
         </select>
         </form>
         <br>
-        <b id="elixier_S_stats">Stats: -</b>
+        <a href="https://projectelixiros.com/" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/Project-Elixir" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="elixier_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 <div class ="flexelement_rom box_rom harlow">
@@ -1601,14 +1624,13 @@
     <img src="repo_images/aospk.png" height="225px" id="logo3">
   </div>
 <div class="image__overlay image__overlay--blur">
-  <div class="image__title"><a style="color:#08f;" href="rom_assets/aospk/index.html">AOSP-Kraken</a>
-    <div class="image__description">
-        AOSPK - The Kraken Project is based on AOSP with useful customizations for everyday life
+  <div class="image__title"><a class="revenge" href="rom_assets/aospk/index.html"><font color="#01fa52">AOSP-</font><font color="#01fbcf">Kraken</font></a>
+    <div class="image__description noselect">
+    <b>AOSPK - The Kraken Project is based on AOSP with useful customizations for everyday life</b>
       <br>
       <br>
-      <a href="https://aospk.org" style="color: green">Website</a> | <a href="https://github.com/AOSPK" style="color: green">GitHub</a>
       <form>
-        <label><a style="color: green">Download</a> </label>
+        <label><a style="color: #08f">Download</a> </label>
         <select name="menu30" id="menu30">
                 <option value = "url"> -
                 </option>
@@ -1625,9 +1647,10 @@
         </select>
         </form>
         <br>
-        <b id="aospk_S_stats">Stats: -</b>
+        <a href="https://aospk.org" class="urlbtn" id="mobile_rom" style="color: #08f">Website</a><a id="mobile_rom"> | </a><a href="https://github.com/AOSPK" class="urlbtn" id="mobile_rom" style="color: #08f">GitHub</a>
     </div>
 </div>
+<b class="noselect" id="aospk_S_stats" style="z-index: -1; font-size: 13px;">Stats: -</b>
 </div>
 </div>
 </div>
