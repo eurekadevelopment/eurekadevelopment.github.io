@@ -103,7 +103,7 @@ $(document).ready(function() {
                                 | (rom_list[i] == 'elixier') | (rom_list[i] == 'elixier')) {
                                     // Do nothing
                                 } else {
-                                    document.getElementById(device + '_' + arch + '_' + rom_list[i] + '_link').outerHTML = "<option value = " + direct_link + "> " + device + " " + arch;
+                                    document.getElementById(device + '_' + arch + '_' + rom_list[i] + '_link').outerHTML = "<a href = " + direct_link + " > <u class=gradient-underline-rom> " + device + " " + arch + "</u></a>";
                                 }
                             } catch(e) {
                                 console.log("Missing id in html for " + rom_list[i] + ". Please check!");
@@ -113,7 +113,7 @@ $(document).ready(function() {
                                 if (((rom_list[i] == 'derp') && (device == "A20")) | ((rom_list[i] == 'derp') && (device == "A20e")) | ((rom_list[i] == 'crdroid') && (device == "A40")) | ((rom_list[i] == 'crdroid') && (device == "A40"))) {
                                     // Do nothing
                                 } else {
-                                    document.getElementById(device + '_' + rom_list[i] + '_link').outerHTML = "<option value = " + direct_link + "> " + device;
+                                    document.getElementById(device + '_' + rom_list[i] + '_link').outerHTML = "<a href = " + direct_link + " > <u class=gradient-underline-rom> " + device + " " + "</u></a>";
                                 }
                             } catch(e) {
                                 console.log("Missing id in html for " + device + rom_list[i] + ". Please check!");
