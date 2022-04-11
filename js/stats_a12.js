@@ -84,9 +84,9 @@ $(document).ready(function() {
 
         const android_list = ['S'];
         const rom_list = ['aex', 'aicp', 'arcana', 'arrow', 'awaken', 'bliss', 'cherish', 'cipher', 'crdroid', 'derp', 'evolution', 'exthmui', 'hentai', 'lighthouse', 'lineage', 'nitrogen', 'octavi', 'pixysos', 'potato', 'ppui', 'radiant', 'spark', 'superior',  'yaap', 'pe', 'ss',
-         'elytra', 'elixier', 'aospk'];
+         'elytra', 'elixier', 'aospk', 'corvus'];
         for (let i = 0; i < 1; i++) {
-            for (let j = 0; j < 29; j++) {
+            for (let j = 0; j < 30; j++) {
                 setTimeout(() => { downloads_per_rom(android_list[i], rom_list[j]); }, 2500);
             }
         }

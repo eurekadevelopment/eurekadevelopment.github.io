@@ -39,14 +39,15 @@ $(document).ready(function() {
             var elytra = largedata.elytra[0];
             var elixier = largedata.elixier[0];
             var aospk = largedata.aospk[0];
-            const rom_data = [aex, aicp, arcana, arrow, awaken, bliss, cherish, cipher, crdroid, derp, evolution, exthmui, hentai, lighthouse, lineage, nitrogen, octavi, pixysos, potato, ppui, radiant, spark, superior, yaap, ancient, pe, ss, elytra, elixier, aospk];
+            var corvus = largedata.corvus[0];
+            const rom_data = [aex, aicp, arcana, arrow, awaken, bliss, cherish, cipher, crdroid, derp, evolution, exthmui, hentai, lighthouse, lineage, nitrogen, octavi, pixysos, potato, ppui, radiant, spark, superior, yaap, ancient, pe, ss, elytra, elixier, aospk, corvus];
 
             const rom_list = ['aex', 'aicp', 'arcana', 'arrow', 'awaken', 'bliss', 'cherish', 'cipher', 'crdroid', 'derp', 'evolution', 'exthmui', 'hentai', 'lighthouse', 'lineage', 'nitrogen', 'octavi', 'pixysos', 'potato', 'ppui', 'radiant', 'spark', 'superior',  'yaap', 'ancient', 'pe', 'ss', 'elytra',
-            'elixier', 'aospk'];
+            'elixier', 'aospk', 'corvus'];
 
             // i < (number of roms in rom_list + 1)
             // i starts at 0.
-            for (let i = 0; i < 30; i++) {
+            for (let i = 0; i < 31; i++) {
                 var target_rom = rom_data[i];
                 if (device == "A10") {
                     if (arch == "arm") {
