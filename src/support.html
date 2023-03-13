@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <link rel="stylesheet" href="./scss/style.scss" />
+    <link rel="stylesheet" href="./scss/_dload.scss" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script is:inline type="module" src="./js/colorpalette.js"></script>
+    <script async src="https://arc.io/widget.min.js#3LCgJWKk"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title>Eureka Development</title>
+  </head>
+
+  <body>
+    <div class="splash">
+      <img class="fade-in center" src="./img/media/eklogo.gif" alt="eklogo" />
+    </div>
+    <nav class="sidebar close nav">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <a href="/"><img src="./img/eureka/logo.svg" alt="" /></a>
+          </span>
+          <div class="text logo-text">
+            <span class="profession"><b>Welcome!</b></span>
+          </div>
+        </div>
+        <i class="bx bx-menu toggle"></i>
+      </header>
+      <div class="menu-bar" style="overflow-x: hidden; overflow-y: hidden">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="/">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">Home</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a id="rom-dialog">
+                <i class="bx bx-microchip icon"></i>
+                <span class="text nav-text">Custom ROM's</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="recovery.html">
+                <i class="bx bx-refresh icon"></i>
+                <span class="text nav-text">Custom Recovery</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="kernel.html">
+                <i class="bx bx-chip icon"></i>
+                <span class="text nav-text">Eureka Kernel</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="statistics.html">
+                <i class="bx bx-stats icon"></i>
+                <span class="text nav-text">Statistics</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="guide.html">
+                <i class="bx bx-book icon"></i>
+                <span class="text nav-text">Guides</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a id="dload-dialog">
+                <i class="bx bx-download icon"></i>
+                <span class="text nav-text">Downloads</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="support.html">
+                <i class="bx bx-heart icon" id="active-page"></i>
+                <span class="text nav-text">Support</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="team.html">
+                <i class="bx bxs-face icon"></i>
+                <span class="text nav-text">Eureka Team</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="about.html">
+                <i class="bx bx-info-circle icon"></i>
+                <span class="text nav-text">About Us</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a onclick="openColorpalette();" style="cursor: pointer">
+                <img
+                  class="color"
+                  id="animation"
+                  onclick="topFunction()"
+                  src="./img/eureka/color.png"
+                /><i class="icon"></i>
+
+                <span class="text nav-text">Switch Web-Color</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="text logo-text"
+          style="margin-left: 20px; margin-top: 5px"
+        ></div>
+      </div>
+    </nav>
+    <section class="home">
+      <div id="colorpalette" class="overlay-colorpalette animate-in">
+        <ul class="ul">
+          <a
+            href="javascript:void(0)"
+            class="closebtn"
+            onclick="closeColorpalette()"
+            >&times;</a
+          >
+          <li class="li" data-color="color1"></li>
+          <li class="li" data-color="color2"></li>
+          <li class="li" data-color="color3"></li>
+          <li class="li" data-color="color4"></li>
+          <li class="li" data-color="color5"></li>
+          <li class="li" data-color="color6"></li>
+          <li class="li" data-color="color7"></li>
+          <li class="li" data-color="color8"></li>
+          <li class="li" data-color="color9"></li>
+          <li class="li" data-color="color10"></li>
+          <li class="li" data-color="color11"></li>
+          <li class="li" data-color="color12"></li>
+        </ul>
+        <p class="color-text">Switch Web-Color</p>
+      </div>
+      <section
+        class="author"
+        style="
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          margin-top: 25px;
+          margin-bottom: -50px;
+        "
+      >
+        <div class="plx-card gold">
+          <div class="pxc-bg"></div>
+          <div class="pxc-subcard">
+            <div class="pxc-avatar">
+              <img class="ek" src="./img/eureka/logo.svg" />
+            </div>
+            <div class="pxc-title" style="font-weight: bold; font-size: 2rem">
+              Eureka Support
+            </div>
+            <hr
+              style="
+                margin: 0 auto;
+                width: 98%;
+                height: 1px;
+                border-width: 0;
+                color: rgba(128, 128, 128, 0.288);
+                background-color: rgba(128, 128, 128, 0.288);
+              "
+            />
+            <br />
+            <div class="pxc-title">
+              <p style="font-size: clamp(1.5rem, 2.5vw, 1.8rem)">
+                Telegram Support
+              </p>
+            </div>
+            <div class="pxc-feats" style="text-align: center">
+              <img
+                style="width: 72px; height: 72px; margin-top: 0px"
+                src="./img/eureka/tg.png"
+                class="topimg floatRight"
+              /><br />
+              <div class="tg">
+                <button class="btn">
+                  <a href="https://t.me/eureka_support_group">Kernel Support</a>
+                </button>
+                <button class="btn">
+                  <a href="https://t.me/eureka_support_group2">ROM Support</a>
+                </button>
+                <div class="pxc-title">
+                  <p style="font-size: clamp(1.2rem, 2.5vw, 1.8rem)">
+                    Support us with a small amount!
+                  </p>
+                </div>
+                <img
+                  style="width: 72px; height: 72px"
+                  src="./img/eureka/pp.png"
+                  class="floatRight"
+                /><img
+                  style="width: 72px; height: 72px"
+                  src="./img/eureka/kofi.png"
+                  class="floatRight"
+                />
+                <div class="adv">
+                  <button class="btn">
+                    <a href="https://www.paypal.me/chaturbaij">PayPal</a>
+                  </button>
+                  <button class="btn">
+                    <a href="https://ko-fi.com/eurekateam">Ko-Fi</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <main>
+        <section class="content">
+          <section class="article-wrapper">
+            <article class="article"></article>
+            <hr
+              style="
+                height: 1px;
+                border-width: 0;
+                color: rgba(128, 128, 128, 0.288);
+                background-color: rgba(128, 128, 128, 0.288);
+              "
+            />
+            <br />
+            <section class="comment">
+              <p style="font-size: 12px">
+                © 2021 - 2023 Eureka Development <br />&emsp;&emsp;&emsp;
+                Design: <a style="color: #08f"><b>Eureka Team</b></a>
+              </p>
+            </section>
+          </section>
+        </section>
+      </main>
+      <div class="overlay" id="dialog-container">
+        <div class="popup" style="margin-top: -1%">
+          <img
+            class="ek"
+            src="./img/eureka/logo.svg"
+            alt="ek"
+            style="
+              width: 128px;
+              height: 128px;
+              margin-left: auto;
+              margin-top: clamp(220px, 50%, 220px);
+            "
+          />
+          <div class="modal-text">
+            <h3 style="font-size: 28px">Select your Android Version</h3>
+            <br />
+            <p style="font-size: 12px">
+              you can choose between Android 11, 12.1 and 13 actually
+            </p>
+          </div>
+          <div class="container-overlay">
+            <div class="box-overlay">
+              <a href="rom11.html">
+                <button class="dialog-btn-modal btn-primary" id="confirm">
+                  Android 11 (R)
+                </button>
+              </a>
+            </div>
+            <div class="box-overlay">
+              <a href="rom12.html">
+                <button class="dialog-btn-modal btn-primary" id="confirm">
+                  Android 12.1 (S)
+                </button>
+              </a>
+            </div>
+            <div class="box-overlay">
+              <a href="rom13.html">
+                <button class="dialog-btn-modal btn-primary" id="confirm">
+                  Android 13 (T)
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay-rom" id="dialog-container-dload">
+        <div class="popup" style="margin-top: -1%">
+          <img
+            class="ek"
+            src="./img/eureka/logo.svg"
+            alt="ek"
+            style="
+              width: 128px;
+              height: 128px;
+              margin-left: auto;
+              margin-top: clamp(220px, 50%, 220px);
+            "
+          />
+          <div class="modal-text">
+            <h3 style="font-size: 28px">Downloads</h3>
+            <br />
+            <p style="font-size: 12px">
+              here u can select what u want to Download like GAPPS or e.g.
+              Magisk
+            </p>
+          </div>
+          <div class="container-overlay">
+            <div class="box-overlay">
+              <a href="gapps.html">
+                <button
+                  class="dialog-btn-modal btn-primary"
+                  id="confirm"
+                  style="width: 160px; margin-right: 40px"
+                >
+                  Google Apps (GAPPS)
+                </button>
+              </a>
+            </div>
+            <div class="box-overlay">
+              <a href="download.html">
+                <button
+                  class="dialog-btn-modal btn-primary"
+                  id="confirm"
+                  style="width: 160px; margin-left: 40px"
+                >
+                  Continue to another Downloads
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script type="text/javascript">
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</html>
+<script type="module" src="./js/main.js"></script>

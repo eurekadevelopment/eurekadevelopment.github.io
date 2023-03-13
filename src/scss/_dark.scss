@@ -1,0 +1,69 @@
+.color {
+  margin-left: 12px;
+  margin-top: 0px;
+  position: fixed;
+  cursor: pointer;
+}
+
+.overlay-colorpalette {
+  z-index: 10000;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  transition: width 1s ease-in, height 1s ease-in;
+  width: 235px;
+}
+
+#colorpalette {
+  background-color: rgba(255, 255, 255, 0.07);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin-top: -5px;
+  margin-bottom: -20px;
+
+  ul {
+    margin-top: 5px;
+    margin-bottom: -5px;
+    padding: 5px;
+    width: 180px;
+  }
+}
+
+.overlay-colorpalettea {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #ffffff;
+  display: block;
+  transition: 0.15s;
+}
+
+.overlay-colorpalette a:hover,
+.overlay-colorpalette a:focus {
+  color: #08f;
+}
+
+.overlay-colorpalette .closebtn {
+  position: fixed;
+  left: 88%;
+  top: -11%;
+  font-size: 60px;
+  transition: all 0.15s ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+  .overlay-colorpalette .closebtn {
+    top: -17%;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-400px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

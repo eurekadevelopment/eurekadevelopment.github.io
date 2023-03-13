@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script is:inline type="module" src="./js/colorpalette.js"></script>
+    <script async src="https://arc.io/widget.min.js#3LCgJWKk"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <link rel="stylesheet" href="./scss/style.scss" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Eureka Development</title>
+  </head>
+
+  <body>
+    <div class="splash">
+      <img class="fade-in center" src="./img/media/eklogo.gif" alt="eklogo" />
+    </div>
+    <nav class="sidebar close nav">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <a href="/"><img src="./img/eureka/logo.svg" alt="" /></a>
+          </span>
+          <div class="text logo-text">
+            <span class="profession"><b>Welcome!</b></span>
+          </div>
+        </div>
+        <i class="bx bx-menu toggle"></i>
+      </header>
+      <div class="menu-bar" style="overflow-x: hidden; overflow-y: hidden">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="/">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">Home</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a id="rom-dialog">
+                <i class="bx bx-microchip icon"></i>
+                <span class="text nav-text">Custom ROM's</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="recovery.html">
+                <i class="bx bx-refresh icon"></i>
+                <span class="text nav-text">Custom Recovery</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="kernel.html">
+                <i class="bx bx-chip icon"></i>
+                <span class="text nav-text">Eureka Kernel</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="statistics.html">
+                <i class="bx bx-stats icon"></i>
+                <span class="text nav-text">Statistics</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="guide.html">
+                <i class="bx bx-book icon"></i>
+                <span class="text nav-text">Guides</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a id="dload-dialog">
+                <i class="bx bx-download icon" id="active-page"></i>
+                <span class="text nav-text">Downloads</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="support.html">
+                <i class="bx bx-heart icon"></i>
+                <span class="text nav-text">Support</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="team.html">
+                <i class="bx bxs-face icon"></i>
+                <span class="text nav-text">Eureka Team</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="about.html">
+                <i class="bx bx-info-circle icon"></i>
+                <span class="text nav-text">About Us</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a onclick="openColorpalette();" style="cursor: pointer">
+                <img
+                  class="color"
+                  id="animation"
+                  onclick="topFunction()"
+                  src="./img/eureka/color.png"
+                /><i class="icon"></i>
+
+                <span class="text nav-text">Switch Web-Color</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="text logo-text"
+          style="margin-left: 20px; margin-top: 5px"
+        ></div>
+      </div>
+    </nav>
+    <section class="home">
+      <div id="colorpalette" class="overlay-colorpalette animate-in">
+        <ul class="ul">
+          <a
+            href="javascript:void(0)"
+            class="closebtn"
+            onclick="closeColorpalette()"
+            >&times;</a
+          >
+          <li class="li" data-color="color1"></li>
+          <li class="li" data-color="color2"></li>
+          <li class="li" data-color="color3"></li>
+          <li class="li" data-color="color4"></li>
+          <li class="li" data-color="color5"></li>
+          <li class="li" data-color="color6"></li>
+          <li class="li" data-color="color7"></li>
+          <li class="li" data-color="color8"></li>
+          <li class="li" data-color="color9"></li>
+          <li class="li" data-color="color10"></li>
+          <li class="li" data-color="color11"></li>
+          <li class="li" data-color="color12"></li>
+        </ul>
+        <p class="color-text">Switch Web-Color</p>
+      </div>
+      <div align="center" style="margin-top: 40px">
+        <img
+          class="ek"
+          src="./img/eureka/logo.svg"
+          style="width: 128px; height: 128px"
+        />
+        <h1
+          style="
+            font-size: 32px;
+            color: white;
+            margin-top: 17px;
+            margin-bottom: -17px;
+          "
+          align="center"
+        >
+          <span>Eureka Downloads</span>
+        </h1>
+        <br /><br />
+        <hr
+          style="
+            margin: 0 auto;
+            width: 77%;
+            height: 1px;
+            border-width: 0;
+            color: rgba(128, 128, 128, 0.288);
+            background-color: rgba(128, 128, 128, 0.288);
+          "
+        />
+        <br />
+      </div>
+      <section
+        class="author"
+        style="
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          margin-bottom: -80px;
+        "
+      >
+        <div class="container3">
+          <div class="grid-row">
+            <div class="grid-item">
+              <div class="grid-item-wrapper">
+                <div class="grid-item-container">
+                  <div class="grid-image-top rex-ray">
+                    <span
+                      class="centered project-image-bg rex-ray-image"
+                    ></span>
+                  </div>
+                  <img
+                    src="./img/download/heimdall.webp"
+                    class="resize1 zoom"
+                    alt=""
+                  />
+                  <p class="dload_size">Heimdall Suite</p>
+                  <p class="dload_info">
+                    Heimdall is a cross-platform open-source tool suite used to
+                    flash firmware (aka ROMs) onto Samsung Galaxy devices.
+                  </p>
+                  <div class="box-dl">
+                    <div class="btn-wrapper">
+                      <a
+                        href="https://bitbucket.org/benjamin_dobell/heimdall/downloads/heimdall-suite-1.4.0-win32.zip"
+                        target="_blank"
+                        ><button><span>Windows</span></button></a
+                      >
+                    </div>
+
+                    <p class="dload_info-fstp">
+                      File Size: ~10MB<br />File Type: *.EXE
+                    </p>
+                  </div>
+                  <div class="box-dl">
+                    <div class="btn-wrapper">
+                      <a
+                        href="https://bitbucket.org/benjamin_dobell/heimdall/downloads/?tab=downloads"
+                        target="_blank"
+                        ><button><span>Linux</span></button></a
+                      >
+                    </div>
+                    <p class="dload_info-fstp">
+                      File Size: ~0.1MB<br />File Type: *.*
+                    </p>
+                  </div>
+                  <div class="box-dl">
+                    <div class="btn-wrapper">
+                      <a
+                        href="https://bitbucket.org/benjamin_dobell/heimdall/downloads/heimdall-suite-1.4.0-mac.dmg"
+                        target="_blank"
+                        ><button><span>MacOS</span></button></a
+                      >
+                    </div>
+                    <p class="dload_info-fstp">
+                      File Size: ~7.0MB<br />File Type: *.DMG
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="grid-item-wrapper">
+                <div class="grid-item-container">
+                  <div class="grid-image-top sputnik">
+                    <span
+                      class="centered project-image-bg sputnik-image"
+                    ></span>
+                  </div>
+                  <img
+                    src="./img/download/odin.webp"
+                    class="resize1 zoom"
+                    alt=""
+                  />
+                  <p class="dload_size">Odin Samsung</p>
+                  <p class="dload_info">
+                    Odin Samsung is an Flashtool to Flash Stock Firmware (also
+                    for unbricking) or Custom Things like Recovery/VBMeta
+                  </p>
+                </div>
+                <div class="btn-wrapper">
+                  <a
+                    href="https://odin-samsung.com/download/257/Odin3-v3.14.1.zip"
+                    target="_blank"
+                    ><button style="width: 140px">
+                      <span>Windows (x86/x64)</span>
+                    </button></a
+                  >
+                </div>
+                <p class="dload_info-fstp">
+                  File Size: ~2.5MB<br />File Type: *.EXE
+                </p>
+              </div>
+            </div>
+            <div class="grid-item" data-aos="zoom-in" data-aos-duration="1100">
+              <div class="grid-item-wrapper">
+                <div class="grid-item-container">
+                  <div class="grid-image-top edgex">
+                    <span class="centered project-image-bg edgex-image"></span>
+                  </div>
+                  <img
+                    src="./img/download/root.webp"
+                    class="resize1 zoom"
+                    alt=""
+                  />
+                  <p class="dload_size">Magisk [ROOT]</p>
+                  <p class="dload_info">
+                    Magisk is a suite of open source software for customizing
+                    Android, supporting devices higher than Android 5.0.
+                  </p>
+                </div>
+                <div class="box-dl" style="margin-left: 11%; width: auto">
+                  <div class="btn-wrapper">
+                    <a
+                      href="https://github.com/topjohnwu/Magisk/releases"
+                      target="_blank"
+                      ><button style="width: 120px; margin-right: 15px">
+                        <span>Download APK</span>
+                      </button></a
+                    >
+                  </div>
+                  <p class="dload_info-fstp" style="margin-right: 18px">
+                    File Size: ~10MB<br />File Type: *.APK
+                  </p>
+                </div>
+                <div class="box-dl" style="width: auto; margin-left: 15px">
+                  <div class="btn-wrapper">
+                    <a
+                      href="https://github.com/topjohnwu/Magisk/releases"
+                      target="_blank"
+                      ><button style="width: 115px">
+                        <span>Download ZIP</span>
+                      </button></a
+                    >
+                  </div>
+                  <p class="dload_info-fstp">
+                    File Size: ~11MB<br />File Type: *.ZIP
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item" data-aos="zoom-in" data-aos-duration="1100">
+              <div class="grid-item-wrapper">
+                <div class="grid-item-container">
+                  <div class="grid-image-top openswitch">
+                    <span
+                      class="centered project-image-bg openswitch-image"
+                    ></span>
+                  </div>
+                  <img
+                    src="./img/download/adb.webp"
+                    class="resize1 zoom"
+                    alt=""
+                  />
+                  <p class="dload_size">Minimal ADB & Fastboot</p>
+                  <p class="dload_info">
+                    Minimal ADB & Fastboot is a Tool to use ADB Commands like
+                    ADB Push or ADB Shell etc and Fastboot Commands (not
+                    relevant for us)
+                  </p>
+                </div>
+                <div class="btn-wrapper">
+                  <a
+                    href="https://sourceforge.net/projects/eurekaroms/files/web_files/Minimal_ADB_Fastboot_v1.4.3.zip/download"
+                    target="_blank"
+                    ><button style="width: 140px">
+                      <span>Windows (x86/x64)</span>
+                    </button></a
+                  >
+                </div>
+                <p class="dload_info-fstp">
+                  File Size: ~1.0MB<br />File Type: *.EXE
+                </p>
+              </div>
+            </div>
+            <div class="grid-item" data-aos="zoom-in" data-aos-duration="1100">
+              <div class="grid-item-wrapper">
+                <div class="grid-item-container">
+                  <div class="grid-image-top scaleio">
+                    <span
+                      class="centered project-image-bg scaleio-image"
+                    ></span>
+                  </div>
+                  <img
+                    src="./img/download/driver.webp"
+                    class="resize1 zoom"
+                    alt=""
+                  />
+                  <p class="dload_size">Samsung USB Drivers</p>
+                  <p class="dload_info">
+                    You need the driver if want to connect a Samsung Android
+                    device to your PC over USB. Also for Odin, USB-Debugging
+                    (ADB).
+                  </p>
+               </div>
+                <div class="btn-wrapper">
+                <a
+                    href="https://developer.samsung.com/sdp/file/0b770489-5d4e-4fff-b4d8-48f6a5950950"
+                    target="_blank"
+                    ><button style="width: 140px">
+                      <span>Windows (x86/x64)</span>
+                    </button></a
+                  >
+                </div>
+                <p class="dload_info-fstp">
+                  File Size: ~35MB<br />File Type: *.EXE
+                </p>
+              </div>
+            </div>
+
+            <div class="grid-item" data-aos="zoom-in" data-aos-duration="1100">
+              <div class="grid-item-wrapper">
+                <div class="grid-item-container">
+                  <div class="grid-image-top csi">
+                    <span class="centered project-image-bg csi-image"></span>
+                  </div>
+                  <img
+                    src="./img/download/vbmeta.webp"
+                    class="resize1 zoom"
+                    alt=""
+                  />
+                  <p class="dload_size">VBMeta Disabler</p>
+                  <p class="dload_info">
+                    The Typical Error Message after flashing TWRP Via Odin on
+                    Samsung devices: "Error: verifying vbmeta!...
+                    OK_NOT_SIGNED."
+                  </p>
+                </div>
+                <div class="btn-wrapper">
+                  <a
+                    href="https://sourceforge.net/projects/eurekaroms/files/web_files/vbmeta.tar/download"
+                    target="_blank"
+                    ><button style="width: 140px">
+                      <span>ODIN Flashable</span>
+                    </button></a
+                  >
+                </div>
+                <p class="dload_info-fstp">
+                  File Size: ~0.2MB<br />File Type: *.TAR
+                </p>
+              </div>
+            </div>
+            <div class="grid-item" data-aos="zoom-in" data-aos-duration="1100">
+              <div class="grid-item-wrapper">
+                <div class="grid-item-container">
+                  <div class="grid-image-top kubernetes">
+                    <span
+                      class="centered project-image-bg kubernetes-image"
+                    ></span>
+                  </div>
+                  <img
+                    src="./img/download/multi.webp"
+                    class="resize1 zoom"
+                    alt=""
+                  />
+                  <p class="dload_size">Samsung Multidisabler</p>
+                  <p class="dload_info">
+                    When flashed on a compatible device, this will disable a
+                    number of device protection features and services that
+                    become problematic on rooted devices.
+                  </p>
+                </div>
+                <div class="btn-wrapper">
+                  <a
+                    href="https://sourceforge.net/projects/eurekaroms/files/web_files/multidisabler-samsung-3.1.zip/download"
+                    target="_blank"
+                    ><button style="width: 140px">
+                      <span>TWRP Flashable</span>
+                    </button></a
+                  >
+                </div>
+                <p class="dload_info-fstp">
+                  File Size: ~0.3MB<br />File Type: *.ZIP
+                </p>
+              </div>
+            </div>
+            <div class="grid-item" data-aos="zoom-in" data-aos-duration="1100">
+              <div class="grid-item-wrapper">
+                <div class="grid-item-container">
+                  <div class="grid-image-top grpc">
+                    <span class="centered project-image-bg grpc-image"></span>
+                  </div>
+                  <img
+                    src="./img/download/verity.webp"
+                    class="resize1 zoom"
+                    alt=""
+                  />
+                  <p class="dload_size">DM-Verity</p>
+                  <p class="dload_info">
+                    The ZIP will remove dm-verity and/or Forceencrypt from all
+                    FSTAB on your Device. It can also remove Disk Quota if you
+                    choose.
+                  </p>
+                </div>
+                <div class="btn-wrapper">
+                  <a
+                    href="https://sourceforge.net/projects/eurekaroms/files/web_files/Dm-Verity.zip/download"
+                    target="_blank"
+                    ><button style="width: 140px">
+                      <span>TWRP Flashable</span>
+                    </button></a
+                  >
+                </div>
+                <p class="dload_info-fstp">
+                  File Size: ~3.5MB<br />File Type: *.ZIP
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <main>
+        <section class="content">
+          <section class="article-wrapper">
+            <article class="article"></article>
+            <hr
+              style="
+                height: 1px;
+                border-width: 0;
+                color: rgba(128, 128, 128, 0.288);
+                background-color: rgba(128, 128, 128, 0.288);
+              "
+            />
+            <br />
+            <section class="comment">
+              <p style="font-size: 12px">
+                © 2021 - 2023 Eureka Development <br />&emsp;&emsp;&emsp;
+                Design: <a style="color: #08f"><b>Eureka Team</b></a>
+              </p>
+            </section>
+          </section>
+        </section>
+      </main>
+      <div class="overlay" id="dialog-container">
+        <div class="popup" style="margin-top: -1%">
+          <img
+            class="ek"
+            src="./img/eureka/logo.svg"
+            alt="ek"
+            style="
+              width: 128px;
+              height: 128px;
+              margin-left: auto;
+              margin-top: clamp(220px, 50%, 220px);
+            "
+          />
+          <div class="modal-text">
+            <h3
+              style="
+                font-size: 28px;
+                width: 380px;
+                background-color: rgba(0, 0, 0, 0.8);
+                margin: 0 auto;
+                border-radius: 6px;
+              "
+            >
+              Select your Android Version
+            </h3>
+            <br />
+            <p
+              style="
+                font-size: 12px;
+                width: 330px;
+                background-color: rgba(0, 0, 0, 0.8);
+                margin: 0 auto;
+                border-radius: 6px;
+              "
+            >
+              you can choose between Android 11, 12.1 and 13 actually
+            </p>
+          </div>
+          <div class="container-overlay">
+            <div class="box-overlay">
+              <a href="rom11.html">
+                <button class="dialog-btn-modal btn-primary" id="confirm">
+                  Android 11 (R)
+                </button>
+              </a>
+            </div>
+            <div class="box-overlay">
+              <a href="rom12.html">
+                <button class="dialog-btn-modal btn-primary" id="confirm">
+                  Android 12.1 (S)
+                </button>
+              </a>
+            </div>
+            <div class="box-overlay">
+              <a href="rom13.html">
+                <button class="dialog-btn-modal btn-primary" id="confirm">
+                  Android 13 (T)
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay-rom" id="dialog-container-dload">
+        <div class="popup" style="margin-top: -1%">
+          <img
+            class="ek"
+            src="./img/eureka/logo.svg"
+            alt="ek"
+            style="
+              width: 128px;
+              height: 128px;
+              margin-left: auto;
+              margin-top: clamp(220px, 50%, 220px);
+            "
+          />
+          <div class="modal-text">
+            <h3 style="font-size: 28px">Downloads</h3>
+            <br />
+            <p style="font-size: 12px">
+              here u can select what u want to Download like GAPPS or e.g.
+              Magisk
+            </p>
+          </div>
+          <div class="container-overlay">
+            <div class="box-overlay">
+              <a href="gapps.html">
+                <button
+                  class="dialog-btn-modal btn-primary"
+                  id="confirm"
+                  style="width: 160px; margin-right: 40px"
+                >
+                  Google Apps (GAPPS)
+                </button>
+              </a>
+            </div>
+            <div class="box-overlay">
+              <a href="download.html">
+                <button
+                  class="dialog-btn-modal btn-primary"
+                  id="confirm"
+                  style="width: 160px; margin-left: 40px"
+                >
+                  Continue to another Downloads
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script type="text/javascript">
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
+<script type="module" src="./js/main.js"></script>

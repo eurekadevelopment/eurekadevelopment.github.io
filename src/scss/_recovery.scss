@@ -1,0 +1,267 @@
+.container1 {
+  position: relative;
+  left: 40%;
+  margin-top: 4%;
+  margin-bottom: -9.5%;
+  transform: translateX(-50%);
+
+  .check {
+    display: none;
+  }
+
+  .btn {
+    color: #fff;
+    border: 1px solid #08f;
+    display: inline-block;
+    padding: 16px;
+    padding-right: 27px;
+    padding-left: 27px;
+    border-radius: 6px;
+    cursor: pointer;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    margin-left: 11%;
+    margin-bottom: 30px;
+
+    .mo {
+      position: relative;
+      overflow: hidden;
+      bottom: -150px;
+      width: 0px;
+      height: 0px;
+      text-align: center;
+      display: inline-block;
+      opacity: 0;
+      background-color: transparent;
+    }
+
+    &:before {
+      width: 0%;
+      position: absolute;
+      left: 0;
+      bottom: 3px;
+      height: 5px;
+      background-color: #08f;
+      content: "";
+    }
+
+    &:hover {
+      background-color: #08f;
+      color: white;
+    }
+  }
+}
+
+#radi {
+  border-radius: 6px;
+  border: 1px solid #08f;
+}
+
+.row:after {
+  content: "";
+  display: table;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.6%;
+  padding: 50px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 70px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: transparent;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  max-width: clamp(30rem, 55vw, 90rem);
+  margin-top: -40px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 17px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 20px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.15s ease-in-out;
+  border-radius: 6px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prev {
+  left: 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 6px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(73, 72, 72, 0.555);
+}
+
+.prev::after {
+  content: "❮";
+}
+
+.next::after {
+  content: "❯";
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 16px;
+  top: 0;
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.pic {
+  opacity: 0.4;
+  margin-top: -20px;
+  margin: 0 auto;
+}
+
+.active,
+.pic:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.5s;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1920px) {
+  .column {
+    float: left;
+    width: 16.6%;
+    padding: 35px;
+    margin: 0 auto;
+  }
+  #mySlides {
+    margin-left: -5px;
+  }
+}
+
+@media (max-width: 450px) {
+  .modal-content {
+    position: fixed;
+    background-color: transparent;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    margin-left: 80px;
+    margin-top: -20px;
+    max-width: clamp(30rem, 55vw, 90rem);
+  }
+
+  .prev {
+    left: 15px;
+    top: 200px;
+  }
+
+  .next {
+    right: 5px;
+    top: 200px;
+    border-radius: 6px;
+  }
+
+  .column {
+    float: left;
+    padding: 15px;
+    width: 25%;
+    margin-bottom: -20px;
+  }
+
+  #mySlides {
+    width: 700px;
+    margin-left: -180px;
+  }
+}

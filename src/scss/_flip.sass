@@ -1,0 +1,129 @@
+$prime: #ff6e48
+$ciBlue: #00FFF1
+$ciRed: #ff00aa
+$ciGreen: #46fcb4
+$second: #0c1016
+
+body,
+html
+    align-items: center
+    background-color: $second
+    display: flex
+    height: 100%
+    justify-content: center
+    margin: 0
+    padding: 0
+    width: 100%
+
+*
+    box-sizing: border-box
+.flex-card-wrapper
+    width: 100%
+    max-width: 60rem
+    height: 60vh
+    max-height: 50rem
+    display: flex
+    justify-content: space-between
+    align-items: stretch
+
+    .flex-card-container
+        margin: 0 10px 0 0
+        height: 100%
+        width: 10%
+        transition: 450ms all ease-in-out
+        border-radius: 20px
+        cursor: pointer
+        overflow: hidden
+        position: relative
+        background-position: center center
+        background-size: cover
+        background-repeat: no-repeat
+
+        &.active
+            width: 60%
+
+            .overlay-home
+                h3, p
+                    opacity: 1
+                    transform: translateX(0)
+
+                .icon
+                    width: 5rem
+                    height: 5rem
+
+                    img
+                        width: 3.0rem
+                        height: 3.0rem
+
+        @media all and (max-width:30em)
+            .overlay-home
+                h3, p
+                    opacity: 1
+                    transform: translateX(0)
+
+                .icon
+                    width: 5rem
+                    height: 5rem
+
+                    img
+                        width: 2rem
+                        height: 2rem
+
+        .overlay-home
+            position: absolute
+            bottom: 0
+            left: 0
+            right: 0
+            z-index: 2
+            height: 9rem
+            padding: 0 0 2rem 1.5rem
+            display: flex
+            justify-content: flex-start
+            align-items: flex-end
+            width: 100%
+            transition: 450ms all ease-in-out
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 0%)
+            backdrop-filter: blur(2px)
+
+            .icon
+                width: 3rem
+                height: 3rem
+                border-radius: 100%
+                background-color: $second
+                transition: 450ms all ease-in-out
+                display: flex
+                justify-content: center
+                align-items: center
+
+                img
+                    width: 1.5rem
+                    height: 1.5rem
+                    transition: 450ms all ease-in-out
+                    margin-top: -3.5px
+
+            h3
+                top: 2rem
+                font-size: 1.8rem
+                transition: 350ms 200ms all ease-in-out
+                margin-left: -59px
+
+            h3, p
+                color: white
+                position: absolute
+                left: 9rem
+                width: 20rem
+                opacity: 0
+                transform: translateX(-15px)
+
+            @media all and (max-width:30em)
+            h3
+                top: 2.3rem
+                font-size: 1.0rem
+                transition: 350ms 200ms all ease-in-out
+                margin-left: -80px
+
+            p
+                top: 4.5rem
+                font-size: 0.7rem
+                transition: 350ms 300ms all ease-in-out
+                margin-left: -80px

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script is:inline type="module" src="./js/colorpalette.js"></script>
+    <script async src="https://arc.io/widget.min.js#3LCgJWKk"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <link rel="stylesheet" href="./scss/style.scss" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Eureka Development</title>
+  </head>
+
+  <body>
+    <div class="splash">
+      <img class="fade-in center" src="./img/media/eklogo.gif" alt="eklogo" />
+    </div>
+    <nav class="sidebar close nav">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <a href="/"><img src="./img/eureka/logo.svg" alt="" /></a>
+          </span>
+          <div class="text logo-text">
+            <span class="profession"><b>Welcome!</b></span>
+          </div>
+        </div>
+        <i class="bx bx-menu toggle"></i>
+      </header>
+      <div class="menu-bar" style="overflow-x: hidden; overflow-y: hidden">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="/">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">Home</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a id="rom-dialog">
+                <i class="bx bx-microchip icon"></i>
+                <span class="text nav-text">Custom ROM's</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="recovery.html">
+                <i class="bx bx-refresh icon"></i>
+                <span class="text nav-text">Custom Recovery</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="kernel.html">
+                <i class="bx bx-chip icon"></i>
+                <span class="text nav-text">Eureka Kernel</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="statistics.html">
+                <i class="bx bx-stats icon"></i>
+                <span class="text nav-text">Statistics</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="guide.html">
+                <i class="bx bx-book icon"></i>
+                <span class="text nav-text">Guides</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a id="dload-dialog">
+                <i class="bx bx-download icon" id="active-page"></i>
+                <span class="text nav-text">Downloads</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="support.html">
+                <i class="bx bx-heart icon"></i>
+                <span class="text nav-text">Support</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="team.html">
+                <i class="bx bxs-face icon"></i>
+                <span class="text nav-text">Eureka Team</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="about.html">
+                <i class="bx bx-info-circle icon"></i>
+                <span class="text nav-text">About Us</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a onclick="openColorpalette();" style="cursor: pointer">
+                <img
+                  class="color"
+                  id="animation"
+                  onclick="topFunction()"
+                  src="./img/eureka/color.png"
+                /><i class="icon"></i>
+
+                <span class="text nav-text">Switch Web-Color</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="text logo-text"
+          style="margin-left: 20px; margin-top: 5px"
+        ></div>
+      </div>
+    </nav>
+    <section class="home">
+      <div id="colorpalette" class="overlay-colorpalette animate-in">
+        <ul class="ul">
+          <a
+            href="javascript:void(0)"
+            class="closebtn"
+            onclick="closeColorpalette()"
+            >&times;</a
+          >
+          <li class="li" data-color="color1"></li>
+          <li class="li" data-color="color2"></li>
+          <li class="li" data-color="color3"></li>
+          <li class="li" data-color="color4"></li>
+          <li class="li" data-color="color5"></li>
+          <li class="li" data-color="color6"></li>
+          <li class="li" data-color="color7"></li>
+          <li class="li" data-color="color8"></li>
+          <li class="li" data-color="color9"></li>
+          <li class="li" data-color="color10"></li>
+          <li class="li" data-color="color11"></li>
+          <li class="li" data-color="color12"></li>
+        </ul>
+        <p class="color-text">Switch Web-Color</p>
+      </div>
+      <div align="center" style="margin-top: 40px">
+        <img
+          class="ek"
+          src="./img/eureka/logo.svg"
+          style="width: 96px; height: 96px"
+        /><img
+          class="ek"
+          src="./img/eureka/gapps.png"
+          style="width: 165px; height: 90px"
+        />
+        <h1
+          style="
+            font-size: 32px;
+            color: white;
+            margin-top: 17px;
+            margin-bottom: -17px;
+          "
+          align="center"
+        >
+          <span
+            >Google Apps<br />
+            <p style="font-size: 14px">contains following Packages</p>
+          </span>
+        </h1>
+        <br />
+        <br />
+        <p style="color: white">
+          Chrome, Drive, Home, Google Assistent, Keyboard, PlayStore, Notices,
+          Fitness & more
+        </p>
+        <br /><br />
+        <p style="font-size: 19px; color: white">
+          here u can select your Mirror, where u want Download from
+        </p>
+      </div>
+      <section
+        class="author"
+        style="
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          margin-bottom: -80px;
+        "
+      >
+        <div class="container-gapps">
+          <div class="gapps-parrent">
+            <a href="https://nikgapps.com/downloads" target="_blank">
+              <img
+                class="ek"
+                src="https://nikgapps.com/images/nikgapps-logo.webp"
+              />
+              <p>NikGAPPS</p>
+            </a>
+          </div>
+          <div class="gapps-parrent">
+            <a href="https://bitgapps.github.io/download.html" target="_blank">
+              <img class="ek" src="./img/eureka/bitgapps.png" />
+              <p>BitGAPPS</p>
+            </a>
+          </div>
+          <div class="gapps-parrent">
+            <a
+              href="https://flamegapps.github.io/download#downloads"
+              target="_blank"
+            >
+              <img
+                class="ek"
+                src="./img/eureka/flamme.png"
+                style="width: 130px"
+              />
+              <p>FlameGAPPS</p>
+            </a>
+          </div>
+          <div class="gapps-parrent">
+            <a
+              href="http://downloads.codefi.re/jdcteam/javelinanddart/gapps"
+              target="_blank"
+            >
+              <img
+                class="ek"
+                src="./img/eureka/mind.png"
+                style="width: 130px"
+              />
+              <p>MindTheGAPPS</p>
+            </a>
+          </div>
+          <div class="gapps-parrent">
+            <a href="https://opengapps.org/" target="_blank">
+              <img class="ek" src="https://opengapps.org/images/logo.svg" />
+              <p>OpenGAPPS</p>
+            </a>
+          </div>
+          <div class="gapps-parrent">
+            <a href="https://litegapps1.site/download.html" target="_blank">
+              <img
+                class="ek"
+                src="./img/eureka/lite.png"
+                style="width: 150px; height: 40px; margin-top: 35%"
+              />
+              <p style="margin-top: 33px">LiteGAPPS</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <main>
+        <section class="content">
+          <section class="article-wrapper">
+            <article class="article"></article>
+            <hr
+              style="
+                height: 1px;
+                border-width: 0;
+                color: rgba(128, 128, 128, 0.288);
+                background-color: rgba(128, 128, 128, 0.288);
+              "
+            />
+            <br />
+            <section class="comment">
+              <p style="font-size: 12px">
+                © 2021 - 2023 Eureka Development <br />&emsp;&emsp;&emsp;
+                Design: <a style="color: #08f"><b>Eureka Team</b></a>
+              </p>
+            </section>
+          </section>
+        </section>
+      </main>
+      <div class="overlay" id="dialog-container">
+        <div class="popup" style="margin-top: -1%">
+          <img
+            class="ek"
+            src="./img/eureka/logo.svg"
+            alt="ek"
+            style="
+              width: 128px;
+              height: 128px;
+              margin-left: auto;
+              margin-top: clamp(220px, 50%, 220px);
+            "
+          />
+          <div class="modal-text">
+            <h3 style="font-size: 28px">Select your Android Version</h3>
+            <br />
+            <p style="font-size: 12px">
+              you can choose between Android 11, 12.1 and 13 actually
+            </p>
+          </div>
+          <div class="container-overlay">
+            <div class="box-overlay">
+              <a href="rom11.html">
+                <button class="dialog-btn-modal btn-primary" id="confirm">
+                  Android 11 (R)
+                </button>
+              </a>
+            </div>
+            <div class="box-overlay">
+              <a href="rom12.html">
+                <button class="dialog-btn-modal btn-primary" id="confirm">
+                  Android 12.1 (S)
+                </button>
+              </a>
+            </div>
+            <div class="box-overlay">
+              <a href="rom13.html">
+                <button class="dialog-btn-modal btn-primary" id="confirm">
+                  Android 13 (T)
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay-rom" id="dialog-container-dload">
+        <div class="popup" style="margin-top: -1%">
+          <img
+            class="ek"
+            src="./img/eureka/logo.svg"
+            alt="ek"
+            style="
+              width: 128px;
+              height: 128px;
+              margin-left: auto;
+              margin-top: clamp(220px, 50%, 220px);
+            "
+          />
+          <div class="modal-text">
+            <h3 style="font-size: 28px">Downloads</h3>
+            <br />
+            <p style="font-size: 12px">
+              here u can select what u want to Download like GAPPS or e.g.
+              Magisk
+            </p>
+          </div>
+          <div class="container-overlay">
+            <div class="box-overlay">
+              <a href="gapps.html">
+                <button
+                  class="dialog-btn-modal btn-primary"
+                  id="confirm"
+                  style="width: 160px; margin-right: 40px"
+                >
+                  Google Apps (GAPPS)
+                </button>
+              </a>
+            </div>
+            <div class="box-overlay">
+              <a href="download.html">
+                <button
+                  class="dialog-btn-modal btn-primary"
+                  id="confirm"
+                  style="width: 160px; margin-left: 40px"
+                >
+                  Continue to another Downloads
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script type="text/javascript">
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
+<script type="module" src="./js/main.js"></script>

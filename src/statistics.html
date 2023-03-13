@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="120" />
+    <script
+      src="https://kit.fontawesome.com/d72bd4ed55.js"
+      crossorigin="anonymous"
+    ></script>
+    <script is:inline type="module" src="./js/colorpalette.js"></script>
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <link rel="stylesheet" href="./scss/style.scss" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script async src="https://arc.io/widget.min.js#3LCgJWKk"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Eureka Development</title>
+  </head>
+
+  <body>
+    <div class="splash">
+      <img class="fade-in center" src="./img/media/eklogo.gif" alt="eklogo" />
+    </div>
+    <nav class="sidebar close nav">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <a href="/"><img src="./img/eureka/logo.svg" alt="" /></a>
+          </span>
+          <div class="text logo-text">
+            <span class="profession"><b>Welcome!</b></span>
+          </div>
+        </div>
+        <i class="bx bx-menu toggle"></i>
+      </header>
+      <div class="menu-bar" style="overflow-x: hidden; overflow-y: hidden">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="/">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">Home</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a id="rom-dialog">
+                <i class="bx bx-microchip icon"></i>
+                <span class="text nav-text">Custom ROM's</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="recovery.html">
+                <i class="bx bx-refresh icon"></i>
+                <span class="text nav-text">Custom Recovery</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="kernel.html">
+                <i class="bx bx-chip icon"></i>
+                <span class="text nav-text">Eureka Kernel</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="statistics.html">
+                <i class="bx bx-stats icon" id="active-page"></i>
+                <span class="text nav-text">Statistics</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="guide.html">
+                <i class="bx bx-book icon"></i>
+                <span class="text nav-text">Guides</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a id="dload-dialog">
+                <i class="bx bx-download icon"></i>
+                <span class="text nav-text">Downloads</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="support.html">
+                <i class="bx bx-heart icon"></i>
+                <span class="text nav-text">Support</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="team.html">
+                <i class="bx bxs-face icon"></i>
+                <span class="text nav-text">Eureka Team</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="about.html">
+                <i class="bx bx-info-circle icon"></i>
+                <span class="text nav-text">About Us</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a onclick="openColorpalette();" style="cursor: pointer">
+                <img
+                  class="color"
+                  id="animation"
+                  onclick="topFunction()"
+                  src="./img/eureka/color.png"
+                /><i class="icon"></i>
+
+                <span class="text nav-text">Switch Web-Color</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="text logo-text"
+          style="margin-left: 20px; margin-top: 5px"
+        ></div>
+      </div>
+    </nav>
+    <section class="home">
+      <div id="colorpalette" class="overlay-colorpalette animate-in">
+        <ul class="ul">
+          <a
+            href="javascript:void(0)"
+            class="closebtn"
+            onclick="closeColorpalette()"
+            >&times;</a
+          >
+          <li class="li" data-color="color1"></li>
+          <li class="li" data-color="color2"></li>
+          <li class="li" data-color="color3"></li>
+          <li class="li" data-color="color4"></li>
+          <li class="li" data-color="color5"></li>
+          <li class="li" data-color="color6"></li>
+          <li class="li" data-color="color7"></li>
+          <li class="li" data-color="color8"></li>
+          <li class="li" data-color="color9"></li>
+          <li class="li" data-color="color10"></li>
+          <li class="li" data-color="color11"></li>
+          <li class="li" data-color="color12"></li>
+        </ul>
+        <p class="color-text">Switch Web-Color</p>
+      </div>
+      <section
+        class="author"
+        style="
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          margin-top: 30px;
+        "
+      ></section>
+      <center>
+        <p id="full_stats" style="color: #ffffff; font-size: 28px">
+          Stats: N/A
+        </p>
+      </center>
+      <div class="centered" id="align_canvas" style="width: 100%">
+        <canvas
+          id="stats_month"
+          style="
+            position: relative;
+            height: 60vh;
+            width: 100%;
+            margin-bottom: 100px;
+          "
+        ></canvas>
+        <canvas
+          id="stats_os"
+          style="
+            position: relative;
+            height: 40vh;
+            width: 100%;
+            margin-bottom: 100px;
+          "
+          data-aos="zoom-in"
+          data-aos-duration="1100"
+        ></canvas>
+        <canvas
+          id="stats_countries"
+          style="
+            position: relative;
+            height: 50vh;
+            width: 100%;
+            margin-bottom: -150px;
+          "
+          data-aos="zoom-in"
+          data-aos-duration="1100"
+        ></canvas>
+      </div>
+      <br />
+      <main>
+        <section class="content">
+          <section class="article-wrapper">
+            <article class="article" style="margin-top: -100px"></article>
+            <hr
+              style="
+                height: 1px;
+                border-width: 0;
+                color: rgba(128, 128, 128, 0.288);
+                background-color: rgba(128, 128, 128, 0.288);
+              "
+            />
+            <br />
+            <section class="comment">
+              <p style="font-size: 12px">
+                © 2021 - 2023 Eureka Development <br />&emsp;&emsp;&emsp;
+                Design:
+                <a style="color: #08f"><b>Eureka Team</b></a>
+              </p>
+            </section>
+          </section>
+        </section>
+      </main>
+      <div class="overlay" id="dialog-container">
+        <div class="popup" style="margin-top: -1%">
+          <img
+            class="ek"
+            src="./img/eureka/logo.svg"
+            alt="ek"
+            style="
+              width: 128px;
+              height: 128px;
+              margin-left: auto;
+              margin-top: clamp(220px, 50%, 220px);
+            "
+          />
+          <div class="modal-text">
+            <h3 style="font-size: 28px">Select your Android Version</h3>
+            <br />
+            <p style="font-size: 12px">
+              you can choose between Android 11, 12.1 and 13 actually
+            </p>
+          </div>
+          <div class="container-overlay">
+            <div class="box-overlay">
+              <a href="rom11.html">
+                <button class="dialog-btn-modal btn-primary" id="confirm">
+                  Android 11 (R)
+                </button>
+              </a>
+            </div>
+            <div class="box-overlay">
+              <a href="rom12.html">
+                <button class="dialog-btn-modal btn-primary" id="confirm">
+                  Android 12.1 (S)
+                </button>
+              </a>
+            </div>
+            <div class="box-overlay">
+              <a href="rom13.html">
+                <button class="dialog-btn-modal btn-primary" id="confirm">
+                  Android 13 (T)
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay-rom" id="dialog-container-dload">
+        <div class="popup" style="margin-top: -1%">
+          <img
+            class="ek"
+            src="./img/eureka/logo.svg"
+            alt="ek"
+            style="
+              width: 128px;
+              height: 128px;
+              margin-left: auto;
+              margin-top: clamp(220px, 50%, 220px);
+            "
+          />
+          <div class="modal-text">
+            <h3 style="font-size: 28px">Downloads</h3>
+            <br />
+            <p style="font-size: 12px">
+              here u can select what u want to Download like GAPPS or e.g.
+              Magisk
+            </p>
+          </div>
+          <div class="container-overlay">
+            <div class="box-overlay">
+              <a href="gapps.html">
+                <button
+                  class="dialog-btn-modal btn-primary"
+                  id="confirm"
+                  style="width: 160px; margin-right: 40px"
+                >
+                  Google Apps (GAPPS)
+                </button>
+              </a>
+            </div>
+            <div class="box-overlay">
+              <a href="download.html">
+                <button
+                  class="dialog-btn-modal btn-primary"
+                  id="confirm"
+                  style="width: 160px; margin-left: 40px"
+                >
+                  Continue to another Downloads
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script type="text/javascript">
+    // fetch block Month
+    function updateChartMonth() {
+      async function fetchData() {
+        const url =
+          "https://sourceforge.net/projects/eurekaroms/files/stats/json?start_date=2021-02-01&end_date=2024-01-01&period=monthly";
+        const response = await fetch(url);
+        const datapoints = await response.json();
+        return datapoints;
+      }
+      fetchData().then((datapoints) => {
+        const months = datapoints.downloads.map((months, index) => {
+          return months[0];
+        });
+        const value = datapoints.downloads.map((value, index) => {
+          return value[1];
+        });
+        stats_month_chart.config.data.labels = months;
+        stats_month_chart.config.data.datasets[0].data = value;
+        stats_month_chart.update();
+      });
+    }
+
+    const data_month = {
+      labels: [],
+      datasets: [
+        {
+          label: "TOP 20 Downloads Eureka ROM - [Monthly]",
+          data: [],
+          backgroundColor: [
+            "rgba(0, 136, 255, 0.5)",
+            "rgba(255, 255, 255, 0.5)",
+          ],
+          borderColor: ["rgba(0, 136, 255)", "rgba(255, 255, 255)"],
+          borderWidth: 2,
+          borderRadius: 6,
+          fill: true,
+          hoverBorderColor: ["rgba(255, 255, 255, 1)", "rgba(0, 136, 255, 1)"],
+          hoverBackgroundColor: [
+            "rgba(0, 136, 255, 0.8)",
+            "rgba(255, 255, 255, 0.8)",
+          ],
+        },
+      ],
+    };
+
+    const config_month = {
+      type: "line",
+      data: data_month,
+      options: {
+        responsive: true,
+        color: "white",
+        scales: {
+          y: {
+            ticks: {
+              color: "white",
+              beginAtZero: true,
+            },
+          },
+          x: {
+            ticks: {
+              color: "white",
+              beginAtZero: true,
+            },
+          },
+        },
+      },
+    };
+
+    const stats_month_chart = new Chart(
+      document.getElementById("stats_month"),
+      config_month
+    );
+    document.onload = updateChartMonth();
+
+    // fetch block os
+    function updateChartOS() {
+      async function fetchData() {
+        const url =
+          "https://sourceforge.net/projects/eurekaroms/files/stats/json?start_date=2021-02-01&end_date=2024-01-01&period=monthly";
+        const response = await fetch(url);
+        const datapoints = await response.json();
+        console.log(datapoints);
+        return datapoints;
+      }
+      fetchData().then((datapoints) => {
+        const oses = datapoints.oses.map((oses, index) => {
+          return oses[0];
+        });
+        const value = datapoints.oses.map((value, index) => {
+          return value[1];
+        });
+        stats_os_chart.config.data.labels = oses;
+        stats_os_chart.config.data.datasets[0].data = value;
+        stats_os_chart.update();
+      });
+    }
+
+    const data_os = {
+      color: "white",
+      datasets: [
+        {
+          label: "Downloads by OS",
+          data: [],
+          backgroundColor: [
+            "rgba(0, 136, 255, 0.5)",
+            "rgba(255, 255, 255, 0.5)",
+          ],
+          borderColor: ["rgba(0, 136, 255)", "rgba(255, 255, 255)"],
+          borderWidth: 2,
+          borderRadius: 6,
+          hoverBorderColor: ["rgba(255, 255, 255, 1)", "rgba(0, 136, 255, 1)"],
+          hoverBackgroundColor: [
+            "rgba(0, 136, 255, 0.8)",
+            "rgba(255, 255, 255, 0.8)",
+          ],
+        },
+      ],
+    };
+
+    const config_os = {
+      type: "bar",
+      data: data_os,
+      options: {
+        responsive: true,
+        color: "white",
+        scales: {
+          y: {
+            ticks: {
+              color: "white",
+              beginAtZero: true,
+            },
+          },
+          x: {
+            ticks: {
+              color: "white",
+              beginAtZero: true,
+            },
+          },
+        },
+      },
+    };
+
+    const stats_os_chart = new Chart(
+      document.getElementById("stats_os"),
+      config_os
+    );
+    document.onload = updateChartOS();
+
+    // fetch block country
+    function updateChartCountries() {
+      async function fetchData() {
+        const url =
+          "https://sourceforge.net/projects/eurekaroms/files/stats/json?start_date=2021-02-01&end_date=2024-01-01&period=monthly";
+        const response = await fetch(url);
+        const datapoints = await response.json();
+        return datapoints;
+      }
+
+      fetchData().then((datapoints) => {
+        const countries = datapoints.countries.map((countries, index) => {
+          return countries[0];
+        });
+        const value = datapoints.countries.map((value, index) => {
+          return value[1];
+        });
+        stats_countries_chart.config.data.labels = countries.slice(0, 20);
+        stats_countries_chart.config.data.datasets[0].data = value.slice(0, 20);
+        stats_countries_chart.update();
+      });
+    }
+
+    const data_countries = {
+      datasets: [
+        {
+          label: "TOP 20 Downloads by Countries",
+          backgroundColor: [
+            "rgba(0, 136, 255, 0.5)",
+            "rgba(255, 255, 255, 0.5)",
+          ],
+          borderColor: ["rgba(0, 136, 255)", "rgba(255, 255, 255)"],
+          borderWidth: 2,
+          borderRadius: 6,
+          hoverBorderColor: ["rgba(255, 255, 255, 1)", "rgba(0, 136, 255, 1)"],
+          hoverBackgroundColor: [
+            "rgba(0, 136, 255, 0.8)",
+            "rgba(255, 255, 255, 0.8)",
+          ],
+        },
+      ],
+    };
+
+    const config_countries = {
+      type: "bar",
+      data: data_countries,
+      options: {
+        responsive: true,
+        color: "white",
+        scales: {
+          y: {
+            ticks: {
+              color: "white",
+              beginAtZero: true,
+            },
+          },
+          x: {
+            ticks: {
+              color: "white",
+              beginAtZero: true,
+            },
+          },
+        },
+      },
+    };
+
+    const stats_countries_chart = new Chart(
+      document.getElementById("stats_countries"),
+      config_countries
+    );
+    document.onload = updateChartCountries();
+
+    function global_stats() {
+      apiUrl =
+        "https://sourceforge.net/projects/eurekaroms/files/stats/json?start_date=2021-03-01&end_date=2023-01-01";
+      fetch(apiUrl)
+        .then((response) => response.json())
+        .then((json_all) => {
+          console.log(json_all);
+          document.getElementById("full_stats").innerHTML =
+            "Eureka ROM files were downloaded: " + json_all.total + " times.";
+        })
+        .catch((err) => console.error(err));
+    }
+
+    global_stats();
+
+    //some output of error
+    fetch(
+      "https://sourceforge.net/projects/eurekaroms/files/stats/json?start_date=2021-02-01&end_date=2023-01-01&period=monthly"
+    )
+      .then(function () {
+        console.log("Pass!");
+      })
+      .catch(function () {
+        show_dialog();
+      });
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
+<script type="module" src="./js/main.js"></script>

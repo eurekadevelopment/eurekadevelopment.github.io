@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script is:inline type="module" src="./js/colorpalette.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5268d20594.js"
+      crossorigin="anonymous"
+    ></script>
+    <script async src="https://arc.io/widget.min.js#3LCgJWKk"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <link rel="stylesheet" href="./scss/style.scss" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Eureka Development</title>
+  </head>
+
+  <body>
+    <div class="splash">
+      <img class="fade-in center" src="./img/media/eklogo.gif" alt="eklogo" />
+    </div>
+    <nav class="sidebar close nav">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <a href="/"><img src="./img/eureka/logo.svg" alt="" /></a>
+          </span>
+          <div class="text logo-text">
+            <span class="profession"><b>Welcome!</b></span>
+          </div>
+        </div>
+        <i class="bx bx-menu toggle"></i>
+      </header>
+      <div class="menu-bar" style="overflow-x: hidden; overflow-y: hidden">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="/">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">Home</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a id="rom-dialog">
+                <i class="bx bx-microchip icon"></i>
+                <span class="text nav-text">Custom ROM's</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="recovery.html">
+                <i class="bx bx-refresh icon" id="active-page"></i>
+                <span class="text nav-text">Custom Recovery</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="kernel.html">
+                <i class="bx bx-chip icon"></i>
+                <span class="text nav-text">Eureka Kernel</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="statistics.html">
+                <i class="bx bx-stats icon"></i>
+                <span class="text nav-text">Statistics</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="guide.html">
+                <i class="bx bx-book icon"></i>
+                <span class="text nav-text">Guides</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a id="dload-dialog">
+                <i class="bx bx-download icon"></i>
+                <span class="text nav-text">Downloads</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="support.html">
+                <i class="bx bx-heart icon"></i>
+                <span class="text nav-text">Support</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="team.html">
+                <i class="bx bxs-face icon"></i>
+                <span class="text nav-text">Eureka Team</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="about.html">
+                <i class="bx bx-info-circle icon"></i>
+                <span class="text nav-text">About Us</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a onclick="openColorpalette();" style="cursor: pointer">
+                <img
+                  class="color"
+                  id="animation"
+                  onclick="topFunction()"
+                  src="./img/eureka/color.png"
+                /><i class="icon"></i>
+
+                <span class="text nav-text">Switch Web-Color</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="text logo-text"
+          style="margin-left: 20px; margin-top: 5px"
+        ></div>
+      </div>
+    </nav>
+    <section class="home">
+      <div id="colorpalette" class="overlay-colorpalette animate-in">
+        <ul class="ul">
+          <a
+            href="javascript:void(0)"
+            class="closebtn"
+            onclick="closeColorpalette()"
+            >&times;</a
+          >
+          <li class="li" data-color="color1"></li>
+          <li class="li" data-color="color2"></li>
+          <li class="li" data-color="color3"></li>
+          <li class="li" data-color="color4"></li>
+          <li class="li" data-color="color5"></li>
+          <li class="li" data-color="color6"></li>
+          <li class="li" data-color="color7"></li>
+          <li class="li" data-color="color8"></li>
+          <li class="li" data-color="color9"></li>
+          <li class="li" data-color="color10"></li>
+          <li class="li" data-color="color11"></li>
+          <li class="li" data-color="color12"></li>
+        </ul>
+        <p class="color-text">Switch Web-Color</p>
+      </div>
+      <div class="cards_rp" align="center">
+        <div class="card_rp">
+          <img src="./img/recovery/twrp.svg" class="img_size ek" />
+          <p>TeamWinRP</p>
+          <hr
+            style="
+              margin: 0 auto;
+              width: 90%;
+              height: 1px;
+              border-width: 0;
+              color: rgba(128, 128, 128, 0.288);
+              background-color: rgba(128, 128, 128, 0.288);
+              margin-top: 10px;
+              margin-bottom: -10px;
+            "
+          />
+          <br />
+          <div class="container2">
+            <div>
+              <a class="btn1" href="#a10">DOWNLOAD A10</a>
+            </div>
+          </div>
+          <div id="a10" class="modal-window4">
+            <div>
+              <a href="#" title="Close" class="modal-close"
+                ><i class="fa-solid fa-xmark"></i
+              ></a>
+              <p style="margin-top: -10px">
+                <i class="fa fa-download" aria-hidden="true"></i>Select your
+                TWRP Version
+              </p>
+              <div>
+                <a
+                  class="btn1"
+                  href="https://eu.dl.twrp.me/a10/twrp-3.6.0_9-0-a10.img.html"
+                  target="_blank"
+                  >TWRP 3.6.0_9.img</a
+                >
+              </div>
+              <div>
+                <a
+                  class="btn1"
+                  href="https://eu.dl.twrp.me/a10/twrp-3.6.0_9-0-a10.img.tar.html"
+                  target="_blank"
+                  >TWRP 3.6.0_9.tar</a
+                >
+              </div>
+              <div>
+                <a
+                  class="btn1"
+                  href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A10/TWRP/twrp-3.6.0_11-a10.img"
+                  target="_blank"
+                  >TWRP 3.6.0_11.img</a
+                >
+              </div>
+              <div>
+                <a
+                  class="btn1"
+                  href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A10/TWRP/twrp-3.6.0_11-a10.tar"
+                  target="_blank"
+                  >TWRP 3.6.0_11.tar</a
+                >
+              </div>
+              <div>
+                <a
+                  class="btn1"
+                  href="https://t.me/exynos7885_rec/23"
+                  target="_blank"
+                  >TWRP 3.7.0_11.img</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="container2">
+            <div>
+              <a class="btn1" href="#a20">DOWNLOAD A20</a>
+            </div>
+          </div>
+          <div id="a20" class="modal-window3">
+            <div style="height: 290px">
+              <a href="#" title="Close" class="modal-close"
+                ><i class="fa-solid fa-xmark"></i
+              ></a>
+              <p style="margin-top: -10px">
+                <i class="fa fa-download" aria-hidden="true"></i>Select your
+                TWRP Version
+              </p>
+              <div>
+                <a
+                  class="btn1"
+                  href="https://eu.dl.twrp.me/a20/twrp-3.6.0_9-0-a20.img.html"
+                  target="_blank"
+                  >TWRP 3.6.0_9.img</a
+                >
+              </div>
+              <div>
+                <a
+                  class="btn1"
+                  href="https://eu.dl.twrp.me/a20/twrp-3.6.0_9-0-a20.img.tar.html"
+                  target="_blank"
+                  >TWRP 3.6.0_9.tar</a
+                >
+              </div>
+              <div>
+                <a
+                  class="btn1"
+                  href="https://t.me/exynos7885_rec/24"
+                  target="_blank"
+                  >TWRP 3.7.0_11.img</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="container2">
+            <div>
+              <a class="btn1" href="#a20e">DOWNLOAD A20e</a>
+            </div>
+          </div>
+          <div id="a20e" class="modal-window2">
+            <div style="height: 290px">
+              <a href="#" title="Close" class="modal-close"
+                ><i class="fa-solid fa-xmark"></i
+              ></a>
+              <p style="margin-top: -10px">
+                <i class="fa fa-download" aria-hidden="true"></i>Select your
+                TWRP Version
+              </p>
+              <div>
+                <a
+                  class="btn1"
+                  href="https://eu.dl.twrp.me/a20e/twrp-3.6.0_9-0-a20e.img.html"
+                  target="_blank"
+                  >TWRP 3.6.0_9.img</a
+                >
+              </div>
+              <div>
+                <a
+                  class="btn1"
+                  href="https://eu.dl.twrp.me/a20e/twrp-3.6.0_9-0-a20e.img.tar.html"
+                  target="_blank"
+                  >TWRP 3.6.0_9.tar</a
+                >
+              </div>
+              <div>
+                <a
+                  class="btn1"
+                  href="https://t.me/exynos7885_rec/25"
+                  target="_blank"
+                  >TWRP 3.7.0_11.img</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="container2">
+            <div>
+              <a class="btn1" href="#a30">DOWNLOAD A30</a>
+            </div>
+          </div>
+          <div id="a30" class="modal-window1">
+            <div style="height: 290px">
+              <a href="#" title="Close" class="modal-close"
+                ><i class="fa-solid fa-xmark"></i
+              ></a>
+              <p style="margin-top: -10px">
+                <i class="fa fa-download" aria-hidden="true"></i>Select your
+                TWRP Version
+              </p>
+              <div>
+                <a
+                  class="btn1"
+                  href="https://eu.dl.twrp.me/a30/twrp-3.6.0_9-0-a30.img.html"
+                  target="_blank"
+                  >TWRP 3.6.0_9.img</a
+                >
+              </div>
+              <div>
+                <a
+                  class="btn1"
+                  href="https://eu.dl.twrp.me/a30/twrp-3.6.0_9-0-a30.img.tar.html"
+                  target="_blank"
+                  >TWRP 3.6.0_9.tar</a
+                >
+              </div>
+              <div>
+                <a
+                  class="btn1"
+                  href="https://t.me/exynos7885_rec/26"
+                  target="_blank"
+                  >TWRP 3.7.0_11.img</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="container2">
+            <div>
+              <a class="btn1" href="#a40">DOWNLOAD A40</a>
+            </div>
+          </div>
+          <div id="a40" class="modal-window5">
+            <div>
+              <a href="#" title="Close" class="modal-close"
+                ><i class="fa-solid fa-xmark"></i
+              ></a>
+              <p style="margin-top: -10px">
+                <i class="fa fa-download" aria-hidden="true"></i>Select your
+                TWRP Version
+              </p>
+              <div>
+                <a
+                  class="btn1"
+                  href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A40/TWRP/TWRP-3.6.1_9-a40.img"
+                  target="_blank"
+                  >TWRP 3.6.1_9.img</a
+                >
+              </div>
+              <div>
+                <a
+                  class="btn1"
+                  href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A40/TWRP/TWRP-3.6.1_9-a40.tar"
+                  target="_blank"
+                  >TWRP 3.6.1_9.tar</a
+                >
+              </div>
+              <div>
+                <a
+                  class="btn1"
+                  href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A40/TWRP/TWRP-3.6.1_11.img"
+                  target="_blank"
+                  >TWRP 3.6.1_11.img</a
+                >
+              </div>
+              <div>
+                <a
+                  class="btn1"
+                  href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A40/TWRP/TWRP-3.6.1_11_A40.tar"
+                  target="_blank"
+                  >TWRP 3.6.1_11.tar</a
+                >
+              </div>
+              <div>
+                <a
+                  class="btn1"
+                  href="https://t.me/exynos7885_rec/28"
+                  target="_blank"
+                  >TWRP 3.7.0_11.img</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="container2">
+            <label>
+              <div
+                class="btn1 modalOpenImg"
+                id="modal0"
+                onclick="openModal('modal0');currentSlide(1)"
+              >
+                <span class="me">SCREENSHOTS</span>
+              </div>
+            </label>
+          </div>
+          <div id="modal0" class="modal fade-modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+              <div class="mySlides" id="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/twrp/1.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <div class="mySlides fade" id="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/twrp/2.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <div class="mySlides fade" id="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/twrp/3.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <div class="mySlides fade" id="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/twrp/4.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <div class="mySlides fade" id="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/twrp/5.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <div class="mySlides fade" id="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/twrp/6.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <img
+                    class="pic cursor dot"
+                    id="radi"
+                    src="./img/recovery/twrp/1.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(1, 0)"
+                    alt="Main Screen"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot"
+                    id="radi"
+                    src="./img/recovery/twrp/2.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(2, 0)"
+                    alt="Reboot menu"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot"
+                    id="radi"
+                    src="./img/recovery/twrp/3.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(3, 0)"
+                    alt="Advanced tab"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot"
+                    id="radi"
+                    src="./img/recovery/twrp/4.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(4, 0)"
+                    alt="Install a File"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot"
+                    id="radi"
+                    src="./img/recovery/twrp/5.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(5, 0)"
+                    alt="Wipe your Phone"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot"
+                    id="radi"
+                    src="./img/recovery/twrp/6.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(6, 0)"
+                    alt="TWRP"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: -7px">
+            <i class="bx bx-images size_rp_i"></i>
+            <p>Screenshots [6]</p>
+            <br />
+            <i class="bx bx-info-circle size_rp_i"></i>
+            <p>Vers.: 3.1.0</p>
+          </div>
+        </div>
+        <div class="card_rp">
+          <img src="./img/recovery/ofox.webp" class="img_size ek" />
+          <p>OrangeFoxRP</p>
+          <hr
+            style="
+              margin: 0 auto;
+              width: 90%;
+              height: 1px;
+              border-width: 0;
+              color: rgba(128, 128, 128, 0.288);
+              background-color: rgba(128, 128, 128, 0.288);
+              margin-top: 10px;
+              margin-bottom: -10px;
+            "
+          />
+          <br />
+          <div class="container1">
+            <label>
+              <input class="check" type="checkbox" />
+              <a
+                href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A10/OFRP/OrangeFox-R11.1-Unofficial-20211120-a10.zip"
+                target="_blank"
+              >
+                <div class="btn">
+                  <span class="me">DOWNLOAD A10</span>
+                </div>
+              </a>
+            </label>
+            <label>
+              <input class="check" type="checkbox" />
+              <a
+                href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A20/OFOX/OrangeFox-R11.1-Unofficial-a20.zip"
+                target="_blank"
+              >
+                <div class="btn">
+                  <span class="me">DOWNLOAD A20</span>
+                </div>
+              </a>
+            </label>
+            <label>
+              <input class="check" type="checkbox" />
+              <a
+                href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A20e/OFOX/OrangeFox-R11.1-Unofficial-a20e.zip"
+                target="_blank"
+              >
+                <div class="btn">
+                  <span class="me">DOWNLOAD A20e</span>
+                </div>
+              </a>
+            </label>
+            <label>
+              <input class="check" type="checkbox" />
+              <a
+                href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A30/OFOX/OrangeFox-a30-beta%40R11.1.zip"
+                target="_blank"
+              >
+                <div class="btn">
+                  <span class="me">DOWNLOAD A30</span>
+                </div>
+              </a>
+            </label>
+            <label>
+              <input class="check" type="checkbox" />
+              <a
+                href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A40/OFOX/OrangeFox-R11.1-Unofficial-a40.zip"
+                target="_blank"
+              >
+                <div class="btn">
+                  <span class="me">DOWNLOAD A40</span>
+                </div>
+              </a>
+            </label>
+            <label>
+              <input class="check" type="checkbox" />
+              <div
+                class="btn modalOpenImg"
+                id="modal1"
+                onclick="openModal('modal1');currentSlide(1)"
+              >
+                <span class="me">SCREENSHOTS</span>
+              </div>
+            </label>
+          </div>
+          <div id="modal1" class="modal fade-modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+              <div class="mySlides1 fade" id="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/ofox/1.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <div class="mySlides1 fade" id="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/ofox/2.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <div class="mySlides1 fade" id="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/ofox/3.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <div class="mySlides1 fade" id="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/ofox/4.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <div class="mySlides1 fade" id="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/ofox/5.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <div class="mySlides1 fade" id="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/ofox/6.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+              <div class="row">
+                <div class="column">
+                  <img
+                    class="pic cursor dot1"
+                    id="radi"
+                    src="./img/recovery/ofox/1.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(1, 1)"
+                    alt=""
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot1"
+                    id="radi"
+                    src="./img/recovery/ofox/2.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(2, 1)"
+                    alt=""
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot1"
+                    id="radi"
+                    src="./img/recovery/ofox/3.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(3, 1)"
+                    alt=""
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot1"
+                    id="radi"
+                    src="./img/recovery/ofox/4.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(4, 1)"
+                    alt=""
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot1"
+                    id="radi"
+                    src="./img/recovery/ofox/5.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(5, 1)"
+                    alt=""
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot1"
+                    id="radi"
+                    src="./img/recovery/ofox/6.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(6, 1)"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <i class="bx bx-images size_rp_i"></i>
+          <p>Screenshots [6]</p>
+          <br />
+          <i class="bx bx-info-circle size_rp_i"></i>
+          <p>Vers.: R11.1</p>
+        </div>
+        <div class="card_rp">
+          <img src="./img/recovery/shrp.webp" class="img_size ek" />
+          <p>SkyHawkRP</p>
+          <hr
+            style="
+              margin: 0 auto;
+              width: 90%;
+              height: 1px;
+              border-width: 0;
+              color: rgba(128, 128, 128, 0.288);
+              background-color: rgba(128, 128, 128, 0.288);
+              margin-top: 10px;
+              margin-bottom: -10px;
+            "
+          />
+          <br />
+          <div class="container1">
+            <label>
+              <input class="check" type="checkbox" />
+              <a
+                href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A10/SHRP/SHRP_v3.1_stable-Unofficial_a10-1637266817.zip"
+                target="_blank"
+              >
+                <div class="btn">
+                  <span class="me">DOWNLOAD A10</span>
+                </div>
+              </a>
+            </label>
+            <label>
+              <input class="check" type="checkbox" />
+              <a
+                href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A20/SHRP/SHRP_v3.1_stable-Unofficial_a20-1577836817.zip"
+                target="_blank"
+              >
+                <div class="btn">
+                  <span class="me">DOWNLOAD A20</span>
+                </div>
+              </a>
+            </label>
+            <label>
+              <input class="check" type="checkbox" />
+              <a
+                href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A20e/SHRP/SHRP_v3.1_stable-Unofficial_a20e-1577838813.zip"
+                target="_blank"
+              >
+                <div class="btn">
+                  <span class="me">DOWNLOAD A20e</span>
+                </div>
+              </a>
+            </label>
+            <label>
+              <input class="check" type="checkbox" />
+              <a
+                href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A30/SHRP/SHRP_v3.1_stable-Unofficial_a30-1650014915.zip"
+                target="_blank"
+              >
+                <div class="btn">
+                  <span class="me">DOWNLOAD A30</span>
+                </div>
+              </a>
+            </label>
+            <label>
+              <input class="check" type="checkbox" />
+              <a
+                href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A40/SHRP/SHRP_v3.1_stable-Unofficial_a40-1577836820.zip"
+                target="_blank"
+              >
+                <div class="btn">
+                  <span class="me">DOWNLOAD A40</span>
+                </div>
+              </a>
+            </label>
+            <label>
+              <input class="check" type="checkbox" />
+              <div
+                class="btn modalOpenImg"
+                id="modal2"
+                onclick="openModal('modal2');currentSlide(1)"
+              >
+                <span class="me">SCREENSHOTS</span>
+              </div>
+            </label>
+          </div>
+          <div id="modal2" class="modal fade-modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+              <div class="mySlides2 fade" id="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/shrp/1.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <div class="mySlides2 fade" id="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/shrp/2.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <div class="mySlides2 fade" id="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/shrp/3.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <div class="mySlides2 fade" id="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/shrp/4.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <div class="mySlides2 fade" id="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/shrp/5.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <div class="mySlides2 fade" id="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/shrp/6.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+              <div class="row">
+                <div class="column">
+                  <img
+                    class="pic cursor dot2"
+                    id="radi"
+                    src="./img/recovery/shrp/1.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(1, 2)"
+                    alt=""
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot2"
+                    id="radi"
+                    src="./img/recovery/shrp/2.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(2, 2)"
+                    alt=""
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot2"
+                    id="radi"
+                    src="./img/recovery/shrp/3.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(3, 2)"
+                    alt=""
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot2"
+                    id="radi"
+                    src="./img/recovery/shrp/4.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(4, 2)"
+                    alt=""
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot2"
+                    id="radi"
+                    src="./img/recovery/shrp/5.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(5, 1)"
+                    alt=""
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot2"
+                    id="radi"
+                    src="./img/recovery/shrp/6.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(6, 1)"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <i class="bx bx-images size_rp_i"></i>
+          <p>Screenshots [6]</p>
+          <br />
+          <i class="bx bx-info-circle size_rp_i"></i>
+          <p>Vers.: 3.1.0</p>
+        </div>
+        <div class="card_rp">
+          <img src="./img/recovery/pbrp.webp" class="img_size ek" />
+          <p>PitchBlackRP</p>
+          <hr
+            style="
+              margin: 0 auto;
+              width: 90%;
+              height: 1px;
+              border-width: 0;
+              color: rgba(128, 128, 128, 0.288);
+              background-color: rgba(128, 128, 128, 0.288);
+              margin-top: 10px;
+              margin-bottom: -10px;
+            "
+          />
+          <br />
+          <div class="container1">
+            <label>
+              <input class="check" type="checkbox" />
+              <a
+                href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A10/PBRP/PBRP-a10-3.1.0-20211118-2142-UNOFFICIAL.zip"
+                target="_blank"
+              >
+                <div class="btn">
+                  <span class="me">DOWNLOAD A10</span>
+                </div>
+              </a>
+            </label>
+            <label>
+              <input class="check" type="checkbox" />
+              <a
+                href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A20/PBRP/PBRP-a20-3.1.0-20211120-UNOFFICIAL.zip"
+                target="_blank"
+              >
+                <div class="btn">
+                  <span class="me">DOWNLOAD A20</span>
+                </div>
+              </a>
+            </label>
+            <label>
+              <input class="check" type="checkbox" />
+              <a
+                href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A20e/PBRP/PBRP-a20e-3.1.0-20211120-UNOFFICIAL.zip"
+                target="_blank"
+              >
+                <div class="btn">
+                  <span class="me">DOWNLOAD A20e</span>
+                </div>
+              </a>
+            </label>
+            <label>
+              <input class="check" type="checkbox" />
+              <a href="404.html">
+                <div class="btn">
+                  <span class="me">DOWNLOAD A30</span>
+                </div>
+              </a>
+            </label>
+            <label>
+              <input class="check" type="checkbox" />
+              <a
+                href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A40/PBRP/PBRP-a40-3.1.0-20220415-2032-UNOFFICIAL.zip"
+                target="_blank"
+              >
+                <div class="btn">
+                  <span class="me">DOWNLOAD A40</span>
+                </div>
+              </a>
+            </label>
+            <label>
+              <input class="check" type="checkbox" />
+              <div
+                class="btn modalOpenImg"
+                id="modal3"
+                onclick="openModal('modal3');currentSlide(1)"
+              >
+                <span class="me">SCREENSHOTS</span>
+              </div>
+            </label>
+          </div>
+          <div id="modal3" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+              <div class="mySlides3 fade" id="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/pbrp/1.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <div class="mySlides3 fade" id="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/pbrp/2.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <div class="mySlides3 fade" id="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/pbrp/3.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <div class="mySlides3 fade" id="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/pbrp/4.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <div class="mySlides3 fade" id="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/pbrp/5.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <div class="mySlides3 fade" id="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/recovery/pbrp/6.webp"
+                  style="width: 25%"
+                />
+              </div>
+              <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+              <div class="row">
+                <div class="column">
+                  <img
+                    class="pic cursor dot3"
+                    id="radi"
+                    src="./img/recovery/pbrp/1.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(1, 3)"
+                    alt=""
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot3"
+                    id="radi"
+                    src="./img/recovery/pbrp/2.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(2, 3)"
+                    alt=""
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot3"
+                    id="radi"
+                    src="./img/recovery/pbrp/3.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(3, 3)"
+                    alt=""
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot3"
+                    id="radi"
+                    src="./img/recovery/pbrp/4.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(4, 3)"
+                    alt=""
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot3"
+                    id="radi"
+                    src="./img/recovery/pbrp/5.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(5, 3)"
+                    alt=""
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot3"
+                    id="radi"
+                    src="./img/recovery/pbrp/6.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(6, 3)"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <i class="bx bx-images size_rp_i"></i>
+          <p>Screenshots [6]</p>
+          <br />
+          <i class="bx bx-info-circle size_rp_i"></i>
+          <p>Vers.: 3.1.0</p>
+        </div>
+      </div>
+      <main>
+        <section class="content">
+          <section class="article-wrapper" style="margin-top: -190px">
+            <article class="article"></article>
+            <hr
+              style="
+                height: 1px;
+                border-width: 0;
+                color: rgba(128, 128, 128, 0.288);
+                background-color: rgba(165, 154, 154, 0.288);
+              "
+            />
+            <br />
+            <section class="comment">
+              <p style="font-size: 12px">
+                © 2021 - 2023 Eureka Development <br />&emsp;&emsp;&emsp;
+                Design: <a style="color: #08f"><b>Eureka Team</b></a>
+              </p>
+            </section>
+          </section>
+        </section>
+      </main>
+      <div class="overlay" id="dialog-container">
+        <div class="popup" style="margin-top: -1%">
+          <img
+            class="ek"
+            src="./img/eureka/logo.svg"
+            alt="ek"
+            style="
+              width: 128px;
+              height: 128px;
+              margin-left: auto;
+              margin-top: clamp(220px, 50%, 220px);
+            "
+          />
+          <div class="modal-text">
+            <h3 style="font-size: 28px">Select your Android Version</h3>
+            <br />
+            <p style="font-size: 12px">
+              you can choose between Android 11, 12.1 and 13 actually
+            </p>
+          </div>
+          <div class="container-overlay">
+            <div class="box-overlay">
+              <a href="rom11.html">
+                <button class="dialog-btn-modal btn-primary" id="confirm">
+                  Android 11 (R)
+                </button>
+              </a>
+            </div>
+            <div class="box-overlay">
+              <a href="rom12.html">
+                <button class="dialog-btn-modal btn-primary" id="confirm">
+                  Android 12.1 (S)
+                </button>
+              </a>
+            </div>
+            <div class="box-overlay">
+              <a href="rom13.html">
+                <button class="dialog-btn-modal btn-primary" id="confirm">
+                  Android 13 (T)
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay-rom" id="dialog-container-dload">
+        <div class="popup" style="margin-top: -1%">
+          <img
+            class="ek"
+            src="./img/eureka/logo.svg"
+            alt="ek"
+            style="
+              width: 128px;
+              height: 128px;
+              margin-left: auto;
+              margin-top: clamp(220px, 50%, 220px);
+            "
+          />
+          <div class="modal-text">
+            <h3 style="font-size: 28px">Downloads</h3>
+            <br />
+            <p style="font-size: 12px">
+              here u can select what u want to Download like GAPPS or e.g.
+              Magisk
+            </p>
+          </div>
+          <div class="container-overlay">
+            <div class="box-overlay">
+              <a href="gapps.html">
+                <button
+                  class="dialog-btn-modal btn-primary"
+                  id="confirm"
+                  style="width: 160px; margin-right: 40px"
+                >
+                  Google Apps (GAPPS)
+                </button>
+              </a>
+            </div>
+            <div class="box-overlay">
+              <a href="download.html">
+                <button
+                  class="dialog-btn-modal btn-primary"
+                  id="confirm"
+                  style="width: 160px; margin-left: 40px"
+                >
+                  Continue to another Downloads
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+      var modals = $(".modal");
+      var ModalImg = $(".modalOpenImg");
+      var CurrentModal = null;
+
+      // Function to open modal by id
+      function openModal(id) {
+        for (i = 0; i < modals.length; i++) {
+          if (modals[i].getAttribute("id") == id) {
+            currentModal = $(modals[i]);
+            $(currentModal).css("display", "block");
+            $(currentModal).css("animation", "fadein 0.5s linear 0s");
+            break;
+          }
+        }
+      }
+      $(".modalOpenImg").click(function () {
+        openModal($("#ModalImg").attr("id"));
+      });
+
+      window.onclick = function (event) {
+        if (
+          $(event.target).is(currentModal) ||
+          $(event.target).attr("class") == "modalClose"
+        ) {
+          $(currentModal).css("animation", "fadeOut 0.5s linear 0s");
+          $(currentModal).hide();
+        }
+      };
+
+      function closeModal() {
+        $(currentModal).hide();
+      }
+
+      // Closing Modal via ESC Key
+      $(document).keyup(function (e) {
+        if (e.keyCode == "27") {
+          closeModal();
+        }
+      });
+
+      /* Class the members of each slideshow group with different CSS classes */
+      var slideIndex = [1, 1, 1, 1];
+      var slideId = ["mySlides", "mySlides1", "mySlides2", "mySlides3"];
+      var dotsId = ["dot", "dot1", "dot2", "dot3"];
+
+      for (let i = 0; i < 4; i++) {
+        showSlides(1, i);
+      }
+
+      function plusSlides(n, no) {
+        showSlides((slideIndex[no] += n), no);
+      }
+
+      function currentSlide(n, no) {
+        showSlides((slideIndex[no] = n), no);
+      }
+
+      function showSlides(n, no) {
+        var i;
+        var x = $("." + slideId[no]);
+        var dots = $("." + dotsId[no]);
+
+        if (n > x.length) {
+          slideIndex[no] = 1;
+        }
+        if (n < 1) {
+          slideIndex[no] = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        x[slideIndex[no] - 1].style.display = "block";
+        dots[slideIndex[no] - 1].className += " active";
+      }
+
+      // Arrow key navigation
+      $(document).keydown(function (event) {
+        if (event.key == "ArrowRight") {
+          for (let i = 0; i < 5; i++) {
+            $(".next")[i].click();
+          }
+        } else if (event.key == "ArrowLeft") {
+          for (let i = 0; i < 5; i++) {
+            $(".prev")[i].click();
+          }
+        }
+      });
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>
+<script type="module" src="./js/main.js"></script>

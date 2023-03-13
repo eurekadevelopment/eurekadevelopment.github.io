@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Eureka-Development - HOME</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-database.js"></script>
+    <script async src="https://arc.io/widget.min.js#3LCgJWKk"></script>  
+</head>
+<body>
+  <body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div id="overlay"></div>
+    <div class="flexbox_main">
+        <div class="topnav_main harlow" id="move"> 
+            <a class="active" href="#home">Home</a> 
+            <a href="rom11">ROM</a>
+            <a href="kernel">Kernel</a> 
+            <a href="recovery">Recovery</a>
+            <a href="support">Support</a> 
+            <a href="guide">Guides</a> 
+            <a href="about">About</a>
+        </div>
+    </div>
+  </div>
+    <div class="flexbox body">
+        <div class ="flexelement box1 harlow body noselect"><img src="svg/logo.svg" width="70px" height="70px" id="logo">
+           <div class="slideshow-container" style="-webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+           animation-timing-function: linear;">
+             <div class="slideshow1 fade">
+               <img src="images/sm_a10.png" id="logo1" style="solid;margin-top: 75px;margin-bottom: 75px;" width="210px" height="444px">
+             </div>
+             <div class="slideshow1 fade">
+               <img src="images/sm_a20.png" id="logo1" style="solid;margin-top: 75px;margin-bottom: 75px;" width="210px" height="444px">
+             </div>
+             <div class="slideshow1 fade">
+               <img src="images/sm_a20e.png" id="logo1" style="solid;margin-top: 75px;margin-bottom: 75px;" width="210px" height="444px">
+             </div>
+             <div class="slideshow1 fade">
+               <img src="images/sm_a30.png" id="logo1" style="solid;margin-top: 75px;margin-bottom: 75px;" width="210px" height="444px">
+             </div>
+             <div class="slideshow1 fade">
+               <img src="images/sm_a30s.png" id="logo1" style="solid;margin-top: 75px;margin-bottom: 75px;" width="210px" height="444px">
+             </div>
+             <div class="slideshow1 fade">
+              <img src="images/sm_a40.png" id="logo1" style="solid;margin-top: 75px;margin-bottom: 75px;" width="210px" height="444px">
+             </div>
+             <div class="slideshow1 fade">
+              <img src="images/sm1.png" id="logo1" style="solid;margin-top: 75px;margin-bottom: 75px;" width="210px" height="444px">
+             </div>
+             <div class="slideshow1 fade">
+              <img src="images/sm2.png" id="logo1" style="solid;margin-top: 75px;margin-bottom: 75px;" width="210px" height="444px">
+             </div>
+             <div class="slideshow1 fade">
+              <img src="images/sm3.png" id="logo1" style="solid;margin-top: 75px;margin-bottom: 75px;" width="210px" height="444px">
+             </div>
+             <div class="slideshow1 fade">
+              <img src="images/sm4.png" id="logo1" style="solid;margin-top: 75px;margin-bottom: 75px;" width="210px" height="444px">
+             </div>
+             <div class="slideshow1 fade">
+              <img src="images/sm5.png" id="logo1" style="solid;margin-top: 75px;margin-bottom: 75px;" width="210px" height="444px">
+             </div>
+            </div>
+            <p id="tt">Eureka-Development</p> 
+          <br>Welcome to Eureka,<br> <br> 
+          Eureka Development is an Android Community for Exynos7885. 
+          <br><br>We Develop Custom ROM's, Recoveries and our own Eureka Kernel!
+          <br><br> Here you will definitely find one or the other rom or kernel. If not,  then take a look at Telegram. 
+          Under Support you will find our  groups and channels.
+          <br>
+          <br>Currently Supported Devices: Galaxy A10/A20/A20e/A30/A30s/A40
+          <br>
+          <br>
+          Eureka Team</p>
+          <style>
+            a {
+              color:white;
+              margin-bottom: -5px;
+            }
+          </style>
+          <div class="Center" id="center">
+          <button type="button" class="button" style="display: inline-block;">
+            <span class="button__icon">
+              <a href="https://github.com/eurekadevelopment" target="_blank">
+              <ion-icon name="logo-github" style="pointer-events:none">
+              </a>
+            </span>
+          </ion-icon>
+          </button>
+          <button type="button" class="button" style="display: inline-block; ">
+            <span class="button__icon">
+              <a href="https://www.paypal.me/chaturbaij" target="_blank">
+              <ion-icon name="logo-paypal" style="pointer-events:none">
+              </a>
+            </span>
+          </ion-icon>
+          </button>
+          <button type="button" class="button" style="display: inline-block; ">
+            <span class="button__icon">
+              <a href="https://t.me/eureka_roms" target="_blank">
+              <ion-icon name="paper-plane-outline" style="pointer-events:none">
+              </a>
+            </span>
+          </ion-icon>
+          </button>
+        </div>
+        </div>
+      </div>
+      </head>
+      <body>
+      <section id="slider" style="-webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+animation-timing-function: linear;">
+        <input type="radio" name="slider" id="s1" checked>
+        <input type="radio" name="slider" id="s2">
+        <input type="radio" name="slider" id="s3">
+        <input type="radio" name="slider" id="s4">
+        <input type="radio" name="slider" id="s5">
+        <label for="s1" id="slide1"><img src="eureka/hi.png" alt=""></label>
+        <label for="s2" id="slide2"><img src="eureka/aroma2.png" alt=""></label>
+        <label for="s3" id="slide3"><img src="eureka/ekm.png" alt=""></label>
+        <label for="s4" id="slide4"><img src="eureka/smparts.jpg" alt=""></label>
+        <label for="s5" id="slide5"><img src="eureka/1.jpg" alt=""></label>
+      </section>
+      <br>
+      <br>
+      <img src="svg/team.svg" height="60px" class="center" style="margin-top: -100px;">
+      <br>
+      <br>
+    <div class="flexbox noselect">
+        <div class ="flexelement box2 harlow" style="height: 120px; width: 220px;"><img src="https://avatars.githubusercontent.com/u/69016406?v=4" width="90px" height="90px" id="logo2"><p>&nbsp;Chatur Baij<br>&nbsp;Leader/Dev.<br>&nbsp;Galaxy A10<br><button type="button" class="button" style="display: inline-block; margin-left: -9px;"><span class="button__icon"><a href="https://github.com/Chatur27" target="_blank"><ion-icon name="logo-github" style="pointer-events:none"></a></span></ion-icon></button><button type="button" class="button" style="display: inline-block;"><span class="button__icon"><a href="https://t.me/Chatur2709" target="_blank"><ion-icon name="paper-plane-outline" style="pointer-events:none"></a></span></ion-icon></button></p></div></a>
+        <div class ="flexelement box2 harlow" style="height: 120px; width: 220px;"><img src="https://avatars.githubusercontent.com/u/88463214?v=4" width="90px" height="90px" id="logo2"><p>&nbsp;Gabriel260br<br>&nbsp;CO.Lead/Dev.<br>&nbsp;Galaxy A10<br><button type="button" class="button" style="display: inline-block; margin-left: -9px;"><span class="button__icon"><a href="https://github.com/Gabriel2392" target="_blank"><ion-icon name="logo-github" style="pointer-events:none"></a></span></ion-icon></button><button type="button" class="button" style="display: inline-block;"><span class="button__icon"><a href="https://t.me/Gabriel260BR" target="_blank"><ion-icon name="paper-plane-outline" style="pointer-events:none"></a></span></ion-icon></button></p></div></a>
+        <div class ="flexelement box2 harlow" style="height: 120px; width: 220px;"><img src="https://avatars.githubusercontent.com/u/69458352?v=4" width="90px" height="90px" id="logo2"><p>&nbsp;Roynatech<br>&nbsp;Kernel/Dev.<br>&nbsp;Galaxy A20e<br><button type="button" class="button" style="display: inline-block; margin-left: -9px;"><span class="button__icon"><a href="https://github.com/roynatech2544" target="_blank"><ion-icon name="logo-github" style="pointer-events:none"></a></span></ion-icon></button><button type="button" class="button" style="display: inline-block;"><span class="button__icon"><a href="https://t.me/roynatech" target="_blank"><ion-icon name="paper-plane-outline" style="pointer-events:none"></a></span></ion-icon></button></p></div></a>
+        <div class ="flexelement box2 harlow" style="height: 120px; width: 220px;"><img src="https://avatars.githubusercontent.com/u/10536991?v=4" width="90px" height="90px" id="logo2"><p>&nbsp;Kevios12<br>&nbsp;Developer<br>&nbsp;Galaxy A40/S8<br><button type="button" class="button" style="display: inline-block; margin-left: -9px;"><span class="button__icon"><a href="https://github.com/kevios12" target="_blank"><ion-icon name="logo-github" style="pointer-events:none"></a></span></ion-icon></button><button type="button" class="button" style="display: inline-block;"><span class="button__icon"><a href="https://t.me/kevios12" target="_blank"><ion-icon name="paper-plane-outline" style="pointer-events:none"></a></span></ion-icon></button></p></div></a>
+        <div class ="flexelement box2 harlow" style="height: 120px; width: 220px;"><img src="https://avatars.githubusercontent.com/u/76120412?v=4" width="90px" height="90px" id="logo2"><p>&nbsp;Chris Sunil<br>&nbsp;Developer<br>&nbsp;Galaxy A10<br><button type="button" class="button" style="display: inline-block; margin-left: -9px;"><span class="button__icon"><a href="https://github.com/chrissunil" target="_blank"><ion-icon name="logo-github" style="pointer-events:none"></a></span></ion-icon></button><button type="button" class="button" style="display: inline-block;"><span class="button__icon"><a href="https://t.me/noobboi0211" target="_blank"><ion-icon name="paper-plane-outline" style="pointer-events:none"></a></span></ion-icon></button></p></div></a>
+        <div class ="flexelement box2 harlow" style="height: 120px; width: 220px;"><img src="https://avatars.githubusercontent.com/u/51184041?v=4" width="90px" height="90px" id="logo2"><p>&nbsp;Neel0210<br>&nbsp;Developer<br>&nbsp;Various Devices<br><button type="button" class="button" style="display: inline-block; margin-left: -9px;"><span class="button__icon"><a href="https://github.com/neel0210" target="_blank"><ion-icon name="logo-github" style="pointer-events:none"></a></span></ion-icon></button><button type="button" class="button" style="display: inline-block;"><span class="button__icon"><a href="https://t.me/neel0210" target="_blank"><ion-icon name="paper-plane-outline" style="pointer-events:none"></a></span></ion-icon></button></p></div></a>
+        <div class ="flexelement box2 harlow" style="height: 120px; width: 220px;"><img src="https://avatars.githubusercontent.com/u/98711335?v=4" width="90px" height="90px" id="logo2"><p>&nbsp;Kinesight<br>&nbsp;Designer<br>&nbsp;Galaxy A20<br><button type="button" class="button" style="display: inline-block; margin-left: -9px;"><span class="button__icon"><a href="#" target="_blank"><ion-icon name="logo-github" style="pointer-events:none"></a></span></ion-icon></button><button type="button" class="button" style="display: inline-block;"><span class="button__icon"><a href="https://t.me/KineSight" target="_blank"><ion-icon name="paper-plane-outline" style="pointer-events:none"></a></span></ion-icon></button></p></div></a>
+        <div class ="flexelement box2 harlow" style="height: 120px; width: 220px;"><img src="https://avatars.githubusercontent.com/u/96374040?v=4" width="90px" height="90px" id="logo2"><p>&nbsp;Alexandru S.<br>&nbsp;Developer<br>&nbsp;Galaxy A40<br><button type="button" class="button" style="display: inline-block; margin-left: -9px;"><span class="button__icon"><a href="https://github.com/alexandrusemina" target="_blank"><ion-icon name="logo-github" style="pointer-events:none"></a></span></ion-icon></button><button type="button" class="button" style="display: inline-block;"><span class="button__icon"><a href="https://t.me/KdePlasmaUser" target="_blank"><ion-icon name="paper-plane-outline" style="pointer-events:none"></a></span></ion-icon></button></p></div></a>
+      </div> 
+    </div>
+    <div class="views harlow glow noselect" style="background-color: transparent;">
+      <h2 id="view_count_text">Total Visits:</h2>
+    </div>
+    <footer class="harlow noselect">
+        <div class="wrapper"><img src="svg/logo.svg" width="22px" height="22px" id="logo">
+            <div style="text-align: right;"><p>© 2021-2022 Eureka Team. All rights reserved.</p></div>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/loader.js"></script>
+<script src="js/slideshow.js"></script>
+<script src="js/slider.js"></script>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+<script src="js/firebase.js"></script>
+<script src="https://api.ipify.org?format=jsonp&callback=get_viewers_ip"></script>
+<script>
+  window.matchMedia("(prefers-color-scheme: dark)").matches
+</script>
+</html>

@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d72bd4ed55.js"
+      crossorigin="anonymous"
+    ></script>
+    <script is:inline type="module" src="./js/colorpalette.js"></script>
+    <script async src="https://arc.io/widget.min.js#3LCgJWKk"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <link rel="stylesheet" href="./scss/style.scss" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Eureka Development</title>
+  </head>
+
+  <body>
+    <div class="splash">
+      <img class="fade-in center" src="./img/media/eklogo.gif" alt="eklogo" />
+    </div>
+    <nav class="sidebar close nav">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <a href="/"><img src="./img/eureka/logo.svg" alt="" /></a>
+          </span>
+          <div class="text logo-text">
+            <span class="profession"><b>Welcome!</b></span>
+          </div>
+        </div>
+        <i class="bx bx-menu toggle"></i>
+      </header>
+      <div class="menu-bar" style="overflow-x: hidden; overflow-y: hidden">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="/">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">Home</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a id="rom-dialog">
+                <i class="bx bx-microchip icon"></i>
+                <span class="text nav-text">Custom ROM's</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="recovery.html">
+                <i class="bx bx-refresh icon"></i>
+                <span class="text nav-text">Custom Recovery</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="kernel.html">
+                <i class="bx bx-chip icon" id="active-page"></i>
+                <span class="text nav-text">Eureka Kernel</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="statistics.html">
+                <i class="bx bx-stats icon"></i>
+                <span class="text nav-text">Statistics</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="guide.html">
+                <i class="bx bx-book icon"></i>
+                <span class="text nav-text">Guides</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a id="dload-dialog">
+                <i class="bx bx-download icon"></i>
+                <span class="text nav-text">Downloads</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="support.html">
+                <i class="bx bx-heart icon"></i>
+                <span class="text nav-text">Support</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="team.html">
+                <i class="bx bxs-face icon"></i>
+                <span class="text nav-text">Eureka Team</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="about.html">
+                <i class="bx bx-info-circle icon"></i>
+                <span class="text nav-text">About Us</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a onclick="openColorpalette();" style="cursor: pointer">
+                <img
+                  class="color"
+                  id="animation"
+                  onclick="topFunction()"
+                  src="./img/eureka/color.png"
+                /><i class="icon"></i>
+
+                <span class="text nav-text">Switch Web-Color</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="text logo-text"
+          style="margin-left: 20px; margin-top: 5px"
+        ></div>
+      </div>
+    </nav>
+    <section class="home">
+      <div id="colorpalette" class="overlay-colorpalette animate-in">
+        <ul class="ul">
+          <a
+            href="javascript:void(0)"
+            class="closebtn"
+            onclick="closeColorpalette()"
+            >&times;</a
+          >
+          <li class="li" data-color="color1"></li>
+          <li class="li" data-color="color2"></li>
+          <li class="li" data-color="color3"></li>
+          <li class="li" data-color="color4"></li>
+          <li class="li" data-color="color5"></li>
+          <li class="li" data-color="color6"></li>
+          <li class="li" data-color="color7"></li>
+          <li class="li" data-color="color8"></li>
+          <li class="li" data-color="color9"></li>
+          <li class="li" data-color="color10"></li>
+          <li class="li" data-color="color11"></li>
+          <li class="li" data-color="color12"></li>
+        </ul>
+        <p class="color-text">Switch Web-Color</p>
+      </div>
+      <section
+        class="author"
+        style="width: 90%; margin: 0px auto; text-align: center"
+      >
+        <figure style="margin-top: 30px">
+          <img src="./img/eureka/logo.svg" class="imgkernel ek" /><img
+            src="./img/eureka/chip.png"
+            class="imgkernel ek"
+          /><br />
+          <span class="figtext1">Eureka</span
+          ><span class="figtext">Kernel</span>
+          <div class="icons" style="text-align: center">
+            <a
+              href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases"
+              target="_blank"
+              data-tooltip="&ensp;&ensp;GitHub&ensp;&ensp;"
+              data-position="top"
+              class="top"
+              ><i class="fa fa-github"></i
+            ></a>
+            <a
+              href="https://t.me/eureka_kernel"
+              target="_blank"
+              data-tooltip="Telegram"
+              data-position="top"
+              class="top"
+              ><i class="fa fa-telegram"></i
+            ></a>
+          </div>
+        </figure>
+      </section>
+      <main>
+        <section class="content" style="margin-top: -60px">
+          <section class="article-wrapper">
+            <article class="article">
+              <section>
+                <article>
+                  <div class="wrap-content">
+                    <article class="changelog">
+                      <span class="figtext1_changelog">Eureka </span
+                      ><span class="figtext_changelog">Features</span>
+                      <section class="version -planned">
+                        <hr
+                          style="
+                            height: 1px;
+                            border-width: 0;
+                            color: rgba(128, 128, 128, 0.288);
+                            background-color: rgba(128, 128, 128, 0.288);
+                          "
+                        />
+                        <br />
+                        <section>
+                          <div style="margin-left: 17px">
+                            <span class="label-inline -ghost -orange">R11</span>
+                          </div>
+                          <ul>
+                            <li>OneUI4 Kernels</li>
+                            <li>Improvements & Bug Fixes</li>
+                            <li>Latest BPF related Patches - Android13</li>
+                          </ul>
+                        </section>
+                        <br />
+                        <section>
+                          <div style="margin-left: 17px">
+                            <span class="label-inline -ghost -orange"
+                              >R10.1</span
+                            >
+                          </div>
+                          <ul>
+                            <li>Updated WireGuard to 20200627</li>
+                            <li>Upstream linux-4.4 with extra patches(p4)</li>
+                            <li>refactored simple SLMK</li>
+                            <li>
+                              Switched back to KSM and defaults to disabled
+                            </li>
+                            <li>
+                              Blocking Userspace LMKD from killing processes
+                            </li>
+                          </ul>
+                        </section>
+                        <br />
+                        <section>
+                          <div style="margin-left: 17px">
+                            <span class="label-inline -ghost -orange"
+                              >R9.2</span
+                            >
+                          </div>
+                          <ul>
+                            <li>Download/Upload speed improve</li>
+                            <li>Support WiFi-Sharing</li>
+                            <li>FM-Radio Support</li>
+                          </ul>
+                        </section>
+                        <br />
+                        <section
+                          class="font-mob"
+                          data-aos="zoom-in"
+                          data-aos-duration="1100"
+                        >
+                          <div style="margin-left: 17px">
+                            <span class="label-inline -ghost -orange"
+                              >R9.0</span
+                            >
+                          </div>
+                          <ul>
+                            <li>
+                              EurekaSound (ESOUND) v1.0 for AOSP as Headphone
+                              Controller
+                            </li>
+                            <li>Latest Linux 4.4 Kernel version .302</li>
+                            <li>
+                              Eureka Display Control (EKCAL), based on Samsung
+                              mDNIE driver (Not available for A20e)
+                            </li>
+                            <li>DT2W for ALL Devices now available</li>
+                            <li>
+                              Flashlight Controller for ALL Devices now
+                              available
+                            </li>
+                            <li>
+                              Kernel SELinux Switcher (Switch between Enforcing
+                              - Permissive)
+                            </li>
+                            <li>WireGuard VPN driver (1.0.20211208)</li>
+                            <li>
+                              98% Audio / Camera Changes included in Q/R/S
+                              Kernel
+                            </li>
+                            <li>New AROMA Installer for our Kernel</li>
+                            <li>AOSP/OneUI Kernel / DTB now in 1-Zip</li>
+                            <li>
+                              Built with Vortex Clang & LTO (Latest Clang-14 -
+                              Vers.: 20220201)
+                            </li>
+                            <li>
+                              New Schedulers HMP (Heterogeneous
+                              Multi-Processing) and EMS (Exynos Mobile
+                              Scheduler)
+                            </li>
+                            <li>
+                              Added to EMS following governors: Blu Schedutil,
+                              ElectroUtilX, PwrUtilX
+                            </li>
+                            <li></li>
+                            <li>Info for Eureka Kernel R9.0</li>
+                            <li>
+                              Eureka kernel R9.0 heavily depends on DTB (not
+                              DTBO) for the following features:
+                            </li>
+                            <li>CPU and GPU overclock & underclock</li>
+                            <li>SELinux state (enforcing or permissive)</li>
+                            <li>
+                              Sound driver compatibility (AOSP, OneUI2 or
+                              OneUI3)
+                            </li>
+                            <li>Energy model and parameters for EMS kernels</li>
+                          </ul>
+                        </section>
+                        <br />
+                        <section data-aos="zoom-in" data-aos-duration="1100">
+                          <div style="margin-left: 17px">
+                            <span class="label-inline -ghost -orange"
+                              >R8.0</span
+                            >
+                          </div>
+                          <ul>
+                            <li>Latest Linux 4.4 Kernel version .288</li>
+                            <li>Added Ondemandplus CPU governor</li>
+                            <li>
+                              New Backlight Brightness Controller (Feature can
+                              be used when new EKM app is released)
+                              **Experimental**
+                            </li>
+                            <li>Samsung A10 1.2A input charging current</li>
+                            <li>Back to Exynos Hotplug</li>
+                            <li>
+                              GPU frequency limit to 1100Mhz while Throttling
+                            </li>
+                            <li>Better FS Performance for EXT4 File-System.</li>
+                            <li>
+                              Full function of Gamepad Controllers (such as
+                              chinese ones)
+                            </li>
+                            <li>Kernel Android 12 (S) Capable</li>
+                          </ul>
+                        </section>
+                      </section>
+                    </article>
+                  </div>
+                </article>
+              </section>
+              <section>
+                <span class="figtext1_changelog">Eureka </span
+                ><span class="figtext_changelog">Downloads</span>
+                <hr
+                  style="
+                    margin: 0 auto;
+                    width: 73%;
+                    height: 1px;
+                    border-width: 0;
+                    color: rgba(128, 128, 128, 0.288);
+                    background-color: rgba(128, 128, 128, 0.288);
+                    margin-top: 20px;
+                    margin-bottom: -10px;
+                  "
+                />
+                <br />
+                <div class="cards">
+                  <div class="card" data-aos="zoom-in" data-aos-duration="1100">
+                    <p>R11 LATEST OneUI[Telegram]</p>
+                    <div class="container-kernel">
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/588"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A10&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/592"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/591"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20e&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/594"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/596"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30s&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/598"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A40&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="zoom-in" data-aos-duration="1100">
+                    <p>R11 LATEST AOSP[Telegram]</p>
+                    <div class="container-kernel">
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/587"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A10&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/589"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/590"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20e&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/593"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a href="#" target="_blank">
+                          <div class="btn">
+                            <span>&nbsp;EK A30s&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/597"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A40&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="zoom-in" data-aos-duration="1100">
+                    <p>R10.1</p>
+                    <div class="container-kernel">
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R10.10/Eureka_Kernel_R10.1_A10.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A10&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R10.10/Eureka_Kernel_R10.1_A20.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R10.10/Eureka_Kernel_R10.1_A20e.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20e&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R10.10/Eureka_Kernel_R10.1_A30.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R10.10/Eureka_Kernel_R10.1_A30s.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30s&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R10.10/Eureka_Kernel_R10.1_A40.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A40&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="zoom-in" data-aos-duration="1100">
+                    <p>R9.2-AOSP[HMP]</p>
+                    <div class="container-kernel">
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.2/Eureka_R9.2_A105_AOSP-HMP.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A10&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.2/Eureka_R9.2_A205_AOSP-HMP.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.2/Eureka_R9.2_A202_AOSP-HMP.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20e&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.2/Eureka_R9.2_A305_AOSP-HMP.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.2/Eureka_R9.2_A307_AOSP-HMP.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30s&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.2/Eureka_R9.2_A405_AOSP-HMP.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A40&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="zoom-in" data-aos-duration="1100">
+                    <p>R9.2-AOSP[EMS]</p>
+                    <div class="container-kernel">
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.2/Eureka_R9.2_A105_AOSP-EMS.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A10&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.2/Eureka_R9.2_A205_AOSP-EMS.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.2/Eureka_R9.2_A202_AOSP-EMS.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20e&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.2/Eureka_R9.2_A305_AOSP-EMS.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.2/Eureka_R9.2_A307_AOSP-EMS.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30s&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.2/Eureka_R9.2_A405_AOSP-EMS.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A40&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="zoom-in" data-aos-duration="1100">
+                    <p>R9.0-AROMA[HMP]</p>
+                    <div class="container-kernel">
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.0/Eureka_R9.0_A105_AROMA-HMP.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A10&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.0/Eureka_R9.0_A205_AROMA-HMP.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.0/Eureka_R9.0_A202_AROMA-HMP.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20e&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.0/Eureka_R9.0_A305_AROMA-HMP.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.0/Eureka_R9.0_A307_AROMA-HMP.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30s&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.0/Eureka_R9.0_A405_AROMA-HMP.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A40&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="zoom-in" data-aos-duration="1100">
+                    <p>R9.0-AROMA[EMS]</p>
+                    <div class="container-kernel">
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.0/Eureka_R9.0_A105_AROMA-EMS.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A10&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.0/Eureka_R9.0_A205_AROMA-EMS.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.0/Eureka_R9.0_A202_AROMA-EMS.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20e&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.0/Eureka_R9.0_A305_AROMA-EMS.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.0/Eureka_R9.0_A307_AROMA-EMS.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30s&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases/download/R9.0/Eureka_R9.0_A405_AROMA-EMS.zip"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A40&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="zoom-in" data-aos-duration="1100">
+                    <p>R8.0 - Q / R / S</p>
+                    <div class="container-kernel">
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A10&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20e&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30s&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A40&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="zoom-in" data-aos-duration="1100">
+                    <p>R8.0 OneUI3/4</p>
+                    <div class="container-kernel">
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A10&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20e&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30s&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://github.com/eurekadevelopment/Eureka-Kernel-Exynos7885-Q-R-S/releases"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A40&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="zoom-in" data-aos-duration="1100">
+                    <p>R7.5 R(UI3) Enf.</p>
+                    <div class="container-kernel">
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/263"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A10&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/265"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/267"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20e&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/269"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/271"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30s&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/273"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A40&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="zoom-in" data-aos-duration="1100">
+                    <p>R7.5 R(UI3) Perm.</p>
+                    <div class="container-kernel">
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/264"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A10&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/266"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/268"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20e&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/270"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/272"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30s&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/274"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A40&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="zoom-in" data-aos-duration="1100">
+                    <p>R7.5 Q/R(GSI) Enforcing</p>
+                    <div class="container-kernel">
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/251"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A10&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/253"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/255"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20e&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/257"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/259"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30s&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/261"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A40&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="card" data-aos="zoom-in" data-aos-duration="1100">
+                    <p>R7.5 Q/R(GSI) Permissive</p>
+                    <div class="container-kernel">
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/252"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A10&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/254"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/256"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A20e&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/258"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/260"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A30s&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                      <label>
+                        <a
+                          href="https://t.me/eureka_kernel/262"
+                          target="_blank"
+                        >
+                          <div class="btn">
+                            <span>&nbsp;EK A40&nbsp;</span>
+                          </div>
+                        </a>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </article>
+            <div class="wrap-content">
+              <article class="changelog">
+                <span class="figtext1_changelog">Eureka </span
+                ><span class="figtext_changelog">Changelog</span>
+                <section class="version -planned">
+                  <hr
+                    style="
+                      margin: 0 auto;
+                      width: 73%;
+                      height: 1px;
+                      border-width: 0;
+                      color: rgba(128, 128, 128, 0.288);
+                      background-color: rgba(128, 128, 128, 0.288);
+                      margin-top: 20px;
+                      margin-bottom: -10px;
+                    "
+                  />
+                  <br />
+                  <div
+                    class="header"
+                    data-aos="zoom-in"
+                    data-aos-duration="1100"
+                  >
+                    <h2 class="version-num" style="margin-left: 7px">
+                      R11 - Latest
+                    </h2>
+                    <time class="datetime" datetime="02-04-2019"
+                      >2023.01.01</time
+                    >
+                  </div>
+                  <section data-aos="zoom-in" data-aos-duration="1100">
+                    <div class="label -s -bg -ghost -blue">Added</div>
+                    <ul>
+                      <li>New BPF Patches</li>
+                      <li>OneUI4 variant</li>
+                      <li>Minor Kernel Bug Fixes..</li>
+                    </ul>
+                  </section>
+                  <section data-aos="zoom-in" data-aos-duration="1100">
+                    <div class="label -s -bg -ghost -orange">Changed</div>
+                    <ul>
+                      <li>-</li>
+                    </ul>
+                  </section>
+                  <section data-aos="zoom-in" data-aos-duration="1100">
+                    <div class="label -s -bg -ghost -violette">Fixed</div>
+                    <ul>
+                      <li>Fixed OOM</li>
+                      <li>
+                        Some SELinux related Stuff (reversed 'getenforce' mode)
+                      </li>
+                    </ul>
+                  </section>
+                  <section data-aos="zoom-in" data-aos-duration="1100">
+                    <div class="label -s -bg -ghost -red">Removed</div>
+                    <ul>
+                      <li>fs-verity: Dropped</li>
+                      <li>sLMK and all related commits to it: Dropped</li>
+                      <li>
+                        erofs: As the xattr (selinux label) is not working,
+                        dropped for now.
+                      </li>
+                      <li>fs-verity: Dropped</li>
+                      <li>Dropped cpu input boost</li>
+                    </ul>
+                  </section>
+                  <br />
+                  <div
+                    class="header"
+                    data-aos="zoom-in"
+                    data-aos-duration="1100"
+                  >
+                    <h2 class="version-num" style="margin-left: 7px">R10.1</h2>
+                    <time class="datetime" datetime="02-04-2019"
+                      >2022.07.03</time
+                    >
+                  </div>
+                  <section data-aos="zoom-in" data-aos-duration="1100">
+                    <div class="label -s -bg -ghost -blue">Added</div>
+                    <ul>
+                      <li>Blocking Userspace LMKD from killing processes</li>
+                    </ul>
+                  </section>
+                  <section data-aos="zoom-in" data-aos-duration="1100">
+                    <div class="label -s -bg -ghost -orange">Changed</div>
+                    <ul>
+                      <li>WireGuard Version 20200627</li>
+                      <li>Eureka_R10.1-4.4.302-p4 (extra linux patches)</li>
+                      <li>refactored simple SLMK</li>
+                    </ul>
+                  </section>
+                  <section data-aos="zoom-in" data-aos-duration="1100">
+                    <div class="label -s -bg -ghost -violette">Fixed</div>
+                    <ul>
+                      <li>-</li>
+                    </ul>
+                  </section>
+                  <section data-aos="zoom-in" data-aos-duration="1100">
+                    <div class="label -s -bg -ghost -red">Removed</div>
+                    <ul>
+                      <li>Switched back to KSM and defaults to disabled</li>
+                    </ul>
+                  </section>
+                </section>
+              </article>
+            </div>
+            <div class="wrap-content">
+              <article class="changelog">
+                <section class="version -planned">
+                  <hr
+                    style="
+                      height: 1px;
+                      border-width: 0;
+                      color: rgba(128, 128, 128, 0.288);
+                      background-color: rgba(128, 128, 128, 0.288);
+                    "
+                  />
+                  <br />
+                  <div
+                    class="header"
+                    data-aos="zoom-in"
+                    data-aos-duration="1100"
+                  >
+                    <h2 class="version-num" style="margin-left: 7px">R09.2</h2>
+                    <time class="datetime" datetime="02-04-2019"
+                      >2022.02.24</time
+                    >
+                  </div>
+                  <section data-aos="zoom-in" data-aos-duration="1100">
+                    <div class="label -s -bg -ghost -blue">Added</div>
+                    <ul>
+                      <li>
+                        Added support for Wi-Fi sharing feature (required by
+                        latest Eureka ROMs)
+                      </li>
+                      <li>
+                        Added required support for FM Radio (required by latest
+                        Eureka ROMs)
+                      </li>
+                    </ul>
+                  </section>
+                  <section data-aos="zoom-in" data-aos-duration="1100">
+                    <div class="label -s -bg -ghost -orange">Changed</div>
+                    <ul>
+                      <li>
+                        Switched to fq_codel queue discipline. Better
+                        download/upload speed.
+                      </li>
+                    </ul>
+                  </section>
+                  <section data-aos="zoom-in" data-aos-duration="1100">
+                    <div class="label -s -bg -ghost -violette">Fixed</div>
+                    <ul>
+                      <li>-</li>
+                    </ul>
+                  </section>
+                  <section data-aos="zoom-in" data-aos-duration="1100">
+                    <div class="label -s -bg -ghost -red">Removed</div>
+                    <ul>
+                      <li>-</li>
+                    </ul>
+                  </section>
+                </section>
+              </article>
+            </div>
+            <div class="wrap-content" style="margin-top: -8px">
+              <article class="changelog">
+                <hr
+                  style="
+                    height: 1px;
+                    border-width: 0;
+                    color: rgba(128, 128, 128, 0.288);
+                    background-color: rgba(128, 128, 128, 0.288);
+                  "
+                />
+                <br />
+                <section class="version -planned">
+                  <div
+                    class="header"
+                    data-aos="zoom-in"
+                    data-aos-duration="1100"
+                  >
+                    <h2 class="version-num" style="margin-left: 7px">R09.0</h2>
+                    <time class="datetime" datetime="02-04-2019"
+                      >2022.02.03</time
+                    >
+                  </div>
+                  <section data-aos="zoom-in" data-aos-duration="1100">
+                    <div class="label -s -bg -ghost -blue">Added</div>
+                    <ul>
+                      <li>
+                        Implemented EurekaSound (ESOUND) v1.0, a basic headphone
+                        audio controller (For AOSP only).
+                      </li>
+                      <li>
+                        Implemented Eureka Display Control (EKCAL) which is
+                        based on Samsung mDNIE driver (Not available for A20e).
+                      </li>
+                      <li>
+                        Merged 98 % audio and camera changes from R kernel
+                        source into Q/R/S (AOSP/OneUI2) kernels.
+                      </li>
+                      <li>
+                        AROMA Installer is now used to facilitate the
+                        installation of Eureka Kernel.
+                      </li>
+                      <li>
+                        Built with Vortex Clang & LTO which is based on the
+                        latest version of Clang 14 (20220201).
+                      </li>
+                      <li>
+                        EMS Shedutil governors: Blu, Electro, PWR (see features
+                        above).
+                      </li>
+                    </ul>
+                  </section>
+                  <section data-aos="zoom-in" data-aos-duration="1100">
+                    <div class="label -s -bg -ghost -orange">Changed</div>
+                    <ul>
+                      <li>
+                        Upstream Linux Kernel Version from 4.4.288 to 4.4.302
+                        (latest and last update from Linux).
+                      </li>
+                      <li>
+                        Modified DT2W driver for A20 and A40 so as to fix DT2W
+                        issue on AOSP ROMs.
+                      </li>
+                      <li>
+                        For permissive selinux, selinux can be switched to
+                        enforcing after boot.
+                      </li>
+                      <li>
+                        Updated WireGuard VPN driver to latest version
+                        (1.0.20211208)
+                      </li>
+                      <li>
+                        OneUI and AOSP kernels & custom DTBs have been merged
+                        into 1 zip (kept size as small as possible).
+                      </li>
+                      <li>
+                        Two kernel versions with different schedulers are now
+                        available: EMS/HMP (see features above).
+                      </li>
+                      <li>
+                        Eureka kernel R9.0 heavily depends on DTB (not DTBO):
+                        OC/UC, SELinux=Enf./Permis., EMS,... See Features above.
+                      </li>
+                      <li>Updated spectrum files.</li>
+                      <li>Other minor changes.</li>
+                    </ul>
+                  </section>
+                  <section data-aos="zoom-in" data-aos-duration="1100">
+                    <div class="label -s -bg -ghost -violette">Fixed</div>
+                    <ul>
+                      <li>Fixed all remaining warnings in kernel source.</li>
+                      <li>
+                        Further improvements to SElinux code to fix some
+                        warnings in kernel log.
+                      </li>
+                    </ul>
+                  </section>
+                  <section>
+                    <div class="label -s -bg -ghost -red">Removed</div>
+                    <ul>
+                      <li>-</li>
+                    </ul>
+                  </section>
+                </section>
+              </article>
+            </div>
+            <div class="wrap-content" style="margin-top: -8px">
+              <article class="changelog">
+                <hr
+                  style="
+                    height: 1px;
+                    border-width: 0;
+                    color: rgba(128, 128, 128, 0.288);
+                    background-color: rgba(128, 128, 128, 0.288);
+                  "
+                />
+                <br />
+                <section class="version -planned">
+                  <div
+                    class="header"
+                    data-aos="zoom-in"
+                    data-aos-duration="1100"
+                  >
+                    <h2 class="version-num" style="margin-left: 7px">R08.0</h2>
+                    <time class="datetime" datetime="02-04-2019"
+                      >2021.10.14</time
+                    >
+                  </div>
+                  <section data-aos="zoom-in" data-aos-duration="1100">
+                    <div class="label -s -bg -ghost -blue">Added</div>
+                    <ul>
+                      <li>Added Ondemandplus CPU governor.</li>
+                      <li>Added BFQ and ZEN v2 I/O schedulers.</li>
+                      <li>
+                        Added a new backlight brightness controller. [Feature
+                        can be used when new EKM app is released] [Experimental]
+                      </li>
+                      <li>
+                        "Samsung A10 1.2A input charging current" feature has
+                        been hardcoded in kernel.
+                      </li>
+                      <li>Patched kernel for android 12 (S).</li>
+                    </ul>
+                  </section>
+                  <section data-aos="zoom-in" data-aos-duration="1100">
+                    <div class="label -s -bg -ghost -orange">Changed</div>
+                    <ul>
+                      <li>
+                        Upstream Linux Kernel Version from 4.4.277 to 4.4.288
+                      </li>
+                      <li>
+                        Some optimizations for better FS performance for EXT4
+                        file-system.
+                      </li>
+                      <li>Some other minor optimizations.</li>
+                    </ul>
+                  </section>
+                  <section data-aos="zoom-in" data-aos-duration="1100">
+                    <div class="label -s -bg -ghost -violette">Fixed</div>
+                    <ul>
+                      <li>
+                        Fixed GPU frequency being limited to 1100 MHz after
+                        being throttled (v2.0).
+                      </li>
+                      <li>
+                        Fixed non-detection of some gamepad controllers (such as
+                        chinese ones).
+                      </li>
+                    </ul>
+                  </section>
+                  <section data-aos="zoom-in" data-aos-duration="1100">
+                    <div class="label -s -bg -ghost -red">Removed</div>
+                    <ul>
+                      <li>
+                        Removed CPU quiet and reverted back to Exynos Hotplug.
+                        It should fix issue of cores randomly turning off.
+                      </li>
+                    </ul>
+                  </section>
+                </section>
+              </article>
+            </div>
+            <hr
+              style="
+                height: 1px;
+                border-width: 0;
+                color: rgba(128, 128, 128, 0.288);
+                background-color: rgba(128, 128, 128, 0.288);
+              "
+            />
+            <br />
+            <section class="comment">
+              <p style="font-size: 12px">
+                © 2021 - 2023 Eureka Development <br />&emsp;&emsp;&emsp;
+                Design: <a style="color: #08f"><b>Eureka Team</b></a>
+              </p>
+            </section>
+          </section>
+        </section>
+      </main>
+      <div class="overlay" id="dialog-container">
+        <div class="popup" style="margin-top: -1%">
+          <img
+            class="ek"
+            src="./img/eureka/logo.svg"
+            alt="ek"
+            style="
+              width: 128px;
+              height: 128px;
+              margin-left: auto;
+              margin-top: clamp(220px, 50%, 220px);
+            "
+          />
+          <div class="modal-text">
+            <h3 style="font-size: 28px">Select your Android Version</h3>
+            <br />
+            <p style="font-size: 12px">
+              you can choose between Android 11, 12.1 and 13 actually
+            </p>
+          </div>
+          <div class="container-overlay">
+            <div class="box-overlay">
+              <a href="rom11.html">
+                <button class="dialog-btn-modal btn-primary" id="confirm">
+                  Android 11 (R)
+                </button>
+              </a>
+            </div>
+            <div class="box-overlay">
+              <a href="rom12.html">
+                <button class="dialog-btn-modal btn-primary" id="confirm">
+                  Android 12.1 (S)
+                </button>
+              </a>
+            </div>
+            <div class="box-overlay">
+              <a href="rom13.html">
+                <button class="dialog-btn-modal btn-primary" id="confirm">
+                  Android 13 (T)
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay-rom" id="dialog-container-dload">
+        <div class="popup" style="margin-top: -1%">
+          <img
+            class="ek"
+            src="./img/eureka/logo.svg"
+            alt="ek"
+            style="
+              width: 128px;
+              height: 128px;
+              margin-left: auto;
+              margin-top: clamp(220px, 50%, 220px);
+            "
+          />
+          <div class="modal-text">
+            <h3 style="font-size: 28px">Downloads</h3>
+            <br />
+            <p style="font-size: 12px">
+              here u can select what u want to Download like GAPPS or e.g.
+              Magisk
+            </p>
+          </div>
+          <div class="container-overlay">
+            <div class="box-overlay">
+              <a href="gapps.html">
+                <button
+                  class="dialog-btn-modal btn-primary"
+                  id="confirm"
+                  style="width: 160px; margin-right: 40px"
+                >
+                  Google Apps (GAPPS)
+                </button>
+              </a>
+            </div>
+            <div class="box-overlay">
+              <a href="download.html">
+                <button
+                  class="dialog-btn-modal btn-primary"
+                  id="confirm"
+                  style="width: 160px; margin-left: 40px"
+                >
+                  Continue to another Downloads
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script type="module" src="./js/main.js"></script>
+  <script type="text/javascript">
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

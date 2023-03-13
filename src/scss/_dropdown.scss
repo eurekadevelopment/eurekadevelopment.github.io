@@ -1,0 +1,496 @@
+.modal-window {
+  position: fixed;
+  background-color: rgba(238, 0, 0, 0.719);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  backdrop-filter: blur(6px);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+
+  &:target {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    pointer-events: auto;
+  }
+
+  & > div {
+    width: clamp(360px, 10vw, 200px);
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: rgb(0, 0, 0);
+    border: 1px solid #08f;
+  }
+
+  header {
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+  }
+}
+
+.modal-window1 {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.719);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.1s;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  backdrop-filter: blur(6px);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+
+  &:target {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    pointer-events: auto;
+  }
+
+  & > div {
+    width: clamp(360px, 10vw, 200px);
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: rgb(0, 0, 0);
+    border: 1px solid #08f;
+    height: 335px;
+    background: rgba(60, 60, 61, 0.048);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid #08f;
+  }
+
+  header {
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+  }
+}
+
+.modal-window2 {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.719);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.1s;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  backdrop-filter: blur(6px);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+
+  &:target {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    pointer-events: auto;
+  }
+
+  & > div {
+    width: clamp(360px, 10vw, 200px);
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: rgb(0, 0, 0);
+    border: 1px solid #08f;
+    height: 335px;
+    background: rgba(60, 60, 61, 0.048);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid #08f;
+  }
+
+  header {
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+  }
+}
+
+.modal-window3 {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.719);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.1s;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  backdrop-filter: blur(6px);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+
+  &:target {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    pointer-events: auto;
+  }
+
+  & > div {
+    width: clamp(360px, 10vw, 200px);
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: rgb(0, 0, 0);
+    border: 1px solid #08f;
+    height: 335px;
+    background: rgba(60, 60, 61, 0.048);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid #08f;
+  }
+
+  header {
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+  }
+}
+
+.modal-close {
+  float: right;
+  margin-top: -20px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+  background: #ff000000;
+  font-size: 31px;
+  font-weight: bold;
+  line-height: 0px;
+  padding: 11px 3px;
+
+  &:hover {
+    color: #08f;
+  }
+}
+
+.modal-window4 {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.719);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.1s;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  backdrop-filter: blur(6px);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+
+  &:target {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    pointer-events: auto;
+  }
+
+  & > div {
+    width: clamp(360px, 10vw, 200px);
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    border: 1px solid #08f;
+    height: 435px;
+    background: rgba(60, 60, 61, 0.048);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid #08f;
+  }
+
+  header {
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+  }
+}
+
+.modal-window5 {
+  position: fixed;
+  background-color: transparent;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.1s;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  backdrop-filter: blur(6px);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+
+  &:target {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    pointer-events: auto;
+  }
+
+  & > div {
+    width: clamp(360px, 10vw, 200px);
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: rgb(0, 0, 0);
+    border: 1px solid #08f;
+    height: 435px;
+    background: rgba(60, 60, 61, 0.048);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid #08f;
+  }
+
+  header {
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  max-width: 150px;
+  display: block;
+}
+
+.container2 {
+  position: relative;
+  left: 35%;
+  top: -1.35%;
+  transform: translateX(-50%);
+
+  .btn1 {
+    color: #fff;
+    border: 1px solid #08f;
+    display: inline-block;
+    padding: 16px;
+    padding-right: 27px;
+    padding-left: 27px;
+    border-radius: 6px;
+    cursor: pointer;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    margin-left: 15%;
+    margin-top: 17px;
+    margin-bottom: 30px;
+    height: 50px;
+    .mo {
+      position: relative;
+      overflow: hidden;
+      width: 0px;
+      height: 0px;
+      text-align: center;
+      display: inline-block;
+      opacity: 0;
+      color: white;
+    }
+
+    &:before {
+      width: 0%;
+      position: absolute;
+      left: 0;
+      bottom: 3px;
+      height: 5px;
+      background-color: #08f;
+      content: "";
+    }
+
+    &:hover {
+      background-color: rgb(0, 136, 255);
+      color: white;
+      font-size: 14px;
+    }
+  }
+}
+
+.btn1 {
+  color: #fff;
+  border: 1px solid #08f;
+  display: inline-block;
+  padding: 16px;
+  padding-right: 27px;
+  padding-left: 27px;
+  border-radius: 6px;
+  cursor: pointer;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 67%;
+  margin-left: 18%;
+  margin-bottom: 20px;
+  margin-top: 18px;
+  background: rgba(60, 60, 61, 0.048);
+  border-radius: 6px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid #08f;
+
+  .mo {
+    position: relative;
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
+    text-align: center;
+    display: inline-block;
+    opacity: 0;
+    color: white;
+  }
+
+  &:before {
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    height: 5px;
+    background-color: #08f;
+    content: "";
+  }
+
+  &:hover {
+    background-color: rgb(0, 136, 255);
+    color: white;
+    font-size: 14px;
+  }
+}
