@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d72bd4ed55.js"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script async src="https://arc.io/widget.min.js#3LCgJWKk"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="icon" type="image/svg+xml" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD5+fn/+fj4//n4+P/5+Pj/+fj4//n4+P/5+Pj/+fj4//n4+P/5+fn/+fn5Ovn5+an5+Pj/+fj4//n4+P/5+fm59+bh/+12E//tdhP/7XYT/+12E//tdhP/7XYT/+12E//xsZn/+fn5pvn5+Tn11cv/7XYT/+12E//00cX9+fn5LPfm4f/tdhP/7XYT/+12E//tdhP/7XYT/+12E//ufzr/+O7r9vn5+R759fTH745d/+12E//vmHH/+fj3mgICAgD35uH/7XYT/+12E//11cr/9uLc//bi3P/24tz/9+nk//n5+YH5+flX9Mq8/+12E//tdhP/9t/X8/n5+RcAAAAA9+bh/+12E//tdhP/9+bh2vn5+UH5+fk/+fn5PPn5+Tn5+fkR+PHv3e6CQv/tdhP/8ayR//n5+X0AAAAAAAAAAPfm4f/tdhP/7XYT//fl39L5+fke+fn5Hvn5+R75+fkG+fn5cvK8qP/tdhP/7Xso//fq5eX5+fkKAAAAAAAAAAD35uH/7XYT/+12E//24Nj/+PHt//jy7v/5+fnf+fn5Gvfq5u/teSP/7XYT//K+rP/5+flhAAAAAAAAAAAAAAAA9+bh/+12E//tdhP/7XYT/+12E//zwrH/+fn5XPn5+ZHxrpP/7XYT/+6FS//48vDQ+fn5AQAAAAAAAAAAAAAAAPfm4f/tdhP/7XYT/+12E//tdhP/8ryp//n5+Vv5+fmR8rij/+12E//ug0X/+PLw2/n5+QUAAAAAAAAAAAAAAAD35uH/7XYT/+12E//12dD/9+bi/ffo4/35+fnc+fn5Gfjv7O/ufzr/7XYT//PArv/5+flpAAAAAAAAAAAAAAAA9+bh/+12E//tdhP/9+XfzAYGBgAGBgYABgYGAAICAgD5+fly88S0/+12E//tfjb/+O7q6Pn5+QsAAAAAAAAAAPfm4f/tdhP/7XYT//fl39b5+fkv+fn5L/n5+S/5+fku+fn5Dfj0893uiFH/7XYT//K4ov/5+fl7AAAAAAAAAAD35uH/7XYT/+12E//11s3/9+Xg//fl4P/35eD/9+nl//n5+Xb5+flX9NHF/+12E//tdxr/9+nk8fn5+RIAAAAA9+bh/+12E//tdhP/7XYT/+12E//tdhP/7XYT/+14HP/36eTz+fn5Gfn498fvlm3/7XYT//Gtk//5+fmOAAAAAPfm4v/tdxX/7XcV/+13Ff/tdxX/7XcV/+13Ff/tdxX/8aqO//n5+aH5+fk59tzT/+13Ff/tdxX/9uPd9/n5+R75+fn/+fn5//n5+f/5+fn/+fn5//n5+f/5+fn/+fn5//n5+f/5+fn/+fn5OPn5+an5+fn/+fn5//n5+f/5+fmeAAAAAAAAAAAAAQAAAAEAAAADAAAAAwAAAAcAAAAHAAAABwAAAAcAAA8DAAAAAwAAAAEAAAABAAAAAAAAAAAAAA==" />
+    
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Eureka Development</title>
+    <script type="module" crossorigin src="/assets/style.7f2dd081.js"></script>
+    <script type="module" crossorigin src="/assets/js/colorpalette.js"></script>
+    <script type="module" crossorigin src="/assets/js/jquery.js"></script>
+    <script type="module" crossorigin src="/assets/js/main.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+
+  <body>
+    <div class="splash">
+      <img class="fade-in center" src="/assets/images/eklogo.gif" alt="eklogo" />
+    </div>
+    <nav class="sidebar close nav">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <a href="/"><img src="/assets/images/logo.svg" alt="" /></a>
+          </span>
+          <div class="text logo-text">
+            <span class="profession"><b>Welcome!</b></span>
+          </div>
+        </div>
+        <i class="bx bx-menu toggle"></i>
+      </header>
+      <div class="menu-bar" style="overflow-x: hidden; overflow-y: hidden">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="/">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">Home</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a id="rom-dialog">
+                <i class="bx bx-microchip icon"></i>
+                <span class="text nav-text">Custom ROM's</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="recovery.html">
+                <i class="bx bx-refresh icon"></i>
+                <span class="text nav-text">Custom Recovery</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="kernel.html">
+                <i class="bx bx-chip icon"></i>
+                <span class="text nav-text">Eureka Kernel</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="statistics.html">
+                <i class="bx bx-stats icon"></i>
+                <span class="text nav-text">Statistics</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="guide.html">
+                <i class="bx bx-book icon" id="active-page"></i>
+                <span class="text nav-text">Guides</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a id="dload-dialog">
+                <i class="bx bx-download icon"></i>
+                <span class="text nav-text">Downloads</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="support.html">
+                <i class="bx bx-heart icon"></i>
+                <span class="text nav-text">Support</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="team.html">
+                <i class="bx bxs-face icon"></i>
+                <span class="text nav-text">Eureka Team</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="about.html">
+                <i class="bx bx-info-circle icon"></i>
+                <span class="text nav-text">About Us</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a onclick="openColorpalette();" style="cursor: pointer">
+                <img
+                  class="color"
+                  id="animation"
+                  onclick="topFunction()"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAFHGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIyLTEwLTIzVDEyOjU4OjQ0KzAyOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMi0xMC0yM1QxMjo1OToyNCswMjowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMi0xMC0yM1QxMjo1OToyNCswMjowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2MThkN2EzNS01NTJk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"
+                /><i class="icon"></i>
+
+                <span class="text nav-text">Switch Web-Color</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="text logo-text"
+          style="margin-left: 20px; margin-top: 5px"
+        ></div>
+      </div>
+    </nav>
+    <section class="home">
+      <div id="colorpalette" class="overlay-colorpalette animate-in">
+        <ul class="ul">
+          <a
+            href="javascript:void(0)"
+            class="closebtn"
+            onclick="closeColorpalette()"
+            >&times;</a
+          >
+          <li class="li" data-color="color1"></li>
+          <li class="li" data-color="color2"></li>
+          <li class="li" data-color="color3"></li>
+          <li class="li" data-color="color4"></li>
+          <li class="li" data-color="color5"></li>
+          <li class="li" data-color="color6"></li>
+          <li class="li" data-color="color7"></li>
+          <li class="li" data-color="color8"></li>
+          <li class="li" data-color="color9"></li>
+          <li class="li" data-color="color10"></li>
+          <li class="li" data-color="color11"></li>
+          <li class="li" data-color="color12"></li>
+        </ul>
+        <p class="color-text">Switch Web-Color</p>
+      </div>
+      <section
+        class="author"
+        style="justify-content: center; align-items: center; display: flex"
+      >
+        <main class="card1">
+          <img
+            class="ek"
+            src="/assets/images/logo.svg"
+            style="width: 128px; height: 128px; margin-bottom: 5px"
+          />
+          <h2 class="title">Guides</h2>
+          <hr
+            style="
+              margin: 0 auto;
+              width: 76%;
+              height: 1px;
+              border-width: 0;
+              color: rgba(128, 128, 128, 0.288);
+              background-color: rgba(128, 128, 128, 0.288);
+            "
+          />
+          <div class="acc-container">
+            <button class="acc-btn">How to Unlock Bootloader?</button>
+            <div class="acc-content">
+              <div style="margin: 5px; color: #fff">
+                <ul>
+                  <li>
+                    <p>Go into Settings > About Phone > Softwareinformation.</p>
+                  </li>
+                  <li>
+                    <p>Tab 10-15x on Buildnumber to unlock Dev. Options.</p>
+                  </li>
+                  <li>
+                    <p>Enable OEM Unlock.</p>
+                  </li>
+                  <li>
+                    <p>Turn off your Phone.</p>
+                  </li>
+                  <li>
+                    <p>
+                      Hold Vol+ and Vol- together and plug your USB Cable in.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Now a Blue Screen appears, follow the Screen instructions
+                      to UNLOCK (Attention: Your Knox Status will 0x1 triggered
+                      and your Warranty is now void.).
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      After u following everything right, it will reboot. It
+                      will Format your DATA!
+                    </p>
+                  </li>
+                  <li>
+                    <p>After u booted to System, u can Setup everything!</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="acc-btn">How to flash Custom Recovery?</button>
+            <div class="acc-content">
+              <div style="margin: 5px; color: #fff">
+                <ul>
+                  <li>
+                    <p>
+                      Download: ODIN or Heimdall, USB Drivers, TWRP.tar, VBMeta,
+                      DM-Verity to your PC.
+                    </p>
+                  </li>
+                  <li>
+                    <p>Extract ODIN or Heimdall, Install USB Drivers.</p>
+                  </li>
+                  <li>
+                    <p>Turn off your Phone.</p>
+                  </li>
+                  <li>
+                    <p>
+                      Hold Vol+ and Vol- together and plug your USB Cable in.
+                    </p>
+                  </li>
+                  <li>
+                    <p>Now a Blue Screen appears, Press Vol+ button.</p>
+                  </li>
+                  <li>
+                    <p>
+                      Open ODIN or Heimdall. Now u can see a blue COM Port
+                      detected. If not, reboot your Computer and force Restart
+                      your phone by hold vol+ and Power button until it reboots.
+                      Repeat step 3/4.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Click on the AP Slot and search your TWRP.tar and put in
+                      CP your VBMeta file, goto Options Tab, uncheck factory
+                      reset.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Click Start. If u see a green sign with "PASSED" and the
+                      Phone reboots, is everything fine.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Boot into TWRP by Power off your Phone and if u turn it
+                      on, hold Power Key + vol- until it boots into TWRP. After
+                      that, flash DM-Verity to Keep the TWRP on Phone.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="acc-btn">How to ROOT my Device?</button>
+            <div class="acc-content">
+              <div style="margin: 5px; color: #fff">
+                <ul>
+                  <li>
+                    <p>Download: Magisk.zip and put it on your SD-Card.</p>
+                  </li>
+                  <li>
+                    <p>
+                      Reboot your Phone, until the Phone Screen goes black, hold
+                      Power Key + vol- key to Enter TWRP.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Click on Install, select the Magisk.zip, swipe to Install.
+                    </p>
+                  </li>
+                  <li>
+                    <p>Reboot your Phone.</p>
+                  </li>
+                  <li>
+                    <p>
+                      After u booted, Open Magisk APP and Wait until it
+                      finished.
+                    </p>
+                  </li>
+                  <li>
+                    <p>If everything fine, u are ROOTED now.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="acc-btn">
+              How to flash a ROM if you coming from Stock?
+            </button>
+            <div class="acc-content">
+              <div style="margin: 5px; color: #fff">
+                <ul>
+                  <li>
+                    <p>
+                      Follow: How to Unlock Bootloader? and How to flash Custom
+                      Recovery?
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Download a ROM (optional Google Apps too) and put in on
+                      your Phone (SD-Card or Internal)
+                    </p>
+                  </li>
+                  <li>
+                    <p>Boot into Recovery</p>
+                  </li>
+                  <li>
+                    <p>Wipe DATA,CACHE,SYSTEM</p>
+                  </li>
+                  <li>
+                    <p>Go to Install > Select ROM Zip and Swipe for Flash</p>
+                  </li>
+                  <li>
+                    <p>Optional: Flash Magisk / Google Apps</p>
+                  </li>
+                  <li>
+                    <p>After Flash is completed, reboot!</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="acc-btn">
+              How to Flash a ROM if you coming from Custom ROM?
+            </button>
+            <div class="acc-content">
+              <div style="margin: 5px; color: #fff">
+                <ul>
+                  <li>
+                    <p>
+                      Download a ROM (optional Google Apps too) and put in on
+                      your Phone (SD-Card or Internal)
+                    </p>
+                  </li>
+                  <li>
+                    <p>Boot into Recovery</p>
+                  </li>
+                  <li>
+                    <p>Wipe DATA,CACHE,SYSTEM</p>
+                  </li>
+                  <li>
+                    <p>Go to Install > Select ROM Zip and Swipe for Flash</p>
+                  </li>
+                  <li>
+                    <p>Optional: Flash Magisk / Google Apps</p>
+                  </li>
+                  <li>
+                    <p>After Flash is completed, reboot!</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="acc-btn">How to Report a BUG?</button>
+            <div class="acc-content">
+              <div style="margin: 5px; color: #fff">
+                <ul>
+                  <li>
+                    <p>
+                      First go into Eureka Support or Device Specific group and
+                      ask if someone else have the same issue. If no one has
+                      this Issue, Download from PlayStore or APKPure Logcat App.
+                      (Magisk needed)[PlayStore][APKPure]
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Open that App and press the Record button. (Accept ROOT
+                      Permissions)
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Reproduce the issue (like force close app or something
+                      else)
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      After that, press on Stop and send us your Log via Share!
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="acc-btn">BSOD - Black Screen Of Death !</button>
+            <div class="acc-content">
+              <div style="margin: 5px; color: #fff">
+                <p style="color: white; font-size: 17px">
+                  - You can't go into download or recovery mode? Well then, you
+                  are stuck in BSOD. Note: your phone is turned on but the
+                  screen is off (black) Bellow is how to fix.
+                </p>
+                <br />
+                <ul>
+                  <li>
+                    <p>
+                      Connect a usb cable to your pc but don't connect it to
+                      your phone yet!
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Force restart your Phone by holding all buttons. As soon
+                      as you press Buttons, start counting.
+                    </p>
+                  </li>
+                  <li>
+                    <p>The Phone will vibrate about on the 12 secs</p>
+                  </li>
+                  <li>
+                    <p>
+                      Now, when your screen is black, hold all buttons and count
+                      again. When you reach 11 secs, quickly release all buttons
+                      and hold only power + vol up button. Also connect the usb
+                      cable to the phone.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Your Phone will then boot into Download mode where u can
+                      Flash stock Firmware again. P.S: It's hard to get the
+                      right timing. So you have to keep trying till you are able
+                      to get it else you have to wait your battery to be 0% so
+                      that it turns off automatically..
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="acc-btn">Bootloop?</button>
+            <div class="acc-content">
+              <div style="margin: 5px; color: #fff">
+                <p style="color: white; font-size: 17px">
+                  - ROM Bootlooping at first Boot (or generally)?
+                </p>
+                <br />
+                <ul>
+                  <li>
+                    <p>
+                      Force restarting your Phone by Hold vol- and Power for
+                      about 12 Seconds.
+                    </p>
+                  </li>
+                  <li>
+                    <p>Boot via Combination into Recovery.</p>
+                  </li>
+                  <li>
+                    <p>
+                      Go into Terminal and type: 'touch data/debug/logcat' and
+                      'touch data/debug/kmsg'.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      After that, reboot your Phone and wait one minute in the
+                      Bootloop and force restarting your Phone by Hold vol- and
+                      power about 12 Seconds.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Boot again via Combination into Recovery and go into File
+                      Manager and copy both files (Kmsg,Logcat) from
+                      data/debug/logs to your SD-Card
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Send us your Logs. (if u cannot wait, flash another ROM in
+                      this Time!)
+                    </p>
+                  </li>
+                  <br />
+                  <p style="color: white; font-size: 17px">
+                    - Bootloop after Magisk Module?
+                  </p>
+                  <br />
+                  <li>
+                    <p>
+                      Force restarting your Phone by Hold vol- and power about
+                      12 Seconds and boot into your Recovery by holding Key
+                      Combination.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Mount System, Go into File Manager and then into
+                      data/adb/modules and Delete the Folder which causes
+                      Bootloop.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </main>
+      </section>
+      <main>
+        <section class="content">
+          <section class="article-wrapper" style="margin-top: -160px">
+            <article class="article"></article>
+            <hr
+              style="
+                height: 1px;
+                border-width: 0;
+                color: rgba(128, 128, 128, 0.288);
+                background-color: rgba(128, 128, 128, 0.288);
+              "
+            />
+            <br />
+            <section class="comment">
+              <p style="font-size: 12px">
+                © 2021 - 2023 Eureka Development <br />&emsp;&emsp;&emsp;
+                Design: <a style="color: #08f"><b>Eureka Team</b></a>
+              </p>
+            </section>
+          </section>
+        </section>
+        <div class="overlay" id="dialog-container">
+          <div class="popup" style="margin-top: -1%">
+            <img
+              class="ek"
+              src="/assets/images/logo.svg"
+              alt="ek"
+              style="
+                width: 128px;
+                height: 128px;
+                margin-left: auto;
+                margin-top: clamp(220px, 50%, 220px);
+              "
+            />
+            <div class="modal-text">
+              <h3 style="font-size: 28px">Select your Android Version</h3>
+              <br />
+              <p style="font-size: 12px">
+                you can choose between Android 11, 12.1 and 13 actually
+              </p>
+            </div>
+            <div class="container-overlay">
+              <div class="box-overlay">
+                <a href="rom11.html">
+                  <button class="dialog-btn-modal btn-primary" id="confirm">
+                    Android 11 (R)
+                  </button>
+                </a>
+              </div>
+              <div class="box-overlay">
+                <a href="rom12.html">
+                  <button class="dialog-btn-modal btn-primary" id="confirm">
+                    Android 12.1 (S)
+                  </button>
+                </a>
+              </div>
+              <div class="box-overlay">
+                <a href="rom13.html">
+                  <button class="dialog-btn-modal btn-primary" id="confirm">
+                    Android 13 (T)
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay-rom" id="dialog-container-dload">
+          <div class="popup" style="margin-top: -1%">
+            <img
+              class="ek"
+              src="/assets/images/logo.svg"
+              alt="ek"
+              style="
+                width: 128px;
+                height: 128px;
+                margin-left: auto;
+                margin-top: clamp(220px, 50%, 220px);
+              "
+            />
+            <div class="modal-text">
+              <h3 style="font-size: 28px">Downloads</h3>
+              <br />
+              <p style="font-size: 12px">
+                here u can select what u want to Download like GAPPS or e.g.
+                Magisk
+              </p>
+            </div>
+            <div class="container-overlay">
+              <div class="box-overlay">
+                <a href="gapps.html">
+                  <button
+                    class="dialog-btn-modal btn-primary"
+                    id="confirm"
+                    style="width: 160px; margin-right: 40px"
+                  >
+                    Google Apps (GAPPS)
+                  </button>
+                </a>
+              </div>
+              <div class="box-overlay">
+                <a href="download.html">
+                  <button
+                    class="dialog-btn-modal btn-primary"
+                    id="confirm"
+                    style="width: 160px; margin-left: 40px"
+                  >
+                    Continue to another Downloads
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <script>
+      const btns = document.querySelectorAll(".acc-btn");
+
+      // fn
+      function accordion() {
+        // this = the btn | icon & bg changed
+        this.classList.toggle("is-open");
+
+        // the acc-content
+        const content = this.nextElementSibling;
+
+        // IF open, close | else open
+        if (content.style.maxHeight) content.style.maxHeight = null;
+        else content.style.maxHeight = content.scrollHeight + "px";
+      }
+
+      // event
+      btns.forEach((el) => el.addEventListener("click", accordion));
+    </script>
+    <script type="text/javascript">
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>
+
