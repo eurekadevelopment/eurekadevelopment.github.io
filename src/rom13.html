@@ -138,6 +138,10 @@
           "RiceDroid",
           "LineageOS",
           "BananaDroid",
+          "exTHmUI",
+          "XTENDED",
+          "TequilaOS",
+          "CalyxOS",
         ];
         var rom_list = [
           "arrow",
@@ -147,8 +151,12 @@
           "rice",
           "lineage",
           "banana",
+          "exthmui",
+          "xtended",
+          "tequila",
+          "calyx",
         ];
-        //total: 7 ROM's
+        //total: 11 ROM's at +20ROM's include Search!
         var romstate = ["Unofficial", "Official"];
 
         const sourceforge =
@@ -212,7 +220,7 @@
           <div class="gototop"></div>
           <div>
             <p style="color: white; font-size: 18px; font-weight: bold">
-              Total ROM's: 7
+              Total ROM's: 11
             </p>
           </div>
         </section>
@@ -1191,7 +1199,6 @@
                       alt=""
                     />
                   </div>
-                  
                 </div>
               </div>
             </div>
@@ -1360,7 +1367,667 @@
                 </div>
               </div>
             </div>
+            </div>
+          <div
+          class="roms tooltip fade-bottom"
+          id="mobile-rom"
+          data-aos="zoom-in-up"
+        >
+          <span class="tooltiptext">
+            <script>
+              docWrite(roms13[7] + space + romstate[0]);
+            </script>
+          </span>
+          <p class="roms_content">
+            <img
+              class="rom_sizer modalOpenImg"
+              id="modal7"
+              src="https://avatars.githubusercontent.com/u/115277224?s=200&v=4"
+              onclick="openModal('modal7');currentSlide(1)"
+            />
+          </p>
+          <div class="roms_content-font">
+            <p class="roms_content" id="rom-font-padding">
+              Another ROM based on AOSP, a 3-party Android OS, under the condition of 
+              keeping the original style appropriate to add some easy to use domestic features.
+            </p>
+            <a href="javascript:void();" class="expand-btn"></a>
           </div>
+          <p class="roms_content">
+            <button
+              class="image-dload"
+              id="button_size"
+              style="width: 110px"
+              onclick="openDownloadWindow('downloadWindow7');"
+            >
+              DOWNLOAD
+            </button>
+          </p>
+          <p class="roms_content">
+            <button
+              class="image-github"
+              id="button_size"
+              onclick="window.open(github + roms13[7], newTab)"
+            >
+              GitHub</button
+            ><button class="image-web" id="button_size">
+              <a href="#" onclick="p404();" target="_blank">Website</a>
+            </button>
+          </p>
+          <p class="spacing" id="banana_T_stats">Downloaded: N/A times</p>
+        </div>
+        <div id="modal7" class="modal fade-modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <div class="mySlides7 fade" id="mySlides">
+              <div class="numbertext">1 / 6</div>
+              <img
+                id="radi"
+                src="./img/rom/screenshots/rom13/exthmui/home.webp"
+                style="width: 25%; margin-left: 37.5%"
+              />
+            </div>
+            <div class="mySlides7 fade" id="mySlides">
+              <div class="numbertext">2 / 6</div>
+              <img
+                id="radi"
+                src="./img/rom/screenshots/rom13/exthmui/drawer.webp"
+                style="width: 25%; margin-left: 37.5%"
+              />
+            </div>
+            <div class="mySlides7 fade" id="mySlides">
+              <div class="numbertext">3 / 6</div>
+              <img
+                id="radi"
+                src="./img/rom/screenshots/rom13/exthmui/quicksettings.webp"
+                style="width: 25%; margin-left: 37.5%"
+              />
+            </div>
+            <div class="mySlides7 fade" id="mySlides">
+              <div class="numbertext">4 / 6</div>
+              <img
+                id="radi"
+                src="./img/rom/screenshots/rom13/exthmui/settings.webp"
+                style="width: 25%; margin-left: 37.5%"
+              />
+            </div>
+            <div class="mySlides7 fade" id="mySlides">
+              <div class="numbertext">5 / 6</div>
+              <img
+                id="radi"
+                src="./img/rom/screenshots/rom13/exthmui/extras.webp"
+                style="width: 25%; margin-left: 37.5%"
+              />
+            </div>
+            <div class="mySlides7 fade" id="mySlides">
+              <div class="numbertext">6 / 6</div>
+              <img
+                id="radi"
+                src="./img/rom/screenshots/rom13/exthmui/about.webp"
+                style="width: 25%; margin-left: 37.5%"
+              />
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 7)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 7)">&#10095;</a>
+            <div class="row">
+              <div class="column">
+                <img
+                  class="pic cursor dot7"
+                  id="radi"
+                  src="./img/rom/screenshots/rom13/exthmui/home.webp"
+                  style="width: 100%"
+                  onclick="currentSlide(1, 7)"
+                  alt=""
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="pic cursor dot7"
+                  id="radi"
+                  src="./img/rom/screenshots/rom13/exthmui/drawer.webp"
+                  style="width: 100%"
+                  onclick="currentSlide(2, 7)"
+                  alt=""
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="pic cursor dot7"
+                  id="radi"
+                  src="./img/rom/screenshots/rom13/exthmui/quicksettings.webp"
+                  style="width: 100%"
+                  onclick="currentSlide(3, 7)"
+                  alt=""
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="pic cursor dot7"
+                  id="radi"
+                  src="./img/rom/screenshots/rom13/exthmui/settings.webp"
+                  style="width: 100%"
+                  onclick="currentSlide(4, 7)"
+                  alt=""
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="pic cursor dot7"
+                  id="radi"
+                  src="./img/rom/screenshots/rom13/exthmui/extras.webp"
+                  style="width: 100%"
+                  onclick="currentSlide(5, 7)"
+                  alt=""
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="pic cursor dot7"
+                  id="radi"
+                  src="./img/rom/screenshots/rom13/exthmui/about.webp"
+                  style="width: 100%"
+                  onclick="currentSlide(6, 7)"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          </div>
+          <div
+          class="roms tooltip fade-bottom"
+          id="mobile-rom"
+          data-aos="zoom-in-up"
+        >
+          <span class="tooltiptext">
+            <script>
+              docWrite(roms13[8] + space + romstate[0]);
+            </script>
+          </span>
+          <p class="roms_content">
+            <img
+              class="rom_sizer modalOpenImg"
+              id="modal8"
+              src="https://avatars.githubusercontent.com/u/35887036?s=200&v=4"
+              onclick="openModal('modal8');currentSlide(1)"
+            />
+          </p>
+          <div class="roms_content-font">
+            <p class="roms_content" id="rom-font-padding">
+              XTENDED is an AOSP based ROM which was before msm-xtended, we offer smooth fluidity,performance and a lot of customization &
+              useful features.
+            </p>
+            <a href="javascript:void();" class="expand-btn"></a>
+          </div>
+          <p class="roms_content">
+            <button
+              class="image-dload"
+              id="button_size"
+              style="width: 110px"
+              onclick="openDownloadWindow('downloadWindow8');"
+            >
+              DOWNLOAD
+            </button>
+          </p>
+          <p class="roms_content">
+            <button
+              class="image-github"
+              id="button_size"
+              onclick="window.open('https://github.com/Project-Xtended', newTab);"
+            >
+              GitHub</button
+            ><button class="image-web" id="button_size">
+              <a href="https://project-xtended.org" target="_blank">Website</a>
+            </button>
+          </p>
+          <p class="spacing" id="banana_T_stats">Downloaded: N/A times</p>
+        </div>
+        <div id="modal8" class="modal fade-modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <div class="mySlides8 fade" id="mySlides">
+              <div class="numbertext">1 / 6</div>
+              <img
+                id="radi"
+                src="./img/rom/screenshots/rom13/xtended/home.webp"
+                style="width: 25%; margin-left: 37.5%"
+              />
+            </div>
+            <div class="mySlides8 fade" id="mySlides">
+              <div class="numbertext">2 / 6</div>
+              <img
+                id="radi"
+                src="./img/rom/screenshots/rom13/xtended/drawer.webp"
+                style="width: 25%; margin-left: 37.5%"
+              />
+            </div>
+            <div class="mySlides8 fade" id="mySlides">
+              <div class="numbertext">3 / 6</div>
+              <img
+                id="radi"
+                src="./img/rom/screenshots/rom13/xtended/quicksettings.webp"
+                style="width: 25%; margin-left: 37.5%"
+              />
+            </div>
+            <div class="mySlides8 fade" id="mySlides">
+              <div class="numbertext">4 / 6</div>
+              <img
+                id="radi"
+                src="./img/rom/screenshots/rom13/xtended/settings.webp"
+                style="width: 25%; margin-left: 37.5%"
+              />
+            </div>
+            <div class="mySlides8 fade" id="mySlides">
+              <div class="numbertext">5 / 6</div>
+              <img
+                id="radi"
+                src="./img/rom/screenshots/rom13/xtended/extras.webp"
+                style="width: 25%; margin-left: 37.5%"
+              />
+            </div>
+            <div class="mySlides8 fade" id="mySlides">
+              <div class="numbertext">6 / 6</div>
+              <img
+                id="radi"
+                src="./img/rom/screenshots/rom13/xtended/about.webp"
+                style="width: 25%; margin-left: 37.5%"
+              />
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 8)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 8)">&#10095;</a>
+            <div class="row">
+              <div class="column">
+                <img
+                  class="pic cursor dot8"
+                  id="radi"
+                  src="./img/rom/screenshots/rom13/xtended/home.webp"
+                  style="width: 100%"
+                  onclick="currentSlide(1, 8)"
+                  alt=""
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="pic cursor dot8"
+                  id="radi"
+                  src="./img/rom/screenshots/rom13/xtended/drawer.webp"
+                  style="width: 100%"
+                  onclick="currentSlide(2, 8)"
+                  alt=""
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="pic cursor dot8"
+                  id="radi"
+                  src="./img/rom/screenshots/rom13/xtended/quicksettings.webp"
+                  style="width: 100%"
+                  onclick="currentSlide(3, 8)"
+                  alt=""
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="pic cursor dot8"
+                  id="radi"
+                  src="./img/rom/screenshots/rom13/xtended/settings.webp"
+                  style="width: 100%"
+                  onclick="currentSlide(4, 8)"
+                  alt=""
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="pic cursor dot8"
+                  id="radi"
+                  src="./img/rom/screenshots/rom13/xtended/extras.webp"
+                  style="width: 100%"
+                  onclick="currentSlide(5, 8)"
+                  alt=""
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="pic cursor dot8"
+                  id="radi"
+                  src="./img/rom/screenshots/rom13/xtended/about.webp"
+                  style="width: 100%"
+                  onclick="currentSlide(6, 8)"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          </div>
+          <div
+          class="roms tooltip fade-bottom"
+          id="mobile-rom"
+          data-aos="zoom-in-up"
+        >
+          <span class="tooltiptext">
+            <script>
+              docWrite(roms13[9] + space + romstate[0]);
+            </script>
+          </span>
+          <p class="roms_content">
+            <img
+              class="rom_sizer modalOpenImg"
+              id="modal9"
+              src="https://avatars.githubusercontent.com/u/105606681?s=200&v=4"
+              onclick="openModal('modal9');currentSlide(1)"
+            />
+          </p>
+          <div class="roms_content-font">
+            <p class="roms_content" id="rom-font-padding">
+              TequilaOS is just an another OS based on AOSP. 
+              Even though we focus on stability and performance, we allow users to customize our System...
+            </p>
+            <a href="javascript:void();" class="expand-btn"></a>
+          </div>
+          <p class="roms_content">
+            <button
+              class="image-dload"
+              id="button_size"
+              style="width: 110px"
+              onclick="openDownloadWindow('downloadWindow9');"
+            >
+              DOWNLOAD
+            </button>
+          </p>
+          <p class="roms_content">
+            <button
+              class="image-github"
+              id="button_size"
+              onclick="window.open(github + roms13[9], newTab)"
+            >
+              GitHub</button
+            ><button class="image-web" id="button_size">
+              <a href="https://tequilaOS.pl" target="_blank">Website</a>
+            </button>
+          </p>
+          <p class="spacing" id="banana_T_stats">Downloaded: N/A times</p>
+        </div>
+        <div id="modal9" class="modal fade-modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <div class="mySlides9 fade" id="mySlides">
+              <div class="numbertext">1 / 6</div>
+              <img
+                id="radi"
+                src="./img/rom/screenshots/rom13/tequila/home.webp"
+                style="width: 25%; margin-left: 37.5%"
+              />
+            </div>
+            <div class="mySlides9 fade" id="mySlides">
+              <div class="numbertext">2 / 6</div>
+              <img
+                id="radi"
+                src="./img/rom/screenshots/rom13/tequila/drawer.webp"
+                style="width: 25%; margin-left: 37.5%"
+              />
+            </div>
+            <div class="mySlides9 fade" id="mySlides">
+              <div class="numbertext">3 / 6</div>
+              <img
+                id="radi"
+                src="./img/rom/screenshots/rom13/tequila/quicksettings.webp"
+                style="width: 25%; margin-left: 37.5%"
+              />
+            </div>
+            <div class="mySlides9 fade" id="mySlides">
+              <div class="numbertext">4 / 6</div>
+              <img
+                id="radi"
+                src="./img/rom/screenshots/rom13/tequila/settings.webp"
+                style="width: 25%; margin-left: 37.5%"
+              />
+            </div>
+            <div class="mySlides9 fade" id="mySlides">
+              <div class="numbertext">5 / 6</div>
+              <img
+                id="radi"
+                src="./img/rom/screenshots/rom13/tequila/extras.webp"
+                style="width: 25%; margin-left: 37.5%"
+              />
+            </div>
+            <div class="mySlides9 fade" id="mySlides">
+              <div class="numbertext">6 / 6</div>
+              <img
+                id="radi"
+                src="./img/rom/screenshots/rom13/tequila/about.webp"
+                style="width: 25%; margin-left: 37.5%"
+              />
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 9)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 9)">&#10095;</a>
+            <div class="row">
+              <div class="column">
+                <img
+                  class="pic cursor dot9"
+                  id="radi"
+                  src="./img/rom/screenshots/rom13/tequila/home.webp"
+                  style="width: 100%"
+                  onclick="currentSlide(1, 9)"
+                  alt=""
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="pic cursor dot9"
+                  id="radi"
+                  src="./img/rom/screenshots/rom13/tequila/drawer.webp"
+                  style="width: 100%"
+                  onclick="currentSlide(2, 9)"
+                  alt=""
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="pic cursor dot9"
+                  id="radi"
+                  src="./img/rom/screenshots/rom13/tequila/quicksettings.webp"
+                  style="width: 100%"
+                  onclick="currentSlide(3, 9)"
+                  alt=""
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="pic cursor dot9"
+                  id="radi"
+                  src="./img/rom/screenshots/rom13/tequila/settings.webp"
+                  style="width: 100%"
+                  onclick="currentSlide(4, 9)"
+                  alt=""
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="pic cursor dot9"
+                  id="radi"
+                  src="./img/rom/screenshots/rom13/tequila/extras.webp"
+                  style="width: 100%"
+                  onclick="currentSlide(5, 9)"
+                  alt=""
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="pic cursor dot9"
+                  id="radi"
+                  src="./img/rom/screenshots/rom13/tequila/about.webp"
+                  style="width: 100%"
+                  onclick="currentSlide(6, 9)"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+        class="roms tooltip fade-bottom"
+        id="mobile-rom"
+        data-aos="zoom-in-up"
+      >
+        <span class="tooltiptext">
+          <script>
+            docWrite(roms13[10] + space + romstate[0]);
+          </script>
+        </span>
+        <p class="roms_content">
+          <img
+            class="rom_sizer modalOpenImg"
+            id="modal11"
+            src="./img/rom/repo_images/calyx.jpg"
+            onclick="openModal('modal10');currentSlide(1)"
+          />
+        </p>
+        <div class="roms_content-font">
+          <p class="roms_content" id="rom-font-padding">
+            our Phone Should Be Private Everyone needs a phone. Not everyone wants to be spied on.
+            Reclaim your privacy with CalyxOS.
+          </p>
+          <a href="javascript:void();" class="expand-btn"></a>
+        </div>
+        <p class="roms_content">
+          <button
+            class="image-dload"
+            id="button_size"
+            style="width: 110px"
+            onclick="openDownloadWindow('downloadWindow10');"
+          >
+            DOWNLOAD
+          </button>
+        </p>
+        <p class="roms_content">
+          <button
+            class="image-github"
+            id="button_size"
+            onclick="window.open(github + roms13[10], newTab)"
+          >
+            GitHub</button
+          ><button class="image-web" id="button_size">
+            <a href="https://calyxos.org/" target="_blank">Website</a>
+          </button>
+        </p>
+        <p class="spacing" id="banana_T_stats">Downloaded: N/A times</p>
+      </div>
+      <div id="modal10" class="modal fade-modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlides11 fade" id="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img
+              id="radi"
+              src="./img/rom/screenshots/rom13/calyx/home.webp"
+              style="width: 25%; margin-left: 37.5%"
+            />
+          </div>
+          <div class="mySlides10 fade" id="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img
+              id="radi"
+              src="./img/rom/screenshots/rom13/calyx/drawer.webp"
+              style="width: 25%; margin-left: 37.5%"
+            />
+          </div>
+          <div class="mySlides10 fade" id="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img
+              id="radi"
+              src="./img/rom/screenshots/rom13/calyx/quicksettings.webp"
+              style="width: 25%; margin-left: 37.5%"
+            />
+          </div>
+          <div class="mySlides10 fade" id="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img
+              id="radi"
+              src="./img/rom/screenshots/rom13/calyx/settings.webp"
+              style="width: 25%; margin-left: 37.5%"
+            />
+          </div>
+          <div class="mySlides10 fade" id="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img
+              id="radi"
+              src="./img/rom/screenshots/rom13/calyx/extras.webp"
+              style="width: 25%; margin-left: 37.5%"
+            />
+          </div>
+          <div class="mySlides10 fade" id="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img
+              id="radi"
+              src="./img/rom/screenshots/rom13/calyx/about.webp"
+              style="width: 25%; margin-left: 37.5%"
+            />
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 10)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 10)">&#10095;</a>
+          <div class="row">
+            <div class="column">
+              <img
+                class="pic cursor dot10"
+                id="radi"
+                src="./img/rom/screenshots/rom13/calyx/home.webp"
+                style="width: 100%"
+                onclick="currentSlide(1, 10)"
+                alt=""
+              />
+            </div>
+            <div class="column">
+              <img
+                class="pic cursor dot10"
+                id="radi"
+                src="./img/rom/screenshots/rom13/calyx/drawer.webp"
+                style="width: 100%"
+                onclick="currentSlide(2, 10)"
+                alt=""
+              />
+            </div>
+            <div class="column">
+              <img
+                class="pic cursor dot10"
+                id="radi"
+                src="./img/rom/screenshots/rom13/calyx/quicksettings.webp"
+                style="width: 100%"
+                onclick="currentSlide(3, 10)"
+                alt=""
+              />
+            </div>
+            <div class="column">
+              <img
+                class="pic cursor dot10"
+                id="radi"
+                src="./img/rom/screenshots/rom13/calyx/settings.webp"
+                style="width: 100%"
+                onclick="currentSlide(4, 10)"
+                alt=""
+              />
+            </div>
+            <div class="column">
+              <img
+                class="pic cursor dot10"
+                id="radi"
+                src="./img/rom/screenshots/rom13/calyx/extras.webp"
+                style="width: 100%"
+                onclick="currentSlide(5, 10)"
+                alt=""
+              />
+            </div>
+            <div class="column">
+              <img
+                class="pic cursor dot10"
+                id="radi"
+                src="./img/rom/screenshots/rom13/calyx/about.webp"
+                style="width: 100%"
+                onclick="currentSlide(6, 10)"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        </div>
           <div style="padding-left: 250px;"></div>
           </div>
           <div>
@@ -1936,6 +2603,314 @@
             </div>
           </div>
         </div>
+        <div id="downloadWindow7" class="overlay1">
+          <a
+            href="javascript:void(0)"
+            class="closebtn"
+            onclick="closeDownloadWindow()"
+            >&times;</a
+          >
+          <div class="overlay-content">
+            <img
+              class="ek"
+              src="./img/eureka/logo.svg"
+              alt="ek"
+              style="
+                width: 128px;
+                height: 128px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 8%;
+                margin-bottom: 5px;
+              "
+            />
+            <h3 style="font-size: 26px; color: white">
+              Download
+              <script>
+                docWrite(roms13[7] + space + newLine + romstate[0] + " | 13.0-Tenshi");
+              </script>
+            </h3>
+            <br />
+            <h3 style="font-size: 26px; color: white">Select your Device</h3>
+            <div class="container">
+              <button
+              class="button"
+              onclick="window.open(sourceforge + model[0] + T + a10_arch[0] + slash + rom_list[7] + slash,newTab);"
+            >
+              <script>
+                docWrite(galaxy + space + model[0] + space + a10_arch[0]);
+              </script>
+            </button>
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[0] + T + a10_arch[1] + slash + rom_list[7] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[0] + space + a10_arch[1]);
+                </script>
+              </button>
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[1] + T + rom_list[7] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[1]);
+                </script>
+              </button>
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[2] + T + rom_list[7] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[2]);
+                </script>
+              </button>
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[3] + T + rom_list[7] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[3]);
+                </script>
+              </button>
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[4] + T + rom_list[7] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[4]);
+                </script>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="downloadWindow8" class="overlay1">
+          <a
+            href="javascript:void(0)"
+            class="closebtn"
+            onclick="closeDownloadWindow()"
+            >&times;</a
+          >
+          <div class="overlay-content">
+            <img
+              class="ek"
+              src="./img/eureka/logo.svg"
+              alt="ek"
+              style="
+                width: 128px;
+                height: 128px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 8%;
+                margin-bottom: 5px;
+              "
+            />
+            <h3 style="font-size: 26px; color: white">
+              Download
+              <script>
+                docWrite(roms13[8] + space + newLine + romstate[0] + " | xt-v5.0");
+              </script>
+            </h3>
+            <br />
+            <h3 style="font-size: 26px; color: white">Select your Device</h3>
+            <div class="container">
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[0] + T + a10_arch[1] + slash + rom_list[8] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[0] + space + a10_arch[1]);
+                </script>
+              </button>
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[1] + T + rom_list[8] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[1]);
+                </script>
+              </button>
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[2] + T + rom_list[8] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[2]);
+                </script>
+              </button>
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[3] + T + rom_list[8] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[3]);
+                </script>
+              </button>
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[4] + T + rom_list[8] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[4]);
+                </script>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="downloadWindow9" class="overlay1">
+          <a
+            href="javascript:void(0)"
+            class="closebtn"
+            onclick="closeDownloadWindow()"
+            >&times;</a
+          >
+          <div class="overlay-content">
+            <img
+              class="ek"
+              src="./img/eureka/logo.svg"
+              alt="ek"
+              style="
+                width: 128px;
+                height: 128px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 8%;
+                margin-bottom: 5px;
+              "
+            />
+            <h3 style="font-size: 26px; color: white">
+              Download
+              <script>
+                docWrite(roms13[9] + space + newLine + romstate[0] + " | tortilla");
+              </script>
+            </h3>
+            <br />
+            <h3 style="font-size: 26px; color: white">Select your Device</h3>
+            <div class="container">
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[0] + T + a10_arch[1] + slash + rom_list[9] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[0] + space + a10_arch[1]);
+                </script>
+              </button>
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[1] + T + rom_list[9] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[1]);
+                </script>
+              </button>
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[2] + T + rom_list[9] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[2]);
+                </script>
+              </button>
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[3] + T + rom_list[9] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[3]);
+                </script>
+              </button>
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[4] + T + rom_list[9] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[4]);
+                </script>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="downloadWindow10" class="overlay1">
+          <a
+            href="javascript:void(0)"
+            class="closebtn"
+            onclick="closeDownloadWindow()"
+            >&times;</a
+          >
+          <div class="overlay-content">
+            <img
+              class="ek"
+              src="./img/eureka/logo.svg"
+              alt="ek"
+              style="
+                width: 128px;
+                height: 128px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 8%;
+                margin-bottom: 5px;
+              "
+            />
+            <h3 style="font-size: 26px; color: white">
+              Download
+              <script>
+                docWrite(roms13[10] + space + newLine + romstate[0] + " | 4.7.7");
+              </script>
+            </h3>
+            <br />
+            <h3 style="font-size: 26px; color: white">Select your Device</h3>
+            <div class="container">
+              <button
+              class="button"
+              onclick="window.open(sourceforge + model[0] + T + a10_arch[0] + slash + rom_list[10] + slash,newTab);"
+            >
+              <script>
+                docWrite(galaxy + space + model[0] + space + a10_arch[0]);
+              </script>
+            </button>
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[0] + T + a10_arch[1] + slash + rom_list[10] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[0] + space + a10_arch[1]);
+                </script>
+              </button>
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[1] + T + rom_list[10] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[1]);
+                </script>
+              </button>
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[2] + T + rom_list[10] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[2]);
+                </script>
+              </button>
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[3] + T + rom_list[10] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[3]);
+                </script>
+              </button>
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[4] + T + rom_list[10] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[4]);
+                </script>
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -1959,7 +2934,7 @@
 
     function closeDownloadWindow() {
       $("#downloadWindow").css("display", "none");
-      for (i = 0; i < 7; i++) {
+      for (i = 0; i < 12; i++) {
         $("#downloadWindow" + [i]).each(function () {
           $(this).css("display", "none");
         });
@@ -1974,7 +2949,7 @@
 
     // Function to open modal by id
     function openModal(id) {
-      for (i = 0; i < 7; i++) {
+      for (i = 0; i < 12; i++) {
         if (modals[i].getAttribute("id") == id) {
           currentModal = modals[i];
           $(currentModal).css("display", "block");
@@ -2011,7 +2986,7 @@
     });
 
     /* Class the members of each slideshow group with different CSS classes */
-    var slideIndex = [1, 1, 1, 1, 1, 1, 1];
+    var slideIndex = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
     var slideId = [
       "mySlides",
       "mySlides1",
@@ -2019,11 +2994,15 @@
       "mySlides3",
       "mySlides4",
       "mySlides5",
-      "mySlides6"
+      "mySlides6",
+      "mySlides7",
+      "mySlides8",
+      "mySlides9",
+      "mySlides10"
     ];
-    var dotsId = ["dot", "dot1", "dot2", "dot3", "dot4", "dot5", "dot6"];
+    var dotsId = ["dot", "dot1", "dot2", "dot3", "dot4", "dot5", "dot6", "dot7", "dot8", "dot9", "dot10"];
 
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < 11; i++) {
       showSlides(1, i);
     }
 

@@ -170,6 +170,7 @@
           "StatixOS",
           "SuperiorOS",
           "YAAP",
+          "/e/FoundationOS",
         ];
         var rom_list = [
           "aicp",
@@ -209,8 +210,9 @@
           "statix",
           "superior",
           "yaap",
+          "eOS",
         ];
-        //total: 37 ROM's
+        //total: 38 ROM's
         var romstate = ["Unofficial", "Official"];
 
         const sourceforge =
@@ -276,7 +278,7 @@
           <div class="container-search" id="somewhereClick">
             <div class="select-box">
               <div class="options-container">
-                <p class="totalrom">Total: 36 ROM's</p>
+                <p class="totalrom">Total: 37 ROM's</p>
                 <div class="option">
                   <input type="radio" class="radio" id="rom3" name="category" />
                   <label for="rom0"
@@ -673,6 +675,16 @@
                     ><a href="#yaap" onclick="onfocus36()">
                       <script>
                         docWrite(roms12[36]);
+                      </script>
+                    </a></label
+                  >
+                </div>
+                <div class="option">
+                  <input type="radio" class="radio" id="rom3" name="category" />
+                  <label for="rom37"
+                    ><a href="#eOS" onclick="onfocus37()">
+                      <script>
+                        docWrite(roms12[37]);
                       </script>
                     </a></label
                   >
@@ -6918,7 +6930,6 @@
                 </div>
               </div>
             </div>
-            <div style="padding-left: 370px"></div>
             <div
               class="roms tooltip fade-bottom"
               id="mobile-rom"
@@ -7090,6 +7101,178 @@
                 </div>
               </div>
             </div>
+            <div style="padding-left: 130px"></div>
+            <div
+            class="roms tooltip fade-bottom"
+            id="mobile-rom"
+            data-aos="zoom-in-up"
+          >
+          <span id="rom-onfocus37">
+            <span class="tooltiptext">
+              <script>
+                docWrite(roms12[37] + space + romstate[0]);
+              </script>
+            </span>
+            <a id="eOS">
+            <p class="roms_content">
+              <img
+                class="rom_sizer modalOpenImg"
+                id="modal37"
+                src="./img/rom/repo_images/eos.png"
+                onclick="openModal('modal37');currentSlide(1)"
+              />
+            </p>
+            <div class="roms_content-font">
+              <p class="roms_content" id="rom-font-padding">
+                Your data is YOUR data!
+                We build desirable, open source, privacy-enabled smartphone operating systems.
+              </p>
+              <a href="javascript:void();" class="expand-btn"></a>
+            </div>
+            <p class="roms_content">
+              <button
+                class="image-dload"
+                id="button_size"
+                style="width: 110px"
+                onclick="openDownloadWindow('downloadWindow37');"
+              >
+                DOWNLOAD
+              </button>
+            </p>
+            <p class="roms_content">
+              <button
+                class="image-github"
+                id="button_size"
+                onclick="p404();"
+              >
+                GitHub</button
+              ><button class="image-web" id="button_size">
+                <a href="https://e.foundation/" target="_blank">Website</a>
+              </button>
+              
+            </p>
+            <p class="spacing" id="eOS_S_stats">Downloaded: N/A times</p>
+          </a>
+        </span>
+          </div>
+          <div id="modal37" class="modal fade-modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+              <div class="mySlides37 fade" id="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/rom/screenshots/rom12/eos/home.webp"
+                  style="width: 25%; margin-left: 37.5%"
+                />
+              </div>
+              <div class="mySlides37 fade" id="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/rom/screenshots/rom12/eos/drawer.webp"
+                  style="width: 25%; margin-left: 37.5%"
+                />
+              </div>
+              <div class="mySlides37 fade" id="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/rom/screenshots/rom12/eos/quicksettings.webp"
+                  style="width: 25%; margin-left: 37.5%"
+                />
+              </div>
+              <div class="mySlides37 fade" id="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/rom/screenshots/rom12/eos/settings.webp"
+                  style="width: 25%; margin-left: 37.5%"
+                />
+              </div>
+              <div class="mySlides37 fade" id="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/rom/screenshots/rom12/eos/extras.webp"
+                  style="width: 25%; margin-left: 37.5%"
+                />
+              </div>
+              <div class="mySlides37 fade" id="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img
+                  id="radi"
+                  src="./img/rom/screenshots/rom12/eos/about.webp"
+                  style="width: 25%; margin-left: 37.5%"
+                />
+              </div>
+              <a class="prev" onclick="plusSlides(-1, 37)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 37)">&#10095;</a>
+              <div class="row">
+                <div class="column">
+                  <img
+                    class="pic cursor dot37"
+                    id="radi"
+                    src="./img/rom/screenshots/rom12/eos/home.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(1, 37)"
+                    alt=""
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot37"
+                    id="radi"
+                    src="./img/rom/screenshots/rom12/eos/drawer.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(2, 37)"
+                    alt=""
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot37"
+                    id="radi"
+                    src="./img/rom/screenshots/rom12/eos/quicksettings.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(3, 37)"
+                    alt=""
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot37"
+                    id="radi"
+                    src="./img/rom/screenshots/rom12/eos/settings.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(4, 37)"
+                    alt=""
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot37"
+                    id="radi"
+                    src="./img/rom/screenshots/rom12/eos/extras.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(5, 37)"
+                    alt=""
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="pic cursor dot37"
+                    id="radi"
+                    src="./img/rom/screenshots/rom12/eos/about.webp"
+                    style="width: 100%"
+                    onclick="currentSlide(6, 37)"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            </div>
+            
           </div>
           <section class="article-wrapper">
             <hr
@@ -10161,6 +10344,87 @@
             </div>
           </div>
         </div>
+        <div id="downloadWindow37" class="overlay1">
+          <a
+            href="javascript:void(0)"
+            class="closebtn"
+            onclick="closeDownloadWindow()"
+            >&times;</a
+          >
+          <div class="overlay-content">
+            <img
+              class="ek"
+              src="./img/eureka/logo.svg"
+              alt="ek"
+              style="
+                width: 128px;
+                height: 128px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 8%;
+                margin-bottom: 5px;
+              "
+            />
+            <h3 style="font-size: 26px; color: white">
+              Download
+              <script>
+                docWrite(roms12[37] + space + newLine + romstate[0] + " | 1.10");
+              </script>
+            </h3>
+            <br />
+            <h3 style="font-size: 26px; color: white">Select your Device</h3>
+            <div class="container">
+              <button
+              class="button"
+              onclick="window.open(sourceforge + model[0] + S + a10_arch[0] + slash + rom_list[37] + slash,newTab);"
+            >
+              <script>
+                docWrite(galaxy + space + model[0] + space + a10_arch[0]);
+              </script>
+            </button>
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[0] + S + a10_arch[1] + slash + rom_list[37] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[0] + space + a10_arch[1]);
+                </script>
+              </button>
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[1] + S + rom_list[37] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[1]);
+                </script>
+              </button>
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[2] + S + rom_list[37] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[2]);
+                </script>
+              </button>
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[3] + S + rom_list[37] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[3]);
+                </script>
+              </button>
+              <button
+                class="button"
+                onclick="window.open(sourceforge + model[4] + S + rom_list[37] + slash,newTab);"
+              >
+                <script>
+                  docWrite(galaxy + space + model[4]);
+                </script>
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -10210,7 +10474,7 @@
 
     function closeDownloadWindow() {
       $("#downloadWindow").css("display", "none");
-      for (i = 0; i < 36; i++) {
+      for (i = 0; i < 38; i++) {
         $("#downloadWindow" + [i]).each(function () {
           $(this).css("display", "none");
         });
@@ -10264,7 +10528,7 @@
     /* Class the members of each slideshow group with different CSS classes */
     var slideIndex = [
       1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-      1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+      1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
     ];
     var slideId = [
       "mySlides",
@@ -10304,6 +10568,7 @@
       "mySlides34",
       "mySlides35",
       "mySlides36",
+      "mySlides37",
     ];
     var dotsId = [
       "dot",
@@ -10343,9 +10608,10 @@
       "dot34",
       "dot35",
       "dot36",
+      "dot37",
     ];
 
-    for (let i = 0; i < 37; i++) {
+    for (let i = 0; i < 38; i++) {
       showSlides(1, i);
     }
 
@@ -10381,7 +10647,7 @@
     // Arrow key navigation
     $(document).keydown(function (event) {
       if (event.key == "ArrowRight") {
-        for (let i = 0; i < 37; i++) {
+        for (let i = 0; i < 38; i++) {
           $(".next")[i].click();
         }
       } else if (event.key == "ArrowLeft") {
@@ -10456,7 +10722,7 @@
   <script type="text/javascript">
     function onfocusRemoveALL() {
       setTimeout(() => {
-        for (i = 0; i < 37; i++) {
+        for (i = 0; i < 38; i++) {
           const onfocusRemove = document.querySelectorAll("#rom-onfocus" + [i]);
           onfocusRemove.forEach((element) => {
             element.className = "";
@@ -10756,6 +11022,14 @@
     function onfocus36() {
       setTimeout(() => {
         $("#rom-onfocus36").toggleClass("onfocus");
+        optionsContainer.removeClass("active");
+      }, 10),
+        onfocusRemoveALL();
+    }
+
+    function onfocus37() {
+      setTimeout(() => {
+        $("#rom-onfocus37").toggleClass("onfocus");
         optionsContainer.removeClass("active");
       }, 10),
         onfocusRemoveALL();

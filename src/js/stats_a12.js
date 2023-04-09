@@ -87,9 +87,9 @@ $(document).ready(function () {
         }
 
         const android_list = ['S'];
-        const rom_list = ['aicp', 'aospk', 'aex', 'arcana', 'arrow', 'awaken', 'blaze', 'bliss', 'cherish', 'cipher', 'corvus', 'crdroid', 'derp', 'elixier', 'elytra', 'evolution', 'exthmui', 'fluid', 'hentai', 'komodo', 'lighthouse', 'lineage', 'nitrogen', 'octavi', 'pe', 'pixelextended', 'pixysos', 'potato', 'ppui', 'radiant', 'ricedroid', 'spice', 'ss', 'statix', 'superior', 'yaap'];
+        const rom_list = ['aicp', 'aospk', 'aex', 'arcana', 'arrow', 'awaken', 'blaze', 'bliss', 'cherish', 'cipher', 'corvus', 'crdroid', 'derp', 'elixier', 'elytra', 'evolution', 'exthmui', 'fluid', 'hentai', 'komodo', 'lighthouse', 'lineage', 'nitrogen', 'octavi', 'pe', 'pixelextended', 'pixysos', 'potato', 'ppui', 'radiant', 'ricedroid', 'spice', 'ss', 'statix', 'superior', 'yaap', 'eOS'];
         for (let i = 0; i < 1; i++) {
-            for (let j = 0; j < 37; j++) {
+            for (let j = 0; j < 39; j++) {
                 setTimeout(() => { downloads_per_rom(android_list[i], rom_list[j]); }, 2500);
             }
         }

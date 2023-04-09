@@ -22,7 +22,7 @@ $(document).ready(function () {
             var a40_data;
             try {
                 filepath = 'Samsung/A10/' + android + '/arm/' + rom;
-                if ((rom == 'cherish') | (rom == 'rice') | (rom == 'banana')) {
+                if ((rom == 'cherish') | (rom == 'rice') | (rom == 'banana') |(rom == 'xtended') | (rom == 'tequila')) {
                     a10_arm_data = 0;
                 } else {
                     a10_arm_data = await fetchData();
@@ -75,9 +75,9 @@ $(document).ready(function () {
         }
 
         const android_list = ['T'];
-        const rom_list = ['arrow', 'crdroid', 'cherish', 'rice', 'lineage', 'banana'];
+        const rom_list = ['arrow', 'crdroid', 'cherish', 'rice', 'lineage', 'banana', 'exthmui', 'xtended', 'tequila', 'calyx',];
         for (let i = 0; i < 1; i++) {
-            for (let j = 0; j < 7; j++) {
+            for (let j = 0; j < 11; j++) {
                 setTimeout(() => { downloads_per_rom(android_list[i], rom_list[j]); }, 2500);
             }
         }
