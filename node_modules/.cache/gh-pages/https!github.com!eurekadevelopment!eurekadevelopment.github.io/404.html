@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD5+fn/+fj4//n4+P/5+Pj/+fj4//n4+P/5+Pj/+fj4//n4+P/5+fn/+fn5Ovn5+an5+Pj/+fj4//n4+P/5+fm59+bh/+12E//tdhP/7XYT/+12E//tdhP/7XYT/+12E//xsZn/+fn5pvn5+Tn11cv/7XYT/+12E//00cX9+fn5LPfm4f/tdhP/7XYT/+12E//tdhP/7XYT/+12E//ufzr/+O7r9vn5+R759fTH745d/+12E//vmHH/+fj3mgICAgD35uH/7XYT/+12E//11cr/9uLc//bi3P/24tz/9+nk//n5+YH5+flX9Mq8/+12E//tdhP/9t/X8/n5+RcAAAAA9+bh/+12E//tdhP/9+bh2vn5+UH5+fk/+fn5PPn5+Tn5+fkR+PHv3e6CQv/tdhP/8ayR//n5+X0AAAAAAAAAAPfm4f/tdhP/7XYT//fl39L5+fke+fn5Hvn5+R75+fkG+fn5cvK8qP/tdhP/7Xso//fq5eX5+fkKAAAAAAAAAAD35uH/7XYT/+12E//24Nj/+PHt//jy7v/5+fnf+fn5Gvfq5u/teSP/7XYT//K+rP/5+flhAAAAAAAAAAAAAAAA9+bh/+12E//tdhP/7XYT/+12E//zwrH/+fn5XPn5+ZHxrpP/7XYT/+6FS//48vDQ+fn5AQAAAAAAAAAAAAAAAPfm4f/tdhP/7XYT/+12E//tdhP/8ryp//n5+Vv5+fmR8rij/+12E//ug0X/+PLw2/n5+QUAAAAAAAAAAAAAAAD35uH/7XYT/+12E//12dD/9+bi/ffo4/35+fnc+fn5Gfjv7O/ufzr/7XYT//PArv/5+flpAAAAAAAAAAAAAAAA9+bh/+12E//tdhP/9+XfzAYGBgAGBgYABgYGAAICAgD5+fly88S0/+12E//tfjb/+O7q6Pn5+QsAAAAAAAAAAPfm4f/tdhP/7XYT//fl39b5+fkv+fn5L/n5+S/5+fku+fn5Dfj0893uiFH/7XYT//K4ov/5+fl7AAAAAAAAAAD35uH/7XYT/+12E//11s3/9+Xg//fl4P/35eD/9+nl//n5+Xb5+flX9NHF/+12E//tdxr/9+nk8fn5+RIAAAAA9+bh/+12E//tdhP/7XYT/+12E//tdhP/7XYT/+14HP/36eTz+fn5Gfn498fvlm3/7XYT//Gtk//5+fmOAAAAAPfm4v/tdxX/7XcV/+13Ff/tdxX/7XcV/+13Ff/tdxX/8aqO//n5+aH5+fk59tzT/+13Ff/tdxX/9uPd9/n5+R75+fn/+fn5//n5+f/5+fn/+fn5//n5+f/5+fn/+fn5//n5+f/5+fn/+fn5OPn5+an5+fn/+fn5//n5+f/5+fmeAAAAAAAAAAAAAQAAAAEAAAADAAAAAwAAAAcAAAAHAAAABwAAAAcAAA8DAAAAAwAAAAEAAAABAAAAAAAAAAAAAA==" />
+    
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    
+    <script async src="https://arc.io/widget.min.js#3LCgJWKk"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title>Eureka Development</title>
+    <script type="module" crossorigin src="/assets/style.7f2dd081.js"></script>
+    <script type="module" crossorigin src="/assets/js/colorpalette.js"></script>
+    <script type="module" crossorigin src="/assets/js/jquery.js"></script>
+    <script type="module" crossorigin src="/assets/js/main.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+
+  <body>
+    <div class="splash">
+      <img class="fade-in center" src="/assets/images/eklogo.gif" alt="eklogo" />
+    </div>
+    <nav class="sidebar close nav">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <a href="/"><img src="/assets/images/logo.svg" alt="" /></a>
+          </span>
+          <div class="text logo-text">
+            <span class="profession"><b>Welcome!</b></span>
+          </div>
+        </div>
+        <i class="bx bx-menu toggle"></i>
+      </header>
+      <div class="menu-bar" style="overflow-x: hidden; overflow-y: hidden">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="/">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">Home</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a id="rom-dialog">
+                <i class="bx bx-microchip icon"></i>
+                <span class="text nav-text">Custom ROM's</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="recovery.html">
+                <i class="bx bx-refresh icon"></i>
+                <span class="text nav-text">Custom Recovery</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a id="kernel-dialog">
+                <i class="bx bx-chip icon"></i>
+                <span class="text nav-text">Eureka Kernel</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="statistics.html">
+                <i class="bx bx-stats icon"></i>
+                <span class="text nav-text">Statistics</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="guide.html">
+                <i class="bx bx-book icon"></i>
+                <span class="text nav-text">Guides</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a id="dload-dialog">
+                <i class="bx bx-download icon"></i>
+                <span class="text nav-text">Downloads</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="support.html">
+                <i class="bx bx-heart icon"></i>
+                <span class="text nav-text">Support</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="team.html">
+                <i class="bx bxs-face icon"></i>
+                <span class="text nav-text">Eureka Team</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="about.html">
+                <i class="bx bx-info-circle icon"></i>
+                <span class="text nav-text">About Us</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="text logo-text"
+          style="margin-left: 20px; margin-top: 5px"
+        ></div>
+      </div>
+    </nav>
+    <section class="home">
+      <section
+        class="author"
+        style="
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          margin-top: 150px;
+        "
+      >
+        <section class="error-container">
+          <span class="four"><span class="screen-reader-text">4</span></span>
+          <span class="zero"><span class="screen-reader-text">0</span></span>
+          <span class="four"><span class="screen-reader-text">4</span></span>
+          <br />
+          <p style="font-size: 22px; margin-top: 30px">
+            The page you're looking for does not exist.
+          </p>
+        </section>
+      </section>
+    </section>
+    <div class="overlay" id="dialog-container">
+      <div class="popup" style="margin-top: -1%">
+        <img
+          class="ek"
+          src="/assets/images/logo.svg"
+          alt="ek"
+          style="
+            width: 128px;
+            height: 128px;
+            margin-left: auto;
+            margin-top: clamp(220px, 50%, 220px);
+          "
+        />
+        <div class="modal-text">
+          <h3 style="font-size: 28px">Select your Android Version</h3>
+          <br />
+          <p style="font-size: 12px">
+            you can choose between Android 11, 12.1 and 13 actually
+          </p>
+        </div>
+        <div class="container-overlay">
+          <div class="box-overlay">
+            <a href="rom11.html">
+              <button class="dialog-btn-modal btn-primary" id="confirm">
+                Android 11 (R)
+              </button>
+            </a>
+          </div>
+          <div class="box-overlay">
+            <a href="rom12.html">
+              <button class="dialog-btn-modal btn-primary" id="confirm">
+                Android 12.1 (S)
+              </button>
+            </a>
+          </div>
+          <div class="box-overlay">
+            <a href="rom13.html">
+              <button class="dialog-btn-modal btn-primary" id="confirm">
+                Android 13 (T)
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay-rom" id="dialog-container-dload">
+      <div class="popup" style="margin-top: -1%">
+        <img
+          class="ek"
+          src="/assets/images/logo.svg"
+          alt="ek"
+          style="
+            width: 128px;
+            height: 128px;
+            margin-left: auto;
+            margin-top: clamp(220px, 50%, 220px);
+          "
+        />
+        <div class="modal-text">
+          <h3 style="font-size: 28px">Downloads</h3>
+          <br />
+          <p style="font-size: 12px">
+            here u can select what u want to Download like GAPPS or e.g. Magisk
+          </p>
+        </div>
+        <div class="container-overlay">
+          <div class="box-overlay">
+            <a href="gapps.html">
+              <button
+                class="dialog-btn-modal btn-primary"
+                id="confirm"
+                style="width: 160px; margin-right: 40px"
+              >
+                Google Apps (GAPPS)
+              </button>
+            </a>
+          </div>
+          <div class="box-overlay">
+            <a href="download.html">
+              <button
+                class="dialog-btn-modal btn-primary"
+                id="confirm"
+                style="width: 160px; margin-left: 40px"
+              >
+                Here it continues to Downloads
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay-kernel" id="dialog-container-kernel">
+      <div class="popup" style="margin-top: -1%">
+        <img
+          class="ek"
+          src="/assets/images/logo.svg"
+          alt="ek"
+          style="
+            width: 128px;
+            height: 128px;
+            margin-left: auto;
+            margin-top: clamp(220px, 50%, 220px);
+          "
+        />
+        <div class="modal-text">
+          <h3 style="font-size: 28px">Eureka Kernel</h3>
+          <br />
+          <p style="font-size: 12px">
+            here u can select which Kernel u want to choose. 
+            U can choose between Normal and KernelSU variant.
+          </p>
+        </div>
+        <div class="container-overlay">
+          <div class="box-overlay">
+            <a href="kernel.html">
+              <button
+                class="dialog-btn-modal btn-primary"
+                id="confirm"
+                style="width: 160px; margin-right: 40px"
+              >
+                Normal
+              </button>
+            </a>
+          </div>
+          <div class="box-overlay">
+            <a href="kernelsu.html">
+              <button
+                class="dialog-btn-modal btn-primary"
+                id="confirm"
+                style="width: 160px; margin-left: 40px"
+              >
+                KernelSU
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  
+</html>
