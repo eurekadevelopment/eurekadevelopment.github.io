@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <script async src="https://arc.io/widget.min.js#3LCgJWKk"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="icon" type="image/svg+xml" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD5+fn/+fj4//n4+P/5+Pj/+fj4//n4+P/5+Pj/+fj4//n4+P/5+fn/+fn5Ovn5+an5+Pj/+fj4//n4+P/5+fm59+bh/+12E//tdhP/7XYT/+12E//tdhP/7XYT/+12E//xsZn/+fn5pvn5+Tn11cv/7XYT/+12E//00cX9+fn5LPfm4f/tdhP/7XYT/+12E//tdhP/7XYT/+12E//ufzr/+O7r9vn5+R759fTH745d/+12E//vmHH/+fj3mgICAgD35uH/7XYT/+12E//11cr/9uLc//bi3P/24tz/9+nk//n5+YH5+flX9Mq8/+12E//tdhP/9t/X8/n5+RcAAAAA9+bh/+12E//tdhP/9+bh2vn5+UH5+fk/+fn5PPn5+Tn5+fkR+PHv3e6CQv/tdhP/8ayR//n5+X0AAAAAAAAAAPfm4f/tdhP/7XYT//fl39L5+fke+fn5Hvn5+R75+fkG+fn5cvK8qP/tdhP/7Xso//fq5eX5+fkKAAAAAAAAAAD35uH/7XYT/+12E//24Nj/+PHt//jy7v/5+fnf+fn5Gvfq5u/teSP/7XYT//K+rP/5+flhAAAAAAAAAAAAAAAA9+bh/+12E//tdhP/7XYT/+12E//zwrH/+fn5XPn5+ZHxrpP/7XYT/+6FS//48vDQ+fn5AQAAAAAAAAAAAAAAAPfm4f/tdhP/7XYT/+12E//tdhP/8ryp//n5+Vv5+fmR8rij/+12E//ug0X/+PLw2/n5+QUAAAAAAAAAAAAAAAD35uH/7XYT/+12E//12dD/9+bi/ffo4/35+fnc+fn5Gfjv7O/ufzr/7XYT//PArv/5+flpAAAAAAAAAAAAAAAA9+bh/+12E//tdhP/9+XfzAYGBgAGBgYABgYGAAICAgD5+fly88S0/+12E//tfjb/+O7q6Pn5+QsAAAAAAAAAAPfm4f/tdhP/7XYT//fl39b5+fkv+fn5L/n5+S/5+fku+fn5Dfj0893uiFH/7XYT//K4ov/5+fl7AAAAAAAAAAD35uH/7XYT/+12E//11s3/9+Xg//fl4P/35eD/9+nl//n5+Xb5+flX9NHF/+12E//tdxr/9+nk8fn5+RIAAAAA9+bh/+12E//tdhP/7XYT/+12E//tdhP/7XYT/+14HP/36eTz+fn5Gfn498fvlm3/7XYT//Gtk//5+fmOAAAAAPfm4v/tdxX/7XcV/+13Ff/tdxX/7XcV/+13Ff/tdxX/8aqO//n5+aH5+fk59tzT/+13Ff/tdxX/9uPd9/n5+R75+fn/+fn5//n5+f/5+fn/+fn5//n5+f/5+fn/+fn5//n5+f/5+fn/+fn5OPn5+an5+fn/+fn5//n5+f/5+fmeAAAAAAAAAAAAAQAAAAEAAAADAAAAAwAAAAcAAAAHAAAABwAAAAcAAA8DAAAAAwAAAAEAAAABAAAAAAAAAAAAAA==" />
+    
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Eureka Development</title>
+    <script type="module" crossorigin src="/assets/style.7f2dd081.js"></script>
+    <script type="module" crossorigin src="/assets/js/colorpalette.js"></script>
+    <script type="module" crossorigin src="/assets/js/jquery.js"></script>
+    <script type="module" crossorigin src="/assets/js/main.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+
+  <body>
+    <div class="splash">
+      <img class="fade-in center" src="/assets/images/eklogo.gif" alt="eklogo" />
+    </div>
+    <nav class="sidebar close nav">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <a href="/"><img src="/assets/images/logo.svg" alt="" /></a>
+          </span>
+          <div class="text logo-text">
+            <span class="profession"><b>Welcome!</b></span>
+          </div>
+        </div>
+        <i class="bx bx-menu toggle"></i>
+      </header>
+      <div class="menu-bar" style="overflow-x: hidden; overflow-y: hidden">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="/">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">Home</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a id="rom-dialog">
+                <i class="bx bx-microchip icon"></i>
+                <span class="text nav-text">Custom ROM's</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="recovery.html">
+                <i class="bx bx-refresh icon"></i>
+                <span class="text nav-text">Custom Recovery</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a id="kernel-dialog">
+                <i class="bx bx-chip icon"></i>
+                <span class="text nav-text">Eureka Kernel</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="statistics.html">
+                <i class="bx bx-stats icon"></i>
+                <span class="text nav-text">Statistics</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="guide.html">
+                <i class="bx bx-book icon"></i>
+                <span class="text nav-text">Guides</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a id="dload-dialog">
+                <i class="bx bx-download icon" id="active-page"></i>
+                <span class="text nav-text">Downloads</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="support.html">
+                <i class="bx bx-heart icon"></i>
+                <span class="text nav-text">Support</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="team.html">
+                <i class="bx bxs-face icon"></i>
+                <span class="text nav-text">Eureka Team</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="about.html">
+                <i class="bx bx-info-circle icon"></i>
+                <span class="text nav-text">About Us</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a onclick="openColorpalette();" style="cursor: pointer">
+                <img
+                  class="color"
+                  id="animation"
+                  onclick="topFunction()"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAFHGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIyLTEwLTIzVDEyOjU4OjQ0KzAyOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMi0xMC0yM1QxMjo1OToyNCswMjowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMi0xMC0yM1QxMjo1OToyNCswMjowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2MThkN2EzNS01NTJk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"
+                /><i class="icon"></i>
+
+                <span class="text nav-text">Switch Web-Color</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="text logo-text"
+          style="margin-left: 20px; margin-top: 5px"
+        ></div>
+      </div>
+    </nav>
+    <section class="home">
+      <div id="colorpalette" class="overlay-colorpalette animate-in">
+        <ul class="ul">
+          <a
+            href="javascript:void(0)"
+            class="closebtn"
+            onclick="closeColorpalette()"
+            >&times;</a
+          >
+          <li class="li" data-color="color1"></li>
+          <li class="li" data-color="color2"></li>
+          <li class="li" data-color="color3"></li>
+          <li class="li" data-color="color4"></li>
+          <li class="li" data-color="color5"></li>
+          <li class="li" data-color="color6"></li>
+          <li class="li" data-color="color7"></li>
+          <li class="li" data-color="color8"></li>
+          <li class="li" data-color="color9"></li>
+          <li class="li" data-color="color10"></li>
+          <li class="li" data-color="color11"></li>
+          <li class="li" data-color="color12"></li>
+        </ul>
+        <p class="color-text">Switch Web-Color</p>
+      </div>
+      <div align="center" style="margin-top: 40px">
+        <img
+          class="ek"
+          src="/assets/images/logo.svg"
+          style="width: 128px; height: 128px"
+        />
+        <h1
+          style="
+            font-size: 32px;
+            color: white;
+            margin-top: 17px;
+            margin-bottom: -17px;
+          "
+          align="center"
+        >
+          <span>Eureka Downloads</span>
+        </h1>
+        <br /><br />
+        <hr
+          style="
+            margin: 0 auto;
+            width: 77%;
+            height: 1px;
+            border-width: 0;
+            color: rgba(128, 128, 128, 0.288);
+            background-color: rgba(128, 128, 128, 0.288);
+          "
+        />
+        <br />
+      </div>
+      <section
+        class="author"
+        style="
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          margin-bottom: -80px;
+        "
+      >
+        <div class="container3">
+          <div class="grid-row">
+            <div class="grid-item">
+              <div class="grid-item-wrapper">
+                <div class="grid-item-container">
+                  <div class="grid-image-top rex-ray">
+                    <span
+                      class="centered project-image-bg rex-ray-image"
+                    ></span>
+                  </div>
+                  <img
+                    src="data:image/webp;base64,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"
+                    class="resize1 zoom"
+                    alt=""
+                  />
+                  <p class="dload_size">Heimdall Suite</p>
+                  <p class="dload_info">
+                    Heimdall is a cross-platform open-source tool suite used to
+                    flash firmware (aka ROMs) onto Samsung Galaxy devices.
+                  </p>
+                  <div class="box-dl">
+                    <div class="btn-wrapper">
+                      <a
+                        href="https://bitbucket.org/benjamin_dobell/heimdall/downloads/heimdall-suite-1.4.0-win32.zip"
+                        target="_blank"
+                        ><button><span>Windows</span></button></a
+                      >
+                    </div>
+
+                    <p class="dload_info-fstp">
+                      File Size: ~10MB<br />File Type: *.EXE
+                    </p>
+                  </div>
+                  <div class="box-dl">
+                    <div class="btn-wrapper">
+                      <a
+                        href="https://bitbucket.org/benjamin_dobell/heimdall/downloads/?tab=downloads"
+                        target="_blank"
+                        ><button><span>Linux</span></button></a
+                      >
+                    </div>
+                    <p class="dload_info-fstp">
+                      File Size: ~0.1MB<br />File Type: *.*
+                    </p>
+                  </div>
+                  <div class="box-dl">
+                    <div class="btn-wrapper">
+                      <a
+                        href="https://bitbucket.org/benjamin_dobell/heimdall/downloads/heimdall-suite-1.4.0-mac.dmg"
+                        target="_blank"
+                        ><button><span>MacOS</span></button></a
+                      >
+                    </div>
+                    <p class="dload_info-fstp">
+                      File Size: ~7.0MB<br />File Type: *.DMG
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="grid-item-wrapper">
+                <div class="grid-item-container">
+                  <div class="grid-image-top sputnik">
+                    <span
+                      class="centered project-image-bg sputnik-image"
+                    ></span>
+                  </div>
+                  <img
+                    src="/assets/images/odin-3783e526.webp"
+                    class="resize1 zoom"
+                    alt=""
+                  />
+                  <p class="dload_size">Odin Samsung</p>
+                  <p class="dload_info">
+                    Odin Samsung is an Flashtool to Flash Stock Firmware (also
+                    for unbricking) or Custom Things like Recovery/VBMeta
+                  </p>
+                </div>
+                <div class="btn-wrapper">
+                  <a
+                    href="https://odin-samsung.com/download/257/Odin3-v3.14.1.zip"
+                    target="_blank"
+                    ><button style="width: 140px">
+                      <span>Windows (x86/x64)</span>
+                    </button></a
+                  >
+                </div>
+                <p class="dload_info-fstp">
+                  File Size: ~2.5MB<br />File Type: *.EXE
+                </p>
+              </div>
+            </div>
+            <div class="grid-item" data-aos="zoom-in" data-aos-duration="1100">
+              <div class="grid-item-wrapper">
+                <div class="grid-item-container">
+                  <div class="grid-image-top edgex">
+                    <span class="centered project-image-bg edgex-image"></span>
+                  </div>
+                  <img
+                    src="/assets/images/root-464923ad.webp"
+                    class="resize1 zoom"
+                    alt=""
+                  />
+                  <p class="dload_size">Magisk [ROOT]</p>
+                  <p class="dload_info">
+                    Magisk is a suite of open source software for customizing
+                    Android, supporting devices higher than Android 5.0.
+                  </p>
+                </div>
+                <div class="box-dl" style="margin-left: 11%; width: auto">
+                  <div class="btn-wrapper">
+                    <a
+                      href="https://github.com/topjohnwu/Magisk/releases"
+                      target="_blank"
+                      ><button style="width: 120px; margin-right: 15px">
+                        <span>Download APK</span>
+                      </button></a
+                    >
+                  </div>
+                  <p class="dload_info-fstp" style="margin-right: 18px">
+                    File Size: ~10MB<br />File Type: *.APK
+                  </p>
+                </div>
+                <div class="box-dl" style="width: auto; margin-left: 15px">
+                  <div class="btn-wrapper">
+                    <a
+                      href="https://github.com/topjohnwu/Magisk/releases"
+                      target="_blank"
+                      ><button style="width: 115px">
+                        <span>Download ZIP</span>
+                      </button></a
+                    >
+                  </div>
+                  <p class="dload_info-fstp">
+                    File Size: ~11MB<br />File Type: *.ZIP
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item" data-aos="zoom-in" data-aos-duration="1100">
+              <div class="grid-item-wrapper">
+                <div class="grid-item-container">
+                  <div class="grid-image-top openswitch">
+                    <span
+                      class="centered project-image-bg openswitch-image"
+                    ></span>
+                  </div>
+                  <img
+                    src="/assets/images/adb-a6d52dde.webp"
+                    class="resize1 zoom"
+                    alt=""
+                  />
+                  <p class="dload_size">Minimal ADB & Fastboot</p>
+                  <p class="dload_info">
+                    Minimal ADB & Fastboot is a Tool to use ADB Commands like
+                    ADB Push or ADB Shell etc and Fastboot Commands (not
+                    relevant for us)
+                  </p>
+                </div>
+                <div class="btn-wrapper">
+                  <a
+                    href="https://sourceforge.net/projects/eurekaroms/files/web_files/Minimal_ADB_Fastboot_v1.4.3.zip/download"
+                    target="_blank"
+                    ><button style="width: 140px">
+                      <span>Windows (x86/x64)</span>
+                    </button></a
+                  >
+                </div>
+                <p class="dload_info-fstp">
+                  File Size: ~1.0MB<br />File Type: *.EXE
+                </p>
+              </div>
+            </div>
+            <div class="grid-item" data-aos="zoom-in" data-aos-duration="1100">
+              <div class="grid-item-wrapper">
+                <div class="grid-item-container">
+                  <div class="grid-image-top scaleio">
+                    <span
+                      class="centered project-image-bg scaleio-image"
+                    ></span>
+                  </div>
+                  <img
+                    src="/assets/images/driver-4b32c718.webp"
+                    class="resize1 zoom"
+                    alt=""
+                  />
+                  <p class="dload_size">Samsung USB Drivers</p>
+                  <p class="dload_info">
+                    You need the driver if want to connect a Samsung Android
+                    device to your PC over USB. Also for Odin, USB-Debugging
+                    (ADB).
+                  </p>
+               </div>
+                <div class="btn-wrapper">
+                <a
+                    href="https://developer.samsung.com/sdp/file/0b770489-5d4e-4fff-b4d8-48f6a5950950"
+                    target="_blank"
+                    ><button style="width: 140px">
+                      <span>Windows (x86/x64)</span>
+                    </button></a
+                  >
+                </div>
+                <p class="dload_info-fstp">
+                  File Size: ~35MB<br />File Type: *.EXE
+                </p>
+              </div>
+            </div>
+
+            <div class="grid-item" data-aos="zoom-in" data-aos-duration="1100">
+              <div class="grid-item-wrapper">
+                <div class="grid-item-container">
+                  <div class="grid-image-top csi">
+                    <span class="centered project-image-bg csi-image"></span>
+                  </div>
+                  <img
+                    src="/assets/images/vbmeta-773c367c.webp"
+                    class="resize1 zoom"
+                    alt=""
+                  />
+                  <p class="dload_size">VBMeta Disabler</p>
+                  <p class="dload_info">
+                    The Typical Error Message after flashing TWRP Via Odin on
+                    Samsung devices: "Error: verifying vbmeta!...
+                    OK_NOT_SIGNED."
+                  </p>
+                </div>
+                <div class="btn-wrapper">
+                  <a
+                    href="https://sourceforge.net/projects/eurekaroms/files/web_files/vbmeta.tar/download"
+                    target="_blank"
+                    ><button style="width: 140px">
+                      <span>ODIN Flashable</span>
+                    </button></a
+                  >
+                </div>
+                <p class="dload_info-fstp">
+                  File Size: ~0.2MB<br />File Type: *.TAR
+                </p>
+              </div>
+            </div>
+            <div class="grid-item" data-aos="zoom-in" data-aos-duration="1100">
+              <div class="grid-item-wrapper">
+                <div class="grid-item-container">
+                  <div class="grid-image-top kubernetes">
+                    <span
+                      class="centered project-image-bg kubernetes-image"
+                    ></span>
+                  </div>
+                  <img
+                    src="/assets/images/multi-3d0fb883.webp"
+                    class="resize1 zoom"
+                    alt=""
+                  />
+                  <p class="dload_size">Samsung Multidisabler</p>
+                  <p class="dload_info">
+                    When flashed on a compatible device, this will disable a
+                    number of device protection features and services that
+                    become problematic on rooted devices.
+                  </p>
+                </div>
+                <div class="btn-wrapper">
+                  <a
+                    href="https://sourceforge.net/projects/eurekaroms/files/web_files/multidisabler-samsung-3.1.zip/download"
+                    target="_blank"
+                    ><button style="width: 140px">
+                      <span>TWRP Flashable</span>
+                    </button></a
+                  >
+                </div>
+                <p class="dload_info-fstp">
+                  File Size: ~0.3MB<br />File Type: *.ZIP
+                </p>
+              </div>
+            </div>
+            <div class="grid-item" data-aos="zoom-in" data-aos-duration="1100">
+              <div class="grid-item-wrapper">
+                <div class="grid-item-container">
+                  <div class="grid-image-top grpc">
+                    <span class="centered project-image-bg grpc-image"></span>
+                  </div>
+                  <img
+                    src="data:image/webp;base64,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"
+                    class="resize1 zoom"
+                    alt=""
+                  />
+                  <p class="dload_size">DM-Verity</p>
+                  <p class="dload_info">
+                    The ZIP will remove dm-verity and/or Forceencrypt from all
+                    FSTAB on your Device. It can also remove Disk Quota if you
+                    choose.
+                  </p>
+                </div>
+                <div class="btn-wrapper">
+                  <a
+                    href="https://sourceforge.net/projects/eurekaroms/files/web_files/Dm-Verity.zip/download"
+                    target="_blank"
+                    ><button style="width: 140px">
+                      <span>TWRP Flashable</span>
+                    </button></a
+                  >
+                </div>
+                <p class="dload_info-fstp">
+                  File Size: ~3.5MB<br />File Type: *.ZIP
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <main>
+        <section class="content">
+          <section class="article-wrapper">
+            <article class="article"></article>
+            <hr
+              style="
+                height: 1px;
+                border-width: 0;
+                color: rgba(128, 128, 128, 0.288);
+                background-color: rgba(128, 128, 128, 0.288);
+              "
+            />
+            <br />
+            <section class="comment">
+              <p style="font-size: 12px">
+                © 2021 - 2023 Eureka Development <br />&emsp;&emsp;&emsp;
+                Design: <a style="color: #08f"><b>Eureka Team</b></a>
+              </p>
+            </section>
+          </section>
+        </section>
+      </main>
+      <div class="overlay" id="dialog-container">
+        <div class="popup" style="margin-top: -1%">
+          <img
+            class="ek"
+            src="/assets/images/logo.svg"
+            alt="ek"
+            style="
+              width: 128px;
+              height: 128px;
+              margin-left: auto;
+              margin-top: clamp(220px, 50%, 220px);
+            "
+          />
+          <div class="modal-text">
+            <h3
+              style="
+                font-size: 28px;
+                width: 380px;
+                background-color: rgba(0, 0, 0, 0.8);
+                margin: 0 auto;
+                border-radius: 6px;
+              "
+            >
+              Select your Android Version
+            </h3>
+            <br />
+            <p
+              style="
+                font-size: 12px;
+                width: 330px;
+                background-color: rgba(0, 0, 0, 0.8);
+                margin: 0 auto;
+                border-radius: 6px;
+              "
+            >
+              you can choose between Android 11, 12.1 and 13 actually
+            </p>
+          </div>
+          <div class="container-overlay">
+            <div class="box-overlay">
+              <a href="rom11.html">
+                <button class="dialog-btn-modal btn-primary" id="confirm">
+                  Android 11 (R)
+                </button>
+              </a>
+            </div>
+            <div class="box-overlay">
+              <a href="rom12.html">
+                <button class="dialog-btn-modal btn-primary" id="confirm">
+                  Android 12.1 (S)
+                </button>
+              </a>
+            </div>
+            <div class="box-overlay">
+              <a href="rom13.html">
+                <button class="dialog-btn-modal btn-primary" id="confirm">
+                  Android 13 (T)
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay-rom" id="dialog-container-dload">
+        <div class="popup" style="margin-top: -1%">
+          <img
+            class="ek"
+            src="/assets/images/logo.svg"
+            alt="ek"
+            style="
+              width: 128px;
+              height: 128px;
+              margin-left: auto;
+              margin-top: clamp(220px, 50%, 220px);
+            "
+          />
+          <div class="modal-text">
+            <h3 style="font-size: 28px">Downloads</h3>
+            <br />
+            <p style="font-size: 12px">
+              here u can select what u want to Download like GAPPS or e.g.
+              Magisk
+            </p>
+          </div>
+          <div class="container-overlay">
+            <div class="box-overlay">
+              <a href="gapps.html">
+                <button
+                  class="dialog-btn-modal btn-primary"
+                  id="confirm"
+                  style="width: 160px; margin-right: 40px"
+                >
+                  Google Apps (GAPPS)
+                </button>
+              </a>
+            </div>
+            <div class="box-overlay">
+              <a href="download.html">
+                <button
+                  class="dialog-btn-modal btn-primary"
+                  id="confirm"
+                  style="width: 160px; margin-left: 40px"
+                >
+                  Continue to another Downloads
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay-kernel" id="dialog-container-kernel">
+        <div class="popup" style="margin-top: -1%">
+          <img
+            class="ek"
+            src="/assets/images/logo.svg"
+            alt="ek"
+            style="
+              width: 128px;
+              height: 128px;
+              margin-left: auto;
+              margin-top: clamp(220px, 50%, 220px);
+            "
+          />
+          <div class="modal-text">
+            <h3 style="font-size: 28px">Eureka Kernel</h3>
+            <br />
+            <p style="font-size: 12px">
+              here u can select which Kernel u want to choose. 
+              U can choose between Normal and KernelSU variant.
+            </p>
+          </div>
+          <div class="container-overlay">
+            <div class="box-overlay">
+              <a href="kernel.html">
+                <button
+                  class="dialog-btn-modal btn-primary"
+                  id="confirm"
+                  style="width: 160px; margin-right: 40px"
+                >
+                  Normal
+                </button>
+              </a>
+            </div>
+            <div class="box-overlay">
+              <a href="kernelsu.html">
+                <button
+                  class="dialog-btn-modal btn-primary"
+                  id="confirm"
+                  style="width: 160px; margin-left: 40px"
+                >
+                  KernelSU
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script type="text/javascript">
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
+
