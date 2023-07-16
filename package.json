@@ -6,7 +6,7 @@
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d"
   },
   "homepage": "https://eurekadevelopment.github.io",
   "devDependencies": {

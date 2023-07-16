@@ -936,6 +936,9 @@ a {
   background-color: #132c4b;
 }
 
+.ul .li:nth-of-type(13) {
+  background-color: #0c1016;
+}
 .content-color {
   width: 100%;
 }
@@ -1402,6 +1405,47 @@ a {
   #align_canvas,
   .splash {
     background: #132c4b;
+  }
+
+  span,
+  img,
+  p,
+  h3,
+  h1,
+  li,
+  ul,
+  a,
+  i,
+  div,
+  .acc-btn,
+  .color {
+    background-color: transparent;
+  }
+
+  .overlay,
+  .overlay1,
+  .helperVideo,
+  .modal-window1,
+  .modal-window2,
+  .modal-window3,
+  .modal-window4,
+  .modal-window5 {
+    -moz-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    background-color: transparent;
+  }
+}
+
+.color13 {
+  *,
+  canvas,
+  section,
+  .cards_rp,
+  body,
+  html,
+  #align_canvas,
+  .splash {
+    background: #0c1016;
   }
 
   span,
