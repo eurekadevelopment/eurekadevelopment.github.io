@@ -19,11 +19,14 @@ toggle.addEventListener("click", () => {
 //Close Window when u click somewhere into page
 const overlay = document.querySelector('.overlay');
 const overlay_rom = document.querySelector('.overlay-rom');
+const overlay_kernel = document.querySelector('.overlay-kernel');
 $(document).on('click', function handleClickOutsideBox(event) {
     if (overlay.contains(event.target)) {
         $(overlay).hide();
     } else if (overlay_rom.contains(event.target)) {
         $(overlay_rom).hide();
+    } else if (overlay_kernel.contains(event.target)) {
+        $(overlay_kernel).hide();
     }
 });
 
@@ -31,6 +34,9 @@ $(document).on('click', function handleClickOutsideBox(event) {
 // Call function when show dialog btn is clicked
 $('#rom-dialog').click(function () {
     show_dialog();
+});
+$('#kernel-dialog').click(function () {
+    show_dialog_kernel();
 });
 $('#dload-dialog').click(function () {
     show_dialog_dload();
@@ -44,10 +50,15 @@ window.show_dialog_dload = function() {
     $('#dialog-container-dload').css('display', 'block');
 };
 
+window.show_dialog_kernel = function() {
+    $('#dialog-container-kernel').css('display', 'block');
+};
+
 // If confirm btn is clicked , the function confim() is executed
 $('#confirm').click(function () {
     $('#confirm').click();
     $('#dialog-container-dload').hide();
+    $('#dialog-container-kernel').hide();
     $('#dialog-container').hide();
 });
 //ROMS/DOWNLOAD DIALOG - END

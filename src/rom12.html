@@ -70,7 +70,7 @@
                 </a>
               </li>
               <li class="nav-link">
-                <a href="kernel.html">
+                <a id="kernel-dialog">
                   <i class="bx bx-chip icon"></i>
                   <span class="text nav-text">Eureka Kernel</span>
                 </a>
@@ -7378,6 +7378,53 @@
                     style="width: 160px; margin-left: 40px"
                   >
                     Continue to another Downloads
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay-kernel" id="dialog-container-kernel">
+          <div class="popup" style="margin-top: -1%">
+            <img
+              class="ek"
+              src="./img/eureka/logo.svg"
+              alt="ek"
+              style="
+                width: 128px;
+                height: 128px;
+                margin-left: auto;
+                margin-top: clamp(220px, 50%, 220px);
+              "
+            />
+            <div class="modal-text">
+              <h3 style="font-size: 28px">Eureka Kernel</h3>
+              <br />
+              <p style="font-size: 12px">
+                here u can select which Kernel u want to choose. 
+                U can choose between Normal and KernelSU variant.
+              </p>
+            </div>
+            <div class="container-overlay">
+              <div class="box-overlay">
+                <a href="kernel.html">
+                  <button
+                    class="dialog-btn-modal btn-primary"
+                    id="confirm"
+                    style="width: 160px; margin-right: 40px"
+                  >
+                    Normal
+                  </button>
+                </a>
+              </div>
+              <div class="box-overlay">
+                <a href="#">
+                  <button
+                    class="dialog-btn-modal btn-primary"
+                    id="confirm"
+                    style="width: 160px; margin-left: 40px"
+                  >
+                    KernelSU
                   </button>
                 </a>
               </div>

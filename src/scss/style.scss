@@ -656,7 +656,9 @@ article#nomark {
   transition: all 0.3s ease-in;
 }
 
-.overlay {
+.overlay,
+.overlay-rom,
+.overlay-kernel {
   width: 100%;
   position: fixed;
   top: 0;
@@ -670,20 +672,7 @@ article#nomark {
   backdrop-filter: blur(6px);
   background-color: rgba(0, 0, 0, 0);
 }
-.overlay-rom {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  z-index: 10000;
-  display: none;
-  -moz-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
-  background-color: rgba(0, 0, 0, 0);
-}
+
 .dialog-btn-modal {
   background-color: #005fb200;
   color: white;
