@@ -16,6 +16,7 @@ export default defineConfig({
                 support: resolve(__dirname, "./src/support.html"),
                 recovery: resolve(__dirname, "./src/recovery.html"),
                 kernel: resolve(__dirname, "./src/kernel.html"),
+                kernelsu: resolve(__dirname, "./src/kernelsu.html"),
                 guide: resolve(__dirname, "./src/guide.html"),
                 download: resolve(__dirname, "./src/download.html"),
                 stats: resolve(__dirname, "./src/statistics.html"),
